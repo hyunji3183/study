@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  font-family: "inter";
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  margin: 20px 0;
+}
+header article {
+  width: 1470px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header article div a {
+  font-size: 20px;
+  color: #000000;
+  margin: 0 100px;
+}
+header article div a:hover {
+  font-weight: 700;
+}
+main .bi {
+  position: relative;
+}
+main .bi a img {
+  width: 100%;
+}
+main .bi p {
+  position: absolute;
+  left: 39%;
+  top: 38%;
+  color: #FFFFFF;
+  font-size: 70px;
+  font-style: italic;
+}
+main .bi p:hover {
+  font-size: 75px;
+  transition: 0.5s;
+}
+
+.txt {
+  margin: 140px 0;
+  text-align: center;
+}
+.txt strong {
+  font-size: 30px;
+}
+.txt strong::after {
+  content: "";
+  margin: 30px auto;
+  display: block;
+  border: 1px solid black;
+  width: 100px;
+}
+.txt p {
+  font-size: 15px;
+}
+
+.menu {
+  width: 1470px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.menu div figure:hover {
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+.menu div figcaption {
+  text-align: center;
+  margin: 40px 0 150px 0;
+  font-size: 15px;
+}
+.menu div figcaption:hover {
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+footer {
+  background-image: url("./img/membership_img.jpg");
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .mem {
+  white-space: pre-line;
+}
+footer .mem strong {
+  font-size: 30px;
+}
+footer .mem strong span {
+  color: #D91226;
+}
+footer .mem p {
+  color: #302C2D;
+  line-height: 20px;
+}
+footer .mem .bt {
+  display: flex;
+  width: 700px;
+  height: 500px;
+  margin-right: 300px;
+}
+footer .mem .bt div:nth-child(2) {
+  margin: 0 60px;
+}
+footer .mem .bt div {
+  text-align: center;
+}
+footer .mem .bt div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid #7A7A7A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+footer .mem .bt div a:hover {
+  transform: rotateY(360deg);
+  transition: 0.5s;
+}
+footer .mem .bt div a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+  height: 80px;
+}
+footer .mem .bt div b {
+  color: #444444;
+}
+footer .mem .bt div p {
+  color: #6E6E6E;
+}
+footer .mem .bt div:nth-of-type(1) a {
+  background: #ffffff url("./img/stamp.png") center no-repeat;
+}
+footer .mem .bt div:nth-of-type(2) a {
+  background: #ffffff url("./img/free.png") center no-repeat;
+}
+footer .mem .bt div:nth-of-type(3) a {
+  background: #ffffff url("./img/order.png") center no-repeat;
+}/*# sourceMappingURL=self.css.map */

@@ -1,0 +1,32 @@
+$wid: 1000px;
+@mixin flex($x:space-between,$y:center) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;}
+// 괄호에 넣어둔값으로 변경해서 사용할 수 있음
+// >>>브라우저에서 확인불가능
+
+
+header{
+    padding: 20px 0;
+    width: $wid;
+    margin: 0 auto;
+    @include flex();
+
+    h1{font-size: 2rem;}
+    nav{
+        a{padding: 0 20px;
+        color: darkmagenta;}
+    }
+}
+
+main{width: $wid; margin: 0 auto;}
+.spot{
+    figure{
+        margin: 0;
+        @include flex(space-between, flex-start){
+            flex-wrap: wrap;};
+        img{width: 30%;}
+    }
+}

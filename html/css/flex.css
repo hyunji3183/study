@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url("./reset.css");
+
+/* 한글주석
+파일명(영문소문자,스페이스X) */
+
+article
+{width: 50%; margin: 100px auto;
+background-color: #eeeeeebe;
+padding: 3%;}
+
+article>div
+{white-space: pre-line;}
+/* 에디터에 표기된 그대로 표시하게만드는것 */
+
+.ex-1
+{background-color: rgb(164, 240, 253);
+color: #fff;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+
+
+.ex-2
+{background-color: rgb(159, 255, 207);
+color: #fff;
+display: flex;
+gap:10px;}
+
+.ex-2>div
+{flex-shrink: 0;
+background-color: rgb(115, 164, 255);
+width: 100%;
+height: 200px;}
+/* flex-shrink <부모가 자식의 사이즈를 감소시키지 못하게 해금해주는것 */
+
+
+
+
+.ex-3
+{background-color: rgb(159, 255, 207);
+color: #fff;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+/* gap:5% */}
+
+.ex-3>div
+{background-color: rgb(115, 164, 255);
+width: 30%;
+height: 200px;
+margin-bottom: 5%;
+}
+
+
+
+
+
+
+.ex-4
+{background-color: rgb(159, 255, 207);
+color: #fff;
+
+display: flex;
+/* flex-direction: column | row; */
+flex-wrap: wrap;
+gap: 20px;}
+
+.ex-4>div
+{background-color: rgb(115, 164, 255);
+width: 45%;
+height: 200px;}
+
+/* .ex-4>div:nth-of-type(1){order: 2;}
+.ex-4>div:nth-of-type(2){order: 1;}
+.ex-4>div:nth-of-type(3){order: 3;}
+.ex-4>div:nth-of-type(4){order: 4;} */
+/* 각 영역의 위치를 바꾸는 태그 order */
+
+/* 
+display: flex(부모)
+ㄴ align-items: flex-start | center | flex-end
+ㄴ justify-content: 
+flex-start | center | flex-end
+space-between | space-around | space-evenly
+
+ㄴ flex-wrap: wrap (리스트 형태의 콘텐츠)
+ㄴ flex-direction: row | colums
+
+(자식)
+너비 감소 (flex-shrink: 1 | 0 )
+너비 비율 (flex-grow : 1 )
+순서 변경 (order : 1 ) */
+
+
+
+.grow{
+    text-align: center;
+    margin: 150px 0; 
+}
+.grow > ul{
+    width: 1280px; margin: 50px auto;
+    display: flex;
+}
+.grow > ul >li{
+    background-color: rgb(243, 242, 204);
+    border: 1px solid rgb(253, 250, 255);
+    height: 200px; 
+    flex-grow: 1;
+    transition: 1s;
+}
+.grow > ul >li:hover{
+    flex-grow: 10;}
+
+
+
+
+
+

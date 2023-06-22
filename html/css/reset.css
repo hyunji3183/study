@@ -1,0 +1,12 @@
+/* 태그기본값 초기화 */
+body,p
+{margin: 0;}
+
+*{box-sizing: border-box;}
+
+ul,li 
+{margin: 0;
+padding: 0;
+list-style-type: none;}
+
+img {vertical-align: top;}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h2mLpUh48UU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="./img/익명5.jpg" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="http://dbcut.co.kr" frameborder="0" scrolling="no"></iframe>
+    <iframe width="560" height="315" src="./img/video.mp4" frameborder="0" scrolling="no"></iframe>
+    <!-- iframe을 이용해서 비디오를 집어넣을 수도있다 -->
+
+
+    <article>
+        <h2>iframe</h2>
+        <div style="display: flex;">
+            <iframe width="560" height="315" 
+                src="http://dbcut.co.kr" 
+                frameborder="0" 
+                scrolling="no" 
+                name="web"> </iframe>
+            <ul>
+                <li>
+                    <a href="http://plana.aero" target="web">
+                    플라나
+                    </a>
+                </li>
+                <li>
+                    <a href="http://klf.or.kr" target="web">
+                        http://klf.or.kr
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+
+
+
+    <article>
+        <h2>video</h2>
+        <figure>
+            <video width="100%" height="960" autoplay muted controls loop poster="./img/익명2.jpg">
+                <source src="./img/video.mp4" type="video/mp4">
+            </video>
+        </figure>
+    </article>
+
+
+    <style>
+        body, figure{margin: 0;}
+        video {width: 100%; height: 100vh; object-fit :cover;}
+        
+
+    </style>
+
+
+
+    
+</body>
+</html>

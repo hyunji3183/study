@@ -1,0 +1,142 @@
+@import url("./reset.css");
+/* css파일을 호출한것/ 항상 상단고정 */
+header
+    {background-color: cadetblue;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    /* 배경색, 텍스트정렬, 문자색상, 여백설정 */}
+header .right
+    {text-align: right !important;}
+
+header .menu
+    {text-align: center;}
+
+header .menu>a
+    {font-size: 16px; 
+    color: rgb(151, 221, 253);
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    line-height: 1.6;}
+
+header .menu > a:nth-of-type(2)
+{color: rgb(255, 100, 100);}
+/* a 태그중에 2번째 것 선택
+:nth-child(2)  /부모 요소의 n번째 자식 요소를 의미
+:nth-of-type(2)/부모 요소의 자식 요소 중 type 조건을 만족하는 n번째 자식 요소를 의미 */
+
+main{}
+
+#content
+{width: 400px;
+background-color: rgb(207, 249, 255);}
+
+#content>p:nth-of-type(1)
+{height: 300px;
+background-color: rgb(255, 100, 100);}
+
+#content>p:nth-of-type(2)
+{text-align: center;}
+
+.content
+{width: 400px;
+background-color: rgb(123, 195, 204);}
+
+
+
+
+
+
+
+.ex
+{width: 1000px;
+border: 1px solid red;
+padding: 40px;
+
+display: flex;
+align-items: center;}
+
+.ex > p
+{width: 50%; height: 600px;
+background-color: rgb(161, 235, 245);}
+
+.ex > div
+{width: 50%;
+padding-left: 60px;
+}
+
+.ex> div> b
+{font-size: 40px;}
+
+.ex> div> p
+{font-size: 20px;
+margin: 30px 0;}
+
+.ex> div> a
+{background-color: yellow;
+border: 1px solid black;
+padding: 10px 30px;
+display: inline-block;}
+
+
+
+
+
+
+
+.ex2
+{width: 1000px; margin: 100px auto;}
+
+.ex2> h2
+{text-align: center;
+font-size: 60px;}
+
+.ex2> .list
+{margin: 0; padding: 0; list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.ex2> .list> li
+{width: 30%;
+border: 2px solid rgb(90, 90, 90);}
+
+.ex2> ul > li > p
+{}
+
+.ex2> ul > li > p > img
+{width: 100%;}
+
+
+
+.ex2> ul > li > div{}
+.ex2> ul > li > div > p{}
+.ex2> ul > li > div > b{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside
+{
+
+}
+footer
+{
+
+}
+

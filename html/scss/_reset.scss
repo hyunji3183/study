@@ -1,0 +1,48 @@
+@import "_media";
+
+html,body{margin: 0;}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+h1,h2,p,figure{}
+ul,li,ol{}
+
+table{}
+a{}
+img{}
+
+input,textarea{}
+button{}
+select{}
+
+*{}
+
+
+
+
+
+
+
+header{
+    width: 100%;
+    margin: 20px 0;
+    article{width: $wid;
+            height: 50px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        div{
+            a{
+                font-size: 20px;
+                color: #000000;
+                margin: 0 100px;
+                &:hover{font-weight: 700;}}
+            h1{}
+        }
+    }
+}
+
+
+
+// common.scss (다중 페이지 공통스타일)
+// 푸터, 버튼, 색상, 콘텐츠(컴포넌트)

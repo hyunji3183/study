@@ -1,0 +1,120 @@
+@import url("./reset.css");
+
+article
+    {width: 500px;
+    border: 5px solid cornflowerblue ;
+    margin: 100px 0 0 100px; /* 상, 우, 하, 좌 */
+    margin: 100px 100px 0; /* 상, 좌우, 하 */
+    margin: 100px 100px; /* 상하, 좌우 */
+    margin: 100px; /* 상하좌우 동일 */
+
+    margin: 100px auto;
+    /* 박스크기에 영향을 주지않음(안쪽여백, 선) */
+    
+    padding: 60px;
+    /* 안쪽여백 (auto 사용불가) */}
+
+.border div:nth-of-type(1)
+{border: 1px solid red;}
+
+.border div:nth-of-type(2)
+{margin-top: 30px;
+border-bottom: 1px solid rgb(74, 74, 235);
+
+/* border-width: 3px 0; */
+/* border-color: black rgb(255, 175, 175); */
+
+border-top-color: rgb(125, 255, 136);
+border-top-width: 10px;
+border-top-style: double;}
+
+.border div:nth-of-type(3)
+{margin-top: 30px;
+border: 3px solid rgb(243, 176, 207);
+border-radius: 30px 0px 30px 0;
+padding: 20px;}
+
+
+
+
+
+
+.bg
+{width: 1000px;}
+
+.bg p
+{height: 400px;}
+
+.bg p:nth-of-type(1)
+{background-color: rgb(252, 132, 89)}
+
+.bg p:nth-of-type(2)
+{background-image: url('../img/익명4.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+/* no-repeat,repeat-x,repeat-y */}
+
+.bg p:nth-of-type(3)
+{background-color: rgb(255, 216, 202);
+background-image: url('../img/익명4.jpg');
+background-size: 10%;
+background-repeat: no-repeat;
+background-position: 100% 50%;
+/* 가로, 세로를 % 숫자로 표기함 */}
+
+.bg p:nth-of-type(4)
+{background-image: url('../img/익명4.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+/* background-size: contain;
+사진의 비율대로 영역 내 크기 맞춤 */
+background-attachment: fixed;}
+
+.bg p:nth-of-type(5)
+{background: rgb(188, 255, 168) url('../img/익명4.jpg') center / 100% no-repeat fixed;}
+/* color, url, position/ size, repeat, attachment
+color, url, position, repeat, attachment <사이즈가 필요없다면
+color, url, position, repeat <고정값이 필요없다면
+*사이즈를 넣을때에는 무조건 / 기호 삽입필요 */
+
+.icon h2
+{text-align: center;}
+
+/* 가상선택자 영역을위해 :before 혹은 after사용 (inline속성)*/
+.icon h2:before
+{content: '';
+display: inline-block;
+/* inline-block < 인라인태그는 스타일 제약이있으니 스타일제약을 없애준 것 */
+width: 44px; height: 44px;
+border: 1px solid rgb(255, 0, 0);
+background: url('../img/icon.png') -250px -90px / 422px;}
+
+.icon h2:before, .icon h2 span
+{vertical-align: middle;
+/* 세로정렬 */}
+
+/* 1. margin: 0 auto 값은 block 속성에서 사용 가능
+2. vertical-align은 inline-block 속성에서 사용 가능
+3. 가상선택자 (before, after)는 inline 속성이고 필수속성으로 (content:'';)를 삽입해야한다.
+4. text-align는 inline, inline-block속성을 정렬할 수 있음 */
+
+
+
+.ex
+{width: 100%; height: 100vh;
+background: url('../img/01.jpg') 0 0 / cover;
+text-align: center;
+padding-top: 200px;
+color: white;}
+
+.ex >b
+{font-size: 60px;}
+
+.ex >p
+{font-size: 20px;}
+
+
+
+
+
+

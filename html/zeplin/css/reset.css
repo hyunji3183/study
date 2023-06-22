@@ -1,0 +1,18 @@
+html,body{margin: 0; font-size: 16px;}
+h1,h2,h3,p{margin: 0;}
+ul,li{list-style-type: none; padding: 0; margin: 0;}
+img{vertical-align: top;}
+a{
+    color: inherit;
+    /* 부모의 값을 상속받겠다는의미 */
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+a,b,i,em,strong,span{display: inline-block;}
+
+figure{margin: 0;}
+
+
