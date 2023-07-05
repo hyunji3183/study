@@ -8,12 +8,11 @@
 
 <body>
 
-    <p>
-    <p id="questionText"></p>
-    <p><input id="inputSolution" /></div>
-    </p>
-    <p><button type="button" id="btn_Submit" onclick="submitAnswer()">정답 제출</button></p>
-    </p>
+    <div>
+        <p id="questionText"></p>
+        <p><input id="inputSolution" /></p>
+        <p><button type="button" id="btn_Submit" onclick="submitAnswer()">정답 제출</button></p>
+    </div>
     <button type="button" id="btn_StartGame" onclick="startGame()">스피드문제 시작</button>
     <button type="button" id="btn_ResetGame" onclick="resetGame()">리셋</button>
 
@@ -24,27 +23,21 @@
         let randNum1 = 0;
         let randNum2 = 0;
         let correctCount = 0;
-        let questionText;
+        let sQuestionText;
         const inputSolution = document.getElementById("inputSolution");
         const btn_Submit = document.getElementById("btn_Submit");
         const btn_StartGame = document.getElementById("btn_StartGame");
         const btn_ResetGame = document.getElementById("btn_ResetGame");
-        const title = document.getElementById("questionText");
+        const questionText = document.getElementById("questionText");
 
         inputSolution.style.display = 'none';
-        title.style.display = 'none';
+        questionText.style.display = 'none';
         btn_Submit.style.display = 'none';
         btn_ResetGame.style.display = 'none';
 
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
-        }
-
         function startGame() {
             inputSolution.style.display = 'inline';
-            title.style.display = 'inline';
+            questionText.style.display = 'inline';
             btn_Submit.style.display = 'inline';
             btn_StartGame.style.display = 'none';
             btn_ResetGame.style.display = 'none';
@@ -52,15 +45,15 @@
             nextRound();
         }
 
-        function stopGame() {
+        function endGame() {
             clearInterval(interval);
             inputSolution.style.display = 'none';
             btn_Submit.style.display = 'none';
 
             if (correctCount >= 4) {
-                title.innerHTML = "통과입니다.<br>게임이 종료되었습니다.";
+                questionText.innerHTML = "통과입니다.<br>게임이 종료되었습니다.";
             } else {
-                title.innerHTML = "탈락입니다.<br>게임이 종료되었습니다.";
+                questionText.innerHTML = "탈락입니다.<br>게임이 종료되었습니다.";
             }
             btn_ResetGame.style.display = 'inline';
 
@@ -69,46 +62,58 @@
         }
 
         function nextRound() {
+            // 현재 라운드에 1을 더한다.
             round = round + 1;
+            // interval 변수에 등록되어 있는 setInterval이 있으면 Clear 한다.
             clearInterval(interval);
-            remainTime = 5;
-            randNum1 = getRandomInt(1, 10);
-            randNum2 = getRandomInt(1, 10);
+            // 남은시간을 표기하는 변수 값을 5초로 초기화
+            remainTime = 5.0;
+            // 0 ~ 10 랜덤한 숫자 2개를 구한다.
+            randNum1 = 10;
+            randNum2 = 5;
+            // 정답 입력하는 input 값을 초기화하고 커서를 포커싱한다.
             inputSolution.value = null;
             inputSolution.focus();
-            questionText = "문제 " + round + ") " + randNum1 + " + " + randNum2 + " 의 정답은?";
-            title.innerHTML = questionText;
-            interval = setInterval("showRemainTime()", 1000);
+            // 현재 round와 랜덤한 숫자를 조합하여 현재 문제 텍스트를 만든다.
+            sQuestionText = "문제 " + round + ") " + randNum1 + " + " + randNum2 + " 의 정답은?";
+            questionText.innerHTML = sQuestionText;
+            // 1초에 한번씩 showRemainTime()를 실행하는 Interval을 설정한다.
+            interval = setInterval("showRemainTime()", 100);
         }
 
         function showRemainTime() {
-            if (remainTime == 0) {
-                nextRound();
+            if (remainTime.toFixed(1) == 0.0) {
+                if (round < 5) {
+                    nextRound();
+                }
+                else {
+                    endGame();
+                }
                 return;
             }
 
-            var addRemainText = questionText + " 남은시간 (<b>" + remainTime + "</b>초)";
-            title.innerHTML = addRemainText;
-            remainTime = remainTime - 1;
+            questionText.innerHTML = sQuestionText + " 남은시간 (<b>" + remainTime.toFixed(1) + "</b>초)";
+            remainTime = remainTime - 0.1;
         }
 
         function submitAnswer() {
-            var submitValue = inputSolution.value;
+            let submitValue = inputSolution.value; // 111
+
+            if ((randNum1 + randNum2) == submitValue) {
+                correctCount = correctCount + 1;
+            }
 
             if (round < 5) {
-                if ((randNum1 + randNum2) == submitValue) {
-                    correctCount = correctCount + 1;
-                }
                 nextRound();
             }
             else {
-                stopGame();
+                endGame();
             }
         }
 
         function resetGame() {
             inputSolution.style.display = 'none';
-            title.style.display = 'none';
+            questionText.style.display = 'none';
             btn_Submit.style.display = 'none';
             btn_StartGame.style.display = 'inline';
             btn_ResetGame.style.display = 'none';

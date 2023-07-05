@@ -1,0 +1,84 @@
+.s1 {
+    color: black;
+}
+
+.s1 div {
+    transition: 1s;
+    transform: translateX(0%);
+}
+
+.s1.on {
+    color: red;
+}
+
+.s1.on h2 {
+    font-size: 3rem;
+}
+
+.s1.on div {
+    transform: translateX(50%);
+}
+
+
+
+article {
+    width: 500px;
+    margin: 200px auto;
+}
+
+.s2 button.active {
+    background-color: rgb(44, 27, 44);
+    color: wheat;
+}
+
+.s2 .contents div {
+    border: 1px solid cornflowerblue;
+    padding: 100px;
+    display: none;
+
+}
+
+.s2 .contents div.active {
+    display: block;
+}
+.s3 h2 div{
+    margin-top: 20px;
+    width: 30px; height: 30px;
+    position: relative;
+}
+.s3 h2 div span{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 5px 0;
+    border: 1px solid black;
+    transition: .5s;
+}
+
+.s3 h2 div.on span:nth-of-type(1){
+    transform:translateY(0%) rotate(45deg) ;
+}
+
+.s3 h2 div.on span:nth-of-type(2){
+    display: none;
+}
+
+.s3 h2 div.on span:nth-of-type(3){
+    transform:translateY(0%) rotate(-45deg);
+}
+.s3 nav{
+    position: fixed; left: 0; top: 0;
+    width: 20%; height: 100%;
+    background-color: lemonchiffon;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-98%);
+    transition: .5s;
+}
+
+.s3 nav.on{
+    transform: translateX(0%);
+}
