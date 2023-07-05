@@ -1,8 +1,17 @@
-*{margin: 0;
-font-family: 'inter';}
-a{text-decoration: none;}
-$wid: 1470px;
+// 태그기본값 정의, 공통스타일(헤더,버튼,푸터,배너,팝업 등)
+// _reset.scss (css문서에서만사용하는것에는 언더바를 붙힘)
+// common.css
+// 로 정리해서 사용함
 
+// @import "_reset";
+// @import "_mixin";
+
+*{margin: 0;
+    font-family: 'inter';}
+    a{text-decoration: none;}
+    $wid: 1470px;
+
+    @import "_reset";
 
 header{width: 100%;
     margin: 20px 0;
@@ -46,7 +55,7 @@ main{
     .txt{
         margin: 140px 0;
         text-align: center;
-        strong{
+        b{
             font-size: 30px;
             &::after{
                 content: '';
@@ -106,12 +115,12 @@ footer{
                 margin: 0 60px;}
             div{text-align: center;
                 a{
+                    
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 120px; height: 120px;
                     margin: 0 auto;
-                    background-color: white;
                     border-radius: 50%;
                     border: 3px solid #7A7A7A;
                     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -125,10 +134,64 @@ footer{
                 }
                 b{color: #444444;}
                 p{color: #6E6E6E;}
+            
+
+                $icons : (1:stamp, 2:free, 3:order);
+                // nth($icons,1)
+                // img/#{변수명}.png
+                // #은 연결시키는 용도
+                // &:nth-of-type(1) a {background: #ffffff url('./img/#{nth($name,1)}.png') center no-repeat;}
+
+
+                @each $number,$name in $icons{
+                    &:nth-of-type(#{$number}) a {background: #ffffff url('./img/#{$name}.png') center no-repeat;}
+                }
+                
+                
             }
         }
     }
-    
-
-    
 }
+
+
+
+// @import "_m-self";
+
+// 1. 해상도 문서(디바이스별 사이즈, mixin, media) => _media.scss
+
+// 2. 각 페이지별 반응형 스타일 => m-self.scss
+
+
+
+
+// pc 최적화
+// 1. 페이지 코딩(헤더,메인,푸터)
+// 2. 공통스타일(헤더, 푸터) reset이나 common파일
+// 3. 반응형
+//     ㄴ 분기점 파악(_media.scss)
+//     ㄴ 각 페이지별 반응형 처리(_m-self.scss)
+
+
+
+//     _reset.scss (태그초기화)
+//     _common.scss (공통스타일)
+//     _media.scss (반응형 분기점 선언)
+//         _common.scss을 만들지않고 _reset.scss와 합쳐도 됨
+
+//     공통믹스인(컬러,버튼,팝업,그리드..)
+//     _mixin.scss
+//     _variable.scss
+
+
+//     #각 페이지 별 스타일문서
+//     index.html  / m-index.scss(mobile, ipad)
+//     sub.html / m-sub.scss(mobile, ipad)
+
+//     ------
+
+//     scss폴더 참고
+//         component - 영상, 날씨, 폼, 썸네일, 리스트 등
+//         config - 초기화
+//         layout - 가로, 세로, ui
+//         themes - 
+//         utils - 버튼, 아이콘 등

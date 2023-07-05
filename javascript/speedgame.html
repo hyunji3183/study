@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Output</title>
+</head>
+
+<body>
+
+    <p>
+    <p id="questionText"></p>
+    <p><input id="inputSolution" /></div>
+    </p>
+    <p><button type="button" id="btn_Submit" onclick="submitAnswer()">정답 제출</button></p>
+    </p>
+    <button type="button" id="btn_StartGame" onclick="startGame()">스피드문제 시작</button>
+    <button type="button" id="btn_ResetGame" onclick="resetGame()">리셋</button>
+
+    <script>
+        let round = 0;
+        let interval = 0;
+        let remainTime = 0;
+        let randNum1 = 0;
+        let randNum2 = 0;
+        let correctCount = 0;
+        let questionText;
+        const inputSolution = document.getElementById("inputSolution");
+        const btn_Submit = document.getElementById("btn_Submit");
+        const btn_StartGame = document.getElementById("btn_StartGame");
+        const btn_ResetGame = document.getElementById("btn_ResetGame");
+        const title = document.getElementById("questionText");
+
+        inputSolution.style.display = 'none';
+        title.style.display = 'none';
+        btn_Submit.style.display = 'none';
+        btn_ResetGame.style.display = 'none';
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+        }
+
+        function startGame() {
+            inputSolution.style.display = 'inline';
+            title.style.display = 'inline';
+            btn_Submit.style.display = 'inline';
+            btn_StartGame.style.display = 'none';
+            btn_ResetGame.style.display = 'none';
+
+            nextRound();
+        }
+
+        function stopGame() {
+            clearInterval(interval);
+            inputSolution.style.display = 'none';
+            btn_Submit.style.display = 'none';
+
+            if (correctCount >= 4) {
+                title.innerHTML = "통과입니다.<br>게임이 종료되었습니다.";
+            } else {
+                title.innerHTML = "탈락입니다.<br>게임이 종료되었습니다.";
+            }
+            btn_ResetGame.style.display = 'inline';
+
+            round = 0;
+            correctCount = 0;
+        }
+
+        function nextRound() {
+            round = round + 1;
+            clearInterval(interval);
+            remainTime = 5;
+            randNum1 = getRandomInt(1, 10);
+            randNum2 = getRandomInt(1, 10);
+            inputSolution.value = null;
+            inputSolution.focus();
+            questionText = "문제 " + round + ") " + randNum1 + " + " + randNum2 + " 의 정답은?";
+            title.innerHTML = questionText;
+            interval = setInterval("showRemainTime()", 1000);
+        }
+
+        function showRemainTime() {
+            if (remainTime == 0) {
+                nextRound();
+                return;
+            }
+
+            var addRemainText = questionText + " 남은시간 (<b>" + remainTime + "</b>초)";
+            title.innerHTML = addRemainText;
+            remainTime = remainTime - 1;
+        }
+
+        function submitAnswer() {
+            var submitValue = inputSolution.value;
+
+            if (round < 5) {
+                if ((randNum1 + randNum2) == submitValue) {
+                    correctCount = correctCount + 1;
+                }
+                nextRound();
+            }
+            else {
+                stopGame();
+            }
+        }
+
+        function resetGame() {
+            inputSolution.style.display = 'none';
+            title.style.display = 'none';
+            btn_Submit.style.display = 'none';
+            btn_StartGame.style.display = 'inline';
+            btn_ResetGame.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 반올림(Math.round() ),
+        // 소수점제거( Math.floor() ),
+        // 올림( Math.ceil() )
+        let ran = Math.random() * 10;
+        console.log(ran);
+        console.log(Math.round(ran));
+        console.log(Math.floor(ran));
+        console.log(Math.ceil(ran));
+    </script>
+
+    <script>
+        let bg = function (n) {
+            return Math.round(Math.random() * n);
+        }
+        const elBody = document.querySelector('body');
+        elBody.style.background = `rgba(${bg(255)},${bg(255)},${bg(255)},${bg(100)}%)`;
+
+        console.log(bg());
+    </script>
+
+
+    <article class="random-img">
+        <h2>random 이미지</h2>
+        <img src="./img/익명3.jpg">
+    </article>
+
+    <script>
+        let imgs = ['익명4.jpg', '익명5.jpg', '익명3.jpg', '익명2.jpg'];
+
+        const elRandom = document.querySelector('.random-img img');
+
+        let num = Math.round(Math.random() * 3);
+
+        // console.log(elRandom.getAttribute('src'));
+
+        elRandom.setAttribute('src', `./img/${imgs[num]}`);
+    </script>
+
+    <script>
+        let ranNum = function (n) {
+            return Math.round(Math.random() * n)
+        }
+        let tag = ranNum(10000);
+        let tag2 = ranNum(10000);
+
+        console.log(
+            `${tag}+${tag2} = ${tag + tag2}`);
+    </script>
+
+    <article class="quiz">
+        <h2>speed quiz</h2>
+        <div class="box">
+            <p></p>
+            <input type="text">
+        </div>
+        <button>start</button>
+        <button>enter</button>
+    </article>
+
+    <script>
+        const elStart = document.querySelectorAll('.quiz button'),
+            elQuiz = document.querySelector('.quiz .box > p'),
+            elResult = document.querySelector('.quiz .box > input');
+
+        let tag3 = ranNum(10000);
+        let tag4 = ranNum(10000);
+        // `${tag3}+${tag4} = ${tag3 + tag4}`;
+
+        // elResult.innerHTML = b;
+        elStart[0].onclick = function () {
+            setInterval(function () {
+                let a = `${tag3}+${tag4}`,
+                    b = `${tag3 + tag4}`;
+                console.log(b);
+
+                elQuiz.innerHTML = a;
+                elResult.innerText = b;
+                elStart[1].onclick = clearInterval()
+            }, 00)
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

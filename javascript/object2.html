@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="movie">
+        <p></p>
+        <p></p>
+        <!-- <button>현재상영영화</button>
+        <button>개봉예정영화</button> -->
+        <div class="con">
+            <!-- <div class="now">
+                <div class="data">
+                    <div class="text">
+                        <strong>인디아나존스</strong>
+                        <p><span>개요: 액션</span> <span>154분</span></p>
+                        <p><span>개봉: 2023.06.28</span> <span>8.14</span></p>
+                        <p>출연: 해리슨 포드, 피비 윌러-브리지, 매즈 미켈슨</p>
+                    </div>
+                    <p><img src="./img/익명4.jpg"></p>
+                </div>
+                <div class="button">
+                    <a>예매하기</a>
+                    <a>예고편</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <style>
+        .movie {
+            width: fit-content;
+        }
+
+        .movie .now {
+            width: 30%;
+            border: 1px solid gray;
+        }
+
+        .movie .now .data {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .movie .now .data .text {
+            width: 60%;
+            padding: 20px 20px 0 20px;
+        }
+
+        .text strong {}
+
+        .text p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .text span {
+            white-space: pre-line;
+        }
+
+
+        .data p {}
+
+        .data p img {
+            width: 100%;
+        }
+
+        .button {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: antiquewhite;
+        }
+
+        .button a {
+            padding: 15px 60px;
+        }
+    </style>
+
+
+    <script>
+        const elP = document.querySelector('.movie p')
+
+        let m_data = {
+            현재상영영화: [
+                {
+                    영화명: '인디아나존스',
+                    개요: '액션',
+                    상영시간: '154분',
+                    개봉일: '2023.06.28',
+                    평점: '8.14',
+                    출연: '해리슨 포드, 피비 윌러-브리지, 매즈 미켈슨',
+                    포스터: "./img/익명4.jpg"
+                },
+                {
+                    영화명: '귀공자',
+                    개요: '액션',
+                    상영시간: '118분',
+                    개봉일: '2023.06.21',
+                    평점: '8.10',
+                    출연: '김선호,강태주,김강우,고아라',
+                    포스터: "./img/익명4.jpg"
+                }
+            ],
+            개봉예정영화: [
+                {
+                    영화명: '악마들',
+                    개요: '스릴러',
+                    상영시간: '106분',
+                    개봉일: '2023.07.05',
+                    출연: '장동윤,오대환,최귀화,장재호,손종학,신승환',
+                    포스터: "./img/익명4.jpg"
+                },
+                {
+                    영화명: '반틈없는 사이',
+                    개요: '멜로/로멘스',
+                    상영시간: '112분',
+                    개봉일: '2023.07.05',
+                    출연: '이지훈,한승연,고규필,김윤성,이유준,정애연',
+                    포스터: "./img/익명4.jpg"
+                }
+            ]
+        };
+
+
+        for (const k in m_data) {
+            elP.innerHTML += `<button>${k}</button>`
+        };
+
+        const elButton = document.querySelectorAll('button'),
+                elCon = document.querySelector('.movie > .con');
+        let now = m_data.현재상영영화[0];
+
+        // console.log(m_data.현재상영영화[0].영화명);
+                elButton.forEach(function (Btn, k) {
+                    Btn.onclick = function () {
+                        elCon.innerHTML ='';
+                elCon.innerHTML += `<div class="now">
+                                        <div class="data">
+                                            <div class="text">
+                                                <strong>${now.영화명}</strong>
+                                                <p><span>개요: ${now.개요}</span> <span>${now.상영시간}</span></p>
+                                                <p><span>개봉: ${now.개봉일}</span> <span>${now.평점}</span></p>
+                                                <p>출연: ${now.출연}</p>
+                                            </div>
+                                            <p><img src=${now.포스터}></p>
+                                        </div>
+                                        <div class="button">
+                                            <a>예매하기</a>
+                                            <a>예고편</a>
+                                        </div>
+                                    </div>`;
+                }
+        })
+
+
+
+
+
+
+
+            // m_data.forEach(function(obj,k){
+            //     for(const k in m_data){
+
+            //     }
+            // })
+
+
+
+
+    </script>
+</body>
+
+</html>

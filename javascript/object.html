@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let obj = {
+            html: 70,
+            css: 80,
+            js: 50,
+            total: function () {
+                return this.html + this.css + this.js
+            }
+        };
+
+        /* 키와 값 */
+        // obj['html']
+        // obj.html
+
+        console.log(
+            obj,
+            obj.html + obj.css + obj.js);
+
+        for (const key in obj) {
+            console.log(`<div> ${key} : ${obj[key]} </div>`);
+            console.log(`${key} : ${obj[key]}`);
+            console.log(obj[key]);
+        }
+        console.log(obj.total());
+    </script>
+
+    <script>
+        let data = {
+            imageName_1: {
+                size: [200, 300],
+                name: '이미지 01',
+                url: 'http://naver.com'
+            }
+        }
+        console.log(data.imageName_1.size[1], data.imageName_1.name, data.imageName_1.url);
+
+        let data2 = [
+            { name: 'p01', code: 1234 },
+            { name: 'p02', code: 1234 },
+            { name: 'p03', code: 1234 }
+        ]
+
+        console.log(data2[1].name);
+
+        let data3 = {
+            생활용품: [
+                {
+                    code: 520734,
+                    title: '알뜨리 다용도 압축봉3',
+                    price: 14960,
+                    color: 'white',
+                    thumb: 'images/a1000045.jpg',
+                    size: '80-150mm'
+                },
+                {
+                    code: 520734,
+                    title: '알뜨리 다용도 압축봉5',
+                    price: 14960,
+                    color: 'white',
+                    thumb: 'images/a100004777777.jpg',
+                    size: '80-150mm'
+                },
+                {
+                    code: 520734,
+                    title: '알뜨리 다용도 압축봉7',
+                    price: 14960,
+                    color: 'white',
+                    thumb: 'images/a1000045.jpg',
+                    size: '80-150mm'
+                }
+            ],
+            캠핑용품: [
+                {
+                    code: 5212314,
+                    title: '그늘막텐트',
+                    price: 14960,
+                    color: 'white',
+                    thumb: 'images/a101156345.jpg',
+                    size: '80-150mm'
+                }
+            ]
+        }
+
+        console.log(data3.생활용품[1].thumb);
+
+        data3.생활용품.forEach(function (obj, key) {
+            console.log(obj.title)
+        });
+
+        for (const key in data3) {
+            if (key == "생활용품") {
+                data3[key].forEach(function (obj, key) {
+                    console.log(obj.title)
+                })
+            }
+        }
+    </script>
+
+    <article>
+        <h2>포트폴리오</h2>
+        <p>
+            <!-- <button>디자인</button>
+            <button>퍼블리싱</button>
+            <button>프론트엔드</button> -->
+        </p>
+
+        <div class="list">
+            <!-- <a class="#">
+                <figure>
+                    <p><img src="./img/익명4.jpg" width="200"></p>
+                    <figcaption>
+                        작품명 : 익명이가 나라를 구한다!
+                        제작기간 : 천년만년
+                        요약설명 : 익명이는 최고입니다. 아무튼 최고에요.
+                    </figcaption>
+                </figure>
+            </a> -->
+        </div>
+    </article>
+
+    <script>
+        const elList = document.querySelector('.list'),
+            elP = document.querySelector('article > p');
+
+
+        let art = {
+            디자인: [{
+                작품명: '익명이가 나라를 구한다!',
+                제작기간: '천년만년',
+                요약설명: '익명이는 영웅이에요.',
+                이미지: './img/익명4.jpg',
+                링크: 'http://naver.com'
+            },
+            {
+                작품명: '익명이가 최고다!',
+                제작기간: '천년만년',
+                요약설명: '익명이는 최고입니다. 아무튼 최고에요.',
+                이미지: './img/익명3.jpg',
+                링크: 'http://naver.com'
+            }],
+            퍼블리셔: [{
+                작품명: '익명이는 깜찍이에요',
+                제작기간: '천년만년',
+                요약설명: '어떻게이렇게 귀여울수있죠!.',
+                이미지: './img/익명2.jpg',
+                링크: 'http://naver.com'
+            }],
+            프론트엔드: [{
+                작품명: '익명이의 귀여움을 알아주세요',
+                제작기간: '천년만년',
+                요약설명: '완전깜찍이니까.',
+                이미지: './img/익명1.jpg',
+                링크: 'http://naver.com'
+            },
+            {
+                작품명: '익명이가 최고다!',
+                제작기간: '천년만년',
+                요약설명: '익명이는 최고입니다. 아무튼 최고에요.',
+                이미지: './img/익명3.jpg',
+                링크: 'http://naver.com'
+            }]
+        }, tag = '';
+
+
+        for (const k in art) {
+            elP.innerHTML += `<button>${k}</button>`
+        }
+
+        const elButton = document.querySelectorAll('button');
+
+        elButton.forEach(function (button, k) {
+            button.onclick = function () {
+                tag = '';
+                let key = this.innerText;
+                printFun(key);
+                elList.innerHTML = tag;
+            }
+        });
+
+        // 아래 function()에 들어가는문자는 수정가능
+        let printFun = function (a) {
+            art[a].forEach(function (obj) {
+                tag += `<a class="#">
+                            <figure>
+                                <p><img src="${obj.이미지}" width="200"></p>
+                                <figcaption>
+                                    작품명 : ${obj.작품명}
+                                    제작기간 : 천년만년
+                                    요약설명 : ${obj.요약설명}
+                                </figcaption>
+                            </figure>
+                        </a>`;
+            });
+        }
+    </script>
+
+
+
+
+    <article>
+        <h2>object 출력</h2>
+        <div class="popol">
+            <div> </div>
+            <div> </div>
+            <div> </div>
+        </div>
+    </article>
+
+    <script>
+        const elPopol = document.querySelectorAll('.popol > div');
+        console.log(art);
+        let num = 0;
+        // for (const data in art) {
+        //     art[data].forEach(function (obj, k) {
+        //         elPopol[num].innerHTML += `<a class="#">
+        //                     <figure>
+        //                         <p><img src="${obj.이미지}" width="200"></p>
+        //                         <figcaption>
+        //                             작품명 : ${obj.작품명}
+        //                             제작기간 : 천년만년
+        //                             요약설명 : ${obj.요약설명}
+        //                         </figcaption>
+        //                     </figure>
+        //                 </a>`;
+        //     });
+        //     num++;
+        // };
+
+
+        let dataPro = Object.keys(art);
+        console.log(dataPro);
+
+        elPopol.forEach(function (ele, k) {
+            let key = dataPro[k]
+            art[key].forEach(function (obj) {
+                ele.innerHTML += `<a class="#">
+                        <figure>
+                            <p><img src="${obj.이미지}" width="200"></p>
+                            <figcaption>
+                                작품명 : ${obj.작품명}
+                                제작기간 : 천년만년
+                                요약설명 : ${obj.요약설명}
+                            </figcaption>
+                            </figure>
+                        </a>`;
+            })
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

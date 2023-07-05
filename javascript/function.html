@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 둘 중 고정된 방법을 선택해서 사용하는것이 좋음
+        // function 네이밍(){}
+        // let 네이밍 = function(){}
+
+        let fun = function (값1, ...값) {
+            // console.log(값1);
+        }
+        fun(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+            // 받아야 할 값이 많다면 ...을 붙여 배열로 만들 수 있음
+            // 제외하고싶은 값이 있다면 '값1, ...값'으로 표현할 수 있음
+    </script>
+
+
+    <article>
+        <h2>구구단</h2>
+        <div class="btn">
+            <button>전체</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+        </div>
+        <div class="result">
+        </div>
+    </article>
+
+
+    <script>
+        // let i=0;
+        // while(i<9){
+        //     console.log(`${2}x${i}=${2*i}`)
+        //     i++;
+        // }
+
+        const elBtn = document.querySelectorAll('.btn button'),
+            elResult = document.querySelector('.result');
+
+        elBtn.innerHTML += `<div></div>`;
+        let str = ''
+
+        let gugudan = function (x) {
+            str += `<p><b>${x}단</b> <br>`
+            for (let i = 2; i <= 9; i++) {
+                str += (`${x}x${i}=${x * i} <br>`);
+            }
+            str += `</p>`;
+            elResult.innerHTML = str;
+        }
+
+        let all = function () {
+            for (let i = 2; i <= 9; i++) {
+                gugudan(i);
+            }
+        }
+
+        elBtn.forEach(function (button, key) {
+            button.onclick = function () {
+                let data = this.innerText;
+
+                elResult.innerHTML = '';
+
+                if (data != '전체') {
+                    gugudan(data);
+                }
+                else {
+                    all();
+                }
+            }
+
+        });
+
+    </script>
+
+    <article class="count">
+        <h2>setInterval / count</h2>
+        <div>1000</div>
+        <div>600</div>
+    </article>
+
+    <script>
+        const elCount = document.querySelectorAll('.count div')
+        let count = [];
+        elCount.forEach(function (el) {
+            count.push(Number(el.innerText));
+            el.innerHTML = 0;
+
+        })
+
+        let startcount = function (n) {
+            let sNum = 0;
+            setInterval(function () {
+                if (sNum < count[n]) sNum++;
+                elCount[n].innerHTML = sNum;
+            }, 1)
+        }
+
+        elCount.forEach(function (v, k) {
+            startcount(k)
+        });
+
+        
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+    <!-- 한개일때 -->
+    <!-- const elCount = document.querySelector ('.count div')
+        let count = Number(elCount.innerText);
+
+        elCount.innerHTML = 0;
+
+        let sNum = 0;
+
+        setInterval(function () {
+            if(sNum < count) sNum++;
+            elCount.innerHTML = sNum;
+        },1) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

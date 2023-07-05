@@ -7,25 +7,25 @@ a {
   text-decoration: none;
 }
 
-@imp header {
+header {
   width: 100%;
   margin: 20px 0;
-  article {
-    width: 1470px;
-    height: 50px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  article div a {
-    font-size: 20px;
-    color: #000000;
-    margin: 0 100px;
-  }
-  article div a:hover {
-    font-weight: 700;
-  }
+}
+header article {
+  width: 1470px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header article div a {
+  font-size: 20px;
+  color: #000000;
+  margin: 0 100px;
+}
+header article div a:hover {
+  font-weight: 700;
 }
 main .bi {
   position: relative;
@@ -155,10 +155,4 @@ footer .mem .bt div:nth-of-type(2) a {
 }
 footer .mem .bt div:nth-of-type(3) a {
   background: #ffffff url("./img/order.png") center no-repeat;
-}
-
-@media (max-width:767px) {
-  body {
-    background-color: rgb(4, 131, 131);
-  }
 }/*# sourceMappingURL=self.css.map */
