@@ -131,10 +131,66 @@
             elNav.classList.toggle('on');
             elbar.classList.toggle('on');
         }
-
-
     </script>
 
+    <article class="s4">
+        <h2> 아코디언 </h2>
+        <ul>
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <script>
+        const elS4 = document.querySelectorAll('.s4 li');
+        let num2 = 0;
+
+        elS4.forEach(function(ele,key){
+            ele.onclick = function(){
+        
+
+
+                this.classList.toggle('active');
+                if( num2 != key ){
+                    elS4[num2].classList.remove('active');
+                }
+                num2 = key;
+
+                // if(this.classList.contains('active') == true){
+                //     elS4[num2].classList.remove('active');
+                // }else{
+                //     elS4[num2].classList.remove('active');
+                //     this.classList.add('active');
+                // }
+            }
+        })
+    </script>
 
 
 

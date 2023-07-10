@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 컨텐츠의 위치 offsetTop, offsetLeft
+    컨텐츠의 크기 offsetHeight, offsetWidth -->
+
+    <article>
+        <h2> offset </h2>
+        <div>
+            <img src="./img/익명3.jpg">
+            <img src="./img/익명4.jpg">
+            <img src="./img/익명5.jpg">
+        </div>
+        <p></p>
+
+        <style>
+            article {
+                width: 80%;
+                margin: 100px auto;
+                padding: 10px;
+                border: 5px solid black;
+                height: 300px;
+                overflow-y: scroll;
+                overflow-x: scroll;
+                overflow: scroll;
+
+                /* overflow: :auto는 영역을 벗어나면 스크롤을 생성시킴 */
+            }
+            article div{
+                position: relative;
+                width: 2000px;
+            }
+            body,
+            p {
+                margin: 0;
+            }
+
+            img {
+                width: 400px;
+            }
+
+            p {
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 10px solid rgb(219, 181, 255);
+                box-sizing: border-box;
+                transition: 1s;
+                margin: 0;
+            }
+        </style>
+
+        <script>
+            const elImgs = document.querySelectorAll('img'),
+                elP = document.querySelector('p');
+
+            elImgs.forEach(function (ele, key) {
+                ele.onclick = function () {
+                    let offset = {
+                        t: ele.getBoundingClientRect().top,
+                        l: ele.getBoundingClientRect().left,
+                        w: ele.getBoundingClientRect().width,
+                        h: ele.getBoundingClientRect().height
+                    }
+                    elP.style = `left:${offset.l}px;
+                                top:${offset.t}px;
+                                width:${offset.w}px;
+                                height:${offset.h}px;`
+                }
+            })
+            let elArticle = document.querySelector('article');
+
+            console.log(elArticle.getBoundingClientRect());
+
+            console.log(
+                elArticle.offsetWidth,
+                elArticle.clientWidth,
+                elArticle.scrollWidth
+            )
+
+
+        </script>
+    </article>
+
+
+
+
+
+</body>
+
+</html>
