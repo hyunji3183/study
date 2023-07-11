@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 1. 스크롤 방향 체크
+    2. 스크롤 값 (pageYoffset / pageXoffset)
+    3. 오브젝트의 정보 (getBoundingClientRect(), offsetTop..)
+    4. 스크롤이 있는 오브젝트 크기 (scrollWidth / scrollHeight)
+    
+    5. 일정 시간 후 실행 (setTimeOut /  clearTimeOut)
+    6. addEventListener(function(){})
+    7. wheel / event.wheelDelta(휠내림 -120/휠올림 120) -->
+    <style>
+        article {
+            width: 50%;
+            margin: 200px auto;
+            border: 1px solid #000;
+            padding: 60px;
+        }
+    </style>
+
+    <article class="ex1">
+        <h2>스크롤 방향 체크</h2>
+        <div>스크롤 up, down시 클래스를 넣거나 삭제하세요.</div>
+        <style>
+            .ex1 div.on {
+                color: blue;
+            }
+        </style>
+    </article>
+
+    <article class="ex2">
+        <h2>스크롤 pageYoffset</h2>
+        <div>텍스트의 크기를 키우거나 줄이세요.</div>
+        <style>
+            .ex2 div.on2 {
+                font-size: 50px;
+                transition: 1s;
+            }
+        </style>
+    </article>
+
+
+    <script>
+        const onbox = document.querySelector('.ex1 div'),
+            onbox2 = document.querySelector('.ex2 div');
+
+        let reset2 = 0;
+        window.onscroll = function (offset, key) {
+            if (window.pageYOffset > reset2) {
+                onbox.classList.add('on');
+                onbox2.classList.add('on2');
+            } else {
+                onbox.classList.remove('on');
+                onbox2.classList.remove('on2');
+            }
+        }
+    </script>
+
+
+    <article class="ex3">
+        <h2>오브젝트 getBoundingClientRect() </h2>
+        <div>스크롤시 뷰포트화면에 해당 내용이 나오면 애니메이션을 주세요.(style 활용)</div>
+        <div class="off">
+        </div>
+        <style>
+            .ex3 div.start {
+                height: 100px;
+                overflow: hidden;
+            }
+
+            .ex3 div.start span {
+                width: 50px;
+                height: 50px;
+                margin: 30px;
+                background-color: rgb(174, 255, 187);
+                border-radius: 100%;
+                display: inline-block;
+                opacity: 1;
+                transition: 2s;
+            }
+        </style>
+    </article>
+
+    <script>
+        const ex3 = document.querySelector('.ex3'),
+            onAnibox = document.querySelector('.ex3 div.off');
+        let reset = 0;
+
+        function scrollFun() {
+            window.onscroll = function anibox(offset, key) {
+                if (ex3.intersectionRatio > reset) {
+                    onAnibox.innerHTML += `<span></span>`
+                    onAnibox.classList.remove('off');
+                    onAnibox.classList.add('start');
+                } else {
+                    onAnibox.classList.remove('on');
+                    onAnibox.classList.add('start');
+                }
+            }
+        }
+
+                // scrollFun.observe(ex3.offsetTop);
+    </script>
+
+
+
+    <article class="ex4">
+        <h2>ex4) 오브젝트 scrollWidth</h2>
+        <div>
+            <p>
+                1. 스크롤 오브젝트(div)의 전체 크기를 구하시오.<br>
+                2. li태그에 width값을 넣으하시오.(전체크기 3등분)
+            </p>
+            <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+            </ul>
+        </div>
+        <style>
+            .ex4 div {
+                overflow-x: scroll;
+            }
+
+            .ex4 p {
+                width: 1900px
+            }
+
+            .ex4 ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .ex4 ul li {
+                flex-shrink: 0;
+                display: inherit;
+                align-items: center;
+                border: 1px solid #000;
+                height: 200px;
+
+            }
+        </style>
+
+        <script>
+            const ex4 = document.querySelector('.ex4 div'),
+                elUl = document.querySelector('.ex4 ul'),
+                elLi = document.querySelectorAll('.ex4 li');
+            console.log(ex4.scrollWidth);
+
+            let wid = ex4.scrollWidth/3;
+
+            elLi.forEach(function(li){
+                li.style.width = wid + 'px';
+            })
+        </script>
+
+
+    </article>
+
+
+
+
+    <article class="ex5">
+        <h2>ex5) 일정시간 후 실행(setTimeOut) </h2>
+        <div>
+            뷰포트화면에 해당 콘텐츠가 보이면
+            figure 자손으로 이미지 3개를 출력하시오.(단 0.3초 간격으로 출력)
+            <figure></figure>
+        </div>
+        <style>
+            .ex5 figure {
+                margin: 0;
+            }
+
+            .ex5 figure img {
+                width: 200px;
+            }
+        </style>
+    </article>
+    <script>
+        const ex5 = document.querySelector('ex5 figure');
+        for (let i = 0; i < 3; i++){
+            setTimeout(function(){
+                ex5.innerHTML += '<img src="./img/01.jpg">'
+            },300*i)
+        }
+    </script>
+
+</body>
+
+</html>
