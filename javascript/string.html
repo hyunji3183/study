@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <article>
+        <h2>이미지명 바꾸기</h2>
+        <img src="./img/익명4.jpg" id="image">
+    </article>
+    <a href="#test-1">test1</a>
+    <a href="#test-2">test2</a>
+    <a href="#test-3">test3</a>
+
+    <script>
+        let str = image.src;
+        let startIndex = str.lastIndexOf('/');  //5
+        let endIndex = str.lastIndexOf('.');  //9
+        let findStr = str.slice(startIndex + 1, endIndex);
+        let changeStr = str.replace(findStr, '익명3');  //문자만 변환된것
+        image.src = changeStr;  //변환된 문자를 DOM에 적용
+
+        // let changeStr = str.replace('익명4','익명3');  찾을 문자열을 알 경우 해당방법으로도 표현가능
+
+        // str.substring(start,end)
+        // str.slice(start,end) 음수값을 쓸 수 있음
+
+
+
+
+        let str2 = image.src;
+        let changeStr2 = str.replace('.jpg', '_on.jpg');
+
+        image.src = changeStr2;
+
+        const elA = document.querySelectorAll('a');
+        elA.forEach(function (aTag) {
+            aTag.onclick = function () {
+                setTimeout(function () {
+                    console.log(location.hash.split('-')[1]);
+                })
+            }
+        })
+
+
+        let jumin = '9602292483518';
+        let num = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
+        let total;
+
+        num.forEach(function (n, k) {
+            total += n * jumin[k];
+        })
+
+        console.log(
+            (11 - (total % 11)) % 10
+        )
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
