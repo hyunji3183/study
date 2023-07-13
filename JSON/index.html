@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <h2>데이터 출력</h2>
+        <div class="list">
+            <p>이름</p>
+        </div>
+    </article>
+
+    <script>
+        // .then(문자열 -> 객체)
+        // .then(객체를 활용해서 프로그래밍)
+
+        // .then(function(res){
+        //     return res.json()
+        // })
+        // .then(function(data){
+        //     console.log(
+        //         data.member,
+        //         data.member[0].name
+        //         )
+        //         data.member.forEach
+        // })
+
+
+        fetch('./data.json')
+            .then(res => res.json()) /* return을 해줌 */
+            .then(data => {
+                console.log(
+                    data.member,
+                    data.member[0].name
+                )
+                data.member.forEach(obj => {
+                    console.log(obj.name)
+                })
+            })
+
+        // > function을 화살표함수로 표현 할 수 있지만 this라는 표현은 사용할 수 없음
+
+
+            const list = document.querySelector('.list')
+            fetch('./data.json')
+                .then((data) => data.json())
+                .then(({ member }) => {
+                    member.forEach(({ id, name }) => {
+                        list.innerHTML += `<p>아이디 : ${id} / 이름 : ${name}</p>`
+                    })
+                })
+
+    </script>
+</body>
+
+</html>
