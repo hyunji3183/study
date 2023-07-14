@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../study/html/css/class.css" <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li>
+                <a href="#">menu01</a>
+                <div>
+                    <a href="#">s01</a>
+                    <a href="#">s02</a>
+                    <a href="#">s03</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">menu02</a>
+                <div>
+                    <a href="#">s04</a>
+                    <a href="#">s05</a>
+                    <a href="#">s06</a>
+                </div>
+            </li>
+        </ul>
+        <style>
+            header {
+                background-color: black;
+                text-align: center;
+            }
+
+            header ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            header ul a {
+                display: block;
+                color: white;
+            }
+
+            header ul li {
+                position: relative;
+                padding: 20px;
+            }
+
+            header ul div {
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                background-color: rgb(82, 82, 82);
+                display: none;
+            }
+        </style>
+    </header>
+
+    <script>
+        $('header li').on('mouseenter', function () {
+            $('li>div').stop().slideUp();
+            $(this).find('div').stop().slideDown()
+        })
+    </script>
+
+
+    <article class="fade">
+        <h2>Fade</h2>
+        <div>
+            <button>
+                < </button>
+                    <button> > </button>
+        </div>
+        <figure>
+            <img src="./img/익명3.jpg" alt="">
+            <img src="./img/익명4.jpg" alt="">
+            <img src="./img/익명5.jpg" alt="">
+        </figure>
+        <style>
+            .fade figure {
+                margin: 0;
+                width: 400px;
+                position: relative;
+            }
+
+            .fade figure img {
+                width: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .fade figure img:not(:first-child) {
+                display: none;
+            }
+        </style>
+    </article>
+
+    <script>
+        let num = 0;
+        // let inter = setInterval(function () {
+        //     $('.fade img').eq(num).fadeOut(1000);
+        //     num++;
+        //     if (num == 3) num = 0;
+        //     $('.fade img').eq(num).fadeIn(1000);
+        // }, 3000)
+
+        // 조건문에서 0은 false로 인식함
+        $('.fade button').on('click', function () {
+            if ($(this).index()) {
+                $('.fade img').eq(num).fadeIn();
+                if (num >= 0) num++;
+            } else {
+                $('.fade img').eq(num).fadeOut();
+                if (num <= 3) num--;
+            }
+        })
+    </script>
+
+    <article class="s4" style="margin: 500px auto;">
+        <h2> 아코디언 </h2>
+        <ul>
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+
+            <li>
+                <p>Q. js 셀렉터는 어떻게 잡을까요?</p>
+                <div>document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                    document.querySelector
+                    getElementId, getElementsByClassName..
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <script>
+        // addClass()
+        // removeClass()
+        // toggleClass()
+        // hasClass()
+
+
+        $(".s4 li").eq(0).addClass('active');
+        $(".s4 li div").eq(0).stop().slideDown()
+
+        $(".s4 li").on('click', function () {
+            $(this).toggleClass('active')
+            $(".s4 li div").stop().slideUp()
+            $(this).find('div').stop().slideToggle()
+        })
+
+        // $(".s4 li").on('click', function () {
+        //     if (!$(this).hasClass('active')) {
+        //         $('.s4 li div').stop().slideUp();
+        //         $('.s4 li').removeClass('active')
+
+        //         $(this)
+        //             .toggleClass('active')
+        //             .find('div').stop().slideToggle()
+        //     }
+        // })
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

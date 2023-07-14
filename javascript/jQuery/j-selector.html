@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li><img src="./img/익명4.jpg"></li>
+    </ul>
+
+    <script>
+        // $('선택자').method();
+        $('body')
+            .css({
+                backgroundColor: "gray",
+                fontSize: "50px"
+            })
+            .on('click', function () {
+                alert('우왕')
+            })
+
+        $('li') //전체 li를 부르는것
+            .css({
+                border: "1px solid white"
+            })
+            .on('click', function () {
+                $(this).css('color', 'white')
+                console.log(
+                    $(this).index(),
+                    $(this).text(),
+                    $(this).html(),
+                    $(this).attr('class', 'abc'),
+                    $(this).find('img').attr('src')
+                );
+            })
+    </script>
+</body>
+
+</html>
