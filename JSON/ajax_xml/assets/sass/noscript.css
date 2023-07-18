@@ -16,5 +16,7 @@ body.is-preload #main .thumb {
 
 /* Header */
 body.is-preload #header {
+  -webkit-transform: none;
   transform: none;
 }
+/*# sourceMappingURL=noscript.css.map */
