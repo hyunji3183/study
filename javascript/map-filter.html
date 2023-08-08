@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = [
+            {id:0, name:'수박'},
+            {id:1, name:'사과'},
+            {id:2, name:'참외'}
+        ];
+
+        let [a,...all] = data;
+        all[0].name = '복숭아'
+
+        // console.log(data);
+        // console.log(all,'스프레드연산자');
+
+        let test =  [10,20,30];
+        // testCopy = test;  //참조
+        // testCopy[0] = 100000;
+        // console.log(test);
+        // console.log(testCopy);
+
+        testCopy = [...test];  //copy
+        testCopy[0] = 100000;
+        console.log(test);
+        console.log(testCopy);
+
+
+
+
+        let addData = data.map((obj,key)=>{
+            obj.num = key;
+            return obj
+        })
+        // console.log(addData);
+
+
+        let find = data.filter(obj => obj.name ==='사과');
+        // console.log(find);
+    
+    
+    </script>
+</body>
+</html>

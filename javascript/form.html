@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <h2>form활용</h2>
+        <form id="member" action="./random.html">
+            <p><input type="text" name="id" placeholder="id"></p>
+            <p><input type="password" name="pw" placeholder="pw">
+                <button>패스워드확인</button>
+            </p>
+            <p><input type="email" name="email" placeholder="email"></p>
+            <p><input type="tel" name="tel" placeholder="010-0000-0000"></p>
+            <p><input type="submit" value="저장"></p>
+        </form>
+    </article>
+
+    <script>
+        const elInput = document.querySelectorAll('input');
+
+        window.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let regId = /^(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?/~`])(?=.*[0-9]).{8,15}$/,
+                regPw = /^(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?/~`])(?=.*[0-9]).{8,15}$/,
+                regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                regTel = /^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/
+
+
+            if (!regId.test(elInput[0].value)) {
+                alert('아이디는 8~15문자와 1개 이상의 특수기호를 포함해야합니다');
+                elInput[0].focus()
+                return;
+            }
+            if (!regPw.test(elInput[1].value)) {
+                alert('아이디는 8~15문자와 1개 이상의 특수기호를 포함해야합니다');
+                return;
+            }
+            if (!regEmail.test(elInput[2].value)) {
+                alert('이메일을 재확인해주세요');
+                return;
+            }
+            if (!regTel.test(elInput[3].value)) {
+                alert('휴대폰 번호를 재확인해주세요');
+                return;
+            }
+            // member.action = 'http://~~~'
+            member.submit();
+        })
+    </script>
+
+    <!-- Group and ranges
+    | : 또는
+    () : 그룹
+    [] : 문자셋, 괄호안의 어떤 문자든
+    [^] : 부정 문자셋, 괄호안의 어떤문자가 아닐때
+    (?:) : 찾지만 기억하지는 않음
+
+    Quanrifiers
+    ? : 없거나 있거나 (Zero or one)
+    * : 없거나 있거나 많거나(Zero or more)
+    + : 하나 또는 많이 (one or more)
+    {n} : n번 반복
+    {min,} : 최소
+    {min,max} : 최소 그리고 최대 -->
+
+
+    <article id="article">
+        <h2>check</h2>
+        <p><input type="checkbox" name="" id="check1">동의 1</p>
+        <p><input type="checkbox" name="" id="check2">동의 2</p>
+        <p><input type="checkbox" name="" id="checkAll">전체동의</p>
+    </article>
+
+    <script>
+        article.addEventListener('click', (e) => {
+            console.log(e.target.checked);
+
+            if (e.target.id == 'checkAll') {
+                check1.checked = e.target.checked;
+                check2.checked = e.target.checked;
+            }
+            if (check1.checked && check2.checked) {
+                checkAll.checked = true
+            } else {
+                checkAll.checked = false
+            }
+        })
+
+
+
+    </script>
+
+
+    <article>
+        <h2>file 이미지 미리보기</h2>
+        <div>
+            <input type="file" id="upload">
+            <img src="" id="preview" alt="#">
+        </div>
+    </article>
+
+    <script>
+        upload.addEventListener('change',()=>{
+            
+            let reader = new FileReader();
+            reader.readAsDataURL(upload.files[0]);
+            
+            reader.onload = (e)=>{
+                preview.src = e.target.result;
+            };
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>

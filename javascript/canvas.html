@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="1000" height="900">
+        캔버스가 호환되지않으니까. 다른 브라우저를 이용해.이용하라고
+    </canvas>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        ctx = canvas.getContext('2d');
+        console.log(ctx);
+
+        ctx.fillRect(100, 50, 200, 200); /* (x,y,w,h) */
+        ctx.strokeRect(100, 300, 200, 200);
+
+        ctx.lineWidth = 20;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = 'green';
+
+        ctx.arc(200, 650, 100, 0, Math.PI, true) /* (x,y,radial,start,end,direction) true-시계방향 / false-반시계방향 */
+        ctx.stroke(); /* 화면에 출력 */
+        ctx.closePath(); /* 새로운 선을 긋기위해 마침표를 지음 */
+
+        ctx.beginPath(); /* 새로운 선을 긋기 시작한다는 것을 알림 */
+        ctx.lineTo(350, 100); /* x,y */
+        ctx.lineTo(500, 100);
+        ctx.stroke();
+        ctx.closePath();
+
+        const newImg = new Image();
+        newImg.src = './img/05.jpg';
+        newImg.addEventListener('load', () => {
+            ctx.drawImage(newImg, 350, 300, 200, 200); /* (x,y,w,h) */
+            ctx.drawImage(newImg, 600, 300, 200, 200, 600, 300, 400, 300);/*  실제이미지의 부위를 지정/ 캔버스에 뿌릴장소와 크기를 지정함 */
+        })
+
+        const newVideo = document.createElement('video');
+        newVideo.src = './img/video.mp4';
+        newVideo.muted = 'muted';
+        newVideo.play();
+
+        newVideo.addEventListener('loadedmetadata', (e) => {
+            // 메타 데이터 => 재생시간 정보 확인
+            console.log(e);
+        })
+
+        newVideo.addEventListener('loadeddata', () => {
+            // 영상 프레임이 조금이라도 준비되면 발생
+            console.log('loadeddata..');
+        })
+
+        newVideo.addEventListener('canplay', () => {
+            // 영상 재생시 발생
+            console.log('canplay..');
+        })
+
+        newVideo.addEventListener('canplaythrough', (e) => {
+            // 영상 전체를 끊김없이 재생 할 수 있을 때 발생
+            console.log('canplaythrough..', e);
+            videoDraw();
+
+        })
+        let aaa;
+        function videoDraw() {
+            ctx.drawImage(newVideo, 600, 50, 300, 200);
+            // videoDraw(); DOM의 상태를 신경쓰지않고 재생하게만드는 재귀함수, 아래처럼 호출하는게 효율적
+            if (!newVideo.ended) {
+                aaa = requestAnimationFrame(videoDraw);
+            } /* else {
+                cancelAnimationFrame(aaa);
+            } */
+        }
+
+        let num = 0;
+        function skill() {
+            num++;
+            ctx.clearRect(590,640,1000,900);
+            ctx.beginPath();
+            ctx.arc(700, 750, 100, 0, (Math.PI * 2) * num / 100, false);
+            ctx.stroke();
+
+            if (num < 100) {
+                requestAnimationFrame(skill);
+            }
+        }
+        skill();
+
+        function sss(){
+            this.width = 20;
+            this.color = 'green';
+            this.x = 500;
+            this.y = 500;
+            this.size = [200,200];
+            this.draw = function(){
+                return 'draw';
+            }
+        }
+
+        let obj = new sss();
+        
+        console.log(obj.draw());
+    </script>
+</body>
+
+</html>

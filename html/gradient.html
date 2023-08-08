@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <article class="gradient">
+        <h2>Gradient(linear/radial)</h2>
+        <div>linear-gradient</div>
+        <div>radial-gradient</div>
+        <div>conic-gradient</div>
+        <style>
+            article {
+                width: 50%;
+                margin: 100px auto;
+            }
+
+            .gradient div {
+                height: 300px;
+            }
+
+            .gradient div:nth-of-type(1) {
+                /* background:linear-gradient(to right, rgb(255, 160, 160) 50%,rgb(255, 255, 186) 50%); */
+                background: repeating-linear-gradient(rgb(255, 160, 160), rgb(255, 160, 160)10px, rgb(255, 255, 186)10px, rgb(255, 255, 186)20px);
+            }
+
+            .gradient div:nth-of-type(2) {
+                /* background:radial-gradient(rgb(89, 89, 255)50%, rgb(134, 255, 134),rgb(255, 135, 135)); */
+                /* closest-side closest-corner*/
+                /* farthest-side farthest-corner */
+                background: radial-gradient(circle farthest-side at 100px 100px, rgb(89, 89, 255)10%, rgb(134, 255, 134), rgb(255, 135, 135));
+            }
+
+            .gradient div:nth-of-type(3) {
+                width: 300px;
+                /* background: conic-gradient(red,yellow,blue,green,violet,red) */
+                background: conic-gradient(at 30% 30%, rgb(248, 152, 152) 10%, rgb(135, 135, 255) 0%)
+            }
+        </style>
+    </article>
+
+
+    <article class="str-dot">
+        <h2>긴 문자 뒤에 점찍기</h2>
+        <div>계절이 지나가는 하늘에는 가을로 가득 차 있습니다. 나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다. 가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은 쉬이 아침이 오는
+            까닭이요, 내일 밤이 남은 까닭이요, 아직 나의 청춘이 다하지 않은 까닭입니다. 별 하나에 추억과 별 하나에 사랑과 별 하나에 쓸쓸함과 별 하나에 동경과 별 하나에 시와 별 하나에 어머니,
+            어머니,</div>
+        <div>계절이 지나가는 하늘에는 가을로 가득 차 있습니다. 나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다. 가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은 쉬이 아침이 오는
+            까닭이요, 내일 밤이 남은 까닭이요, 아직 나의 청춘이 다하지 않은 까닭입니다. 별 하나에 추억과 별 하나에 사랑과 별 하나에 쓸쓸함과 별 하나에 동경과 별 하나에 시와 별 하나에 어머니,
+            어머니,</div>
+        <style>
+            .str-dot div {
+                margin: 100px 0;
+            }
+
+            .str-dot div:nth-of-type(1) {
+                /* 한줄 */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .str-dot div:nth-of-type(2) {
+                /* 여러줄 */
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        </style>
+    </article>
+
+
+    <article class="filter">
+        <h2>filter(blur,brightness,grayscale,drop-shadow)</h2>
+        <div>blur</div>
+        <div><img src="./img/click_icon_151451.png" alt=""></div>
+        <style>
+            .filter div {
+                margin: 50px 0;
+            }
+
+            .filter div:nth-of-type(1) {
+                font-size: 3rem;
+                font-weight: bold;
+                -webkit-text-stroke: 2px rgb(0, 217, 255);
+                -webkit-text-fill-color: transparent;
+            }
+
+            .filter div:nth-of-type(2) {
+                filter: drop-shadow(10px 10px 0px rgb(0, 217, 255)) grayscale(100%) blur(5px) brightness(50%);
+                transition: 0.5s;
+            }
+
+            .filter div:nth-of-type(2):hover {
+                filter: drop-shadow(10px 10px 0px rgb(0, 217, 255)) grayscale(0%) blur(0px) brightness(100%);
+            }
+        </style>
+    </article>
+
+
+    <article class="mix">
+        <h2>mix-blend-mode</h2>
+        <div>부모 배경색과 자식 배경색을 혼합</div>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .mix {
+                background-color: #3a3a3a;
+                position: relative;
+            }
+
+            .mix div {
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                font-weight: bold;
+                mix-blend-mode: difference;
+                transform: translateY(40%);
+            }
+        </style>
+
+        <!-- <style>
+            .mix {
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .mix div {
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                font-weight: bold;
+                mix-blend-mode: difference;
+                position:relative;
+                z-index:2;
+            }
+
+            .mix::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                left: 0;
+                top: 100%;
+                z-index: 1;
+                background-color: rgb(255, 255, 255);
+                animation: bg 1s 1s forwards;
+                mix-blend-mode: difference;
+            }
+
+            @keyframes bg {
+                0% {
+                    top: 100%;
+                }
+
+                100% {
+                    top: 0%
+                }
+            }
+        </style> -->
+    </article>
+
+
+
+
+</body>
+
+</html>

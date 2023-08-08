@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="color" id="elcolor">
+    <select id="ellineSize">
+        <option>1</option>
+        <option>3</option>
+        <option>6</option>
+        <option>10</option>
+    </select>
+    <button id="remove">remove</button>
+    <a id="save" href="" download ="canvas-test.png">save</a>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <style>
+        canvas {
+            border: 1px solid rgb(0, 0, 0);
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        let ctx = canvas.getContext('2d');
+        let cSize = { w: canvas.width, h: canvas.height };
+
+        let status = false,
+            linecolor = elcolor.value,
+            lineSize = ellineSize.value;
+
+        save.addEventListener('click', function () {
+            this.href = canvas.toDataURL();
+        })
+        remove.addEventListener('click', function () {
+            ctx.clearRect(0,0,500,500);
+        })
+        elcolor.addEventListener('change', function () {
+            linecolor = this.value;
+        })
+        ellineSize.addEventListener('change', function () {
+            lineSize = this.value;
+        })
+        canvas.addEventListener('mousedown', function () {
+            ctx.beginPath()
+            status = true;
+        })
+        canvas.addEventListener('mouseup', function () {
+            status = false;
+        })
+        canvas.addEventListener('mousemove', drawMove)
+
+
+        function drawMove(e) {
+            if (status) {
+                ctx.lineWidth = lineSize;
+                ctx.strokeStyle = linecolor;
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
