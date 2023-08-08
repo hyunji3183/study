@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  word-break: keep-all;
+}
+
+body, p, figure, h2, h3, h4, h5, div {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img, video {
+  vertical-align: middle;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "CantataOne-Regular";
+  src: url("../sejong/font/Cantata_One/CantataOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Black";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Black.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Bold";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Light";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Medium";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Regular";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR-Thin";
+  src: url("../sejong/font/Noto_Sans_KR/NotoSansKR-Thin.otf") format("truetype");
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+header .head_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header .head_bar h2 {
+  width: 20%;
+}
+header .head_bar h2 a {
+  display: inline-block;
+  width: 50%;
+}
+header .head_bar h2 a img {
+  width: 100%;
+}
+header .head_bar .head_title {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+header .head_bar .head_title li {
+  width: 20%;
+}
+header .head_bar .head_icon {
+  width: 20%;
+}

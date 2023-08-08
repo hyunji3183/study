@@ -1,0 +1,57 @@
+@import "_reset";
+
+header {
+    position: fixed;
+    width: 100%;
+
+    .head_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h2 {
+            width: 20%;
+            a {
+                display: inline-block;
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .head_title {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            li {
+                width: 20%;
+                a {
+                }
+
+                .head_menu {
+                    >li {
+                        a {}
+                    }
+                }
+            }
+        }
+
+        .head_icon {
+            width: 20%;
+
+            a {
+                img {}
+            }
+        }
+    }
+
+
+
+
+
+}
