@@ -1,0 +1,88 @@
+$purple-color: #9988FF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+body,
+p,
+b,
+figure,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img,
+video {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button,
+input {
+    outline-style: none;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
+    font-family: "NotoSansKR-Black";
+}
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
+    font-family: "NotoSansKR-Bold";
+}
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
+    font-family: "NotoSansKR-Light";
+}
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
+    font-family: "NotoSansKR-Medium";
+}
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
+    font-family: "NotoSansKR-Regular";
+}
+
+@font-face {
+    src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
+    font-family: "NotoSansKR-Thin";
+}
+
+@font-face {
+    src: url("../font/Cantataone/CantataOne-Regular.ttf") format("truetype");
+    font-family: "CantataOne-Regular";
+}
