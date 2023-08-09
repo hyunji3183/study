@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { motion } from "framer-motion"
+import {txt,txt2} from './animation'
+
 export default function Selector() {
     const element = useRef(null);
     const elementAll = useRef([]);
@@ -27,6 +30,12 @@ export default function Selector() {
 
     return (
         <>
+        <motion.div
+        variants={txt}
+        initial="init"
+        animate="play"
+        transition="trans">
+
             <article>
                 <h2> Selector </h2>
                 <button onClick={pop}> open </button>
@@ -53,6 +62,7 @@ export default function Selector() {
                     활성화 & 비활성화
                 </div>
             </article>
+            </motion.div>
         </>
     )
 }

@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react'
+import { motion } from "framer-motion"
+// import { txt, txt2 } from './animation'
+import  * as all from './animation'
+
 
 export default function Scroll() {
 
@@ -29,7 +33,11 @@ export default function Scroll() {
 
 
     return (
-        <div>
+        <motion.div
+                variants={all}
+                initial="init"
+                animate="play"
+                transition="trans">
             <h2> Scroll </h2>
             <div className="scroll">
                 <figure> 01 </figure>
@@ -39,6 +47,6 @@ export default function Scroll() {
                 <figure> 05 </figure>
                 <figure> 06 </figure>
             </div>
-        </div>
+        </motion.div>
     )
 }
