@@ -219,6 +219,9 @@ main {
 main .title figure {
   position: relative;
 }
+main .title figure p {
+  overflow: hidden;
+}
 main .title figure figcaption {
   position: absolute;
   left: 45%;
@@ -227,4 +230,334 @@ main .title figure figcaption {
 main .title figure figcaption b {
   font-size: 40px;
   color: white;
+}
+main .guide {
+  width: 100%;
+  padding: 5rem 0;
+}
+main .guide h3 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 28px;
+  font-family: "NotoSansKR-Bold";
+  border-bottom: 1px solid #c0c0c0;
+}
+main .guide .guide_contents {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .guide .guide_contents .guide_txt {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+main .guide .guide_contents .guide_txt .information {
+  padding: 2rem 0;
+}
+main .guide .guide_contents .guide_txt .information b {
+  font-size: 22px;
+  font-family: "NotoSansKR-Bold";
+  text-transform: uppercase;
+}
+main .guide .guide_contents .guide_txt .information b::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0 6px 2px 0;
+  background-color: #9988ff;
+  border-radius: 20px;
+  display: inline-block;
+}
+main .guide .guide_contents .guide_txt .information .description {
+  padding-left: 1rem;
+}
+main .guide .guide_contents .guide_txt .information .description p {
+  padding: 1rem 0;
+  white-space: pre-line;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "NotoSansKR-Medium";
+}
+main .guide .guide_contents .guide_txt .information .description span {
+  font-size: 16px;
+  font-family: "NotoSansKR-Regular";
+  color: #818181;
+}
+main .guide .guide_contents .guide_txt .notice {
+  padding: 2rem 0;
+}
+main .guide .guide_contents .guide_txt .notice b {
+  font-size: 22px;
+  font-family: "NotoSansKR-Bold";
+  text-transform: uppercase;
+}
+main .guide .guide_contents .guide_txt .notice b::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 0 6px 2px 0;
+  background-color: #9988ff;
+  border-radius: 20px;
+  display: inline-block;
+}
+main .guide .guide_contents .guide_txt .notice .description {
+  padding-left: 1rem;
+}
+main .guide .guide_contents .guide_txt .notice .description span {
+  display: block;
+  white-space: pre-line;
+  padding: 1rem 0;
+  font-size: 16px;
+  font-family: "NotoSansKR-Regular";
+  color: #818181;
+}
+main .guide .guide_contents .guide_txt .map_btn {
+  width: 80%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map {
+  border: 2px solid #9988ff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map:hover {
+  border: 2px solid white;
+  background-color: #9988ff;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map:hover span {
+  color: white;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map p {
+  width: 20%;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map p img {
+  width: 80%;
+}
+main .guide .guide_contents .guide_txt .map_btn .naver_map span {
+  width: 70%;
+  text-align: center;
+  font-family: "NotoSansKR-Medium";
+  font-size: 14px;
+  color: #9988ff;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map {
+  border: 2px solid #9988ff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover {
+  border: 2px solid white;
+  background-color: #9988ff;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover span {
+  color: white;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map p {
+  width: 20%;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map p img {
+  width: 100%;
+}
+main .guide .guide_contents .guide_txt .map_btn .kakao_map span {
+  width: 70%;
+  text-align: center;
+  font-family: "NotoSansKR-Medium";
+  font-size: 14px;
+  color: #9988ff;
+}
+main .guide .guide_contents .guide_img {
+  width: 60%;
+}
+main .guide .guide_contents .guide_img p {
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .guide .guide_contents .guide_img p img {
+  width: 100%;
+}
+main .traffic {
+  width: 100%;
+}
+main .traffic .alert {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform-origin: 0% 100%;
+}
+main .traffic .alert p {
+  width: 2%;
+  display: inline-block;
+  animation-name: alert;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main .traffic .alert p img {
+  width: 100%;
+}
+@keyframes alert {
+  0%, 50% {
+    transform: rotate(0deg);
+  }
+  5%, 15%, 25%, 35%, 45% {
+    transform: rotate(13deg);
+  }
+  10%, 20%, 30%, 40% {
+    transform: rotate(-13deg);
+  }
+}
+main .traffic .alert figcaption {
+  width: 97%;
+}
+main .traffic .public_transport {
+  width: 80%;
+  margin: 0 auto;
+}
+main .traffic .public_transport .subway {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+main .traffic .public_transport .subway figure {
+  width: 20%;
+}
+main .traffic .public_transport .subway figure p {
+  text-align: center;
+}
+main .traffic .public_transport .subway figure p img {
+  width: 18%;
+}
+main .traffic .public_transport .subway figure figcaption {
+  padding-top: 1rem;
+  text-align: center;
+  font-family: "NotoSansKR-Medium";
+}
+main .traffic .public_transport .subway .subway_route {
+  padding-left: 1rem;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(1) p::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #0e0e71;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(2) p::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #8936e0;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(3) p::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #ff7200;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(1) em {
+  color: #0e0e71;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(2) em {
+  color: #8936e0;
+}
+main .traffic .public_transport .subway .subway_route div:nth-of-type(3) em {
+  color: #ff7200;
+}
+main .traffic .public_transport .bus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+main .traffic .public_transport .bus figure {
+  width: 20%;
+}
+main .traffic .public_transport .bus figure p {
+  text-align: center;
+}
+main .traffic .public_transport .bus figure p img {
+  width: 18%;
+}
+main .traffic .public_transport .bus figure figcaption {
+  padding-top: 1rem;
+  text-align: center;
+  font-family: "NotoSansKR-Medium";
+}
+main .traffic .public_transport .bus .bus_route {
+  padding-left: 1rem;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(1)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #0e0e71;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(2)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #67b33a;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(3)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #db0908;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(4)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #444444;
+}
+main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(1)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #482edd;
+}
+main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(2)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #67b33a;
+}
+main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #444444;
 }/*# sourceMappingURL=location.css.map */
