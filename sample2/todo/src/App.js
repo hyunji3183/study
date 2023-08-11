@@ -10,7 +10,24 @@ function App() {
 
     const [data, setData] = useState(initData);
     const [count, setCount] = useState(0);
-    //값이 바뀌면 랜더링 되어 화면에 출력되야하기 때문에 useState() 사용
+    const [mode, setMode] = useState(true);
+    const [mData, setMdata] = useState('');
+
+    let [mCode, setCode] = useState();
+
+
+    const modifyData = (code) => {
+        setCode(code);
+        setMode(false);
+
+        let data2 = data.filter(obj => obj.date == code);
+        setMdata(data2[0].todo);
+    }
+
+    const deleteData = (code) => {
+        let delData = data.filter(obj => obj.date != code);
+        setData(delData);
+    }
 
     const todoCount = () => {
         let dataCount = data.filter(obj => obj.state == false);
@@ -30,13 +47,28 @@ function App() {
 
         setData(dataFind);
     }
-    console.log(data);
 
     const insert = (e) => {
         e.preventDefault();
 
         let todo = e.target.todo.value;
-        setData([...data, { todo, state: false, date: Date.now() }]);
+
+        if (mode) {
+            setData([...data, { todo, state: false, date: Date.now() }]);
+            e.target.todo.value = '';
+        } else {
+            //수정하기
+            console.log(mCode);
+            setData(
+                data.map(obj => {
+                    if (obj.date == mCode) {
+                        obj.todo = todo;
+                    }
+                    return obj;
+                })
+            );
+            setMode(true);
+        }
     }
 
     data.sort(function (b, a) {
@@ -45,9 +77,13 @@ function App() {
         return 0;
     })
 
+
     useEffect(() => {
         todoCount();
-    }, [data])
+    }, [data]);
+
+
+
 
     return (
         <div className="App">
@@ -56,15 +92,29 @@ function App() {
                 <ul>
                     {
                         data.map((obj) => (
-                            <Item key={obj.date} item={obj} todoStatus={todoStatus} />
+                            <Item
+                                key={obj.date}
+                                item={obj}
+                                todoStatus={todoStatus}
+                                deleteData={deleteData}
+                                modifyData={modifyData} />
                         ))
                     }
                 </ul>
                 <form onSubmit={insert}>
-                    <p>
-                        <input type="text" name="todo" />
-                        <button>등록</button>
-                    </p>
+                    {
+                        <p>
+                            <input type="text"
+                                name="todo"
+                                value={mData}
+                                onChange={(e) => { setMdata(e.target.value) }} />
+
+                            <button>
+                                {(mode) ? '등록' : '수정'}
+                            </button>
+                        </p>
+                    }
+
                 </form>
             </article>
         </div>
