@@ -5,16 +5,7 @@
   word-break: keep-all;
 }
 
-body,
-p,
-b,
-figure,
-h2,
-h3,
-h4,
-h5,
-h6,
-div {
+body, p, b, figure, h2, h3, h4, h5, h6, div {
   margin: 0px;
 }
 
@@ -27,26 +18,37 @@ a {
   color: black;
 }
 
-img,
-video {
+img, video {
   vertical-align: middle;
 }
 
-ul,
-li {
+ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-button,
-input {
+button, input {
   outline-style: none;
   border: none;
 }
 
 table {
   border-collapse: collapse;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
 }
 
 @font-face {
@@ -74,7 +76,7 @@ table {
   font-family: "NotoSansKR-Thin";
 }
 @font-face {
-  src: url("../font/Cantataone/CantataOne-Regular.ttf") format("truetype");
+  src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
   font-family: "CantataOne-Regular";
 }
 header {

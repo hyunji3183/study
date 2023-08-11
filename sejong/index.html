@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>세종문화회관</title>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <!--favicon-->
     <!--favicon-->
     <link rel="shortcut icon" href="./imgs/favicon/favicon_16.png" type="image/x-icon" sizes="16x16">
@@ -39,11 +39,13 @@
     <!-- 세종시즌 텍스트 -->
     <script defer src="./js/세종시즌텍스트.js"></script>
     <script defer src="./js/smallbtn.js"></script>
+    <script defer src="./js/header.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
-    <!-- 헤더 -->
-    <!-- 헤더 -->
+
     <header>
         <!-- 헤더이너 -->
         <!-- 헤더이너 -->
@@ -151,14 +153,9 @@
             </div>
         </div>
     </header>
-    <!-- 메인 -->
-    <!-- 메인 -->
+
     <main>
-        <!-- 메인이너 -->
-        <!-- 메인이너 -->
         <div class="main-inner">
-            <!-- 배너 섹션 -->
-            <!-- 배너 섹션-->
             <section class="banner">
                 <div class="swiper mySwiper bannerwrap">
                     <div class="swiper-wrapper">
@@ -196,62 +193,61 @@
                             <img src="./imgs/메인/슬라이드/우주양자마음.png" alt="슬라이드11">
                         </div>
                     </div>
-                    <!-- 배너 드롭온 -->
-                    <!-- 배너 드롭온 -->
+                    <div class="banner_btn">
+                        <button>예매하기</button>
+                        <button>상세보기</button>
+                    </div>
 
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                    <!-- 백그라운드 컬러수정해주세요 -->
-                </div>
-                <div class="smallbtn">
-                    <img src="./imgs/icon/Vector.png" class="s-b-1">
-                    <img src="./imgs/icon/Vector.png" class="s-b-2">
-                    <div class="small-sumnail">
-                        <ul>
-                            <li><img src="./imgs/메인/썸네일/존재 그리고 연결.png"></li>
-                            <li><img src="./imgs/메인/썸네일/모차르트 썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/알로하 나의엄마들썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/2시 22분썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/싱트넥스트 썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/우주양자마음썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/스니커즈썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/여름가족음악회썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/꽃슈즈썸네일.png"></li>
-                            <li><img src="./imgs/메인/썸네일/모니카xCIFIKA.png"></li>
-                            <li><img src="./imgs/메인/썸네일/슈베르트와 장미 썸네일.png"></li>
-                        </ul>
-                    </div>
-                </div>
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-                <div class="banner-item">
-                    <div class="benner-btn">
-                        <button class="예매하기">예매하기</button>
-                        <button class="상세보기">상세보기</button>
-                    </div>
-                </div>
-            </section>
-            <!-- 검색 섹션 -->
-            <!-- 검색 섹션 -->
-            <section class="search">
-                <div class="sr-con">
-                    <form action="#">
-                        <select id="daySelect" class="day-Select">
-                            <option value="red">날짜 미완성</option>
-                        </select>
-                        <div class="search-input">
-                            <input type="search" placeholder="공연명을 입력해 주세요">
-                            <img src="./imgs/icon/header (3).png" alt="검색하기" title="검색하기">
+                    <div class="small_thumb">
+                        <div class="open_arrow">
+                            <span class="material-symbols-outlined">
+                                straight
+                            </span>
                         </div>
-                    </form>
+                        <div class="thumb_box">
+                            <ul class="thumb">
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/존재 그리고 연결.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/모차르트 썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/알로하 나의엄마들썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/2시 22분썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/싱트넥스트 썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/우주양자마음썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/스니커즈썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/여름가족음악회썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/꽃슈즈썸네일.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/모니카xCIFIKA.png"></p>
+                                </li>
+                                <li>
+                                    <p><img src="./imgs/메인/썸네일/슈베르트와 장미 썸네일.png"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </section>
-            <!-- 인기프로그램 섹션 -->
-            <!-- 인기프로그램 섹션 -->
+
+
+
             <section class="popularity">
                 <div class="popularity-back">
                     <div class="text-loop">Art · Culture · Performance Art · Culture · Performance Art · Culture ·
@@ -453,7 +449,7 @@
                             </h2>
                         </div>
                         <div class="Sejong-sub">
-                            <p>제작극장 세종이 정성스럽게 준비한<br/>
+                            <p>제작극장 세종이 정성스럽게 준비한<br />
                                 2023년도의 28개 공연을 소개합니다.</p>
                         </div>
                         <div class="Sejong-btn">
@@ -539,7 +535,9 @@
                             <div class="box-text">
                                 <p>2023.06.30 ~ 2023.08.11</p>
                                 <p>2023 세종예술아카데미 여름특강</p>
-                                <p><한여름밤의 아카데미> 수강오픈!</p>
+                                <p>
+                                    <한여름밤의 아카데미> 수강오픈!
+                                </p>
                             </div>
                             <div class="box-sumnail">
                                 <img src="./imgs/event/진행중/한여름밤의 아카데미.png">
