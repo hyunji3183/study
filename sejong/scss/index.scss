@@ -221,7 +221,7 @@ main {
                     position: absolute;
                     left: 0;
                     // bottom: 0;
-                    bottom: -24%;
+                    bottom: -26%;
                     cursor: pointer;
                     z-index: 1;
                     transition: 1s;
@@ -235,12 +235,12 @@ main {
                             bottom: 0%;
                         }
                         100% {
-                            bottom: -24%;
+                            bottom: -26%;
                         }
                     }
                     @keyframes thumb2 {
                         0% {
-                            bottom: -24%;
+                            bottom: -26%;
                         }
                         100% {
                             bottom: 0%;
@@ -259,7 +259,7 @@ main {
 
                     .thumb_box {
                         width: 100%;
-                        padding: 2% 0;
+                        padding: 2% 0 3% 0;
                         background-color: rgba(209, 209, 209, 0.58);
 
                         .thumb {
@@ -287,13 +287,19 @@ main {
             }
             .search {
                 width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -7%;
                 .search_box {
                     width: 80%;
                     margin: 0 auto;
-                    border: 2px solid #9988ff;
+                    padding: 1.5rem 3rem;
+                    border-radius: 40px;
+                    background-color: white;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    box-shadow: 4px 7px 27px rgba(0, 0, 0, 0.3);
                     .search_date {
                         width: 20%;
                         display: flex;
@@ -301,9 +307,19 @@ main {
                         justify-content: space-between;
                         p {
                             display: inline-block;
+                            color: #9988ff;
+                            font-family: "NotoSansKR-Medium";
                         }
                         span {
+                            width: 10%;
+                            text-align: center;
+                            color: #818181;
                         }
+                    }
+                    > span {
+                        display: inline-block;
+                        height: 30px;
+                        border: 1px solid #c0c0c0;
                     }
                     .search_txt {
                         width: 70%;
@@ -312,8 +328,14 @@ main {
                         justify-content: space-between;
                         p {
                             display: inline-block;
+                            color: #9988ff;
+                            font-family: "NotoSansKR-Medium";
                         }
                         span {
+                            width: 5%;
+                            text-align: center;
+                            font-size: 26px;
+                            font-weight: bold;
                         }
                     }
                 }
@@ -343,9 +365,9 @@ main {
             .text-loop {
                 font-weight: 900;
                 white-space: nowrap;
-                -webkit-text-stroke: 2px #9988ff;
+                -webkit-text-stroke: 3px #9988ff;
                 /* 텍스트 스트로크 설정 (웹킷 브라우저용) */
-                text-stroke: 2px #9988ff;
+                text-stroke: 3px #9988ff;
                 /* 텍스트 스트로크 설정 (표준) */
                 color: white;
 
@@ -587,7 +609,6 @@ main {
         margin-top: 200px;
         background-color: #f3f3f5;
         padding: 182px 0px 176px 10px;
-
         .Sejong-inner {
             width: 100%;
             max-width: 1500px;
@@ -595,53 +616,41 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             .Sejong-box {
                 display: flex;
                 width: 1084px;
-
                 &:hover {
                     cursor: pointer;
                 }
-
                 .S-boxs {
                     position: relative;
                     margin-right: 20px;
-
                     .se-box-con {
                         width: 100%;
                         max-width: 632px;
                         height: 263px;
                         position: absolute;
-                        top: 347px;
-                        left: 36px;
-                        right: 33px;
-                        bottom: 39px;
+                        left: 5%;
+                        bottom: 5%;
                         background-color: rgba(255, 255, 255, 78%);
                         border-radius: 20px;
                         display: none;
-
                         &.firstboxcon {
                             display: block;
                         }
-
                         .s-b-c-c {
                             position: absolute;
                             top: 36px;
                             left: 27px;
-
                             h1 {
                                 margin-bottom: 6px;
                             }
-
                             p {
                                 line-height: 30px;
-
                                 &:nth-of-type(2) {
                                     margin-bottom: 25px;
                                 }
                             }
-
                             button {
                                 cursor: pointer;
                                 width: 178px;
@@ -653,47 +662,48 @@ main {
                         }
                     }
                 }
-
                 .Sejong-box1 {
                     width: 701px;
                     overflow: hidden;
                     transition: width 0.3s ease;
                     border-radius: 30px;
-
                     img {
                         height: 649px;
                     }
+                    &.active-box {
+                        min-width: 700px;
+                    }
                 }
-
                 .Sejong-box2 {
                     width: 165px;
                     overflow: hidden;
                     border-radius: 30px;
                     transition: width 0.3s ease;
-
                     img {
                         height: 649px;
                     }
+                    &.active-box {
+                        min-width: 700px;
+                    }
                 }
-
                 .Sejong-box3 {
                     width: 165px;
                     overflow: hidden;
                     border-radius: 30px;
                     transition: width 0.3s ease;
-
                     img {
                         height: 649px;
                     }
+                    &.active-box {
+                        min-width: 700px;
+                    }
                 }
             }
-
             .Sejong-text {
                 .Sejong-title {
                     font-size: 42px;
                     font-weight: bold;
                     margin-bottom: 16px;
-
                     .p-animation2 {
                         display: flex;
                         font-size: 42px;
@@ -701,13 +711,11 @@ main {
                         z-index: 99;
                         text-align: right;
                         justify-content: right;
-
                         .p-ani {
                             position: absolute;
                             bottom: 0;
                             z-index: -1;
                             display: flex;
-
                             p {
                                 &.puplewidth2 {
                                     width: 0px;
@@ -715,12 +723,10 @@ main {
                                     background-color: #9988ff;
                                     border-radius: 30px;
                                     transition: width 0.3s ease;
-
                                     &.active {
                                         width: 165px;
                                     }
                                 }
-
                                 &.puplecircle2 {
                                     width: 20px;
                                     height: 20px;
@@ -730,7 +736,6 @@ main {
                                     transition: 1s;
                                     transform: translateY(-10px);
                                     margin-right: 10px;
-
                                     &.active {
                                         opacity: 1;
                                         transform: translateY(0px);
@@ -740,10 +745,8 @@ main {
                         }
                     }
                 }
-
                 text-align: right;
                 position: relative;
-
                 .Sejong-deco {
                     position: absolute;
                     right: 0;
@@ -751,7 +754,6 @@ main {
                     height: 2px;
                     background-color: black;
                 }
-
                 .Sejong-title-top {
                     padding-top: 16px;
                     font-size: 16px;
@@ -764,7 +766,6 @@ main {
                     margin-bottom: 16px;
                     line-height: 1.8;
                 }
-
                 .Sejong-btn {
                     font-family: "NotoSansKR-Regular";
                     font-size: 18px;
@@ -785,7 +786,6 @@ main {
                         outline-style: none;
                         border: none;
                         margin-left: 16px;
-
                         &:hover {
                             cursor: pointer;
                         }
@@ -846,238 +846,67 @@ main {
         }
 
         .event-box {
-            img {
-                width: 264px;
-                height: 109px;
-                border-radius: 30px;
-                border: solid 3px #9988ff;
-            }
-
-            .event-box1 {
-                width: 806px;
-                height: 139px;
-                background-color: #9988ff;
-                border-radius: 30px;
-                margin-bottom: 25px;
+            width: 100%;
+            .box-contents {
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                padding: 10px 20px 10px 30px;
-                font-weight: bold;
-
-                p {
-                    &:nth-of-type(1) {
-                        color: white;
-                        font-size: 16px;
-                        margin: 10px 0;
-                    }
-
-                    &:nth-of-type(2) {
-                        font-size: 24px;
-                        margin-bottom: 1px;
-                    }
-
-                    &:nth-of-type(3) {
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                &.active {
-                    animation: ssss 0.5s forwards;
-
-                    @keyframes ssss {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        50% {
-                            transform: translateX(-47px);
-                        }
-
-                        100% {
-                            transform: translateX(0);
-                        }
-                    }
-                }
-            }
-
-            .event-box2 {
-                width: 806px;
-                height: 139px;
-                border-radius: 30px;
+                justify-content: space-between;
                 background-color: #f3f3f5;
-                margin-bottom: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px 20px 10px 30px;
-                font-weight: bold;
-
-                p {
-                    &:nth-of-type(1) {
-                        color: #9988ff;
-                        font-size: 16px;
-                        margin: 10px 0;
-                    }
-
-                    &:nth-of-type(2) {
-                        font-size: 24px;
-                        margin-bottom: 1px;
-                    }
-
-                    &:nth-of-type(3) {
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                &.active {
-                    animation: ssss 1.5s forwards;
-
-                    @keyframes ssss {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        50% {
-                            transform: translateX(-47px);
-                        }
-
-                        100% {
-                            transform: translateX(0);
-                        }
-                    }
-                }
-            }
-
-            .event-box3 {
-                width: 806px;
-                height: 139px;
+                border: 1px solid #9988ff;
                 border-radius: 30px;
-                background-color: #f3f3f5;
-                margin-bottom: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px 20px 10px 30px;
-                font-weight: bold;
-
-                p {
-                    &:nth-of-type(1) {
-                        color: #9988ff;
-                        font-size: 16px;
-                        margin: 10px 0;
-                    }
-
-                    &:nth-of-type(2) {
-                        font-size: 24px;
-                        margin-bottom: 1px;
-                    }
-
-                    &:nth-of-type(3) {
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                    }
+                padding: 1rem;
+                margin-bottom: 1rem;
+                transition: .5s;
+                animation: season_loop 1.5s forwards ;
+                &:hover{background-color:#9988ff;
+                    transform: translateX(-45px);
+                    .box-text span{color: #f3f3f5;}
+                    .box-thumb p{border: 2px solid #f3f3f5;}
                 }
+                // &:nth-of-type(2) {
+                //     animation-delay: 1.5s;
+                // }
+                // &:nth-of-type(3) {
+                //     animation-delay: 3s;
+                // }
+                // &:nth-of-type(4) {
+                //     animation-delay: 4.5s;
+                // }
 
-                &.active {
-                    animation: ssss 2.5s forwards;
-
-                    @keyframes ssss {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        50% {
-                            transform: translateX(-47px);
-                        }
-
-                        100% {
-                            transform: translateX(0);
-                        }
-                    }
-                }
-            }
-
-            .event-box4 {
-                width: 806px;
-                height: 139px;
-                border-radius: 30px;
-                background-color: #f3f3f5;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px 20px 10px 30px;
-                font-weight: bold;
-
-                p {
-                    &:nth-of-type(1) {
-                        color: #9988ff;
-                        font-size: 16px;
-                        margin: 10px 0;
-                    }
-
-                    &:nth-of-type(2) {
-                        font-size: 24px;
-                        margin-bottom: 1px;
-                    }
-
-                    &:nth-of-type(3) {
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                &.active {
-                    animation: ssss 3s forwards;
-
-                    @keyframes ssss {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        50% {
-                            transform: translateX(-47px);
-                        }
-
-                        100% {
-                            transform: translateX(0);
-                        }
-                    }
-                }
-            }
-
-            .event-boxs {
-                width: 1px;
-                box-shadow: #9696967e 1px 2px 15px;
+                // @keyframes season_loop {
+                //     0% {
+                //         transform: translateX(0);
+                //     }
+                //     50% {
+                //         transform: translateX(-45px);
+                //     }
+                //     100% {
+                //         transform: translateX(0);
+                //     }
+                // }
 
                 .box-text {
-                    p {
-                        letter-spacing: -1px;
-                        font-size: 1.2rem;
+                    span {
+                        display: inline-block;
+                        font-size: 14px;
+                        font-family: "NotoSansKR-Medium";
                     }
-
-                    p:nth-of-type(1) {
-                        font-size: 1rem;
-                        letter-spacing: 0px;
+                    > p {
+                        white-space: pre-line;
+                        font-size: 20px;
+                        font-family: "NotoSansKR-Bold";
                     }
                 }
-
-                .box-sumnail {
-                }
-
-                &.active {
-                    width: 100%;
-                    /* 너비를 100%로 늘림 */
-                    opacity: 1;
-
-                    .box-text {
-                        opacity: 1;
-                    }
-
-                    .box-sumnail {
-                        opacity: 1;
+                .box-thumb {
+                    width: 30%;
+                    > p {
+                        border: 2px solid #9988ff;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -1085,7 +914,6 @@ main {
 
         .event-text {
             text-align: left;
-
             .event-deco {
                 width: 73px;
                 height: 2px;
