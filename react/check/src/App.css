@@ -1,0 +1,45 @@
+article {
+  width: 30%;
+  margin: 100px auto;
+  padding: 60px;
+  border: 1px solid salmon;
+  border-radius: 30px;
+}
+
+input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.save{
+}
+
+.save div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.save button {
+  display: none;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgb(255, 163, 44);
+  color: aliceblue;
+}
+.save button.active{display: block;}
+
+.hnum{
+background-color: aliceblue;
+
+}
+li {
+  padding: 15px 0;
+  border-bottom: 1px dashed lightcoral;
+}
+
+* {
+  box-sizing: border-box;
+}
