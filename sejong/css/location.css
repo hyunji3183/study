@@ -400,14 +400,17 @@ main .guide .guide_contents .guide_img p img {
 }
 main .traffic {
   width: 100%;
+  padding: 5rem 0 10rem 0;
 }
 main .traffic .alert {
   width: 80%;
   margin: 0 auto;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transform-origin: 0% 100%;
+  border-bottom: 1px solid #C0C0C0;
 }
 main .traffic .alert p {
   width: 2%;
@@ -443,6 +446,7 @@ main .traffic .public_transport .subway {
   display: flex;
   align-items: center;
   padding: 3rem 0;
+  border-bottom: 1px solid #C0C0C0;
 }
 main .traffic .public_transport .subway figure {
   width: 20%;
@@ -459,26 +463,58 @@ main .traffic .public_transport .subway figure figcaption {
   font-family: "NotoSansKR-Medium";
 }
 main .traffic .public_transport .subway .subway_route {
-  padding-left: 1rem;
+  padding-left: 3rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-left: 1px solid #c0c0c0;
+}
+main .traffic .public_transport .subway .subway_route div {
+  width: 45%;
+}
+main .traffic .public_transport .subway .subway_route div p {
+  font-family: "NotoSansKR-Bold";
+  padding-bottom: 0.5rem;
+}
+main .traffic .public_transport .subway .subway_route div span {
+  font-family: "NotoSansKR-Light";
+  white-space: pre-line;
+}
+main .traffic .public_transport .subway .subway_route div span em {
+  font-style: normal;
+  font-family: "NotoSansKR-Bold";
 }
 main .traffic .public_transport .subway .subway_route div:nth-of-type(1) p::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "1";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #0e0e71;
 }
 main .traffic .public_transport .subway .subway_route div:nth-of-type(2) p::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "2";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #8936e0;
 }
 main .traffic .public_transport .subway .subway_route div:nth-of-type(3) p::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "3";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #ff7200;
 }
@@ -492,6 +528,7 @@ main .traffic .public_transport .subway .subway_route div:nth-of-type(3) em {
   color: #ff7200;
 }
 main .traffic .public_transport .bus {
+  border-bottom: 1px solid #C0C0C0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -512,54 +549,237 @@ main .traffic .public_transport .bus figure figcaption {
   font-family: "NotoSansKR-Medium";
 }
 main .traffic .public_transport .bus .bus_route {
-  padding-left: 1rem;
+  width: 80%;
+  padding-left: 3rem;
+  border-left: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 {
+  width: 45%;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 b {
+  font-family: "NotoSansKR-Bold";
+  padding-bottom: 1rem;
+}
+main .traffic .public_transport .bus .bus_route .bus_way1 p {
+  font-family: "NotoSansKR-Light";
+  white-space: pre-line;
+  padding-top: 6px;
 }
 main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(1)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "B";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #0e0e71;
 }
 main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(2)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "G";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #67b33a;
 }
 main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(3)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "R";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #db0908;
 }
 main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(4)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "B";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #444444;
 }
+main .traffic .public_transport .bus .bus_route .bus_way2 {
+  width: 45%;
+}
+main .traffic .public_transport .bus .bus_route .bus_way2 b {
+  font-family: "NotoSansKR-Bold";
+}
+main .traffic .public_transport .bus .bus_route .bus_way2 p {
+  font-family: "NotoSansKR-Light";
+  white-space: pre-line;
+  padding-top: 6px;
+}
 main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(1)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "B";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #482edd;
 }
 main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(2)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "G";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #67b33a;
 }
 main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+  content: "B";
+  text-align: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  border-radius: 10px;
   display: inline-block;
   background-color: #444444;
+}
+
+footer {
+  width: 100%;
+  height: 345px;
+  margin: 0 auto;
+  background-color: black;
+  position: relative;
+}
+footer .footer-deco {
+  width: 100%;
+  z-index: -99;
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+}
+footer .footer-deco img {
+  width: 100%;
+}
+footer .footer-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+footer .footer-inner .ft-top {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+footer .footer-inner .ft-top img {
+  width: 22px;
+  margin-left: 20px;
+}
+footer .footer-inner .ft-top ul {
+  display: flex;
+}
+footer .footer-inner .ft-top ul li {
+  margin-right: 10px;
+}
+footer .footer-inner .ft-top ul li a {
+  color: white;
+}
+footer .footer-inner .ft-top .ft-top-left {
+  width: 60%;
+}
+footer .footer-inner .ft-top .ft-top-left ul {
+  justify-content: space-between;
+}
+footer .footer-inner .hr {
+  width: 100%;
+  height: 1px;
+  background-color: #818181;
+  margin-bottom: 35px;
+}
+footer .footer-inner .ft-middle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.9;
+}
+footer .footer-inner .ft-middle p {
+  color: white;
+}
+footer .footer-inner .ft-middle img:nth-of-type(1) {
+  width: 33px;
+  height: 36px;
+}
+footer .footer-inner .ft-middle img:nth-of-type(2) {
+  width: 65px;
+  height: 40px;
+}
+footer .footer-inner .ft-middle .ft-middle-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 {
+  text-align: center;
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 P:nth-child(1) {
+  font-size: 16px;
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 P:nth-child(2) {
+  font-weight: 900;
+  font-size: 20px;
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-2 {
+  display: flex;
+  transform: translateY(27px);
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-2 a {
+  margin: 10px;
+}
+footer .footer-inner .ft-middle .ft-middle-right .f-m-r-2 a img {
+  width: 100%;
+}
+footer .footer-inner .ft-bottom {
+  margin-top: 10px;
+  font-size: 12px;
+}
+footer .footer-inner .ft-bottom p {
+  color: white;
+  letter-spacing: 1px;
+}
+
+aside {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #9988FF;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
+  display: grid;
+  place-items: center;
+}
+aside div {
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
 }/*# sourceMappingURL=location.css.map */
