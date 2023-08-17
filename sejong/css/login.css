@@ -216,7 +216,7 @@ header .head_drop_box .head_drop .sejong_explanation p {
 }
 
 main {
-  background-color: #F3F3F5;
+  background-color: #f3f3f5;
   width: 100%;
   padding: 8rem 0;
 }
@@ -225,8 +225,10 @@ main article {
   margin: 0 auto;
   background-color: #ffffff;
   padding: 2rem;
+  border-radius: 20px;
 }
 main article h3 {
+  padding-top: 1rem;
   text-align: center;
   font-size: 24px;
   font-family: "NotoSansKR-Medium";
@@ -237,8 +239,8 @@ main article .middle_line {
 }
 main article .middle_line span {
   display: inline-block;
-  width: 10%;
-  border: 2px solid #111111;
+  width: 16%;
+  border: 1.5px solid #111111;
 }
 main article > p {
   text-align: center;
@@ -255,13 +257,18 @@ main article form label:nth-of-type(1) {
   display: flex;
   margin: 0 auto;
   width: 90%;
-  border: 1px solid #9988FF;
+  border: 1px solid #9988ff;
   padding: 1rem;
   margin-bottom: 2%;
   border-radius: 10px;
 }
+main article form label:nth-of-type(1) input::-moz-placeholder {
+  color: #9988ff;
+  font-size: 14px;
+  font-family: "NotoSansKR-Light";
+}
 main article form label:nth-of-type(1) input::placeholder {
-  color: #9988FF;
+  color: #9988ff;
   font-size: 14px;
   font-family: "NotoSansKR-Light";
 }
@@ -278,13 +285,18 @@ main article form label:nth-of-type(2) {
   display: flex;
   margin: 0 auto;
   width: 90%;
-  border: 1px solid #9988FF;
+  border: 1px solid #9988ff;
   padding: 1rem;
   margin-bottom: 2%;
   border-radius: 10px;
 }
+main article form label:nth-of-type(2) input::-moz-placeholder {
+  color: #9988ff;
+  font-size: 14px;
+  font-family: "NotoSansKR-Light";
+}
 main article form label:nth-of-type(2) input::placeholder {
-  color: #9988FF;
+  color: #9988ff;
   font-size: 14px;
   font-family: "NotoSansKR-Light";
 }
@@ -314,13 +326,13 @@ main article form label:nth-of-type(4) {
   padding: 1rem;
   margin-bottom: 2%;
   border-radius: 10px;
-  background-color: #9988FF;
-  border: 1px solid #9988FF;
+  background-color: #9988ff;
+  border: 1px solid #9988ff;
   text-align: center;
   font-family: "NotoSansKR-Bold";
 }
 main article form label:nth-of-type(4) input {
-  background-color: #9988FF;
+  background-color: #9988ff;
   color: #ffffff;
   font-size: 18px;
 }
@@ -343,33 +355,63 @@ main article .convenience .find li {
 main article .convenience .find span {
   display: inline-block;
   height: 10px;
-  border: 0.3px solid #C0C0C0;
+  border: 0.3px solid #c0c0c0;
 }
-main article .convenience .find .sns_login {
+main article .convenience .sns_login {
   width: 90%;
   margin: 0 auto;
+  padding: 1rem 0;
 }
-main article .convenience .find .sns_login .sns_login_btn {
+main article .convenience .sns_login p {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: "NotoSansKR-Light";
+}
+main article .convenience .sns_login .sns_login_btn {
   display: flex;
-}
-main article .convenience .find .sns_login .sns_login_btn .naver {
-  width: 30%;
-}
-main article .convenience .find .sns_login .sns_login_btn .naver img {
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
-main article .convenience .find .sns_login .sns_login_btn .kakao {
-  width: 30%;
+main article .convenience .sns_login .sns_login_btn .naver {
+  width: 20%;
 }
-main article .convenience .find .sns_login .sns_login_btn .kakao img {
-  width: 100%;
+main article .convenience .sns_login .sns_login_btn .naver img {
+  width: 60%;
 }
-main article .convenience .find .sns_login .sns_login_btn .google {
-  width: 30%;
+main article .convenience .sns_login .sns_login_btn .kakao {
+  width: 20%;
 }
-main article .convenience .find .sns_login .sns_login_btn .google img {
-  width: 100%;
+main article .convenience .sns_login .sns_login_btn .kakao img {
+  width: 60%;
 }
+main article .convenience .sns_login .sns_login_btn .google {
+  width: 20%;
+}
+main article .convenience .sns_login .sns_login_btn .google img {
+  width: 60%;
+}
+main article .login_notice {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 12px;
+  color: #818181;
+  border-top: 1px solid #818181;
+}
+main article .login_notice span {
+  width: 2%;
+  text-align: center;
+}
+main article .login_notice p {
+  display: inline-block;
+  width: 97%;
+}
+
 footer {
   width: 100%;
   height: 345px;
@@ -484,7 +526,7 @@ aside {
   width: 52px;
   height: 52px;
   border-radius: 100px;
-  background-color: #9988FF;
+  background-color: #9988ff;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
