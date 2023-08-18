@@ -200,12 +200,10 @@ main {
 
         form {
             padding: 1.5rem;
-
+            input {
+            }
             label {
                 display: block;
-
-                input {
-                }
 
                 &:nth-of-type(1) {
                     display: flex;
@@ -259,11 +257,23 @@ main {
                     }
                 }
 
-                &:nth-of-type(3) {
+                input[type="checkbox"]&:nth-of-type(3) {
                     width: 90%;
                     margin: 0 auto;
                     display: flex;
                     padding: 0.3rem 0 1.5rem 0;
+                    input[type="checkbox"] + label &::before{
+                        
+                    }
+                    input[id="id_save"]:checked+label::before{
+                        content: '';
+                        width: 12px;
+                        height: 12px;
+                        border: 1px solid #98f;
+                        border-radius: 10px;
+                        font-family: "material-symbols-outlined"done
+                        
+                    }
 
                     > span {
                         padding-left: 2%;

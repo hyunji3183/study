@@ -262,11 +262,6 @@ main article form label:nth-of-type(1) {
   margin-bottom: 2%;
   border-radius: 10px;
 }
-main article form label:nth-of-type(1) input::-moz-placeholder {
-  color: #9988ff;
-  font-size: 14px;
-  font-family: "NotoSansKR-Light";
-}
 main article form label:nth-of-type(1) input::placeholder {
   color: #9988ff;
   font-size: 14px;
@@ -290,11 +285,6 @@ main article form label:nth-of-type(2) {
   margin-bottom: 2%;
   border-radius: 10px;
 }
-main article form label:nth-of-type(2) input::-moz-placeholder {
-  color: #9988ff;
-  font-size: 14px;
-  font-family: "NotoSansKR-Light";
-}
 main article form label:nth-of-type(2) input::placeholder {
   color: #9988ff;
   font-size: 14px;
@@ -309,13 +299,21 @@ main article form label:nth-of-type(2)::before {
   background-repeat: no-repeat;
   background-image: url(../imgs/icon/login\ \(2\).png);
 }
-main article form label:nth-of-type(3) {
+input[type=checkbox] main article form label:nth-of-type(3) {
   width: 90%;
   margin: 0 auto;
   display: flex;
   padding: 0.3rem 0 1.5rem 0;
 }
-main article form label:nth-of-type(3) > span {
+input[type=checkbox] + label input[type=checkbox] main article form label:nth-of-type(3)::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #98f;
+  border-radius: 10px;
+  font-family: "material-symbols-outlined" done;
+}
+input[type=checkbox] main article form label:nth-of-type(3) > span {
   padding-left: 2%;
   font-size: 12px;
   color: #111111;
