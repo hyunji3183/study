@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -132,7 +133,7 @@ header .head_bar .head_title li {
 header .head_bar .head_title li a {
   display: block;
   padding: 28px 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "NotoSansKR-Medium";
 }
 header .head_bar .head_title li .head_inner {
@@ -149,7 +150,7 @@ header .head_bar .head_title li .head_inner li {
 header .head_bar .head_title li .head_inner li > a {
   padding: 10px 0;
   color: #818181;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "NotoSansKR-Regular";
 }
 header .head_bar .head_icon {
@@ -187,7 +188,7 @@ header .head_drop_box .head_drop .sejong_head_txt {
   width: 32%;
 }
 header .head_drop_box .head_drop .sejong_head_txt p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "NotoSansKR-Regular";
 }
 header .head_drop_box .head_drop .sejong_head_txt b {
@@ -208,7 +209,7 @@ header .head_drop_box .head_drop .sejong_explanation {
   width: 32%;
 }
 header .head_drop_box .head_drop .sejong_explanation p {
-  font-size: 14px;
+  font-size: 0.875rem;
   white-space: pre-line;
   text-align: right;
   color: #818181;
@@ -230,7 +231,7 @@ main article {
 main article h3 {
   padding-top: 1rem;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "NotoSansKR-Medium";
 }
 main article .middle_line {
@@ -244,19 +245,46 @@ main article .middle_line span {
 }
 main article > p {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #818181;
 }
 main article form {
   padding: 1.5rem;
+  margin: 0 auto;
+  width: 90%;
+}
+main article form input[type=checkbox] {
+  display: none;
+}
+main article form input[type=checkbox] + label {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #98f;
+  border-radius: 10px;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+main article form input[id=id_save]:checked + label::after {
+  content: "✔";
+  font-size: 0.4rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  color: #ffffff;
+  background-color: #98f;
+  border: 1px solid #98f;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  left: -18%;
+  bottom: 0%;
 }
 main article form label {
   display: block;
 }
 main article form label:nth-of-type(1) {
   display: flex;
-  margin: 0 auto;
-  width: 90%;
   border: 1px solid #9988ff;
   padding: 1rem;
   margin-bottom: 2%;
@@ -264,22 +292,20 @@ main article form label:nth-of-type(1) {
 }
 main article form label:nth-of-type(1) input::placeholder {
   color: #9988ff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
 main article form label:nth-of-type(1)::before {
   content: "";
   display: inline-block;
   width: 10%;
-  height: 20px;
+  height: 1.25rem;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-image: url(../imgs/icon/login\ \(1\).png);
+  background-image: url(../imgs/page/login/login_id.png);
 }
 main article form label:nth-of-type(2) {
   display: flex;
-  margin: 0 auto;
-  width: 90%;
   border: 1px solid #9988ff;
   padding: 1rem;
   margin-bottom: 2%;
@@ -287,38 +313,37 @@ main article form label:nth-of-type(2) {
 }
 main article form label:nth-of-type(2) input::placeholder {
   color: #9988ff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
 main article form label:nth-of-type(2)::before {
   content: "";
   display: inline-block;
   width: 10%;
-  height: 20px;
+  height: 1.25rem;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-image: url(../imgs/icon/login\ \(2\).png);
-}
-main article form label > span {
-  padding-left: 2%;
-  font-size: 12px;
-  color: #111111;
+  background-image: url(../imgs/page/login/login_pw.png);
 }
 main article form label:nth-of-type(4) {
-  margin: 0 auto;
-  width: 90%;
   padding: 1rem;
+  margin-top: 4%;
   margin-bottom: 2%;
   border-radius: 10px;
   background-color: #9988ff;
   border: 1px solid #9988ff;
   text-align: center;
   font-family: "NotoSansKR-Bold";
+  cursor: pointer;
 }
 main article form label:nth-of-type(4) input {
   background-color: #9988ff;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125rem;
+}
+main article form > span {
+  font-size: 0.8rem;
+  font-family: "NotoSansKR-Light";
 }
 main article .convenience {
   width: 100%;
@@ -332,8 +357,8 @@ main article .convenience .find {
   align-items: center;
   justify-content: space-between;
 }
-main article .convenience .find li {
-  font-size: 12px;
+main article .convenience .find li a {
+  font-size: 0.75rem;
   font-family: "NotoSansKR-Light";
 }
 main article .convenience .find span {
@@ -344,12 +369,12 @@ main article .convenience .find span {
 main article .convenience .sns_login {
   width: 90%;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 main article .convenience .sns_login p {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "NotoSansKR-Light";
 }
 main article .convenience .sns_login .sns_login_btn {
@@ -360,18 +385,21 @@ main article .convenience .sns_login .sns_login_btn {
 }
 main article .convenience .sns_login .sns_login_btn .naver {
   width: 20%;
+  text-align: center;
 }
 main article .convenience .sns_login .sns_login_btn .naver img {
   width: 60%;
 }
 main article .convenience .sns_login .sns_login_btn .kakao {
   width: 20%;
+  text-align: center;
 }
 main article .convenience .sns_login .sns_login_btn .kakao img {
   width: 60%;
 }
 main article .convenience .sns_login .sns_login_btn .google {
   width: 20%;
+  text-align: center;
 }
 main article .convenience .sns_login .sns_login_btn .google img {
   width: 60%;
@@ -383,7 +411,7 @@ main article .login_notice {
   width: 90%;
   margin: 0 auto;
   padding: 2rem 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #818181;
   border-top: 1px solid #818181;
 }
@@ -424,7 +452,7 @@ footer .footer-inner .ft-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 1rem;
 }
 footer .footer-inner .ft-top img {
   width: 22px;
@@ -454,7 +482,7 @@ footer .footer-inner .hr {
 footer .footer-inner .ft-middle {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.9;
 }
 footer .footer-inner .ft-middle p {
@@ -477,11 +505,11 @@ footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 {
   text-align: center;
 }
 footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 P:nth-child(1) {
-  font-size: 16px;
+  font-size: 1rem;
 }
 footer .footer-inner .ft-middle .ft-middle-right .f-m-r-1 P:nth-child(2) {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 footer .footer-inner .ft-middle .ft-middle-right .f-m-r-2 {
   display: flex;
@@ -521,4 +549,713 @@ aside {
 aside div {
   text-transform: uppercase;
   letter-spacing: 0.7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+body, p, b, figure, h2, h3, h4, h5, h6, div {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img, video {
+  vertical-align: middle;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button, input {
+  outline-style: none;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
+  font-family: "NotoSansKR-Black";
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
+  font-family: "NotoSansKR-Bold";
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
+  font-family: "NotoSansKR-Light";
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
+  font-family: "NotoSansKR-Medium";
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
+  font-family: "NotoSansKR-Regular";
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
+  font-family: "NotoSansKR-Thin";
+}
+@font-face {
+  src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
+  font-family: "CantataOne-Regular";
+}
+@media (min-width: 950px) {
+  main {
+    background-color: #f3f3f5;
+    width: 100%;
+    padding: 8rem 0;
+  }
+  main article {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  main article h3 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "NotoSansKR-Medium";
+  }
+  main article .middle_line {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  main article .middle_line span {
+    display: inline-block;
+    width: 16%;
+    border: 1.5px solid #111111;
+  }
+  main article > p {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #818181;
+  }
+  main article form {
+    padding: 1.5rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main article form input[type=checkbox] {
+    display: none;
+  }
+  main article form input[type=checkbox] + label {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #98f;
+    border-radius: 10px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  main article form input[id=id_save]:checked + label::after {
+    content: "✔";
+    font-size: 0.4rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    color: #ffffff;
+    background-color: #98f;
+    border: 1px solid #98f;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: -18%;
+    bottom: 0%;
+  }
+  main article form label {
+    display: block;
+  }
+  main article form label:nth-of-type(1) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(1) input::placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_id.png);
+  }
+  main article form label:nth-of-type(2) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(2) input::placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_pw.png);
+  }
+  main article form label:nth-of-type(4) {
+    padding: 1rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #9988ff;
+    border: 1px solid #9988ff;
+    text-align: center;
+    font-family: "NotoSansKR-Bold";
+    cursor: pointer;
+  }
+  main article form label:nth-of-type(4) input {
+    background-color: #9988ff;
+    color: #ffffff;
+    font-size: 1.125rem;
+  }
+  main article form > span {
+    font-size: 0.8rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  main article .convenience .find {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main article .convenience .find li a {
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .find span {
+    display: inline-block;
+    height: 10px;
+    border: 0.3px solid #c0c0c0;
+  }
+  main article .convenience .sns_login {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  main article .convenience .sns_login p {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .sns_login .sns_login_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .google {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .google img {
+    width: 60%;
+  }
+  main article .login_notice {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 0.75rem;
+    color: #818181;
+    border-top: 1px solid #818181;
+  }
+  main article .login_notice span {
+    width: 2%;
+    text-align: center;
+  }
+  main article .login_notice p {
+    display: inline-block;
+    width: 97%;
+  }
+}
+@media (min-width: 641px) and (max-width: 949px) {
+  main {
+    background-color: #f3f3f5;
+    width: 100%;
+    padding: 8rem 0;
+  }
+  main article {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  main article h3 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "NotoSansKR-Medium";
+  }
+  main article .middle_line {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  main article .middle_line span {
+    display: inline-block;
+    width: 16%;
+    border: 1.5px solid #111111;
+  }
+  main article > p {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #818181;
+  }
+  main article form {
+    padding: 1.5rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main article form input[type=checkbox] {
+    display: none;
+  }
+  main article form input[type=checkbox] + label {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #98f;
+    border-radius: 10px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  main article form input[id=id_save]:checked + label::after {
+    content: "✔";
+    font-size: 0.4rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    color: #ffffff;
+    background-color: #98f;
+    border: 1px solid #98f;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: -18%;
+    bottom: 0%;
+  }
+  main article form label {
+    display: block;
+  }
+  main article form label:nth-of-type(1) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(1) input::placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_id.png);
+  }
+  main article form label:nth-of-type(2) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(2) input::placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_pw.png);
+  }
+  main article form label:nth-of-type(4) {
+    padding: 1rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #9988ff;
+    border: 1px solid #9988ff;
+    text-align: center;
+    font-family: "NotoSansKR-Bold";
+    cursor: pointer;
+  }
+  main article form label:nth-of-type(4) input {
+    background-color: #9988ff;
+    color: #ffffff;
+    font-size: 1.125rem;
+  }
+  main article form > span {
+    font-size: 0.8rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  main article .convenience .find {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main article .convenience .find li a {
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .find span {
+    display: inline-block;
+    height: 10px;
+    border: 0.3px solid #c0c0c0;
+  }
+  main article .convenience .sns_login {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  main article .convenience .sns_login p {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .sns_login .sns_login_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .google {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .google img {
+    width: 60%;
+  }
+  main article .login_notice {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 0.75rem;
+    color: #818181;
+    border-top: 1px solid #818181;
+  }
+  main article .login_notice span {
+    width: 2%;
+    text-align: center;
+  }
+  main article .login_notice p {
+    display: inline-block;
+    width: 97%;
+  }
+}
+@media (max-width: 640px) {
+  main {
+    background-color: #f3f3f5;
+    width: 100%;
+    padding: 8rem 0;
+  }
+  main article {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  main article h3 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "NotoSansKR-Medium";
+  }
+  main article .middle_line {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  main article .middle_line span {
+    display: inline-block;
+    width: 16%;
+    border: 1.5px solid #111111;
+  }
+  main article > p {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #818181;
+  }
+  main article form {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main article form input[type=checkbox] {
+    display: none;
+  }
+  main article form input[type=checkbox] + label {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #98f;
+    border-radius: 10px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  main article form input[id=id_save]:checked + label::after {
+    content: "✔";
+    font-size: 0.4rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    color: #ffffff;
+    background-color: #98f;
+    border: 1px solid #98f;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: -18%;
+    bottom: 0%;
+  }
+  main article form label {
+    display: block;
+  }
+  main article form label:nth-of-type(1) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(1) input::placeholder {
+    color: #9988ff;
+    font-size: 0.775rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_id.png);
+  }
+  main article form label:nth-of-type(2) {
+    display: flex;
+    border: 1px solid #9988ff;
+    padding: 1rem;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+  main article form label:nth-of-type(2) input::placeholder {
+    color: #9988ff;
+    font-size: 0.775rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 1.25rem;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/page/login/login_pw.png);
+  }
+  main article form label:nth-of-type(4) {
+    padding: 1rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #9988ff;
+    border: 1px solid #9988ff;
+    text-align: center;
+    font-family: "NotoSansKR-Bold";
+    cursor: pointer;
+  }
+  main article form label:nth-of-type(4) input {
+    background-color: #9988ff;
+    color: #ffffff;
+    font-size: 1.125rem;
+  }
+  main article form > span {
+    font-size: 0.8rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  main article .convenience .find {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main article .convenience .find li a {
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .find span {
+    display: inline-block;
+    height: 10px;
+    border: 0.3px solid #c0c0c0;
+  }
+  main article .convenience .sns_login {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  main article .convenience .sns_login p {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article .convenience .sns_login .sns_login_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .naver img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .kakao img {
+    width: 60%;
+  }
+  main article .convenience .sns_login .sns_login_btn .google {
+    width: 20%;
+    text-align: center;
+  }
+  main article .convenience .sns_login .sns_login_btn .google img {
+    width: 60%;
+  }
+  main article .login_notice {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 0.75rem;
+    color: #818181;
+    border-top: 1px solid #818181;
+  }
+  main article .login_notice span {
+    width: 2%;
+    text-align: center;
+  }
+  main article .login_notice p {
+    display: inline-block;
+    width: 97%;
+  }
 }/*# sourceMappingURL=login.css.map */
