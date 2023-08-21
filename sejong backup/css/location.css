@@ -226,8 +226,10 @@ main .title figure p {
 }
 main .title figure figcaption {
   position: absolute;
-  left: 45%;
+  width: 100%;
+  left: 0%;
   bottom: 45%;
+  text-align: center;
 }
 main .title figure figcaption b {
   font-size: 2.5rem;
@@ -418,7 +420,6 @@ main .traffic .alert {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform-origin: 0% 100%;
   border-bottom: 1px solid #c0c0c0;
 }
 main .traffic .alert p {
@@ -876,7 +877,7 @@ input::-webkit-search-results-decoration {
   src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
   font-family: "CantataOne-Regular";
 }
-@media (min-width: 950px) {
+@media (min-width: 1281px) and (max-width: 1920px) {
   main {
     width: 100%;
   }
@@ -888,8 +889,10 @@ input::-webkit-search-results-decoration {
   }
   main .title figure figcaption {
     position: absolute;
-    left: 45%;
+    width: 100%;
+    left: 0%;
     bottom: 45%;
+    text-align: center;
   }
   main .title figure figcaption b {
     font-size: 2.5rem;
@@ -1330,7 +1333,7 @@ input::-webkit-search-results-decoration {
     background-color: #444444;
   }
 }
-@media (min-width: 641px) and (max-width: 949px) {
+@media (min-width: 641px) and (max-width: 1280px) {
   main {
     width: 100%;
   }
@@ -1345,7 +1348,8 @@ input::-webkit-search-results-decoration {
   }
   main .title figure figcaption {
     position: absolute;
-    left: 34%;
+    width: 100%;
+    left: 0%;
     bottom: 40%;
     text-align: center;
   }
@@ -1576,8 +1580,8 @@ input::-webkit-search-results-decoration {
     animation-timing-function: linear;
   }
   main .traffic .alert p img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 2rem;
+    height: 2rem;
   }
   @keyframes alert {
     0%, 50% {
@@ -1615,7 +1619,7 @@ input::-webkit-search-results-decoration {
     text-align: center;
   }
   main .traffic .public_transport .subway figure p img {
-    width: 18%;
+    width: 14%;
   }
   main .traffic .public_transport .subway figure figcaption {
     padding-top: 1rem;
@@ -1703,7 +1707,7 @@ input::-webkit-search-results-decoration {
     text-align: center;
   }
   main .traffic .public_transport .bus figure p img {
-    width: 18%;
+    width: 14%;
   }
   main .traffic .public_transport .bus figure figcaption {
     padding-top: 1rem;
@@ -1836,7 +1840,8 @@ input::-webkit-search-results-decoration {
   }
   main .title figure figcaption {
     position: absolute;
-    left: 26%;
+    width: 100%;
+    left: 0%;
     bottom: 40%;
     text-align: center;
   }

@@ -1,6 +1,6 @@
 @import "../reset";
 
-@media (min-width: 950px) {
+@media (min-width: 1281px) and (max-width: 1920px) {
     main {
         width: 100%;
 
@@ -17,8 +17,11 @@
 
                 figcaption {
                     position: absolute;
-                    left: 45%;
+                    width: 100%;
+                    left: 0%;
                     bottom: 45%;
+                    text-align: center;
+
 
                     b {
                         font-size: 2.5rem;
@@ -571,7 +574,7 @@
     }
 }
 
-@media (min-width: 641px) and (max-width: 949px) {
+@media (min-width: 641px) and (max-width: 1280px) {
     main {
         width: 100%;
 
@@ -588,7 +591,8 @@
 
                 figcaption {
                     position: absolute;
-                    left: 34%;
+                    width: 100%;
+                    left: 0%;
                     bottom: 40%;
                     text-align: center;
 
@@ -852,8 +856,8 @@
                     animation-timing-function: linear;
 
                     img {
-                        width: 1.875rem;
-                        height: 1.875rem;
+                        width: 2rem;
+                        height: 2rem;
 
                         @keyframes alert {
                             0%,
@@ -906,7 +910,7 @@
                             text-align: center;
 
                             img {
-                                width: 18%;
+                                width: 14%;
                             }
                         }
 
@@ -1016,7 +1020,7 @@
                             text-align: center;
 
                             img {
-                                width: 18%;
+                                width: 14%;
                             }
                         }
 
@@ -1186,7 +1190,8 @@
 
                 figcaption {
                     position: absolute;
-                    left: 26%;
+                    width: 100%;
+                    left: 0%;
                     bottom: 40%;
                     text-align: center;
 
