@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+header {
+  background-color: gray;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header a {
+  color: aliceblue;
+  padding: 0 20px;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+article h2 {
+  border-bottom: 2px solid orange;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  padding: 15px 0;
+  border-bottom: 2px solid rgb(255, 247, 172);
+}
+
+.total{
+  background-color: rgb(255, 223, 154);
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+input,textarea{
+  width: 100%; padding: 10px;
+}
+
+textarea{
+  height: 200px;
+}
