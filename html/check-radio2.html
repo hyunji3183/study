@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- check-radio.html -->
     <article>
@@ -13,33 +15,44 @@
         <div class="check">
             <input id="c" type="checkbox" name="check">
             <label for="c"><span></span></label>
-           
         </div>
     </article>
     <style>
-        article{width:50%; margin:100px auto;}
-        .check input{
+        article {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .check input {
             display: none;
             /* opacity: 0; */
             /* visibility: hidden; */
         }
-        .check label{
+
+        .check label {
             display: block;
-            width:60px; height:26px;
+            width: 60px;
+            height: 26px;
             background-color: #aaa;
             border-radius: 26px;
         }
-        .check label span{
+
+        .check label span {
             display: block;
-            width:22px; height:22px;
+            width: 22px;
+            height: 22px;
             background-color: #fff;
             border-radius: 22px;
-            transform: translate(2px,2px);
+            transform: translate(2px, 2px);
             transition: .5s;
         }
-        .check input:checked + label{ background-color: red; }
-        .check input:checked + label>span{ 
-            transform: translate(36px,2px); 
+
+        .check input:checked+label {
+            background-color: red;
+        }
+
+        .check input:checked+label>span {
+            transform: translate(36px, 2px);
         }
     </style>
 
@@ -62,25 +75,38 @@
         </div>
     </article>
     <style>
-        .radio label{ 
+        .radio label {
             display: inline-block;
             background-color: #aaa;
-            padding:10px 20px;
+            padding: 10px 20px;
         }
-        .radio div{
-            width:500px; overflow:hidden;
-        }
-        .radio div figure{display: flex; transition: 1s; margin:0;}
-        .radio div img{width:100%;}
 
-        .radio input:nth-of-type(1):checked ~ div > figure{
+        .radio div {
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .radio div figure {
+            display: flex;
+            transition: 1s;
+            margin: 0;
+        }
+
+        .radio div img {
+            width: 100%;
+        }
+
+        .radio input:nth-of-type(1):checked~div>figure {
             transform: translateX(0%);
         }
-        .radio input:nth-of-type(2):checked ~ div > figure{
+
+        .radio input:nth-of-type(2):checked~div>figure {
             transform: translateX(-100%);
         }
-        .radio input{display: none;}
 
+        .radio input {
+            display: none;
+        }
     </style>
 
 
@@ -101,65 +127,86 @@
         </div>
     </article>
     <style>
-        *{box-sizing: border-box;}
-        
-        .login{
-            width:360px; margin:100px auto;
-            border:3px solid #000;
+        * {
+            box-sizing: border-box;
+        }
+
+        .login {
+            width: 360px;
+            margin: 100px auto;
+            border: 3px solid #000;
             border-radius: 10px;
-            padding:20px;
+            padding: 20px;
         }
-        .login p{margin:0;}
-        .login p input{
-            width:100%;
+
+        .login p {
+            margin: 0;
+        }
+
+        .login p input {
+            width: 100%;
             border-radius: 7px;
-            border:1px solid #aaa;
-            padding:10px;
-            margin-bottom:10px;
-            outline:none;
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin-bottom: 10px;
+            outline: none;
         }
-        .login p input[type="submit"]{
+
+        .login p input[type="submit"] {
             background-color: black;
-            color:white;
-            margin:20px 0 0;
-            border:none;
+            color: white;
+            margin: 20px 0 0;
+            border: none;
         }
-        .login p:nth-of-type(2) input{display: none;}
-        .login p input::placeholder{
-            color:#aaa;
+
+        .login p:nth-of-type(2) input {
+            display: none;
         }
-        .login p:nth-of-type(2){
+
+        .login p input::placeholder {
+            color: #aaa;
         }
-        .login p:nth-of-type(2) label{
+
+        .login p:nth-of-type(2) {}
+
+        .login p:nth-of-type(2) label {
             display: flex;
             align-items: center;
-            position:relative;
+            position: relative;
         }
-        .login p:nth-of-type(2) label::before{
-            content:'';
+
+        .login p:nth-of-type(2) label::before {
+            content: '';
             display: inline-block;
-            width:40px; height:20px;
+            width: 40px;
+            height: 20px;
             background-color: #ddd;
             border-radius: 20px;
-            margin-right:10px;
+            margin-right: 10px;
         }
-        .login p:nth-of-type(2) label::after{
-            content:'';
-            width:16px; height:16px;
+
+        .login p:nth-of-type(2) label::after {
+            content: '';
+            width: 16px;
+            height: 16px;
             background-color: white;
             border-radius: 100%;
-            position:absolute;
-            left:2px; top:2px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
             transition: .5s;
         }
-        .login p:nth-of-type(2) input:checked + label::before{
+
+        .login p:nth-of-type(2) input:checked+label::before {
             background-color: red;
         }
-        .login p:nth-of-type(2) input:checked + label::after{
-            left:22px;
+
+        .login p:nth-of-type(2) input:checked+label::after {
+            left: 22px;
         }
     </style>
 
 
 </body>
+
 </html>
