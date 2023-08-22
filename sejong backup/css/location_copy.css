@@ -354,11 +354,11 @@ main .guide .guide_contents .guide_txt .map_btn .naver_map:hover {
 main .guide .guide_contents .guide_txt .map_btn .naver_map:hover span {
   color: white;
 }
-main .guide .guide_contents .guide_txt .map_btn .naver_map p {
+main .guide .guide_contents .guide_txt .map_btn .naver_map .p {
   width: 20%;
 }
-main .guide .guide_contents .guide_txt .map_btn .naver_map p img {
-  width: 80%;
+main .guide .guide_contents .guide_txt .map_btn .naver_map .p img {
+  width: 100%;
 }
 main .guide .guide_contents .guide_txt .map_btn .naver_map span {
   width: 70%;
@@ -399,30 +399,32 @@ main .guide .guide_contents .guide_txt .map_btn .kakao_map span {
   font-size: 0.875rem;
   color: #9988ff;
 }
+main .guide .guide_contents .guide_img.on p {
+  width: 100%;
+}
+main .guide .guide_contents .guide_img.on p img {
+  display: none;
+}
+main .guide .guide_contents .guide_img.on .root_daum_roughmap {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #9988ff;
+  display: block;
+}
 main .guide .guide_contents .guide_img {
   width: 60%;
 }
-main .guide .guide_contents .guide_img .img {
+main .guide .guide_contents .guide_img p {
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
 }
-main .guide .guide_contents .guide_img .img img {
+main .guide .guide_contents .guide_img p img {
   width: 100%;
   display: block;
 }
-main .guide .guide_contents .guide_img .img img.on {
+main .guide .guide_contents .guide_img .root_daum_roughmap {
   display: none;
-}
-main .guide .guide_contents .guide_img .map {
-  border-radius: 20px;
-  overflow: hidden;
-}
-main .guide .guide_contents .guide_img .map div {
-  display: none;
-  border: 1px solid #9988ff;
-}
-main .guide .guide_contents .guide_img .map div.on {
-  display: block;
 }
 main .traffic {
   width: 100%;
@@ -1963,9 +1965,10 @@ input::-webkit-search-results-decoration {
   }
   main .guide .guide_contents .guide_txt .guide_img_m {
     display: block;
-    width: 100%;
+    width: 80%;
   }
   main .guide .guide_contents .guide_txt .guide_img_m p {
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
   }
@@ -2053,6 +2056,9 @@ input::-webkit-search-results-decoration {
   }
   main .guide .guide_contents .guide_img p img {
     width: 100%;
+  }
+  main .guide .guide_contents .guide_img .root_daum_roughmap {
+    display: none;
   }
   main .traffic {
     width: 100%;

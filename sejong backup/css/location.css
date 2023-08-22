@@ -1948,9 +1948,10 @@ input::-webkit-search-results-decoration {
   }
   main .guide .guide_contents .guide_txt .guide_img_m {
     display: block;
-    width: 100%;
+    width: 80%;
   }
   main .guide .guide_contents .guide_txt .guide_img_m p {
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
   }
@@ -2038,6 +2039,9 @@ input::-webkit-search-results-decoration {
   }
   main .guide .guide_contents .guide_img p img {
     width: 100%;
+  }
+  main .guide .guide_contents .guide_img .root_daum_roughmap {
+    display: none;
   }
   main .traffic {
     width: 100%;
