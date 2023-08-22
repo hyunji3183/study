@@ -1,32 +1,66 @@
 import axios from 'axios';
 import { createContext, useEffect, useReducer } from 'react'
-const MyContext = createContext();
+export const MyContext = createContext();
+
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'insert': return;
-        case 'modify': return;
-        case 'del': return;
+        case 'post': return [...state, action.d];
+        case 'put': return state.map(obj => {
+            if (obj.id == action.d.id) {
+                obj.price = action.d.price;
+                obj.msg = action.d.msg;
+                obj.date = action.d.date;
+            }
+            return obj;
+        })
+        case 'del': return state.filter(obj => obj.id != action.d);
         default: return action.d;
     }
 }
 
-
 function Context({ children }) {
     const [data, dispatch] = useReducer(reducer, []);
-    const fetchFn = () => {
-        axios.get('http://localhost:3030/history')
-            .then(res => {
-                dispatch({ type: 'get', d: res.data })
-            })
+
+    const instance = axios.create({
+        baseURL: 'http://localhost:3030/history'
+    });
+    // const fetchFn = () => {
+    //     axios.get('/')
+    //         .then(res => {
+    //             dispatch({ type: 'get', d: res.data })
+    //         })
+    // }
+
+
+    const fetchFn = async (type, data) => {
+        let res;
+
+        switch (type) {
+            case 'post':
+                res = await instance.post('/', data);
+                break;
+            case 'put':
+                res = await instance.put(`/${data.id}`, data);
+                break;
+            case 'del':
+                res = await instance.delete(`/${data}`);
+                res = { data };
+                break;
+            default:
+                res = await instance.get('/');
+        }
+        console.log(res);
+        dispatch({ type, d: res.data })
     }
 
+
     useEffect(() => {
-        fetchFn()
+        fetchFn('get')
     }, [])
 
-console.log(data);
+
     return (
-        <MyContext.Provider value={data}>
+        <MyContext.Provider value={{ data, fetchFn }}>
             {children}
         </MyContext.Provider>
     )

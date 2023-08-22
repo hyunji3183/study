@@ -177,10 +177,10 @@ main {
 
             figcaption {
                 position: absolute;
-                    width: 100%;
-                    left: 0%;
-                    bottom: 45%;
-                    text-align: center;
+                width: 100%;
+                left: 0%;
+                bottom: 45%;
+                text-align: center;
 
                 b {
                     font-size: 2.5rem;
@@ -389,15 +389,35 @@ main {
                 }
             }
 
+
             .guide_img {
                 width: 60%;
 
-                p {
+                .img {
                     border-radius: 20px;
                     overflow: hidden;
 
                     img {
                         width: 100%;
+                        display: block;
+                    }
+
+                    img.on {
+                        display: none;
+                    }
+                }
+
+                .map {
+                    border-radius: 20px;
+                    overflow: hidden;
+
+                    div{
+                        display: none;
+                        border: 1px solid #9988ff;
+                    }
+
+                    div.on {
+                        display: block;
                     }
                 }
             }
@@ -890,3 +910,6 @@ aside {
         letter-spacing: 0.7px;
     }
 }
+
+
+@import "_locationmedia"

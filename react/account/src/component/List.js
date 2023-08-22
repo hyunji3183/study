@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../Context';
+import Item from './Item';
 
 function List() {
+    const { data, fetchFn } = useContext(MyContext);
+
     return (
         <article>
             <h2>List</h2>
             <p className='total'>총 잔액 - <code>3,800</code> </p>
             <ul>
-                <li>
-                    <code>8/21</code>
-                    <code>바나프레소</code>
-                    <code>-5,800</code>
-                </li>
+                {
+                    data.map(obj => (
+                        <Item key={obj.id} obj={obj}/>
+                    ))
+                }
             </ul>
         </article>
     )

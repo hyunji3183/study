@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes, Link } from 'react-router-dom';
 import List from './component/List';
 import Insert from './component/Insert';
 import Context from './Context';
+import Modify from './component/Modify';
 
 function App() {
 
@@ -13,14 +14,13 @@ function App() {
                     <nav>
                         <Link to="/">Home</Link>
                         <Link to="/insert">글쓰기</Link>
-                        <Link to="/modify">글수정</Link>
                     </nav>
                 </header>
                 <main>
                     <Routes>
                         <Route path="/" element={<List />} />
                         <Route path="/insert" element={<Insert />} />
-                        {/* <Route path="/modify" element={<List/>}/> */}
+                        <Route path="/modify" element={<Modify/>}/>
                     </Routes>
                 </main>
             </HashRouter>
