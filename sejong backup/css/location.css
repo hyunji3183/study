@@ -2033,21 +2033,18 @@ input::-webkit-search-results-decoration {
     display: none;
     width: 60%;
   }
-  main .guide .guide_contents .guide_img p {
+  main .guide .guide_contents .guide_img .lo_img {
     border-radius: 20px;
     overflow: hidden;
   }
-  main .guide .guide_contents .guide_img p img {
+  main .guide .guide_contents .guide_img .lo_img img {
     width: 100%;
   }
-  main .guide .guide_contents .guide_img .root_daum_roughmap {
-    display: none;
-  }
-  main .traffic {
+  main .guide .traffic {
     width: 100%;
     padding: 5rem 0 10rem 0;
   }
-  main .traffic .alert {
+  main .guide .traffic .alert {
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
@@ -2059,7 +2056,7 @@ input::-webkit-search-results-decoration {
     border-bottom: 1px solid #c0c0c0;
     line-height: 1.8rem;
   }
-  main .traffic .alert p {
+  main .guide .traffic .alert p {
     width: 4%;
     padding: 0.4rem 0;
     display: inline-block;
@@ -2068,7 +2065,7 @@ input::-webkit-search-results-decoration {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  main .traffic .alert p img {
+  main .guide .traffic .alert p img {
     width: 1.875rem;
     height: 1.875rem;
   }
@@ -2083,17 +2080,17 @@ input::-webkit-search-results-decoration {
       transform: rotate(-13deg);
     }
   }
-  main .traffic .alert figcaption {
+  main .guide .traffic .alert figcaption {
     width: 96%;
     text-align: center;
     font-family: "NotoSansKR-Medium";
     white-space: pre-line;
   }
-  main .traffic .public_transport {
+  main .guide .traffic .public_transport {
     width: 80%;
     margin: 0 auto;
   }
-  main .traffic .public_transport .subway {
+  main .guide .traffic .public_transport .subway {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2101,21 +2098,21 @@ input::-webkit-search-results-decoration {
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
-  main .traffic .public_transport .subway figure {
+  main .guide .traffic .public_transport .subway figure {
     width: 100%;
   }
-  main .traffic .public_transport .subway figure p {
+  main .guide .traffic .public_transport .subway figure p {
     text-align: center;
   }
-  main .traffic .public_transport .subway figure p img {
+  main .guide .traffic .public_transport .subway figure p img {
     width: 18%;
   }
-  main .traffic .public_transport .subway figure figcaption {
+  main .guide .traffic .public_transport .subway figure figcaption {
     padding-top: 1rem;
     text-align: center;
     font-family: "NotoSansKR-Medium";
   }
-  main .traffic .public_transport .subway .subway_route {
+  main .guide .traffic .public_transport .subway .subway_route {
     padding-left: 0;
     width: 100%;
     display: flex;
@@ -2124,23 +2121,23 @@ input::-webkit-search-results-decoration {
     flex-direction: column;
     border-left: 0px;
   }
-  main .traffic .public_transport .subway .subway_route div {
+  main .guide .traffic .public_transport .subway .subway_route div {
     width: 100%;
     padding: 1rem 0;
   }
-  main .traffic .public_transport .subway .subway_route div p {
+  main .guide .traffic .public_transport .subway .subway_route div p {
     font-family: "NotoSansKR-Bold";
     padding-bottom: 0.5rem;
   }
-  main .traffic .public_transport .subway .subway_route div span {
+  main .guide .traffic .public_transport .subway .subway_route div span {
     font-family: "NotoSansKR-Light";
     white-space: pre-line;
   }
-  main .traffic .public_transport .subway .subway_route div span em {
+  main .guide .traffic .public_transport .subway .subway_route div span em {
     font-style: normal;
     font-family: "NotoSansKR-Bold";
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(1) p::before {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(1) p::before {
     content: "1";
     text-align: center;
     color: white;
@@ -2151,7 +2148,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #0e0e71;
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(2) p::before {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(2) p::before {
     content: "2";
     text-align: center;
     color: white;
@@ -2162,7 +2159,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #8936e0;
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(3) p::before {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(3) p::before {
     content: "3";
     text-align: center;
     color: white;
@@ -2173,16 +2170,16 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #ff7200;
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(1) em {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(1) em {
     color: #0e0e71;
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(2) em {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(2) em {
     color: #8936e0;
   }
-  main .traffic .public_transport .subway .subway_route div:nth-of-type(3) em {
+  main .guide .traffic .public_transport .subway .subway_route div:nth-of-type(3) em {
     color: #ff7200;
   }
-  main .traffic .public_transport .bus {
+  main .guide .traffic .public_transport .bus {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2190,21 +2187,21 @@ input::-webkit-search-results-decoration {
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
-  main .traffic .public_transport .bus figure {
+  main .guide .traffic .public_transport .bus figure {
     width: 100%;
   }
-  main .traffic .public_transport .bus figure p {
+  main .guide .traffic .public_transport .bus figure p {
     text-align: center;
   }
-  main .traffic .public_transport .bus figure p img {
+  main .guide .traffic .public_transport .bus figure p img {
     width: 18%;
   }
-  main .traffic .public_transport .bus figure figcaption {
+  main .guide .traffic .public_transport .bus figure figcaption {
     padding-top: 1rem;
     text-align: center;
     font-family: "NotoSansKR-Medium";
   }
-  main .traffic .public_transport .bus .bus_route {
+  main .guide .traffic .public_transport .bus .bus_route {
     width: 100%;
     padding-left: 0;
     border-left: 0px;
@@ -2213,20 +2210,20 @@ input::-webkit-search-results-decoration {
     align-items: center;
     justify-content: space-between;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 {
     width: 100%;
     padding: 1rem 0;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 b {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 b {
     font-family: "NotoSansKR-Bold";
     padding-bottom: 1rem;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 p {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 p {
     font-family: "NotoSansKR-Light";
     white-space: pre-line;
     padding-top: 0.375rem;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(1)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(1)::before {
     content: "B";
     text-align: center;
     color: white;
@@ -2237,7 +2234,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #0e0e71;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(2)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(2)::before {
     content: "G";
     text-align: center;
     color: white;
@@ -2248,7 +2245,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #67b33a;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(3)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(3)::before {
     content: "R";
     text-align: center;
     color: white;
@@ -2259,7 +2256,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #db0908;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(4)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way1 p:nth-of-type(4)::before {
     content: "B";
     text-align: center;
     color: white;
@@ -2270,19 +2267,19 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #444444;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 {
     width: 100%;
     padding: 1rem 0;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 b {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 b {
     font-family: "NotoSansKR-Bold";
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 p {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 p {
     font-family: "NotoSansKR-Light";
     white-space: pre-line;
     padding-top: 0.375rem;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(1)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(1)::before {
     content: "B";
     text-align: center;
     color: white;
@@ -2293,7 +2290,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #482edd;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(2)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(2)::before {
     content: "G";
     text-align: center;
     color: white;
@@ -2304,7 +2301,7 @@ input::-webkit-search-results-decoration {
     display: inline-block;
     background-color: #67b33a;
   }
-  main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::before {
+  main .guide .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::before {
     content: "B";
     text-align: center;
     color: white;
