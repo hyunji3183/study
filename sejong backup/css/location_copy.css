@@ -407,7 +407,7 @@ main .guide .guide_contents .guide_img.on p img {
   display: none;
 }
 main .guide .guide_contents .guide_img.on .map_wrap {
-  display: block;
+  display: inline-block;
 }
 main .guide .guide_contents .guide_img {
   width: 60%;
