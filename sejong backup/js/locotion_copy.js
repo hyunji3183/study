@@ -1,21 +1,31 @@
-const $btn_naver = document.querySelector('.naver_map');
-const $click_btn = document.querySelector('.kakao_map');
+const $btn_google = document.querySelector('.google_map'),
+    $click_btn = document.querySelector('.kakao_map'),
+    changeBtn1 = document.querySelector('.google_map p img'),
+    changeBtn2 = document.querySelector('.kakao_map p img');
+
+
 $click_btn.onclick = function () {
     const map_img = document.querySelector('.guide_img');
-    map_img.classList.toggle('on')
-    kakaoMap();    
+    map_img.classList.remove('G_on')
+    map_img.classList.add('K_on')
+    kakaoMap();
+}
+$btn_google.onclick = function () {
+    const map_img = document.querySelector('.guide_img');
+    map_img.classList.remove('K_on')
+    map_img.classList.add('G_on')
 }
 
 //버튼 마우스오버
-const changeBtn1 = document.querySelector('.naver_map p img');
+
 function mouseover1() {
-    changeBtn1.setAttribute("src", "../imgs/location/location_naver_color_(2).png");
+    changeBtn1.setAttribute("src", "../imgs/location/location_google_color_(2).png");
 }
 function mouseleave1() {
-    changeBtn1.setAttribute("src", "../imgs/location/location_naver_color.png");
+    changeBtn1.setAttribute("src", "../imgs/location/location_google_color.png");
 }
 
-const changeBtn2 = document.querySelector('.kakao_map p img');
+
 function mouseover2() {
     changeBtn2.setAttribute("src", "../imgs/location/location_map_color_(2).png");
 }
@@ -27,8 +37,7 @@ function mouseleave2() {
 
 
 
-
-function kakaoMap(){
+function kakaoMap() {
 
     const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = {
@@ -56,12 +65,6 @@ function kakaoMap(){
         image: markerImage, // 마커의 이미지
         map: map // 마커를 표시할 지도 객체
     });
-
-
-
-
-
-
 
 
     var placeOverlay = new kakao.maps.CustomOverlay({ zIndex: 1 }),
@@ -155,7 +158,7 @@ function kakaoMap(){
     // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
     function addMarker(position, order) {
         var imageSrc = 'https://i.postimg.cc/Dy7wRTjB/pin-btn.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-            imageSize = new kakao.maps.Size(39 , 32),  // 마커 이미지의 크기
+            imageSize = new kakao.maps.Size(39, 32),  // 마커 이미지의 크기
             imgOptions = {
                 spriteSize: new kakao.maps.Size(79, 235), // 스프라이트 이미지의 크기
                 spriteOrigin: new kakao.maps.Point(42, (order * 51)), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
@@ -244,15 +247,13 @@ function kakaoMap(){
         if (el) {
             el.className = 'on';
         }
-    } 
-
-    function relayout() {    
-        // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
-        // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
-        // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
-        
     }
+
     map.setCenter(new kakao.maps.LatLng(37.572532, 126.975644));
 }
 
-kakaoMap();
+
+
+
+
+

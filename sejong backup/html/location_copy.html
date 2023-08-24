@@ -12,7 +12,10 @@
     <script defer src="../js/locotion_copy.js"></script>
     <script defer src="../js/common.js"></script>
     <script type="text/javascript"
+        src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=pbja0yx9ow&callback=initMap"></script>
+    <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9c6443b890ffa77aee076523b98b43ec&libraries=services"></script>
+
 </head>
 </head>
 
@@ -54,13 +57,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="map_btn">
-                        <a class="naver_map" onmouseover="mouseover1()" onmouseleave="mouseleave1()"
-                            href="https://map.naver.com/p/search/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80/place/11576170?c=16.55,0,0,0,dh"
-                            target="_blank">
-                            <p><img src="../imgs/location/location_naver_color.png" alt="naver_app_btn "></p>
-                            <span>네이버 맵 열기</span>
+                        <a class="google_map" onmouseover="mouseover1()" onmouseleave="mouseleave1()">
+                            <p><img src="../imgs/location/location_google_color.png" alt="google_map_btn "></p>
+                            <span>구글 맵 열기</span>
                         </a>
                         <a class="kakao_map" onmouseover="mouseover2()" onmouseleave="mouseleave2()">
                             <p><img src="../imgs/location/location_map_color.png" alt="kakao_app_btn"></p>
@@ -70,9 +70,10 @@
                 </div>
 
                 <div class="guide_img">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.1293548070894!2d126.97395881343029!3d37.57252527582744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eb4d3089f9%3A0xdc83747259b1898d!2z7IS47KKF66y47ZmU7ZqM6rSA!5e0!3m2!1sko!2skr!4v1692850290908!5m2!1sko!2skr" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <p class="lo_img"><img src="../imgs/location/location.jpg" alt=""></p>
                     <div class="map_wrap">
-                        <div id="map"></div>
+                        <div id="map" class="kmap"></div>
                         <ul id="category">
                             <li id="CE7" data-order="0">
                                 <span class="category_bg cafe"></span>
@@ -160,6 +161,6 @@
 
 
 
-</body>	
+</body>
 
 </html>

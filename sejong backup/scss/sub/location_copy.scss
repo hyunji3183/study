@@ -143,7 +143,7 @@ main {
                     display: flex;
                     justify-content: space-between;
 
-                    .naver_map {
+                    .google_map {
                         border: 2px solid #9988ff;
                         border-radius: 10px;
                         padding: 0.5rem;
@@ -168,7 +168,7 @@ main {
                             width: 20%;
 
                             img {
-                                width: 100%;
+                                width: 80%;
                             }
                         }
 
@@ -206,7 +206,7 @@ main {
                             width: 20%;
 
                             img {
-                                width: 100%;
+                                width: 80%;
                             }
                         }
 
@@ -221,9 +221,24 @@ main {
                     }
                 }
             }
+            .guide_img.G_on {
+                iframe {
+                    display: inline-block;
+                }
+                p {
+                    width: 100%;
+
+                    img {
+                        display: none;
+                    }
+                }
+                .map_wrap {
+                    display: none;
+                }
+            }
 
 
-            .guide_img.on {
+            .guide_img.K_on {
                 p {
                     width: 100%;
 
@@ -239,6 +254,14 @@ main {
 
             .guide_img {
                 width: 60%;
+
+                iframe {
+                    display: none;
+                    border: 1px solid rgba(153, 136, 255, 0.5);
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 70vh;
+                }
 
                 .lo_img {
                     width: 100%;
@@ -264,6 +287,7 @@ main {
                         position: relative;
                         max-width: 900px;
                         height: 70vh;
+
                     }
 
                     #category {
