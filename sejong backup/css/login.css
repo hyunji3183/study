@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   word-break: keep-all;
+  font-family: "NotoSansKR-Regular";
 }
 
 body, p, b, figure, h2, h3, h4, h5, h6, div {
@@ -556,6 +557,7 @@ aside div {
   padding: 0;
   box-sizing: border-box;
   word-break: keep-all;
+  font-family: "NotoSansKR-Regular";
 }
 
 body, p, b, figure, h2, h3, h4, h5, h6, div {
