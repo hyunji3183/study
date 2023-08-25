@@ -13,7 +13,8 @@ let currentPage = 1; // 현재 페이지를 추적
 
 
 //데이터 가져오기
-fetch('http://openAPI.seoul.go.kr:8088/73716259566c65653534455853574d/json/SJWPerform/115/135')
+//fetch('http://openAPI.seoul.go.kr:8088/73716259566c65653534455853574d/json/SJWPerform/10/140') 
+fetch('../data/data.json')
     .then(response => {
         if (!response.ok) {
             //데이터를 받아올때 성공적으로 받아왓는지 확인해줌 
@@ -23,9 +24,9 @@ fetch('http://openAPI.seoul.go.kr:8088/73716259566c65653534455853574d/json/SJWPe
     }return response.json();})
     .then(jsonData => {
         let dataAll = jsonData.SJWPerform.row;
+        console.log(dataAll);
         let toDate = new Date();
         let data ={e1:[],e2:[],e3:[]};
-
         dataAll.forEach((obj,key)=>{
             
             let sDate = {
@@ -46,18 +47,45 @@ fetch('http://openAPI.seoul.go.kr:8088/73716259566c65653534455853574d/json/SJWPe
             }
             obj.startD = `${sDate.s1}-${sDate.s2}-${sDate.s3}`;
             obj.endD = `${eDate.s1}-${eDate.s2}-${eDate.s3}`;
-
+            
             if(toDate >= sDate.day() && toDate <= eDate.day()) { data.e1.push(obj); }//진행중..
-
+            
             if(toDate < sDate.day()){ data.e2.push(obj); } //진행예정
             
             if(toDate > eDate.day()){ data.e3.push(obj); } //종료..
 
-           
         })
+        
+     
+        /* ENDLISTHTML(  data.e3  ); */
+        
+        STARTLISTHTML(  data.e1  );
+        elPageTurn.classList.add('active');
+        
 
-        STARTLISTHTML(  data.e3  );
-
+        elEventing.forEach(function (ele, key) {
+            ele.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (key===0){ //진행중 클릭
+                    updatePageContent();
+                    STARTLISTHTML(data.e1);
+                    elBlackColor[0].classList.add('black');
+                    elBlackColor[1].classList.remove('black');
+                    elBefore[1].classList.add('active'); // 페이지 넘버 변경
+                    elBefore[0].classList.remove('active');
+                    elPageTurn.classList.add('active');
+                }
+                else{   //종료된 클릭
+                    updatePageContent();
+                    ENDLISTHTML(data.e3)
+                    elBlackColor[1].classList.add('black');
+                    elBlackColor[0].classList.remove('black');
+                    elBefore[0].classList.add('active'); 
+                    elBefore[1].classList.remove('active');
+                    elPageTurn.classList.remove('active');// 페이지 넘버 변경
+                }
+            });
+        });
     }); 
 /*  
     1. 현재시간<끝나는시간 => 진행중 이벤트 출력
@@ -76,35 +104,41 @@ fetch('http://openAPI.seoul.go.kr:8088/73716259566c65653534455853574d/json/SJWPe
 
 
 */
-
-
 /* 진행중 이벤트 선택시 나오는 리스트를 뽑는 함수 */
 function STARTLISTHTML(obj) {
-    obj.forEach(item=>{
+    obj.forEach((item,key)=>{
         const listItem = document.createElement('li');    
+        const imageElement = document.createElement('img');
+        imageElement.src = item.FILE_URL_MI; // 이미지 URL 설정
+        imageElement.alt = item.TITLE; // 이미지 대체 텍스트 설정
         listItem.innerHTML += `
             <div class="bgimg">
-                <img src="../imgs/event/${title1[0]}.png" alt="">
+                <img src="../imgs/event/${title1[key]}.png" alt="">
             </div>
             <div class="txtbox">
                 <b>${item.TITLE}</b>
                 <p>${item.startD} ~ ${item.endD}</p>
             </div>
         `;
+        listItem.addEventListener('click', function (e) {
+            // 아이템에 걸려있는 링크로 이동
+            window.location.href = item.PERFORM_URL;
+        })
         elColumn1.appendChild(listItem); //지정된 부모 요소에 새로운 자식 요소를 추가하는 데 사용
     })
-        
+    
     
 }
 
 /* 종료된 이벤트 선택시 나오는 리스트를 뽑는 함수 */
-function ENDLISTHTML(title2,StartDate,EndDate) {
+function ENDLISTHTML(obj) {
+    obj.forEach((item,key)=>{
         const listItem = document.createElement('li');
         listItem.innerHTML = `
             <div class="bgimg">
                 <div class="end">
 
-                    <img src="../imgs/end_event/${title2}.png" alt="">
+                    <img src="../imgs/event/end_event/${title2[key]}.png" alt="">
                     <div class="blur">
 
                     </div>
@@ -116,18 +150,23 @@ function ENDLISTHTML(title2,StartDate,EndDate) {
                 </div>
             </div>
             <div class="txtbox">
-                <b>${title2}</b>
-                <p>${StartDate} ~ ${EndDate}</p>
+                <b>${item.TITLE}</b>
+                <p>${item.startD} ~ ${item.endD}</p>
             </div>
         `;
+        listItem.addEventListener('click', function (e) {
+            // 아이템에 걸려있는 링크로 이동
+            window.location.href = item.PERFORM_URL;
+        })
         elColumn1.appendChild(listItem);
+    })
 }
 
 //페이지를 다음으로 전환하는 함수
 function nextPage() {
     if (currentPage === 1) {
         currentPage++;
-        ENDLISTHTML(); // 종료된 이벤트 목록을 업데이트
+        ENDLISTHTML(data.e2); // 종료된 이벤트 목록을 업데이트
         updatePageNumbers();
     }
 }
@@ -136,7 +175,7 @@ function nextPage() {
 function prevPage() {
     if (currentPage === 2) {
         currentPage--;
-        STARTLISTHTML(); // 진행중 이벤트 목록을 업데이트
+        STARTLISTHTML(data.e1); // 진행중 이벤트 목록을 업데이트
         updatePageNumbers();
     }
 }
@@ -147,15 +186,13 @@ function updatePageContent() {
     const totalEvents = title1.length; // 진행 중 이벤트의 총 개수
 
     if (currentPage === 1) {
-        //STARTLISTHTML();
         elBefore[1].classList.add('active'); // 페이지 넘버 변경
         elBefore[0].classList.remove('active');
         elPageTurn.classList.add('active');
     } else {
-        //ENDLISTHTML();
-        elBefore[0].classList.add('active'); // 페이지 넘버 변경
+        elBefore[0].classList.add('active'); 
         elBefore[1].classList.remove('active');
-        elPageTurn.classList.remove('active')
+        elPageTurn.classList.remove('active');// 페이지 넘버 변경
     }
     
     updatePageNumbers(totalEvents);
@@ -172,13 +209,15 @@ function updatePageNumbers(totalEvents) {
 
 // 페이지가 로드될 때 초기화
 window.onload = function () {
-    
-    updatePageContent();
     elEventing.forEach(function (ele, key) {
+        
+    });
+}
+    /* elEventing.forEach(function (ele, key) {
         ele.addEventListener('click', function (event) {
             event.preventDefault();
             currentPage = key + 1; // 페이지 번호를 클릭한 요소에 따라 설정
-            updatePageContent();
+            //updatePageContent();
             if (key === 0) {
                 elBlackColor[0].classList.add('black');
                 elBlackColor[1].classList.remove('black');
@@ -188,7 +227,6 @@ window.onload = function () {
             }
         });
     });
-    initializePage();
     // 각 페이지 번호에 이벤트 추가
     for (let i = 0; i < 4; i++) {
         elPageNumbers[i + 1].addEventListener('click', function () {
@@ -197,8 +235,4 @@ window.onload = function () {
         });
     }
 };
-elPageNumbers[2].addEventListener('click', nextPage);
-
-
-
-
+elPageNumbers[2].addEventListener('click', nextPage); */

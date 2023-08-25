@@ -99,28 +99,6 @@
             hr{}
         }
     }
-    aside{
-        cursor: pointer;
-        position: fixed;
-        bottom: 5%; right: 3%;
-        width: 52px; height: 52px;
-        border-radius: 100px;
-        background-color: #9988FF;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
-        display:grid;
-        place-items: center;
-        div{
-            text-transform: uppercase;
-            letter-spacing: .7px;
-            
-             
-        }
-    }
-    
-    footer{margin-top: 20%;}
 }
 @media (min-width:641px) and (max-width:1280px){
     main{
@@ -211,26 +189,4 @@
             hr{}
         }
     }
-    aside{
-        cursor: pointer;
-        position: fixed;
-        bottom: 5%; right: 3%;
-        width: 52px; height: 52px;
-        border-radius: 100px;
-        background-color: #9988FF;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
-        display:grid;
-        place-items: center;
-        div{
-            text-transform: uppercase;
-            letter-spacing: .7px;
-            
-             
-        }
-    }
-    
-    footer{margin-top: 20%;}
 }

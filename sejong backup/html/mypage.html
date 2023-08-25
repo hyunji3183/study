@@ -9,13 +9,15 @@
     <!-- style -->
     <!-- style -->
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/mypage.css">
+    <!-- 로그인연동 -->
+    <!-- 로그인연동 -->
+    <script defer src="..js/mypage.js"></script>
     <!-- google font icon -->
     <!-- google font icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script defer src="../js/common.js"></script>
+
 </head>
 
 <body>
@@ -34,14 +36,14 @@
                     <div class="mp-status1">
                         <div class="user-name">
                             <figure>
-                                <img src="../../imgs/mypage/ic-m-11.png">
-                                <figcaption> <span>조현지</span> 님 안녕하세요!</figcaption>
+                                <img src="../imgs/mypage/ic-m-11.png">
+                                <figcaption> <span class="user_name">조현지</span> 님 안녕하세요!</figcaption>
                             </figure>
                         </div>
                         <div class="day-status">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" class="join">
                                         가입일자 : 2022-07-26
                                     </a>
                                 </li>
@@ -62,7 +64,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="../sub/login.html" class="logout">
                                         로그아웃
                                         <span class="material-symbols-outlined">
                                             logout
@@ -75,7 +77,7 @@
                     <div class="mp-status2">
                         <div class="user-welcome">
                             <figure>
-                                <img src="../../imgs/mypage/ic-m-1.png">
+                                <img src="../imgs/mypage/ic-m-1.png">
                                 <figcaption>웰컴(Welcome)</figcaption>
                             </figure>
                         </div>
@@ -96,29 +98,29 @@
                         <div class="se2-boxs">
                             <div class="se2-contents-box">
                                 <div class="sbox-icon">
-                                    <img src="../../imgs/mypage/ic-m-11.png">
+                                    <img src="../imgs/mypage/ic-m-11.png">
                                 </div>
                                 <div class="sbox-text">
                                     <p>세종 <span>S</span> 포인트</p>
-                                    <p>0</p>
+                                    <p class="point"></p>
                                 </div>
                             </div>
                             <div class="se2-contents-box">
                                 <div class="sbox-icon">
-                                    <img src="../../imgs/mypage/ic-m-7.png">
+                                    <img src="../imgs/mypage/ic-m-7.png">
                                 </div>
                                 <div class="sbox-text">
                                     <p>이용횟수</p>
-                                    <p>0회</p>
+                                    <p class="visitdate">0회</p>
                                 </div>
                             </div>
                             <div class="se2-contents-box">
                                 <div class="sbox-icon">
-                                    <img src="../../imgs/mypage/ic-m-6.png">
+                                    <img src="../imgs/mypage/ic-m-6.png">
                                 </div>
                                 <div class="sbox-text sbox-text3">
                                     <p>2024년 예상등급</p>
-                                    <p>웰컴 (Welcome)</p>
+                                    <p class="Rating">웰컴 (Welcome)</p>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +132,7 @@
                             <ul>
                                 <li>
                                     <figure>
-                                        <img src="../../imgs/mypage/ic-m-1.png">
+                                        <img src="../imgs/mypage/ic-m-1.png">
                                         <figcaption>
                                             <p>웰컴</p>
                                             <p>회원가입</p>
@@ -139,7 +141,7 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <img src="../../imgs/mypage/ic-m-8.png">
+                                        <img src="../imgs/mypage/ic-m-8.png">
                                         <figcaption>
                                             <p>스타트</p>
                                             <p>3000포인트</p>
@@ -149,7 +151,7 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <img src="../../imgs/mypage/ic-m-9.png">
+                                        <img src="../imgs/mypage/ic-m-9.png">
                                         <figcaption>
                                             <p>스페셜</p>
                                             <p>6000포인트</p>
@@ -159,7 +161,7 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <img src="../../imgs/mypage/ic-m-10.png">
+                                        <img src="../imgs/mypage/ic-m-10.png">
                                         <figcaption>
                                             <p>시그니처</p>
                                             <p>10000포인트</p>
@@ -206,26 +208,12 @@
                                     <span class="material-symbols-outlined">
                                         expand_more
                                     </span>
-                                    <div class="selec-pop">
-                                        <ul>
-                                            <li>준</li>
-                                            <li>비</li>
-                                            <li>중</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="selector-frame selector-frame2">
                                     2023-09-03
                                     <span class="material-symbols-outlined">
                                         expand_more
                                     </span>
-                                    <div class="selec-pop">
-                                        <ul>
-                                            <li>준</li>
-                                            <li>비</li>
-                                            <li>중</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                             <div class="search-item4 search-item">
@@ -251,16 +239,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th>2023-07-02</th>
-                                        <th>이벤트</th>
-                                        <th>내 등급 조회하고 포인트받자!</th>
-                                        <th>+ 500</th>
-                                    </tr>
-                                    <tr>
-                                        <th>2023-06-21</th>
-                                        <th>뮤지컬</th>
-                                        <th>뮤지컬 <모차르트!> 관람</th>
-                                        <th>+ 1000</th>
+                                        <th class="point-day">2023-07-02</th>
+                                        <th class="point-type">이벤트</th>
+                                        <th class="point-eventname">내 등급 조회하고 포인트받자!</th>
+                                        <th class="point-score1 point-score">+ 500</th>
                                     </tr>
                                     <tr>
                                         <th colspan="4">
@@ -309,17 +291,11 @@
                                 <li>
                                     <div class="mobile-frame">
                                         2023-08-03
-                                        <div class="mobile-frame-drop">
-                                            준비중
-                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="mobile-frame">
                                         2023-09-03
-                                        <div class="mobile-frame-drop">
-                                            준비중
-                                        </div>
                                     </div>
                                 </li>
                                 <li>

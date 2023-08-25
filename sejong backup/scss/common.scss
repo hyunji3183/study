@@ -1,12 +1,12 @@
 @import "_reset", "_mixin";
 
 
-// ==================== header ====================
+// ==================== Header Start ====================
 
 header{
     position:fixed;
     top:0; left:0;
-    z-index:3;
+    z-index:100;
     width:100%;
     height:92px;
     background-color:#fff;
@@ -22,13 +22,14 @@ header{
         overflow:hidden;
         >h1{
             float:left;
-            padding:29px 0 30px;
+            padding:30px 0 31px;
+            font-size:0;
         }
         .gnb_list{
             width:54.4666%;
             display:inline-flex;
             justify-content:space-between;
-            padding:37px 0;
+            padding:32px 0;
             >li{
                 position:relative;
                 &::before{
@@ -46,8 +47,8 @@ header{
                     &::before{opacity:1}
                 }
                 >a{
-                    font-size:calc(0.8333rem + 0.3472vw);
-                    font-weight:500;
+                    font-family:"NotoSansKR-Medium";
+                    font-size:1.25rem;
                 }
                 .lnb_list{
                     width:100%;
@@ -58,8 +59,8 @@ header{
                         padding-bottom:21px;
                         text-align:center;
                         a{
-                            font-size:calc(0.7083rem + 0.2951vw);
-                            font-weight:500;
+                            font-family:"NotoSansKR-Medium";
+                            font-size:1.0625rem;
                             color:#818181;
                         }
                     }
@@ -68,10 +69,18 @@ header{
         }
         .gnb_btn{
             float:right;
+            @include align_xy_center;
             width:11%;
-            padding:37px 0 33px;
-            a{margin-right:22.7%}
-            .btn_search{font-size:0}
+            padding:32px 0 31px;
+            a{
+                font-size:0;
+                margin-right:22.7%
+            }
+            .btn_search{
+                margin-top:3px;
+                font-size:0;
+                cursor:pointer;
+            }
         }
         .gnb_intro{        
             width:100%;
@@ -79,13 +88,14 @@ header{
             @include align_y_center;
             justify-content:space-between;
             .title_wrap{
+                margin-left:-2px;
                 span{
                     padding-bottom:12px;
                     margin-left:-48px;
                     font-size:0.875rem;
                 }
                 h2{
-                    font-family:'CantataOne';
+                    font-family:'CantataOne-Regular';
                     font-size:4rem;
                     line-height:1.15;
                 }
@@ -93,7 +103,7 @@ header{
             >hr{
                 width:31.2%;
                 height:1px;
-                transform:translate(30px, 10px);
+                transform:translate(20px, 10px);
                 background-color:#000;
             }
             >p{
@@ -106,27 +116,10 @@ header{
     }//header_wrap
 }//header
 
-aside {
-    position: sticky;
-    left: 94%;
-    bottom: 7%;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 100%;
-    background-color: #9988ff;
-    box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
-    cursor: pointer;
+// ==================== Header End ====================
 
-    a {
-        display: block;
-        width: 100%;
-        padding: 30% 0;
-        text-align: center;
-        color: white;
-        letter-spacing: .7px;
-        font-family: "NotoSansKR-Bold";
-    }
-}
+
+// ==================== Footer Start ====================
 
 footer {
     .footer_inner {
@@ -171,7 +164,7 @@ footer {
                             }
                         }
                     }
-                }
+                }//inner_txt
 
                 .inner_sns {
                     width: 22%;
@@ -186,8 +179,8 @@ footer {
                             width: 24px;
                         }
                     }
-                }
-            }
+                }//inner_sns
+            }//footer_top
 
             .info {
                 width: 80%;
@@ -243,7 +236,7 @@ footer {
                         padding-top: 3rem;
                         font-size: 0.8rem;
                     }
-                }
+                }//left_txt
 
                 .right {
                     width: 18%;
@@ -257,7 +250,7 @@ footer {
                         }
 
                         b {}
-                    }
+                    }//right_txt
 
                     .right_img {
                         width: 100%;
@@ -275,9 +268,38 @@ footer {
                                 width: 50%;
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
+                    }//right_img
+                }//right
+            }//info
+        }//footer_contents
+    }//footer_inner
 }
+
+// ==================== Footer End ====================
+
+
+// ==================== Top Button Start ====================
+
+aside {
+    position: sticky;
+    left: 94%;
+    bottom: 7%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    background-color: #9988ff;
+    box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
+    cursor: pointer;
+
+    a{
+        display: block;
+        width: 100%;
+        padding: 30% 0;
+        text-align: center;
+        color: white;
+        letter-spacing: .7px;
+        font-family: "NotoSansKR-Bold";
+    }
+}//Top Button
+
+// ==================== Top Button End ====================

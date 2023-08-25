@@ -27,9 +27,11 @@ ul,li {
 }
 
 button,input{
-    outline-style: none;
     border: none;
+    outline-style: none;
+    background-color: transparent;
 }
+button{cursor:pointer}
 table{
     border-collapse: collapse;
 }
@@ -46,34 +48,38 @@ input::-webkit-search-results-decoration{
 }
 
 
-
-
 @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
-    font-family: "NotoSansKR-Black";
-  }
-  @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
-    font-family: "NotoSansKR-Bold";
-  }
-  @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
-    font-family: "NotoSansKR-Light";
-  }
-  @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
-    font-family: "NotoSansKR-Medium";
-  }
-  @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
-    font-family: "NotoSansKR-Regular";
-  }
-  @font-face {
-    src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
-    font-family: "NotoSansKR-Thin";
-  }
-  @font-face {
-    src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
-    font-family: "CantataOne-Regular";
-  }
+  src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
+  font-family: "NotoSansKR-Black";
+  font-weight: 900;
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
+  font-family: "NotoSansKR-Bold";
+  font-weight: 700;
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
+  font-family: "NotoSansKR-Light";
+  font-weight: 300;
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
+  font-family: "NotoSansKR-Medium";
+  font-weight: 500;
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
+  font-family: "NotoSansKR-Regular";
+  font-weight: 400;
+}
+@font-face {
+  src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
+  font-family: "NotoSansKR-Thin";
+  font-weight: 100;
+}
+@font-face {
+  src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
+  font-family: "CantataOne-Regular";
+}
 

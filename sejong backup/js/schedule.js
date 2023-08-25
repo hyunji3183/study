@@ -1,69 +1,35 @@
 //탭 메뉴 써클, 라인포인트
 document.addEventListener('DOMContentLoaded', function() {
-  const menuItems = document.querySelectorAll('.menu_item');
-  const linePoints = document.querySelectorAll('.line_point');
-  const menuCircles = document.querySelectorAll('.menu_circle');
+    const menuItems = document.querySelectorAll('.menu_item');
+    const linePoints = document.querySelectorAll('.line_point');
+    const menuCircles = document.querySelectorAll('.menu_circle');
+  
+    menuItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        menuItems.forEach((menuItem) => {
+          menuItem.classList.remove('active');
+        });
+        linePoints.forEach((linePoint) => {
+          linePoint.style.display = 'none';
+        });
+        menuCircles.forEach((circle) => {
+          circle.style.display = 'none';
+        });
+  
+        item.classList.add('active');
 
-  menuItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      menuItems.forEach((menuItem) => {
-        menuItem.classList.remove('active');
+        menuCircles[index].style.display = 'inline-block';
       });
-      linePoints.forEach((linePoint) => {
-        linePoint.style.display = 'none';
-      });
-      menuCircles.forEach((circle) => {
-        circle.style.display = 'none';
-      });
-
-      item.classList.add('active');
-      linePoints[index].style.display = 'block';
-      menuCircles[index].style.display = 'inline-block';
     });
+  
+    // 초기에 첫 번째 메뉴 선택 표시
+    menuItems[0].classList.add('active');
+    menuCircles[0].style.display = 'inline-block';
+    
   });
 
-  // 초기에 첫 번째 메뉴 선택 표시
-  menuItems[0].classList.add('active');
-  linePoints[0].style.display = 'block';
-  menuCircles[0].style.display = 'inline-block';
-  
-});
 
 //탭 메뉴 콘텐츠보이기
-document.addEventListener('DOMContentLoaded', function() {
-  const menuItems = document.querySelectorAll('.menu_item');
-  const container1 = document.querySelector('.container_1');
-  const container2 = document.querySelector('.container_2');
-  
-  // 첫 번째 메뉴 아이템을 초기에 선택된 상태로 설정
-  menuItems[0].classList.add('active');
-  container1.style.display = 'block';
-  container2.style.display = 'none';
-
-  // 메뉴 아이템 클릭 이벤트
-  menuItems.forEach((item, index) => {
-      item.addEventListener('click', () => {
-          // 모든 메뉴 아이템의 클래스 제거
-          menuItems.forEach((menuItem) => {
-              menuItem.classList.remove('active');
-          });
-
-          // 클릭한 메뉴 아이템에 active 클래스 추가
-          item.classList.add('active');
-
-          // 컨테이너 표시 여부 설정
-          if (index === 0) {
-              container1.style.display = 'block';
-              container2.style.display = 'none';
-          } else if (index === 1) {
-              container1.style.display = 'none';
-              container2.style.display = 'block';
-          }
-      });
-  });
-});
-
-//
 document.addEventListener('DOMContentLoaded', function() {
     const menuItems = document.querySelectorAll('.menu_item');
     const container1 = document.querySelector('.container_1');
@@ -90,37 +56,138 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+ 
+
+
+
+
+    let schedule = [],data;
+
+    fetch('../data/data.json')
+    .then(res=>res.json())
+    .then(res=>{
+      data = res.SJWPerform.row;
+      
+      data.forEach(d=>{
+        schedule.push({
+          sy:d.START_DATE.substr(0,4),
+          sm:d.START_DATE.substr(4,2),
+          sd:d.START_DATE.substr(6,2),
+          ey:d.END_DATE.substr(0,4),
+          em:d.END_DATE.substr(4,2),
+          ed:d.END_DATE.substr(6,2)
+        });
+      })
+
+      datepickerFn();
+      $('.today').trigger('click');
+    })
+
+    //달력에 스케줄아이콘 출력
+    function datepickerFn(){
+      schedule.forEach(item=>{
+        for(let i=item.sd; i<=item.ed; i++ ){
+          let sDay = new Date(`${item.sy},${item.sm},${i} 09:00:00`).getTime();
+          let eDay = new Date(`${item.ey},${item.em},${i} 09:00:00`).getTime();
+          $(`.day[data-date=${sDay}]`).addClass('sche');
+          $(`.day[data-date=${eDay}]`).addClass('sche');
+        } 
+      })
+      
+    }
+
+    //달력 클릭 이벤트 -> 공연리스트 출력 (JSON)
+    function dataList(get){
+      
+      let imgIcon = {"세종M씨어터":"../imgs/schedule/M.png","세종대극장":"../imgs/schedule/G.png","세종S씨어터":"../imgs//schedule/S.png", "세종체임버홀":"../imgs//schedule/CH.png" }
+      let findD = {y:get.getFullYear(),m:get.getMonth()+1,d:get.getDate()};
+      let result = [],resultTag='';
+      
+      schedule.forEach((item,k)=>{
+        for(let i=item.sd; i<=item.ed; i++ ){
+          if(i == findD.d){
+            result.push(k);
+          }
+        }
+      })
+      
+      result.forEach(item=>{
+        let placeName = imgIcon[data[item].PLACE_NAME];
+
+        resultTag += `<li class="list_1" data-key="${item}">
+                          <img src="${placeName || imgIcon['세종M씨어터']}" alt="">
+                          <a>${data[item].TITLE}</a>
+                      </li>`
+      })
+      $('.list').html(resultTag)
+      $('.right_title h3').html(`${findD.m}월 ${findD.d}일`)
+
+      dataPop()
+    }
     const listItems = document.querySelectorAll('.list li');
     const boxes = document.querySelectorAll('.box_ele');
 
     listItems.forEach((listItem, index) => {
-        listItem.addEventListener('click', () => {
+        listItem.addEventListener('click', (e) => {
+
             boxes.forEach((box) => {
                 box.classList.remove('active');
+                console.log('1');
             });
             boxes[index].classList.add('active');
         });
     });
+    //공연리스트 -> 팝업박스
+    function dataPop() {
 
-
-
+      $('.list li').on('click', function() {
+        let box = document.querySelector('.box_list');
+        let key = $(this).data().key;
+        
+        let popupContent = `<div class="box_ele ele_1">
+                              <div class="thumb">
+                                <img src="${data[key].FILE_URL_MI}" alt="Place Icon">
+                              </div>
+                              <div class="box_right">
+                                <span>${data[key].PLACE_NAME}</span>
+                                <p>${data[key].START_DATE} ~ ${data[key].END_DATE}</p>
+                                <h3>${data[key].TITLE}</h3>
+                                <button><a href="#">상세보기</a></button>
+                              </div>
+                            </div>`;
+        
+        box.innerHTML = popupContent; 
+        $('.popup').fadeIn();
+      });
+    }
+    
     $('.schedule_left').datepicker({
         format: 'dd-mm-yyyy',
         todayHighlight: true,
         showWeekDays: true,
         language: 'ko',
-        onAfterEventsLoad: function(events) {
-            console.log(events);
-        }
+    })
+    .on('changeMonth',function(){
+      setTimeout(()=>{datepickerFn(schedule)},50)
+    })
+    .on('changeDate',function(e){
+      setTimeout(()=>{datepickerFn(schedule)},50);
+      let getDate = new Date(e.dates[0])
+      dataList(getDate);
     });
+
+    
+
+    
+
+
 
 
     
 });
 
-
+//달력옵션
 function dateFn(){
-  console.log('sdfsdf')
   $('#datePicker')
       .datepicker({
          format: 'yyyy-mm-dd', //데이터 포맷 형식(yyyy : 년 mm : 월 dd : 일 )
@@ -161,3 +228,18 @@ function dateFn(){
          // e.date를 찍어보면 Thu Jun 27 2019 00:00:00 GMT+0900 (한국 표준시) 위와 같은 형태로 보인다.
       });
 }
+
+//리스트 현재날짜
+document.addEventListener('DOMContentLoaded', function() {
+    const dateElement = document.querySelector('.right_title h3');
+    const currentDate = new Date();
+
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1;
+    const day = currentDate.getDate();
+
+    const formattedDate = `${month}월 ${day}일`;
+
+    dateElement.textContent = formattedDate;
+});
+

@@ -1,5 +1,5 @@
 @import "../reset";
-
+@import "../common.scss";
 
 main{
     font-family:'NotoSansKR';
@@ -16,16 +16,18 @@ main{
             color: #ffffff;
             padding-top: 4%;
             font-weight: 400;
-            animation: title 1s ;
+            font-family: "NotoSansKR-Medium";
+            //animation: title 1s ;
+        
         }
-        @keyframes title{
+/*         @keyframes title{
             0%{transform: translateY(30%);opacity: 0;}
             100%{transform: translateY(0%);}
         }
         @keyframes title_p{
             0%{transform: translateY(100%); opacity: 0;}
             100%{transform: translateY(0%);}
-        }
+        } */
         .m_title{display: none;}
     }
     section{    
@@ -75,35 +77,14 @@ main{
                         width: 35px;
                         height: 35px;
                     }
+                    cursor: pointer;
                 }
                 .a_c{padding-left: 15px;}
             }
             hr{margin: 0; height: 250px;}
         }
-        hr{}
+        hr{ margin-bottom: 8%}
     }
 }
-aside{
-    cursor: pointer;
-    position: fixed;
-    bottom: 5%; right: 3%;
-    width: 52px; height: 52px;
-    border-radius: 100px;
-    background-color: #9988FF;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
-    display:grid;
-    place-items: center;
-    div{
-        text-transform: uppercase;
-        letter-spacing: .7px;
-        
-         
-    }
-}
-
-footer{margin-top: 10%;}
 
 @import "./m_reservation";

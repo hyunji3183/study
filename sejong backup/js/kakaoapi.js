@@ -45,8 +45,8 @@ document.querySelector('.kakao').addEventListener('click', function () {
 
                     // 객체를 JSON 문자열로 변환하여 세션 스토리지에 저장
                     sessionStorage.setItem('kakao_user_info', JSON.stringify(kakao_user_info));
+                    window.location.href = "./mypage.html";
 
-                    console.log(response);
                 },
                 fail: function (error) {
                     // 사용자 정보 가져오기 실패 시 알림 표시
@@ -60,3 +60,4 @@ document.querySelector('.kakao').addEventListener('click', function () {
         }
     });
 });
+

@@ -1,4 +1,4 @@
-@import "../_common";
+@import "../common";
 
 // 서브 페이지
 main.performance{
@@ -37,10 +37,10 @@ main.performance{
                     width:230px;
                     margin-left:100px;
                     transition:transform 0.5s;
-                    border:2px solid #fff;
                     border-radius:10px;
                     overflow:hidden;
                     &:hover{
+                        border:2px solid #fff;
                         transform:translateY(-30px);
                         figure{
                             cursor:pointer;
@@ -87,7 +87,7 @@ main.performance{
     }//visual
     .sorting{
         width:calc(1920px / 9 * 7);
-        padding:53px 30px 360px;
+        padding:53px 30px 200px;
         margin:0 auto;
         .btn_wrap{
             padding:35px 0 50px;

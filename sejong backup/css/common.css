@@ -30,8 +30,13 @@ ul, li {
 }
 
 button, input {
-  outline-style: none;
   border: none;
+  outline-style: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
 }
 
 table {
@@ -55,26 +60,32 @@ input::-webkit-search-results-decoration {
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
   font-family: "NotoSansKR-Black";
+  font-weight: 900;
 }
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
   font-family: "NotoSansKR-Bold";
+  font-weight: 700;
 }
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
   font-family: "NotoSansKR-Light";
+  font-weight: 300;
 }
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
   font-family: "NotoSansKR-Medium";
+  font-weight: 500;
 }
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
   font-family: "NotoSansKR-Regular";
+  font-weight: 400;
 }
 @font-face {
   src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
   font-family: "NotoSansKR-Thin";
+  font-weight: 100;
 }
 @font-face {
   src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
@@ -84,7 +95,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 100;
   width: 100%;
   height: 92px;
   background-color: #fff;
@@ -104,13 +115,14 @@ header .header_wrap {
 }
 header .header_wrap > h1 {
   float: left;
-  padding: 29px 0 30px;
+  padding: 30px 0 31px;
+  font-size: 0;
 }
 header .header_wrap .gnb_list {
   width: 54.4666%;
   display: inline-flex;
   justify-content: space-between;
-  padding: 37px 0;
+  padding: 32px 0;
 }
 header .header_wrap .gnb_list > li {
   position: relative;
@@ -132,8 +144,8 @@ header .header_wrap .gnb_list > li:hover::before {
   opacity: 1;
 }
 header .header_wrap .gnb_list > li > a {
-  font-size: calc(0.8333rem + 0.3472vw);
-  font-weight: 500;
+  font-family: "NotoSansKR-Medium";
+  font-size: 1.25rem;
 }
 header .header_wrap .gnb_list > li .lnb_list {
   width: 100%;
@@ -146,20 +158,26 @@ header .header_wrap .gnb_list > li .lnb_list > li {
   text-align: center;
 }
 header .header_wrap .gnb_list > li .lnb_list > li a {
-  font-size: calc(0.7083rem + 0.2951vw);
-  font-weight: 500;
+  font-family: "NotoSansKR-Medium";
+  font-size: 1.0625rem;
   color: #818181;
 }
 header .header_wrap .gnb_btn {
   float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 11%;
-  padding: 37px 0 33px;
+  padding: 32px 0 31px;
 }
 header .header_wrap .gnb_btn a {
+  font-size: 0;
   margin-right: 22.7%;
 }
 header .header_wrap .gnb_btn .btn_search {
+  margin-top: 3px;
   font-size: 0;
+  cursor: pointer;
 }
 header .header_wrap .gnb_intro {
   width: 100%;
@@ -168,20 +186,23 @@ header .header_wrap .gnb_intro {
   align-items: center;
   justify-content: space-between;
 }
+header .header_wrap .gnb_intro .title_wrap {
+  margin-left: -2px;
+}
 header .header_wrap .gnb_intro .title_wrap span {
   padding-bottom: 12px;
   margin-left: -48px;
   font-size: 0.875rem;
 }
 header .header_wrap .gnb_intro .title_wrap h2 {
-  font-family: "CantataOne";
+  font-family: "CantataOne-Regular";
   font-size: 4rem;
   line-height: 1.15;
 }
 header .header_wrap .gnb_intro > hr {
   width: 31.2%;
   height: 1px;
-  transform: translate(30px, 10px);
+  transform: translate(20px, 10px);
   background-color: #000;
 }
 header .header_wrap .gnb_intro > p {
@@ -189,27 +210,6 @@ header .header_wrap .gnb_intro > p {
   line-height: 1.5;
   text-align: right;
   color: #818181;
-}
-
-aside {
-  position: sticky;
-  left: 94%;
-  bottom: 7%;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 100%;
-  background-color: #9988ff;
-  box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
-  cursor: pointer;
-}
-aside a {
-  display: block;
-  width: 100%;
-  padding: 30% 0;
-  text-align: center;
-  color: white;
-  letter-spacing: 0.7px;
-  font-family: "NotoSansKR-Bold";
 }
 
 footer .footer_inner {
@@ -329,4 +329,25 @@ footer .footer_inner .footer_contents .info .right .right_img p {
 }
 footer .footer_inner .footer_contents .info .right .right_img p img {
   width: 50%;
+}
+
+aside {
+  position: sticky;
+  left: 94%;
+  bottom: 7%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  background-color: #9988ff;
+  box-shadow: 0px 4px 11px rgba(85, 85, 85, 0.445);
+  cursor: pointer;
+}
+aside a {
+  display: block;
+  width: 100%;
+  padding: 30% 0;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.7px;
+  font-family: "NotoSansKR-Bold";
 }/*# sourceMappingURL=common.css.map */

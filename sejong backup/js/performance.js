@@ -58,5 +58,5 @@ $.ajax({
 });
 
 $(window).on("load", function () {
-	console.log("adsdf");
+	
 });

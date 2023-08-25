@@ -53,6 +53,7 @@ left: 0;
 
 .datepicker table tr td.today, span.focused {
 color: #9988FF;
+font-family: "NotoSansKR-bold";
 }
 
 .datepicker table tr td.today.range {
@@ -73,7 +74,7 @@ thead tr:nth-child(3) th:nth-child(1) {
 
 .dow, .old-day, .day, .new-day {
 width: 40px !important;
-height: 40px !important;
+height: 20% !important;
 border-radius: 0px !important;
 }
 
@@ -122,7 +123,7 @@ background-color: #000 !important;
   
 }
 .datepicker table{
-  width:100%; height:100%;
+  width:100.1%; height:100%;
 }
 .datepicker-days{height:100%}
 .table-condensed{height:100%}
@@ -419,9 +420,6 @@ tbody tr td:nth-child(1){
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active.disabled,
 .datepicker table tr td.active.disabled:hover {
-  background-color: #006dcc;
-  
-
   color: #fff;
 }
 .datepicker table tr td.active:hover,
@@ -470,7 +468,8 @@ tbody tr td:nth-child(1){
 }
 .datepicker table tr td span:hover,
 .datepicker table tr td span.focused {
-  background: #eee;
+  color: #9988FF;
+  font-family: "NotoSansKR-bold";
 }
 .datepicker table tr td span.disabled,
 .datepicker table tr td span.disabled:hover {
@@ -482,8 +481,6 @@ tbody tr td:nth-child(1){
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
 .datepicker table tr td span.active.disabled:hover {
-  background-color: #006dcc;
-
   color: #fff;
 }
 .datepicker table tr td span.active:hover,
@@ -506,7 +503,8 @@ tbody tr td:nth-child(1){
 .datepicker table tr td span.active:hover[disabled],
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
-  background-color: #0044cc;
+  color: #9988FF;
+  font-family: "NotoSansKR-bold";
 }
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
@@ -516,7 +514,6 @@ tbody tr td:nth-child(1){
 .datepicker table tr td span.active:hover.active,
 .datepicker table tr td span.active.disabled.active,
 .datepicker table tr td span.active.disabled:hover.active {
-  background-color: #003399 \9;
 }
 .datepicker table tr td span.old,
 .datepicker table tr td span.new {
@@ -584,6 +581,38 @@ tbody tr td:nth-child(1){
   margin-left: -5px;
   margin-right: -5px;
 }
+.month{color:#c0c0c0 ;}
+.year{color:#c0c0c0 ;}
+.decade{color:#c0c0c0 ;}
+.century{color:#c0c0c0 ;}
+
+.day {
+  position: relative;
+}
+.day.sche::after{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9988FF;
+  margin: 10% auto;
+}
+.day.active::after{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 10% auto;
+}
+.old::after,.new::after{
+  content: '';
+  display: none;
+}
+.datepicker-days .table-condensed tbody tr:nth-last-of-type(1){display: none;} 
+
 /*# sourceMappingURL=bootstrap-datepicker.css.map */
 
 

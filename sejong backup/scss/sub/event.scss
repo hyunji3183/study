@@ -1,9 +1,9 @@
 @import url('../css/basic.css');
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 main{
     .bg{
-        background:url("../imgs/Event/Event_banner.png");
+        background:url("../imgs/event/Event_banner.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -36,16 +36,21 @@ main{
 .Event_list{
     width:100%;
     .eventing{
+        margin: 0 auto;
+        width: 80%;
         margin-top: 5%;
         margin-bottom: 1%;
         display: flex;
         gap: 5%;
         justify-content:center;
         padding-left: 0px;
-        
+        border-bottom: 4px solid #C0C0C0;
         >li{
             position: relative;
-            border: 0px;
+            border-bottom: 4px solid #9988ff;
+            padding-bottom: 15px;
+            display: inline-block;
+            bottom: -4px;
             a{
                 
                 color: #818181;
@@ -56,7 +61,6 @@ main{
                 color: black;
             }
             hr{
-                
                 position: absolute;
                 margin-top: 14%;
                 border-color: #9988FF;
@@ -67,7 +71,7 @@ main{
                 height: 0.5625rem;
                 width: 0.5625rem;
                 content: '';
-                background-image: url('../imgs/icon/circle9x9.svg');
+                background-image: url('../imgs/common/icon/circle9x9.svg');
                 border-radius: 50%;
                 vertical-align: middle;
                 margin-right: 0.5625rem;
@@ -76,16 +80,18 @@ main{
             
         }
         >li.active{
+                border-bottom: 0px;
             a{
                display: block;
             }
             hr{
-              display: none;
+              
             }
             a::before{
               display: none;
             }
         }
+        
     }
     hr{
         border-color: #C0C0C0;
@@ -93,10 +99,13 @@ main{
     .colum-contianer{
         display: flex;
         flex-direction: column;
-    ul{
+        ul{
+        margin: 4% auto;
+        width: 80%;
         display: flex;
-        margin: 10rem 10rem 5rem;
-        justify-content: space-between;
+        margin: 10rem auto 5rem;
+        justify-content: flex-start;
+        gap: 4%;
         flex-wrap: wrap;
         li{
             border-radius: 30px;
@@ -109,7 +118,7 @@ main{
             transition: 1s;
             .bgimg{
                 position: relative;
-                height: 12.5rem;
+                height: 16rem;
                 border-bottom: 0px solid black;
                 .end{
                     width: 100%;
@@ -135,13 +144,14 @@ main{
                 .end_contants{
                     color: white;
                     border: 2px solid white;
-                    padding: 0.5rem 3.125rem;
+                    padding: 0.5rem 2.125rem;
                     border-radius: 1.875rem;
                     font-size: 0.875rem;
                     text-align: center;
                     position : absolute;
                     top:50%;
-                    right: 25%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
                     z-index: 2;
                 }
                 img{
@@ -156,7 +166,7 @@ main{
                 flex-direction: column;
                 gap: 1.25rem;
                 b{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
                 p{
                     font-size: 0.75rem;
@@ -231,8 +241,9 @@ main{
             } 
             .colum-contianer{
                 ul{
-                    margin: 10rem 5rem 5rem;
+                    margin: 10rem auto 5rem;
                     flex-wrap: wrap;
+                    justify-content: space-between;
                     li{
                         width: 45%;
                         font-size: 1.125rem;
@@ -272,7 +283,7 @@ main{
             } 
             .colum-contianer{
                 ul{
-                    margin: 10rem 5rem 5rem;
+                    margin: 10rem auto 5rem;
                     flex-wrap: wrap;
                     li{
                         width: 100%;
