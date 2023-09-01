@@ -253,7 +253,7 @@ function kakaoMap() {
 }
 
 
-
+kakaoMap();
 
 
 
