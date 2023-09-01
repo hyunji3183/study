@@ -1,8 +1,15 @@
-@import "../reset";
-
 main {
     width: 100%;
 
+    .group{
+        opacity: 0;
+        transform: translateY(30%);
+        transition: 0.8s;
+    }
+    .group.mem{
+        opacity: 1;
+        transform: translateY(0%);
+    }
     .title {
         figure {
             position: relative;
@@ -35,7 +42,7 @@ main {
             }
         }
     }
-
+    
     .guide {
         width: 100%;
         padding: 5rem 0;

@@ -1,101 +1,17 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  word-break: keep-all;
-  font-family: "NotoSansKR-Regular";
-}
-
-body, p, b, figure, h2, h3, h4, h5, h6, div {
-  margin: 0px;
-}
-
-body {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-img, video {
-  vertical-align: middle;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-button, input {
-  border: none;
-  outline-style: none;
-  background-color: transparent;
-}
-
-button {
-  cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-input::-ms-clear,
-input::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration {
-  display: none;
-}
-
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
-  font-family: "NotoSansKR-Black";
-  font-weight: 900;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
-  font-family: "NotoSansKR-Bold";
-  font-weight: 700;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
-  font-family: "NotoSansKR-Light";
-  font-weight: 300;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
-  font-family: "NotoSansKR-Medium";
-  font-weight: 500;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
-  font-family: "NotoSansKR-Regular";
-  font-weight: 400;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
-  font-family: "NotoSansKR-Thin";
-  font-weight: 100;
-}
-@font-face {
-  src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
-  font-family: "CantataOne-Regular";
-}
 main {
   background-color: #f3f3f5;
   width: 100%;
   padding: 8rem 0;
+}
+main .group {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 0.8s;
+}
+main .group.mem {
+  opacity: 1;
+  transform: translateY(0%);
 }
 main article {
   width: 34%;
@@ -166,11 +82,6 @@ main article form label:nth-of-type(1) {
   margin-bottom: 2%;
   border-radius: 10px;
 }
-main article form label:nth-of-type(1) input::-moz-placeholder {
-  color: #9988ff;
-  font-size: 0.875rem;
-  font-family: "NotoSansKR-Light";
-}
 main article form label:nth-of-type(1) input::placeholder {
   color: #9988ff;
   font-size: 0.875rem;
@@ -183,7 +94,7 @@ main article form label:nth-of-type(1)::before {
   height: 1.25rem;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-image: url(../imgs/page/login/login_id.png);
+  background-image: url(../../imgs/login/login_id.png);
 }
 main article form label:nth-of-type(2) {
   display: flex;
@@ -191,11 +102,6 @@ main article form label:nth-of-type(2) {
   padding: 1rem;
   margin-bottom: 2%;
   border-radius: 10px;
-}
-main article form label:nth-of-type(2) input::-moz-placeholder {
-  color: #9988ff;
-  font-size: 0.875rem;
-  font-family: "NotoSansKR-Light";
 }
 main article form label:nth-of-type(2) input::placeholder {
   color: #9988ff;
@@ -209,7 +115,7 @@ main article form label:nth-of-type(2)::before {
   height: 1.25rem;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-image: url(../imgs/page/login/login_pw.png);
+  background-image: url(../../imgs/login/login_pw.png);
 }
 main article form label:nth-of-type(4) {
   padding: 1rem;
@@ -310,99 +216,6 @@ main article .login_notice p {
   width: 97%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  word-break: keep-all;
-  font-family: "NotoSansKR-Regular";
-}
-
-body, p, b, figure, h2, h3, h4, h5, h6, div {
-  margin: 0px;
-}
-
-body {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-img, video {
-  vertical-align: middle;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-button, input {
-  border: none;
-  outline-style: none;
-  background-color: transparent;
-}
-
-button {
-  cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-input::-ms-clear,
-input::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration {
-  display: none;
-}
-
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
-  font-family: "NotoSansKR-Black";
-  font-weight: 900;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
-  font-family: "NotoSansKR-Bold";
-  font-weight: 700;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
-  font-family: "NotoSansKR-Light";
-  font-weight: 300;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
-  font-family: "NotoSansKR-Medium";
-  font-weight: 500;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
-  font-family: "NotoSansKR-Regular";
-  font-weight: 400;
-}
-@font-face {
-  src: url("../font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
-  font-family: "NotoSansKR-Thin";
-  font-weight: 100;
-}
-@font-face {
-  src: url("../font/cantataone/CantataOne-Regular.ttf") format("truetype");
-  font-family: "CantataOne-Regular";
-}
 @media (min-width: 1281px) and (max-width: 1920px) {
   main {
     background-color: #f3f3f5;
@@ -478,11 +291,6 @@ input::-webkit-search-results-decoration {
     margin-bottom: 2%;
     border-radius: 10px;
   }
-  main article form label:nth-of-type(1) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.875rem;
-    font-family: "NotoSansKR-Light";
-  }
   main article form label:nth-of-type(1) input::placeholder {
     color: #9988ff;
     font-size: 0.875rem;
@@ -495,7 +303,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_id.png);
+    background-image: url(../imgs/login/login_id.png);
   }
   main article form label:nth-of-type(2) {
     display: flex;
@@ -503,11 +311,6 @@ input::-webkit-search-results-decoration {
     padding: 1rem;
     margin-bottom: 2%;
     border-radius: 10px;
-  }
-  main article form label:nth-of-type(2) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.875rem;
-    font-family: "NotoSansKR-Light";
   }
   main article form label:nth-of-type(2) input::placeholder {
     color: #9988ff;
@@ -521,7 +324,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_pw.png);
+    background-image: url(../imgs/login/login_pw.png);
   }
   main article form label:nth-of-type(4) {
     padding: 1rem;
@@ -700,11 +503,6 @@ input::-webkit-search-results-decoration {
     margin-bottom: 2%;
     border-radius: 10px;
   }
-  main article form label:nth-of-type(1) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.875rem;
-    font-family: "NotoSansKR-Light";
-  }
   main article form label:nth-of-type(1) input::placeholder {
     color: #9988ff;
     font-size: 0.875rem;
@@ -717,7 +515,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_id.png);
+    background-image: url(../imgs/login/login_id.png);
   }
   main article form label:nth-of-type(2) {
     display: flex;
@@ -725,11 +523,6 @@ input::-webkit-search-results-decoration {
     padding: 1rem;
     margin-bottom: 2%;
     border-radius: 10px;
-  }
-  main article form label:nth-of-type(2) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.875rem;
-    font-family: "NotoSansKR-Light";
   }
   main article form label:nth-of-type(2) input::placeholder {
     color: #9988ff;
@@ -743,7 +536,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_pw.png);
+    background-image: url(../imgs/login/login_pw.png);
   }
   main article form label:nth-of-type(4) {
     padding: 1rem;
@@ -927,11 +720,6 @@ input::-webkit-search-results-decoration {
     margin-bottom: 2%;
     border-radius: 10px;
   }
-  main article form label:nth-of-type(1) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.775rem;
-    font-family: "NotoSansKR-Light";
-  }
   main article form label:nth-of-type(1) input::placeholder {
     color: #9988ff;
     font-size: 0.775rem;
@@ -944,7 +732,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_id.png);
+    background-image: url(../imgs/login/login_id.png);
   }
   main article form label:nth-of-type(2) {
     display: flex;
@@ -953,11 +741,6 @@ input::-webkit-search-results-decoration {
     padding: 0.8rem;
     margin-bottom: 2%;
     border-radius: 10px;
-  }
-  main article form label:nth-of-type(2) input::-moz-placeholder {
-    color: #9988ff;
-    font-size: 0.775rem;
-    font-family: "NotoSansKR-Light";
   }
   main article form label:nth-of-type(2) input::placeholder {
     color: #9988ff;
@@ -971,7 +754,7 @@ input::-webkit-search-results-decoration {
     height: 1.25rem;
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-image: url(../imgs/page/login/login_pw.png);
+    background-image: url(../imgs/login/login_pw.png);
   }
   main article form label:nth-of-type(4) {
     padding: 0.8rem;

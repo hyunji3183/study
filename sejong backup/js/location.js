@@ -253,15 +253,4 @@ function kakaoMap() {
 }
 
 
-kakaoMap();
 
-
-
-
-
-
-// const $topBtn = document.querySelector("aside div");
-
-// $topBtn.onclick = () => {
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-// }

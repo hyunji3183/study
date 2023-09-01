@@ -6,6 +6,15 @@ main {
   justify-content: center;
   align-items: center;
 }
+main .group {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 0.8s;
+}
+main .group.mem {
+  opacity: 1;
+  transform: translateY(0%);
+}
 main .bg {
   background: url("../imgs/event/Event_banner.png");
   background-repeat: no-repeat;

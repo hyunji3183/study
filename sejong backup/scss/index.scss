@@ -1,15 +1,22 @@
-
-
 main {
     overflow: hidden;
     width: 100%;
     background-image: url(../imgs/메인/대관공고img.png);
     background-repeat: no-repeat;
     background-position: bottom center;
+    .group{
+        opacity: 0;
+        transform: translateY(30%);
+        transition: 0.8s;
+    }
+    .group.mem{
+        opacity: 1;
+        transform: translateY(0%);
+    }
     .main-inner {
         .banner {
             position: relative;
-            top: 0;
+            top: 92px;
 
             .mySwiper {
                 width: 100%;
@@ -67,31 +74,32 @@ main {
                     cursor: pointer;
                     z-index: 1;
                     transition: 1s;
-                    animation: thumb1 1.5s forwards;
+                    // animation: thumb1 1.5s forwards;
 
                     &:hover {
-                        animation: thumb2 1s forwards;
+                        // animation: thumb2 1s forwards;
+                        bottom:0.1%;
                     }
 
-                    @keyframes thumb1 {
-                        0% {
-                            bottom: 0%;
-                        }
+                    // @keyframes thumb1 {
+                    //     0% {
+                    //         bottom: 0%;
+                    //     }
 
-                        100% {
-                            bottom: -26%;
-                        }
-                    }
+                    //     100% {
+                    //         bottom: -26%;
+                    //     }
+                    // }
 
-                    @keyframes thumb2 {
-                        0% {
-                            bottom: -26%;
-                        }
+                    // @keyframes thumb2 {
+                    //     0% {
+                    //         bottom: -26%;
+                    //     }
 
-                        100% {
-                            bottom: 0%;
-                        }
-                    }
+                    //     100% {
+                    //         bottom: 0%;
+                    //     }
+                    // }
 
                     .open_arrow {
                         text-align: center;
@@ -139,7 +147,9 @@ main {
                 position: absolute;
                 left: 0;
                 bottom: -7%;
-
+                &:hover {
+                    cursor: pointer;
+                }
                 .search_box {
                     width: 80%;
                     margin: 0 auto;
@@ -157,16 +167,21 @@ main {
                         align-items: center;
                         justify-content: space-between;
 
-                        p {
-                            display: inline-block;
-                            color: #9988ff;
-                            font-family: "NotoSansKR-Medium";
+                        input {
+                            &::placeholder {
+                                display: inline-block;
+                                color: #9988ff;
+                                font-family: "NotoSansKR-Medium";
+                            }
                         }
 
                         span {
                             width: 10%;
                             text-align: center;
                             color: #818181;
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
 
@@ -182,10 +197,12 @@ main {
                         align-items: center;
                         justify-content: space-between;
 
-                        p {
-                            display: inline-block;
-                            color: #9988ff;
-                            font-family: "NotoSansKR-Medium";
+                        input {
+                            &::placeholder {
+                                display: inline-block;
+                                color: #9988ff;
+                                font-family: "NotoSansKR-Medium";
+                            }
                         }
 
                         span {
@@ -193,9 +210,16 @@ main {
                             text-align: center;
                             font-size: 26px;
                             font-weight: bold;
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
+            }
+            .search-popup{
+                width: 1214.220px;
+                height: 819.549px;
             }
         }
 
@@ -203,7 +227,7 @@ main {
             width: 100%;
             max-width: 1500px;
             margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 145px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -478,11 +502,11 @@ main {
                         width: 159px;
                         &.active {
                             width: 701px !important;
-                            img{
+                            img {
                                 width: 100%;
                                 max-width: none !important;
                             }
-                            .se-box-con{
+                            .se-box-con {
                                 display: block;
                             }
                         }
@@ -529,7 +553,7 @@ main {
                                 }
                             }
                         }
-                        &:nth-of-type(1){
+                        &:nth-of-type(1) {
                             width: 159px;
                         }
                     }
@@ -1035,7 +1059,7 @@ main {
                         line-height: 160%;
                         width: 95%;
                         font-size: 16px;
-                        font-family: "NotoSansKR-Regular";
+                        font-family: "NotoSansKR-Regula";
                         white-space: normal;
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
@@ -1047,7 +1071,6 @@ main {
         }
     }
 }
-
 
 @import "./sub/media";
 @import "./reset";

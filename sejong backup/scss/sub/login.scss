@@ -1,9 +1,16 @@
-@import "../reset";
-
 main {
     background-color: #f3f3f5;
     width: 100%;
     padding: 8rem 0;
+    .group{
+        opacity: 0;
+        transform: translateY(30%);
+        transition: 0.8s;
+    }
+    .group.mem{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 
     article {
         width: 34%;
@@ -92,7 +99,7 @@ main {
                         height: 1.25rem;
                         background-size: 20px 20px;
                         background-repeat: no-repeat;
-                        background-image: url(../imgs/page/login/login_id.png);
+                        background-image: url(../../imgs/login/login_id.png);
                     }
                 }
 
@@ -116,7 +123,7 @@ main {
                         height: 1.25rem;
                         background-size: 20px 20px;
                         background-repeat: no-repeat;
-                        background-image: url(../imgs/page/login/login_pw.png);
+                        background-image: url(../../imgs/login/login_pw.png);
                     }
                 }
 

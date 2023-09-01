@@ -4,6 +4,15 @@ main {
   padding: 20px 111px;
   margin: 0 auto;
 }
+main .group {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 0.8s;
+}
+main .group.mem {
+  opacity: 1;
+  transform: translateY(0%);
+}
 main .title {
   padding-bottom: 100px;
   display: flex;

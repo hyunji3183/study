@@ -6,8 +6,17 @@ main {
   align-items: center;
   flex-direction: column;
 }
+main .group {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 0.8s;
+}
+main .group.mem {
+  opacity: 1;
+  transform: translateY(0%);
+}
 main .bg {
-  width: 1920px;
+  width: 100%;
   height: 650px;
   background: url("../imgs/season/Season_banner.png");
   display: flex;
@@ -31,7 +40,7 @@ main .bg p {
   display: none;
 }
 main .Season_content {
-  width: 1920px;
+  width: 100%;
 }
 main .Season_content ul {
   display: flex;

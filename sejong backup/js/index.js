@@ -101,4 +101,19 @@ function sejonswiper() {
         },
     });
 }
-sejonswiper()
+sejonswiper();
+
+// 20230828 추가
+window.onload=function(){
+    addMetaTagToIndexPage();
+};
+
+function addMetaTagToIndexPage(){
+    const mediaQueryList = window.matchMedia('screen and (max-width:640px)');   
+    let $meta = document.querySelector('meta[name=viewport]');
+    if(mediaQueryList.matches) $meta.content = "width=320, initial-scale=0.5, user-scalable=no";
+    else $meta.content = "width=device-width, initial-scale=1.0";
+    $meta.parentElement.prepend($meta);
+}
+
+
