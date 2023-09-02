@@ -1,4 +1,4 @@
-import {createContext, useReducer,useState} from 'react'
+import {createContext,useState} from 'react'
 import {themoviedb} from './comp/instans'
 export const MyContext = createContext();
 
