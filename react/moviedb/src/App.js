@@ -1,7 +1,9 @@
 import './App.css';
 import { HashRouter, Route, Routes, Link } from 'react-router-dom';
 import Context from './Context';
-import List from './comp/List';
+import List from './comp/List.js'
+import Item from './comp/Item';
+import Home from './comp/Home';
 
 function App() {
   return (
@@ -10,13 +12,15 @@ function App() {
         <header>
           <nav>
             <Link to="/">Home</Link>
-            <Link to="/List">list</Link>
+            <Link to="/List">movie</Link>
+            <Link to="/Item">TV</Link>
           </nav>
         </header>
         <main>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/List" element={<List />} />
-            {/* <Route path="/modify" element={<Modify/>}/> */}
+            <Route path="/Item" element={<Item />} />
           </Routes>
         </main>
       </HashRouter>
