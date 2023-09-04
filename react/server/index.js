@@ -33,7 +33,7 @@ app.post('/insert', function (req, res) {
 
 
 
-app.listen(3030)
+app.listen(3000)
 
 //server terminal
 //npm init -y (노드환경구축)
