@@ -1,37 +1,81 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useEffect, useState } from 'react';
 import axios from 'axios'
 
-function App() {
-    axios.get('http://localhost:3030/json?id=500')
-        .then(res => {
-            console.log(res);
-        })
 
+function List({ data, setData }) {
 
-    axios.post('http://localhost:3030/insert',{id:1100,name:'new'})
-        
+    const remove = (id) => {
+        console.log(`${process.env.REACT_APP_SERVER}/abc/${id}`);
 
+        axios.delete(`${process.env.REACT_APP_SERVER}/abc/${id}`)
+            .then(res => {
+                setData(res.data)
+            })
+    }
 
-
-
-    
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <>
+            {
+                data.map(obj => (
+                    <li key={obj.id}>
+                        {obj.msg}
+                        <button onClick={() => { remove(obj.id) }}>삭제</button>
+                    </li>
+                ))
+            }
+
+        </>
+    )
+}
+
+function Write({ setData }) {
+    const insert = (e) => {
+        e.preventDefault();
+
+        let msg = e.target.msg.value;
+        axios.post(`${process.env.REACT_APP_SERVER}/insert`, { msg })
+            .then(res => {
+                setData(res.data)
+            })
+    }
+
+
+    return (
+        <div>
+            <form onSubmit={insert}>
+                <input type="text" name="msg" />
+                <input type="submit" value="저장" />
+            </form>
+        </div>
+    );
+}
+
+function App() {
+    const [data, setData] = useState([]);
+
+    const getData = () => {
+        axios.get(`${process.env.REACT_APP_SERVER}/abc`)
+            .then(res => {
+                setData(res.data);
+            });
+    }
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+
+
+
+    return (
+        <div>
+            <h2>한줄댓글(7)</h2>
+            <Write setData={setData} />
+
+            <ul>
+                <List data={data} setData={setData} />
+            </ul>
         </div>
     );
 }
