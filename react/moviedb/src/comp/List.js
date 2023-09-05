@@ -1,11 +1,13 @@
 import React from 'react'
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
-function List() {
+function Popular() {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
 
-    useEffect(() => {    
+    useEffect(() => {
         axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=f89a6c1f22aca3858a4ae7aef10de967')
             .then(res => {
                 console.log(res.data.results)
@@ -15,13 +17,13 @@ function List() {
     const base_url = "https://image.tmdb.org/t/p/original";
 
     return (
-        <>
-            <h2>top_rated_movie</h2>
+        <div className='contents'>
+            <h2>movie_Top rated</h2>
             <ul>
                 {data && data.map((item) => (
                     <li key={item.objectID}>
-                        <figure>
-                            <img src={`${base_url}${item.poster_path}`}/>
+                        <figure onClick={() => { navigate(`/detail/${item.id}`) }}>
+                            <img src={`${base_url}${item.poster_path}`} />
                             <figcaption>
                                 <p>{item.title}</p>
                             </figcaption>
@@ -29,8 +31,8 @@ function List() {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     )
 }
 
-export default List
+export default Popular

@@ -8,7 +8,7 @@ function Popular() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('https://api.themoviedb.org/3/tv/popular?api_key=f89a6c1f22aca3858a4ae7aef10de967')
+        axios.get('https://api.themoviedb.org/3/movie/popular?api_key=f89a6c1f22aca3858a4ae7aef10de967')
             .then(res => {
                 console.log(res.data.results)
                 setData(res.data.results)
@@ -18,7 +18,7 @@ function Popular() {
 
     return (
         <div className='contents'>
-            <h2>TV_popular</h2>
+            <h2>movie_popular</h2>
             <ul>
                 {data && data.map((item) => (
                     <li key={item.objectID}>
