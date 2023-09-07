@@ -1,45 +1,218 @@
-body{background-color: black;
-width: 100%;}
-*{
+@font-face {
+  src: url("../../../../git_team_project/sejongpac/font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
+  font-family: "NotoSansKR-Medium";
+}
+
+
+body {
+  background-color: black;
+  width: 100%;
+}
+
+* {
   color: white;
   list-style-type: none;
   text-decoration: none;
+  font-family: "NotoSansKR-Medium";
+  font-weight: bold;
 }
 
-header{
-  width: 80%;
+header {
+  width: 90%;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+header h1 {
+  width: 10%;
+  font-size: 3rem;
+}
+
+header nav {
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header h1{
-width: 10%;
-font-size: 3rem;
-}
-header nav{
-}
-header nav a{
-  font-size: 30px;
+
+header nav a {
+  font-size: 20px;
   padding: 0 1rem;
+  border: 4px solid white;
+  border-radius: 30px;
+  transition: 0.5s;
 }
-.contents{
+
+header nav a:hover {
+  color: red;
+  border: 4px solid red;
+}
+
+.searching {
+  text-align: center;
+  width: 80%;
+  height: 100vh;
+  margin: 20vh auto 0;
+
+}
+
+.searching b {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#txt {
+  border: 0;
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: black;
+  margin-right: 16px;
+  width: 30%;
+}
+
+#search {
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: black;
+}
+form{display: flex;
+  align-items: center;
+  justify-content: center;
+width: 100%;}
+form div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 10%;
+}
+
+.contents {
   width: 80%;
   margin: 0 auto;
+  padding: 2rem 0;
 }
-h2{width: 95%;
-margin: 20px auto;}
-ul{display: flex;
+
+h2 {
+  width: 95%;
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+ul {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
 }
-ul li{width: 20%;
-  display: inline-block;}
-ul li figure{}
-ul li figure img{ width: 100%;}
-ul li figure figcaption{}
-ul li figure figcaption p{font-size: 20px;}
+
+ul li {
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul li figure:hover img {
+  transform: translateY(-20px);
+}
+
+ul li figure:hover p {
+  transition: 0.3s;
+  color: red;
+}
+
+
+ul li figure {
+  display: flex;
+  flex-direction: column
+}
+
+ul li figure img {
+  width: 80%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+ul li figure figcaption {
+  width: 100%;
+  height: 80px;
+}
+
+ul li figure figcaption p {
+  font-size: 20px;
+}
+
+.visual {
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+
+.mySwiper {}
+
+.visualSlide {
+  width: 100%;
+  height: 900px;
+}
+
+.movie-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visualSlide p {}
+
+.left {
+  width: 30%;
+}
+
+.left h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.left p {
+  padding-bottom: 2rem;
+}
+
+.left button {
+  background-color: transparent;
+  border: 4px solid white;
+  border-radius: 40px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.left button:hover {
+  border: 4px solid red;
+  color: red;
+}
+
+.right {
+  width: 40%;
+
+}
+
+.right p {
+  padding: 18% 0 12%;
+}
+
+.right p img {
+  width: 50%;
+  border-radius: 20px;
+}

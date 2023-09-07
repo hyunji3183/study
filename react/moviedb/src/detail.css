@@ -5,13 +5,14 @@ body {
 
 .div {
     width: 100%;
+    
 }
 
 .figure {
-    background-color: rgba(240, 248, 255,0.5);
+    background-color: rgba(240, 248, 255, 0.5);
     width: 60%;
-    height: 60vh;
-    margin: 3rem auto;
+    height: 50vh;
+    margin: 14rem auto;
     padding: 0 3rem;
     display: flex;
     align-items: center;
@@ -24,13 +25,19 @@ body {
     border-radius: 20px;
 }
 
-.figcaption { width: 70%;}
+.figcaption {
+    width: 70%;
+}
 
 .h2 {
     font-size: 36px;
     margin: 0;
 }
 
-.p {padding-left: 1rem;}
+.p {
+    padding-left: 1rem;
+}
 
-.span {padding-left: 1rem;}
+.span {
+    padding-left: 1rem;
+}
