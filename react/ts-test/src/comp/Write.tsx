@@ -15,7 +15,7 @@ const Write = (props: Props) => {
     const [community, setcommunity] = useState<ts_msg[]>([]);
 
     console.log(community);
-    
+
     const insert = (e: React.FocusEvent<HTMLFormElement>): void => {
         e.preventDefault();
         if (msgForm.current) {
@@ -23,7 +23,7 @@ const Write = (props: Props) => {
             let idx: number = Date.now()
             formdata.append('id', idx.toString())
             let obj: ts_msg = Object.fromEntries(formdata)
-            setcommunity([...community,obj])
+            setcommunity([...community, obj])
         }
     }
     return (

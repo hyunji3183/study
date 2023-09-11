@@ -1,0 +1,114 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.home {
+  width: 50%;
+  margin: 0 auto;
+  background-color: lemonchiffon;
+  text-align: center;
+  padding: 1rem;
+}
+
+.home h2 {
+  color: black;
+}
+.home img{
+  width: 16%;
+  padding: 3rem 0;
+}
+
+.home nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home nav a {
+  width: 30%;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.list {
+  width: 50%;
+  margin: 0 auto;
+  background-color: lemonchiffon;
+  text-align: center;
+  padding: 1rem;
+}
+
+.list h3 {
+  font-size: 30px;
+}
+
+.list p {background-color: rgb(255, 166, 0);
+color: white;
+padding: 1rem 0;
+font-size: 20px;}
+
+.list span {}
+
+.list ul {padding: 0.5rem 1rem;}
+
+.list li {text-align: left;
+padding: 1rem ;
+background-color: white;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 1rem 0;}
+
+.list li span{
+  font-weight: bold;
+  text-align: center;
+  width: 45%;
+  padding: 0.3rem; background-color: lemonchiffon;
+  border-radius: 10px;
+  border: 1px dotted gray;
+  
+}
+
+
+
+
+
+.new {
+  width: 50%;
+  margin: 0 auto;
+  background-color: lemonchiffon;
+  text-align: center;
+  padding: 1rem;
+}
+
+.new h3 {
+  font-size: 30px;
+}
+
+.new p {background-color: rgb(255, 166, 0);
+  color: white;
+  padding: 1rem 0;
+  font-size: 20px;}
+
+.new span {}
+
+.new input{padding: 0.5rem 1rem;
+  margin: 1rem auto;
+display: flex;
+flex-wrap: wrap;
+border-radius: 10px;}
+
+
+
+
