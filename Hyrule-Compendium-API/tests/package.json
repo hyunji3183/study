@@ -1,0 +1,36 @@
+{
+  "name": "hyrule-compendium-api",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"> <img src=\"https://static.wikia.nocookie.net/characterprofile/images/c/c8/BotW_Link.png/revision/latest/scale-to-width-down/340?cb=20170306180639\" length=10% width=10%> </p> <h1 align=\"center\">Hyrule Compendium API</h1> <p align=\"center\"><b>An API serving data on all creatures, monsters, materials, equipment, and treasure in <i>The Legend of Zelda: Breath of the Wild</i>.</b><br> <sub>By <a href=\"https://github.com/gadhagod\">Aarav Borthakur</a></sub></p>",
+  "main": "test/api.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha",
+    "test:v3": "npx mocha -g v3",
+    "test:v2": "npx mocha -g v2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadhagod/Hyrule-Compendium-API.git"
+  },
+  "author": "Aarav Borthakur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gadhagod/Hyrule-Compendium-API/issues"
+  },
+  "homepage": "https://github.com/gadhagod/Hyrule-Compendium-API#readme",
+  "dependencies": {
+    "mocha": "^8.4.0",
+    "request": "^2.88.2",
+    "validate-image-type": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.38",
+    "@types/request": "^2.48.8",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.2"
+  }
+}

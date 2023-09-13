@@ -1,0 +1,21 @@
+# python
+bin
+lib 
+pyvenv.cfg
+include
+__pycache__
+
+# vscode
+.vscode/settings.json
+
+# tests
+out
+node_modules
+dist
+.img
+
+# previous versions
+v2
+
+# venv
+venv
