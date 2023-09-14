@@ -1,17 +1,185 @@
-@import url('./_reset.scss');
+@import url("./_reset.scss");
 
 body {
-    background: url(./background_image.jpeg)
-};
-
-header {
-    .head {
+    background: url(./background_image.jpeg);
+    width: 100%;
+}
+.intro {
+    position: relative;
+    video {
+        display: inline-block;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    .logo {
+        position: absolute;
+        left: 0; bottom: 16%;
         p {
-            img {}
+            width: 80%;
+            display: inline-block;
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+header {
+    width: 100%;
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        a {
+            width: 7%;
+            text-align: center;
+            img {
+            }
+        }
+        .heart {
+            display: none;
         }
         h2 {
+            width: 16%;
+            color: #e0ceaa;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.875rem;
             font-family: "font_zelda";
-            color: white;
+            font-weight: 00;
+        }
+    }
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    aside {
+        width: 10%;
+        position: sticky;
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        .category {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+            a {
+                width: 100%;
+                margin-bottom: 1rem;
+                img {
+                    width: 100%;
+                    &:hover {
+                        box-shadow: (0px 0px 7px 6px rgba(1, 242, 255, 0.5));
+                    }
+                }
+            }
+        }
+        .toggle {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            > div {
+                background-color: #332624;
+                text-align: center;
+                padding: 1rem 0;
+                a {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 0.8rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            a {
+                padding: 1rem 0.3rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .list {
+        width: 90%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #332624;
+            padding: 2rem;
+            li {
+                width: 45%;
+                padding: 1rem 0;
+                figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    a {
+                        width: 48%;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    figcaption {
+                        width: 46%;
+                        color: #e0ceaa;
+
+                        b {
+                            font-family: "dreamgotic";
+                            font-weight: 500;
+                            font-size: 1.375rem;
+                        }
+                        p {
+                            font-family: "font_zelda";
+                            font-weight: 200;
+                            font-size: 1.125rem;
+                            padding: 0.3rem 0 1rem;
+                        }
+                        span {
+                            font-family: "font_zelda";
+                            font-weight: 200;
+                            font-size: 1.325rem;
+                            color: #84a1c8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .search {
+        width: 90%;
+        .search_area {
+            form {
+                input {
+                }
+            }
+            div {
+                .searchbar {
+                    img {
+                    }
+                }
+                .searchbtn {
+                    img {
+                    }
+                }
+            }
         }
     }
 }

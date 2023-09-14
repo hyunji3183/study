@@ -1,0 +1,167 @@
+@import url("./_reset.scss");
+body {
+  background: url(./background_image.jpeg);
+  width: 100%;
+}
+
+.intro {
+  position: relative;
+}
+.intro video {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.intro .logo {
+  position: absolute;
+  left: 0;
+  bottom: 16%;
+}
+.intro .logo p {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+.intro .logo p img {
+  width: 50%;
+}
+
+header {
+  width: 100%;
+}
+header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+header .head a {
+  width: 7%;
+  text-align: center;
+}
+header .head .heart {
+  display: none;
+}
+header .head h2 {
+  width: 16%;
+  color: #e0ceaa;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-family: "font_zelda";
+  font-weight: 0;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+main aside {
+  width: 10%;
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+main aside .category {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+main aside .category a {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+main aside .category a img {
+  width: 100%;
+}
+main aside .category a img:hover {
+  box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
+}
+main aside .toggle {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main aside .toggle > div {
+  background-color: #332624;
+  text-align: center;
+  padding: 1rem 0;
+}
+main aside .toggle > div a {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+main aside .toggle > div a img {
+  width: 100%;
+}
+main aside .toggle a {
+  padding: 1rem 0.3rem;
+}
+main aside .toggle a img {
+  width: 100%;
+}
+main .list {
+  width: 90%;
+}
+main .list ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #332624;
+  padding: 2rem;
+}
+main .list ul li {
+  width: 45%;
+  padding: 1rem 0;
+}
+main .list ul li figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .list ul li figure a {
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .list ul li figure a img {
+  width: 100%;
+}
+main .list ul li figure figcaption {
+  width: 46%;
+  color: #e0ceaa;
+}
+main .list ul li figure figcaption b {
+  font-family: "dreamgotic";
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+main .list ul li figure figcaption p {
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 1.125rem;
+  padding: 0.3rem 0 1rem;
+}
+main .list ul li figure figcaption span {
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 1.325rem;
+  color: #84a1c8;
+}
+main .search {
+  width: 90%;
+}

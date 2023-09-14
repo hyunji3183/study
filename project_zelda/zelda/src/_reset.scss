@@ -14,6 +14,7 @@ body{width: 100%;}
 a{
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 img,video{
@@ -51,32 +52,32 @@ input::-webkit-search-results-decoration{
 @font-face {
   src: url("./font/a드림고딕1.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 100;
 }
 @font-face {
   src: url("./font/a드림고딕2.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 200;
 }
 @font-face {
   src: url("./font/a드림고딕3.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 300;
 }
 @font-face {
   src: url("./font/a드림고딕4.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 400;
 }
 @font-face {
   src: url("./font/a드림고딕5.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 500;
 }
 @font-face {
   src: url("./font/a드림고딕6.otf") format("truetype");
   font-family: "dreamgotic";
-  font-weight: 700;
+  font-weight: 600;
 }
 @font-face {
   src: url("./font/a드림고딕7.otf") format("truetype");
@@ -86,4 +87,5 @@ input::-webkit-search-results-decoration{
 @font-face {
   src: url("./font/The_Wild_Breath_of_Zelda.otf") format("truetype");
   font-family: "font_zelda";
+  font-weight: 200;
 }
