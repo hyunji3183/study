@@ -24,7 +24,7 @@ export default function Main() {
             const difference = startX - endX;
             if (difference > 50) {
                 // 스와이프 왼쪽으로 밀면 다른 페이지로 이동
-                history('/creatures');
+                history('/Home');
             }
         }
         setStartX(null);

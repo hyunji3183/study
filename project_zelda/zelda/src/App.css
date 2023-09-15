@@ -114,6 +114,18 @@ main aside .toggle a {
 main aside .toggle a img {
   width: 100%;
 }
+main .home {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .home b {
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: #e0ceaa;
+}
 main .list {
   width: 90%;
 }
@@ -164,4 +176,90 @@ main .list ul li figure figcaption span {
 }
 main .search {
   width: 90%;
+}
+main .search .search_area {
+  display: flex;
+  align-items: flex-end;
+}
+main .search .search_area .searchbar form {
+  transform: translateY(50%);
+  padding-left: 1rem;
+}
+main .search .search_area .searchbar form input {
+  width: 100%;
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 30px;
+  color: #e0ceaa;
+}
+main .search .search_data ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+main .search .search_data ul li {
+  width: 25%;
+  padding: 1rem 0 0;
+}
+main .search .search_data ul li figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .search .search_data ul li figure a {
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .search .search_data ul li figure a img {
+  width: 100%;
+}
+main .search .search_data ul li figure figcaption {
+  color: #e0ceaa;
+  width: 80%;
+  text-align: center;
+}
+main .search .search_data ul li figure figcaption p {
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+}
+main .favorite {
+  width: 90%;
+}
+main .favorite .favorite_data ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+main .favorite .favorite_data ul li {
+  width: 25%;
+  padding: 1rem 0 0;
+}
+main .favorite .favorite_data ul li figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .favorite .favorite_data ul li figure a {
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .favorite .favorite_data ul li figure a img {
+  width: 100%;
+}
+main .favorite .favorite_data ul li figure figcaption {
+  color: #e0ceaa;
+  width: 80%;
+  text-align: center;
+}
+main .favorite .favorite_data ul li figure figcaption p {
+  font-family: "font_zelda";
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
 }

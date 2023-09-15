@@ -3,35 +3,80 @@ import truffle from '../img/big_hearty_truffle.png';
 import searchbar from '../img/search_bar.png'
 import searchbtn from '../img/search_button.png'
 
-
-
 import '../App.css';
+import Header from '../Header';
+import Aside from '../Aside';
 
 function Search() {
     return (
         <>
-            <div className="search">
-                <div className='search_area'>
-                    <form>
-                        <input></input>
-                    </form>
-                    <div>
-                        <p className='searchbar'><img src={searchbar}></img></p>
-                        <p className='searchbtn'><img src={searchbtn}></img></p>
+            <Header />
+            <main>
+                <Aside />
+                <div className="search">
+                    <div className='search_area'>
+                        <p className='searchbar'>
+                            <form>
+                                <input type='text' name='text'></input>
+                            </form>
+                            <img src={searchbar} /></p>
+                        <p className='searchbtn'><img src={searchbtn} /></p>
+                    </div>
+                    <div className='search_data'>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>rare ore deposit</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>big hearty truffle</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>big hearty truffle</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>big hearty truffle</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>big hearty truffle</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a><img src={truffle} /></a>
+                                    <figcaption>
+                                        <p>big hearty truffle</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-                <ul className='search_data'>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>장비페이지입니당</b>
-                                <p>big hearty truffle</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
+            </main>
         </>
     )
 }
