@@ -1,116 +1,41 @@
-import truffle from '../img/big_hearty_truffle.png';
-
 import '../App.css';
 import Header from '../Header';
 import Aside from '../Aside';
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 
 function Monsters() {
+    const bodys = document.querySelector('body')
+    bodys.classList.remove('detail')
+    const [data, setData] = useState([]);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        axios.get('./db/botw/data/compendium/monsters.json')
+            .then(res => {
+                setData(res.data)
+                console.log(res.data);
+            })
+    }, []);
     return (<>
         <Header />
         <main>
             <Aside/>
             <div className="list">
                 <ul>
-                    <li>
+                    {data && data.map((item) => (
+                    <li key={item.objectID}>
                         <figure>
-                            <a><img src={truffle} /></a>
+                            <a><img src={item.image} /></a>
                             <figcaption>
-                                <b>몬스터페이지입니당</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
+                                <b>{item.name}</b>
+                                <p>{item.name}</p>
+                                <span>{item.id}</span>
                             </figcaption>
                         </figure>
                     </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a><img src={truffle} /></a>
-                            <figcaption>
-                                <b>큰맥스트러플</b>
-                                <p>big hearty truffle</p>
-                                <span>178</span>
-                            </figcaption>
-                        </figure>
-                    </li>
+                    ))}
                 </ul>
             </div>
         </main>

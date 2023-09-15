@@ -25,6 +25,7 @@ import Equipment from './comp/Equipment';
 import Treasure from './comp/Treasure';
 import Favorite from './comp/Favorite';
 import Search from './comp/Search';
+import Detail from './comp/Detail';
 
 const App = () => {
     return (
@@ -40,6 +41,7 @@ const App = () => {
                         <Route path="/Treasure" element={<Treasure />} />
                         <Route path="/Favorite" element={<Favorite />} />
                         <Route path="/Search" element={<Search />} />
+                        <Route path="/Detail/:param" element={<Detail />} />
                     </Routes>
             </BrowserRouter>
         </>

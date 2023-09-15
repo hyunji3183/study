@@ -8,6 +8,8 @@ import Header from '../Header';
 import Aside from '../Aside';
 
 function Search() {
+    const bodys = document.querySelector('body')
+    bodys.classList.remove('detail')
     return (
         <>
             <Header />
