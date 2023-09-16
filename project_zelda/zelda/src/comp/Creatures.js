@@ -25,16 +25,18 @@ function Creatures() {
             <div className="list">
                 <ul>
                     {data && data.map((item) => (
-                    <li key={item.objectID}>
-                        <figure onClick={() => { navigate(`/detail/Creatures-${item.id}`)}}>
-                            <a><img src={item.image} /></a>
-                            <figcaption>
-                                <b>{item.name}</b>
-                                <p>{item.name}</p>
-                                <span>{item.id}</span>
-                            </figcaption>
-                        </figure>
-                    </li>
+                        <li key={item.objectID}>
+                            <figure onClick={() => { navigate(`/detail/Creatures-${item.id}`) }}>
+                                <a>
+                                    <img src={item.image} />
+                                    <span>NO. {item.id}</span>
+                                </a>
+                                <figcaption>
+                                    <b>{item.name}</b>
+                                    <p>{item.name}</p>
+                                </figcaption>
+                            </figure>
+                        </li>
                     ))}
                 </ul>
             </div>

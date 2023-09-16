@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import creatures from './img/icon_1.png';
 import monsters from './img/icon_2.png';
 import materials from './img/icon_3.png';
@@ -11,22 +11,45 @@ import triforce from './img/icon_triforce.png';
 import { Link } from 'react-router-dom';
 
 function Aside() {
+    const togglemenu = document.querySelector('.menu')
+    const toggle = () => {
+        togglemenu.classList.toggle('on')
+    }
+
+
+    const click_back = () => {
+        const categoryBtn = document.querySelectorAll('.category a');
+        let num = 0;
+
+        categoryBtn.forEach(function (ele, key) {
+            ele.onclick = function () {
+                this.classList.toggle('active');
+                if (num != key) {
+                    categoryBtn[num].classList.remove('active');
+                }
+                num = key;
+            }
+        })        
+    }
+
+
+
     return (
         <aside>
             <div className="category">
-                <Link to="/Creatures"><img src={creatures} alt="" /></Link>
-                <Link to="/monsters"><img src={monsters} alt="" /></Link>
-                <Link to="/materials"><img src={materials} alt="" /></Link>
-                <Link to="/equipment"><img src={equipmentd} alt="" /></Link>
-                <Link to="/treasure"><img src={treasure} alt="" /></Link>
+                <Link to="/Creatures" ><img src={creatures} alt="" onClick={click_back} /></Link>
+                <Link to="/monsters"><img src={monsters} alt="" onClick={click_back} /></Link>
+                <Link to="/materials"><img src={materials} alt="" onClick={click_back} /></Link>
+                <Link to="/equipment"><img src={equipmentd} alt="" onClick={click_back} /></Link>
+                <Link to="/treasure"><img src={treasure} alt="" onClick={click_back} /></Link>
             </div>
             <div className="toggle">
-                <div>
+                <div className='menu'>
                     <Link to="/Favorite"><img src={favorite} alt="" /></Link>
                     <a><img src={sort} alt="" /></a>
                     <Link to="/Search"><img src={search} alt="" /></Link>
                 </div>
-                <a><img src={triforce} alt="" /></a>
+                <a onClick={toggle}><img src={triforce} alt="" /></a>
             </div>
         </aside>
     )

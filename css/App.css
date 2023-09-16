@@ -45,9 +45,6 @@ header .head a {
   width: 7%;
   text-align: center;
 }
-header .head a img {
-  width: 50%;
-}
 header .head .heart {
   display: none;
 }
@@ -63,15 +60,16 @@ header .head h2 {
 
 main {
   width: 90%;
-  height: fit-content;
   margin: 0 auto;
   display: flex;
 }
 main aside {
-  height: fit-content;
   width: 10%;
   position: sticky;
-  top: 100px;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 main aside .category {
   width: 70%;
@@ -87,8 +85,7 @@ main aside .category a {
 main aside .category a img {
   width: 100%;
 }
-main aside .category a.active img {
-  width: 100%;
+main aside .category a img:hover {
   box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
 }
 main aside .toggle {
@@ -98,33 +95,17 @@ main aside .toggle {
   align-items: center;
   justify-content: space-between;
 }
-main aside .toggle .menu {
-  opacity: 0;
+main aside .toggle > div {
   background-color: #332624;
   text-align: center;
   padding: 1rem 0;
 }
-main aside .toggle .menu a {
+main aside .toggle > div a {
   width: 80%;
   margin: 0 auto;
   padding: 0.8rem;
 }
-main aside .toggle .menu a img {
-  width: 100%;
-}
-main aside .toggle .menu.on {
-  transition: 0.3s;
-  opacity: 1;
-  background-color: #332624;
-  text-align: center;
-  padding: 1rem 0;
-}
-main aside .toggle .menu.on a {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0.8rem;
-}
-main aside .toggle .menu.on a img {
+main aside .toggle > div a img {
   width: 100%;
 }
 main aside .toggle a {
@@ -161,7 +142,7 @@ main .list ul li {
 }
 main .list ul li figure {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 main .list ul li figure a {
@@ -175,16 +156,13 @@ main .list ul li figure a img {
 }
 main .list ul li figure a span {
   position: absolute;
-  left: 2%;
-  top: 2.5%;
+  left: 10%;
+  top: 10%;
   display: block;
   font-family: "font_zelda";
   font-weight: 200;
-  font-size: 1.125rem;
-  color: #FAF7F2;
-  background-color: #163156;
-  padding: 0.2rem 0.3rem;
-  border-radius: 10px;
+  font-size: 1.325rem;
+  color: #84a1c8;
 }
 main .list ul li figure figcaption {
   width: 46%;
@@ -199,7 +177,7 @@ main .list ul li figure figcaption p {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.125rem;
-  padding: 0.5rem 0 1rem;
+  padding: 0.3rem 0 1rem;
 }
 main .search {
   width: 90%;
@@ -289,4 +267,4 @@ main .favorite .favorite_data ul li figure figcaption p {
   font-weight: 200;
   font-size: 1.5rem;
   padding: 0.3rem 0;
-}
+}/*# sourceMappingURL=App.css.map */

@@ -27,11 +27,13 @@ function Materials() {
                     {data && data.map((item) => (
                     <li key={item.objectID}>
                         <figure>
-                            <a><img src={item.image} /></a>
+                            <a>
+                                <img src={item.image} />
+                                <span>NO. {item.id}</span>
+                            </a>
                             <figcaption>
                                 <b>{item.name}</b>
                                 <p>{item.name}</p>
-                                <span>{item.id}</span>
                             </figcaption>
                         </figure>
                     </li>
