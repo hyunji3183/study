@@ -10,7 +10,7 @@ import search from './img/search.png';
 import triforce from './img/icon_triforce.png';
 import { Link } from 'react-router-dom';
 
-function Aside() {
+function Aside({ onSortRequest }) {
     const toggle = () => {
         const togglemenu = document.querySelector('.menu')
         togglemenu.classList.toggle('on')
@@ -25,7 +25,7 @@ function Aside() {
         window.event.target.classList.toggle('active');
 
         // categoryBtn.forEach(function (ele, key) {
-       
+
         //         this.classList.toggle('active');
         //         if (num != key) {
         //             categoryBtn[num].classList.remove('active');
@@ -33,7 +33,12 @@ function Aside() {
         //         num = key;
         // })        
     }
+    const [isSorted, setIsSorted] = useState(false);
 
+    const toggleSort = () => {
+        setIsSorted(!isSorted); // Toggle the sorting state
+        onSortRequest(!isSorted); // Pass the updated sorting state to the parent component (Creatures)
+    };
 
     return (
         <aside>
@@ -47,7 +52,7 @@ function Aside() {
             <div className="toggle">
                 <div className='menu'>
                     <Link to="/Favorite"><img src={favorite} alt="" /></Link>
-                    <a><img src={sort} alt="" /></a>
+                    <a onClick={toggleSort}><img src={sort} alt="" /></a>
                     <Link to="/Search"><img src={search} alt="" /></Link>
                 </div>
                 <a onClick={toggle}><img src={triforce} alt="" /></a>

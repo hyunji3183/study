@@ -8,21 +8,31 @@ import axios from 'axios'
 function Creatures() {
     const bodys = document.querySelector('body')
     bodys.classList.remove('detail')
-    
+
     const [data, setData] = useState([]);
+    const [sortedData, setSortedData] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/creatures.json')
-            .then(res => {
-                setData(res.data)
-            })
+        axios.get('./db/botw/data/compendium/creatures.json').then((res) => {
+            setData(res.data);
+            setSortedData([...res.data]);
+        });
     }, []);
+
+    const sortDataAlphabetically = (isSorted) => {
+        // Sort the data based on the isSorted state
+        const sorted = isSorted
+            ? [...data].sort((a, b) => a.name.localeCompare(b.name))
+            : [...data];
+        setData(sorted);
+    };
+
 
     return (<>
         <Header />
         <main>
-            <Aside />
+            <Aside onSortRequest={sortDataAlphabetically} />
             <div className="list">
                 <ul>
                     {data && data.map((item) => (

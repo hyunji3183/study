@@ -24,7 +24,7 @@ function Detail() {
 
     const [data, setData] = useState([]);
     const [favorite, setFavorite] = useState();
-
+    const [isFavorite, setIsFavorite] = useState(false);
 
     const url = {
         Creatures: '../db/botw/data/compendium/Creatures.json',
