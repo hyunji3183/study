@@ -26,7 +26,7 @@ function Materials() {
                 <ul>
                     {data && data.map((item) => (
                     <li key={item.objectID}>
-                        <figure>
+                        <figure onClick={() => { navigate(`/detail/Materials-${item.id}`) }}>
                             <a>
                                 <img src={item.image} />
                                 <span>NO. {item.id}</span>

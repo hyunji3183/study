@@ -1,8 +1,8 @@
 @import url("./_reset.scss");
 body.detail {
   background-image: url(./background_image_detail.jpg);
-  width: 100%;
   background-repeat: no-repeat;
+  width: 100%;
 }
 body.detail header {
   width: 100%;
@@ -34,15 +34,6 @@ body.detail header .head h2 {
   font-family: "font_zelda";
   font-weight: 200;
 }
-body.detail header .head span {
-  width: 10%;
-  font-size: 2.125rem;
-  color: #818181;
-  text-align: left;
-}
-body.detail header .head span.active {
-  color: red;
-}
 body.detail .detail aside {
   width: 50%;
   margin: 0 auto;
@@ -63,7 +54,7 @@ body.detail .detail aside .category a img {
 body.detail .detail aside .category a img:hover {
   box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
 }
-body.detail .contents {
+body.detail .contentsD {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -71,129 +62,126 @@ body.detail .contents {
   justify-content: space-between;
   padding: 3rem 0;
 }
-body.detail .contents .left_contents .left_txt {
+body.detail .contentsD .left_contents .left_txt {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-bottom: 0.2rem;
 }
-body.detail .contents .left_contents .left_txt > p {
+body.detail .contentsD .left_contents .left_txt > p {
   color: #84a1c8;
   font-family: "font_zelda";
   font-weight: 200;
   text-transform: uppercase;
 }
-body.detail .contents .left_contents .left_txt .txt {
+body.detail .contentsD .left_contents .left_txt .txt {
   color: #e0ceaa;
   text-align: right;
 }
-body.detail .contents .left_contents .left_txt .txt p {
+body.detail .contentsD .left_contents .left_txt .txt p {
   font-family: "dreamgotic";
   font-weight: 500;
   font-size: 1.375rem;
 }
-body.detail .contents .left_contents .left_txt .txt span {
+body.detail .contentsD .left_contents .left_txt .txt span {
   font-family: "font_zelda";
   font-weight: 200;
 }
-body.detail .contents .left_contents > p {
+body.detail .contentsD .left_contents > p {
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
 }
-body.detail .contents .right_contents {
+body.detail .contentsD .right_contents {
   width: 55%;
   color: white;
-  display: inline-block;
+  display: none;
 }
-body.detail .contents .right_contents .place {
+body.detail .contentsD .right_contents .place {
   padding: 1rem 0 2rem;
 }
-body.detail .contents .right_contents .place .location {
+body.detail .contentsD .right_contents .place .location {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.detail .contents .right_contents .place .location span {
+body.detail .contentsD .right_contents .place .location span {
   color: #3cd3fc;
   font-size: 1.375rem;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents .place .place_data {
+body.detail .contentsD .right_contents .place .place_data {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-top: 0.5rem;
-  text-align: center;
 }
-body.detail .contents .right_contents .place .place_data span {
+body.detail .contentsD .right_contents .place .place_data span {
   padding: 0.3rem 0;
   width: 30%;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents .get_item {
+body.detail .contentsD .right_contents .get_item {
   padding-bottom: 2rem;
 }
-body.detail .contents .right_contents .get_item .item {
+body.detail .contentsD .right_contents .get_item .item {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.detail .contents .right_contents .get_item .item span {
+body.detail .contentsD .right_contents .get_item .item span {
   color: #3cd3fc;
   font-size: 1.375rem;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents .get_item .item_data {
+body.detail .contentsD .right_contents .get_item .item_data {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 0.5rem;
-  text-align: center;
 }
-body.detail .contents .right_contents .get_item .item_data span {
+body.detail .contentsD .right_contents .get_item .item_data span {
   padding: 0.3rem 0;
   width: 25%;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents .description {
+body.detail .contentsD .right_contents .description {
   padding: 0.8rem 0;
 }
-body.detail .contents .right_contents .description > p {
+body.detail .contentsD .right_contents .description > p {
   color: #e0ceaa;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents_Weapon {
+body.detail .contentsD .right_contents_Weapon {
   width: 55%;
   color: white;
-  display: none;
 }
-body.detail .contents .right_contents_Weapon .place {
+body.detail .contentsD .right_contents_Weapon .place {
   padding: 1rem 0 2rem;
 }
-body.detail .contents .right_contents_Weapon .place .location {
+body.detail .contentsD .right_contents_Weapon .place .location {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.detail .contents .right_contents_Weapon .place .location span {
+body.detail .contentsD .right_contents_Weapon .place .location span {
   color: #3cd3fc;
   font-size: 1.375rem;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents_Weapon .place .place_data {
+body.detail .contentsD .right_contents_Weapon .place .place_data {
   width: 100%;
   display: flex;
   align-items: center;
@@ -201,34 +189,34 @@ body.detail .contents .right_contents_Weapon .place .place_data {
   padding-top: 0.5rem;
   text-align: center;
 }
-body.detail .contents .right_contents_Weapon .place .place_data span {
+body.detail .contentsD .right_contents_Weapon .place .place_data span {
   padding: 0.3rem 0;
   width: 30%;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents_Weapon .get_item {
+body.detail .contentsD .right_contents_Weapon .get_item {
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.detail .contents .right_contents_Weapon .get_item .item_stats {
+body.detail .contentsD .right_contents_Weapon .get_item .item_stats {
   width: 100%;
 }
-body.detail .contents .right_contents_Weapon .get_item .item_stats .item {
+body.detail .contentsD .right_contents_Weapon .get_item .item_stats .item {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.detail .contents .right_contents_Weapon .get_item .item_stats .item span {
+body.detail .contentsD .right_contents_Weapon .get_item .item_stats .item span {
   color: #3cd3fc;
   font-size: 1.375rem;
   font-family: "dreamgotic";
   font-weight: 500;
 }
-body.detail .contents .right_contents_Weapon .get_item .item_stats .item_data {
+body.detail .contentsD .right_contents_Weapon .get_item .item_stats .item_data {
   width: 100%;
   display: flex;
   align-items: center;
@@ -237,17 +225,17 @@ body.detail .contents .right_contents_Weapon .get_item .item_stats .item_data {
   padding-top: 0.5rem;
   text-align: center;
 }
-body.detail .contents .right_contents_Weapon .get_item .item_stats .item_data span {
+body.detail .contentsD .right_contents_Weapon .get_item .item_stats .item_data span {
   padding: 0.3rem 0;
   width: 25%;
   font-size: 1.125rem;
   font-family: "font_zelda";
   font-weight: 200;
 }
-body.detail .contents .right_contents_Weapon .description {
+body.detail .contentsD .right_contents_Weapon .description {
   padding: 0.8rem 0;
 }
-body.detail .contents .right_contents_Weapon .description > p {
+body.detail .contentsD .right_contents_Weapon .description > p {
   color: #e0ceaa;
   font-family: "dreamgotic";
   font-weight: 500;

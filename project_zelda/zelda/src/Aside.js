@@ -11,33 +11,34 @@ import triforce from './img/icon_triforce.png';
 import { Link } from 'react-router-dom';
 
 function Aside() {
-    const togglemenu = document.querySelector('.menu')
     const toggle = () => {
+        const togglemenu = document.querySelector('.menu')
         togglemenu.classList.toggle('on')
     }
 
 
+    console.log('hi');
     const click_back = () => {
         const categoryBtn = document.querySelectorAll('.category a');
         let num = 0;
 
-        categoryBtn.forEach(function (ele, key) {
-            ele.onclick = function () {
-                this.classList.toggle('active');
-                if (num != key) {
-                    categoryBtn[num].classList.remove('active');
-                }
-                num = key;
-            }
-        })        
-    }
+        window.event.target.classList.toggle('active');
 
+        // categoryBtn.forEach(function (ele, key) {
+       
+        //         this.classList.toggle('active');
+        //         if (num != key) {
+        //             categoryBtn[num].classList.remove('active');
+        //         }
+        //         num = key;
+        // })        
+    }
 
 
     return (
         <aside>
             <div className="category">
-                <Link to="/Creatures" ><img src={creatures} alt="" onClick={click_back} /></Link>
+                <Link to="/Creatures"><img src={creatures} alt="" onClick={click_back} /></Link>
                 <Link to="/monsters"><img src={monsters} alt="" onClick={click_back} /></Link>
                 <Link to="/materials"><img src={materials} alt="" onClick={click_back} /></Link>
                 <Link to="/equipment"><img src={equipmentd} alt="" onClick={click_back} /></Link>

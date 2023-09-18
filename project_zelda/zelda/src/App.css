@@ -181,7 +181,7 @@ main .list ul li figure a span {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.125rem;
-  color: #FAF7F2;
+  color: #faf7f2;
   background-color: #163156;
   padding: 0.2rem 0.3rem;
   border-radius: 10px;
@@ -204,20 +204,24 @@ main .list ul li figure figcaption p {
 main .search {
   width: 90%;
 }
-main .search .search_area {
-  display: flex;
-  align-items: flex-end;
-}
-main .search .search_area .searchbar form {
+main .search .search_area form {
   transform: translateY(50%);
   padding-left: 1rem;
+  display: flex;
 }
-main .search .search_area .searchbar form input {
-  width: 100%;
+main .search .search_area form input {
+  width: 80%;
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 30px;
   color: #e0ceaa;
+}
+main .search .search_area form > div {
+  width: 90%;
+  display: flex;
+}
+main .search .search_area form > div .searchbar img {
+  width: 100%;
 }
 main .search .search_data ul {
   display: flex;
@@ -252,6 +256,15 @@ main .search .search_data ul li figure figcaption p {
   font-weight: 200;
   font-size: 1.5rem;
   padding: 0.3rem 0;
+}
+main .search .search_data p {
+  padding: 10rem 0;
+  width: 100%;
+  color: #e0ceaa;
+  text-align: center;
+  font-size: 20px;
+  font-family: "dreamgotic";
+  font-weight: 500;
 }
 main .favorite {
   width: 90%;

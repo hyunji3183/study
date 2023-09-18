@@ -1,6 +1,6 @@
-import './App.css';
-import Header from './Header';
-import Aside from './Aside';
+import '../App.css';
+import Header from '../Header';
+import Aside from '../Aside';
 
 
 export default function Home() {

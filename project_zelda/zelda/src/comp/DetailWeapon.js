@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../Detail.css';
+import '../DetailWeapon.css';
 import like_heart from '../img/icon_favorite_none.png'
 import back from '../img/icon_arrow_back.png'
 import creatures from '../img/icon_1.png';
@@ -7,12 +7,15 @@ import monsters from '../img/icon_2.png';
 import materials from '../img/icon_3.png';
 import equipmentd from '../img/icon_4.png';
 import treasure from '../img/icon_5.png';
+import truffle from '../img/big_hearty_truffle.png';
 import deLplace from '../img/detail_line_place_left.png'
 import deRplace from '../img/detail_line_place_right.png'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
+import deLitem from '../img/detail_line_item_left.png'
+import deRitem from '../img/detail_line_item_right.png'
+import deLweapon from '../img/detail_line_weapon_left.png'
+import deRweapon from '../img/detail_line_weapon_right.png'
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import List from '../Favorite_List.json';
-
 
 function Detail() {
     const bodys = document.querySelector('body')
@@ -20,11 +23,10 @@ function Detail() {
 
     const { param } = useParams();
     const [catagory, id] = param.split('-');
+    console.log(catagory, id)
 
 
     const [data, setData] = useState([]);
-    const [favorite, setFavorite] = useState();
-
 
     const url = {
         Creatures: '../db/botw/data/compendium/Creatures.json',
@@ -37,43 +39,9 @@ function Detail() {
     useEffect(() => {
         axios.get(url[catagory])
             .then(res => {
-                let data = res.data.filter(n => n.id == id)
-                setData(data)
-                setFavorite( localStorage.getItem('fa') )
+                setData(res.data)
             })
     }, []);
-
-    
-    
-    function loaclS(id){
-        localStorage.setItem('fa',id)
-        setFavorite(id)
-    }
-
-
-    let favoriteArr;
-    function faadd(id){
-        favorite.split(',').length ||  !favorite.split(',') <= 0 ? favoriteArr=0 : favoriteArr = favorite.split(',');
-
-        if(!favorite || favoriteArr.length <= 0){
-            loaclS( id )
-        } else {
-            let findFavorite = favoriteArr.filter(n=>n == id);
-            if(findFavorite.length <= 0) {
-                let key = favorite + "," + id;
-                loaclS(key)
-            } else {
-                let key = favoriteArr.filter(n=>n != id);
-                loaclS(key)
-            }
-            console.log(findFavorite);
-        }
-    }
-
-    if (!data && data.length <= 0) return <></>;
-
-
-
 
     return (
         <>
@@ -81,7 +49,7 @@ function Detail() {
                 <div className="head">
                     <a><img src={back} alt="back" /></a>
                     <h2>Detail</h2>
-                    <span className={`material-symbols-outlined `} onClick={()=>{faadd(id)}}>favorite</span>
+                    <a className='like_heart'><img src={like_heart} alt="like_heart" /></a>
                 </div>
             </header>
             <div className='detail'>
@@ -95,8 +63,9 @@ function Detail() {
                     </div>
                 </aside>
                 {data && data
+                    .filter((item) => item.id == id)
                     .map((item) => (
-                        <div className='contents' key={item.id}>
+                        <div className='contentsD' key={item.id}>
                             <div className='left_contents'>
                                 <div className='left_txt'>
                                     <p>no. {item.id}</p>
@@ -107,7 +76,7 @@ function Detail() {
                                 </div>
                                 <p><img src={item.image} /></p>
                             </div>
-                            <div className='right_contents'>
+                            <div className='right_contents_Weapon'>
                                 <div className='place'>
                                     <div className='location'>
                                         <p><img src={deLplace} /></p>
@@ -115,23 +84,31 @@ function Detail() {
                                         <p><img src={deRplace} /></p>
                                     </div>
                                     <div className='place_data'>
-                                        {
-                                            item.common_locations && item.common_locations.map((v, k) => (
-                                                <span key={k}>{v}</span>
-                                            ))
-                                        }
+                                        <span>{item.common_locations[0]}</span>
+                                        <span>{item.common_locations[1]}</span>
+                                        <span>{item.common_locations[2]}</span>
                                     </div>
                                 </div>
                                 <div className='get_item'>
-                                    <div className='item'>
-                                        <p><img src={deLplace} /></p>
-                                        <span> {catagory == 'Materials' ? "요리효과" : "관련아이템"} </span>
-                                        <p><img src={deRplace} /></p>
+                                    <div className='item_stats'>
+                                        <div className='item'>
+                                            <p><img src={deLweapon} /></p>
+                                            <span>공격력</span>
+                                            <p><img src={deRweapon} /></p>
+                                        </div>
+                                        <div className='item_data'>
+                                            <span>{item.properties.attack}</span>
+                                        </div>
                                     </div>
-                                    <div className='item_data'>
-                                        {
-                                            item.drops === undefined ? <span>{item.cooking_effect}</span> : item.drops.map((v,k) => (<span key={k}>{v}</span>))
-                                        }
+                                    <div className='item_stats'>
+                                        <div className='item'>
+                                            <p><img src={deLweapon} /></p>
+                                            <span>방어력</span>
+                                            <p><img src={deRweapon} /></p>
+                                        </div>
+                                        <div className='item_data'>
+                                            <span>{item.properties.defense}</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='description'>

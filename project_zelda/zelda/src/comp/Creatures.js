@@ -8,6 +8,7 @@ import axios from 'axios'
 function Creatures() {
     const bodys = document.querySelector('body')
     bodys.classList.remove('detail')
+    
     const [data, setData] = useState([]);
     const navigate = useNavigate();
 

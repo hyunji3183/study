@@ -2,8 +2,8 @@
 
 body.detail {
     background-image: url(./background_image_detail.jpg);
-    width: 100%;
     background-repeat: no-repeat;
+    width: 100%;
     header {
         width: 100%;
         .head {
@@ -32,15 +32,6 @@ body.detail {
                 font-family: "font_zelda";
                 font-weight: 200;
             }
-            span{
-                width: 10%;
-                font-size: 2.125rem;
-                color: #818181;
-                text-align: left;
-                &.active {
-                    color:red
-                }
-            }
         }
     }
     .detail aside {
@@ -64,7 +55,7 @@ body.detail {
         }
     }
 
-    .contents {
+    .contentsD {
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -108,7 +99,7 @@ body.detail {
         .right_contents {
             width: 55%;
             color: white;
-            display: inline-block;
+            display: none;
             .place {
                 padding: 1rem 0 2rem;
                 .location {
@@ -133,7 +124,6 @@ body.detail {
                     align-items: center;
                     justify-content: flex-start;
                     padding-top: 0.5rem;
-                    text-align: center;
                     span {
                         padding: 0.3rem 0;
                         width: 30%;
@@ -167,7 +157,6 @@ body.detail {
                     justify-content: flex-start;
                     flex-wrap: wrap;
                     padding-top: 0.5rem;
-                    text-align: center;
                     span {
                         padding: 0.3rem 0;
                         width: 25%;
@@ -188,7 +177,6 @@ body.detail {
         .right_contents_Weapon {
             width: 55%;
             color: white;
-            display: none;
             .place {
                 padding: 1rem 0 2rem;
                 .location {

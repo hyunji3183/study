@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import truffle from '../img/big_hearty_truffle.png';
-
 
 import '../App.css';
 import Header from '../Header';
 import Aside from '../Aside';
 
+
+
+
 function Favorite() {
     const bodys = document.querySelector('body')
     bodys.classList.remove('detail')
+
+
+    
+
+    
     return (<>
         <Header />
         <main>

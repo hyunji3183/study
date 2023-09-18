@@ -15,7 +15,6 @@ function Treasure() {
         axios.get('./db/botw/data/compendium/treasure.json')
             .then(res => {
                 setData(res.data)
-                console.log(res.data);
             })
     }, []);
     return (<>
@@ -26,7 +25,7 @@ function Treasure() {
                 <ul>
                     {data && data.map((item) => (
                     <li key={item.objectID}>
-                        <figure>
+                        <figure onClick={() => { navigate(`/detail/Treasure-${item.id}`) }}>
                             <a>
                                 <img src={item.image} />
                                 <span>NO. {item.id}</span>

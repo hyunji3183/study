@@ -7,7 +7,7 @@
             "Hyrule Field",
             "Faron Grasslands"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/horse/image",
         "category": "creatures",
         "dlc": false,
@@ -17,8 +17,8 @@
         "id": 2,
         "name": "giant horse",
         "description": "This giant horse is the last of its kind. Its physical capabilities completely overshadow those of regular horses, but its temperament is extremely wild. Only a truly skilled rider can train, or even catch, this beast of a mount. This is a horse that chooses its rider.",
-        "common_locations": null,
-        "drops": [],
+        "common_locations": ["unKnown"],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/giant_horse/image",
         "category": "creatures",
         "dlc": false,
@@ -28,8 +28,8 @@
         "id": 3,
         "name": "white horse",
         "description": "The Hyrulean royal family that perished 100 years ago would sometimes ride atop white horses as a display of their divine right. This white horse may be a descendant of one once ridden by royalty.",
-        "common_locations": null,
-        "drops": null,
+        "common_locations": ["unKnown"],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/white_horse/image",
         "category": "creatures",
         "dlc": false,
@@ -42,7 +42,7 @@
         "common_locations": [
             "Satori Mountain"
         ],
-        "drops": null,
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/lord_of_the_mountain/image",
         "category": "creatures",
         "dlc": false,
@@ -56,7 +56,7 @@
             "Hebra Mountains",
             "Akkala Highlands"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stalhorse/image",
         "category": "creatures",
         "dlc": false,
@@ -69,7 +69,7 @@
         "common_locations": [
             "Greater Hyrule"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/donkey/image",
         "category": "creatures",
         "dlc": false,
@@ -82,7 +82,7 @@
         "common_locations": [
             "Gerudo Desert"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/sand_seal/image",
         "category": "creatures",
         "dlc": false,
@@ -95,7 +95,7 @@
         "common_locations": [
             "Gerudo Desert"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/patricia/image",
         "category": "creatures",
         "dlc": false,
@@ -173,7 +173,7 @@
             "West Necluda",
             "Eldin Canyon"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/white_goat/image",
         "category": "creatures",
         "dlc": false,
@@ -236,7 +236,7 @@
             "East Necluda",
             "Faron Grasslands"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hateno_cow/image",
         "category": "creatures",
         "dlc": false,
@@ -250,7 +250,7 @@
             "East Necluda",
             "Akkala Highlands"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/highland_sheep/image",
         "category": "creatures",
         "dlc": false,
@@ -418,7 +418,7 @@
             "Akkala Highlands",
             "Hebra Mountains"
         ],
-        "drops": [],
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hylian_retriever/image",
         "category": "creatures",
         "dlc": false,
@@ -431,7 +431,7 @@
         "common_locations": [
             "Satori Mountain"
         ],
-        "drops": null,
+        "drops": ["none"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blupee/image",
         "category": "creatures",
         "dlc": false,

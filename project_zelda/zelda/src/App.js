@@ -17,7 +17,7 @@ import triforce from './img/icon_triforce.png';
 import truffle from './img/big_hearty_truffle.png';
 
 import Main from './Main';
-import Home from './Home';
+import Home from './comp/Home';
 import Creatures from './comp/Creatures';
 import Monsters from './comp/Monsters';
 import Materials from './comp/Materials';
@@ -26,6 +26,7 @@ import Treasure from './comp/Treasure';
 import Favorite from './comp/Favorite';
 import Search from './comp/Search';
 import Detail from './comp/Detail';
+import DetailWeapon from './comp/DetailWeapon';
 
 const App = () => {
     return (
@@ -42,6 +43,7 @@ const App = () => {
                         <Route path="/Favorite" element={<Favorite />} />
                         <Route path="/Search" element={<Search />} />
                         <Route path="/Detail/:param" element={<Detail />} />
+                        <Route path="/DetailWeapon/:param" element={<DetailWeapon />} />
                     </Routes>
             </BrowserRouter>
         </>

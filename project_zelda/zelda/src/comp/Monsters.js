@@ -15,7 +15,6 @@ function Monsters() {
         axios.get('./db/botw/data/compendium/monsters.json')
             .then(res => {
                 setData(res.data)
-                console.log(res.data);
             })
     }, []);
     return (<>
@@ -26,7 +25,7 @@ function Monsters() {
                 <ul>
                     {data && data.map((item) => (
                     <li key={item.objectID}>
-                        <figure>
+                        <figure onClick={() => { navigate(`/detail/Monsters-${item.id}`) }}>
                             <a>
                                 <img src={item.image} />
                                 <span>NO. {item.id}</span>

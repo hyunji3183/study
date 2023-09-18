@@ -3,7 +3,7 @@
         "id": 201,
         "name": "master sword",
         "description": "The legendary sword that seals the darkness. Its blade gleams with a sacred luster that can oppose the Calamity. Only a hero chosen by the sword itself can wield it.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/master_sword/image",
         "category": "equipment",
         "dlc": false,
@@ -80,7 +80,7 @@
         "id": 206,
         "name": "spring-loaded hammer",
         "description": "This strange hammer is one of Kilton's specialties. Being struck by it doesn't hurt much, but the forth swing in a string of attacks will send the victim flying.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/spring-loaded_hammer/image",
         "category": "equipment",
         "dlc": false,
@@ -268,7 +268,7 @@
         "id": 218,
         "name": "ancient short sword",
         "description": "The blade of this ancient sword was made using an ancient power lost to this modern age. Its blade appears only when drawn, and its cutting power surpasses metal swords.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ancient_short_sword/image",
         "category": "equipment",
         "dlc": false,
@@ -297,7 +297,7 @@
         "id": 220,
         "name": "royal guard's sword",
         "description": "A Sheikah-made replica of the sword that seals the darkness. It was made with ancient technology to oppose the Great Calamity, but its low durability made it inefficient.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/royal_guard's_sword/image",
         "category": "equipment",
         "dlc": false,
@@ -662,7 +662,7 @@
         "id": 243,
         "name": "demon carver",
         "description": "This lethal weapon is forged by the Yiga. Its unique shape facilitates the sound dispatching of any target and strikes fear into the hearts of all who see it.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/demon_carver/image",
         "category": "equipment",
         "dlc": false,
@@ -675,7 +675,7 @@
         "id": 244,
         "name": "one-hit obliterator",
         "description": "A weapon that defeats foes with one hit and causes the user to die within one hit. It loses its sheen and power after two consecutive uses, but it will eventually regain both.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/one-hit_obliterator/image",
         "category": "equipment",
         "dlc": false,
@@ -1005,7 +1005,7 @@
         "id": 265,
         "name": "ancient bladesaw",
         "description": "This two-handed sword was forged using ancient Sheikah technology. Its unique rotating blades give it impressive cutting power that will slice enemies to shreds.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ancient_bladesaw/image",
         "category": "equipment",
         "dlc": false,
@@ -1034,7 +1034,7 @@
         "id": 267,
         "name": "royal guard's claymore",
         "description": "The Sheikah used the very essence of ancient technology to forge this greatsword. It was designed to oppose the Calamity, but its low durability made it impractical in battle.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/royal_guard's_claymore/image",
         "category": "equipment",
         "dlc": false,
@@ -1588,7 +1588,7 @@
         "id": 302,
         "name": "ancient spear",
         "description": "This spear is the result of countless hours of research into the ancient technology used by Guardians. The glowing spearhead has piercing potential.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ancient_spear/image",
         "category": "equipment",
         "dlc": false,
@@ -1617,7 +1617,7 @@
         "id": 304,
         "name": "royal guard's spear",
         "description": "This Sheikah-made spear was created using ancient technology to combat the Calamity. Its attack power is very high, but a critical design flaw left it with poor durability.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/royal_guard's_spear/image",
         "category": "equipment",
         "dlc": false,
@@ -1918,7 +1918,7 @@
         "id": 323,
         "name": "bow of light",
         "description": "Princess Zelda gave you this bow and arrow for the battle with Dark Beast Ganon. When wielded by the hero, it fires arrows of pure light strong enough to oppose the Calamity.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/bow_of_light/image",
         "category": "equipment",
         "dlc": false,
@@ -2122,7 +2122,7 @@
         "id": 336,
         "name": "ancient bow",
         "description": "This bow is the result of Robbie's research. Ancient Sheikah technology affords it heightened functionality. Arrows fired from it travel in a perfectly straight line.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ancient_bow/image",
         "category": "equipment",
         "dlc": false,
@@ -2135,7 +2135,7 @@
         "id": 337,
         "name": "royal guard's bow",
         "description": "This prototype Sheikah-made bow was designed to fight the Great Calamity. Made with ancient technology, it boast a high rate of fire and firepower, but has a low durability.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/royal_guard's_bow/image",
         "category": "equipment",
         "dlc": false,
@@ -2315,8 +2315,8 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
@@ -2331,8 +2331,8 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
@@ -2347,8 +2347,8 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
@@ -2363,8 +2363,8 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
@@ -2379,8 +2379,8 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
@@ -2394,15 +2394,15 @@
         "category": "equipment",
         "dlc": false,
         "properties": {
-            "attack": null,
-            "defense": null
+            "attack": 0,
+            "defense": 0
         }
     },
     {
         "id": 354,
         "name": "hylian shield",
         "description": "A shield passes down through the Hylian royal family, along with the legend of the hero who wielded it. Its defensive capabilities and durability outshine all other shields.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hylian_shield/image",
         "category": "equipment",
         "dlc": false,
@@ -2669,7 +2669,7 @@
         "id": 371,
         "name": "ancient shield",
         "description": "This shield was made using ancient Sheikah technology. Its surface glows blue when raised in defense. Enhanced functionality allows it to deflect Guardian beams.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ancient_shield/image",
         "category": "equipment",
         "dlc": false,
@@ -2698,7 +2698,7 @@
         "id": 373,
         "name": "royal guard's shield",
         "description": "This shield was forged using ancient Sheikah technology. It boasts extremely high stopping power, but its structural weakness made its low durability impractical for combat.",
-        "common_locations": null,
+        "common_locations": ["unKnown"],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/royal_guard's_shield/image",
         "category": "equipment",
         "dlc": false,
