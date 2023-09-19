@@ -13,18 +13,21 @@ function Creatures() {
     const [sortedData, setSortedData] = useState([]);
     const navigate = useNavigate();
 
+    //json data 출력
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/creatures.json').then((res) => {
+        axios.get('./db/botw/data/compendium/creatures.json')
+        .then((res) => {
             setData(res.data);
             setSortedData([...res.data]);
         });
     }, []);
 
+    //정렬기능함수
     const sortDataAlphabetically = (isSorted) => {
-        // Sort the data based on the isSorted state
         const sorted = isSorted
             ? [...data].sort((a, b) => a.name.localeCompare(b.name))
-            : [...data];
+            : [...data].sort((b, a) => a.name.localeCompare(b.name))
+            console.log([...data]);
         setData(sorted);
     };
 
@@ -36,7 +39,7 @@ function Creatures() {
             <div className="list">
                 <ul>
                     {data && data.map((item) => (
-                        <li key={item.objectID}>
+                        <li key={item.id}>
                             <figure onClick={() => { navigate(`/detail/Creatures-${item.id}`) }}>
                                 <a>
                                     <img src={item.image} />

@@ -16,8 +16,6 @@ function Aside({ onSortRequest }) {
         togglemenu.classList.toggle('on')
     }
 
-
-    console.log('hi');
     const click_back = () => {
         const categoryBtn = document.querySelectorAll('.category a');
         let num = 0;
@@ -36,8 +34,8 @@ function Aside({ onSortRequest }) {
     const [isSorted, setIsSorted] = useState(false);
 
     const toggleSort = () => {
-        setIsSorted(!isSorted); // Toggle the sorting state
-        onSortRequest(!isSorted); // Pass the updated sorting state to the parent component (Creatures)
+        setIsSorted(!isSorted);
+        onSortRequest(!isSorted); 
     };
 
     return (

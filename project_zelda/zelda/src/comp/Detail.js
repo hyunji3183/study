@@ -25,6 +25,7 @@ function Detail() {
     const [data, setData] = useState([]);
     const [favorite, setFavorite] = useState();
     const [isFavorite, setIsFavorite] = useState(false);
+    const navigate = useNavigate();
 
     const url = {
         Creatures: '../db/botw/data/compendium/Creatures.json',
@@ -39,31 +40,31 @@ function Detail() {
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
-                setFavorite( localStorage.getItem('fa') )
+                setFavorite(localStorage.getItem('fa'))
             })
     }, []);
 
-    
-    
-    function loaclS(id){
-        localStorage.setItem('fa',id)
+
+
+    function loaclS(id) {
+        localStorage.setItem('fa', id)
         setFavorite(id)
     }
 
 
     let favoriteArr;
-    function faadd(id){
-        favorite.split(',').length ||  !favorite.split(',') <= 0 ? favoriteArr=0 : favoriteArr = favorite.split(',');
+    function faadd(id) {
+        favorite.split(',').length || !favorite.split(',') <= 0 ? favoriteArr = 0 : favoriteArr = favorite.split(',');
 
-        if(!favorite || favoriteArr.length <= 0){
-            loaclS( id )
+        if (!favorite || favoriteArr.length <= 0) {
+            loaclS(id)
         } else {
-            let findFavorite = favoriteArr.filter(n=>n == id);
-            if(findFavorite.length <= 0) {
+            let findFavorite = favoriteArr.filter(n => n == id);
+            if (findFavorite.length <= 0) {
                 let key = favorite + "," + id;
                 loaclS(key)
             } else {
-                let key = favoriteArr.filter(n=>n != id);
+                let key = favoriteArr.filter(n => n != id);
                 loaclS(key)
             }
             console.log(findFavorite);
@@ -79,9 +80,9 @@ function Detail() {
         <>
             <header>
                 <div className="head">
-                    <a><img src={back} alt="back" /></a>
+                    <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
-                    <span className={`material-symbols-outlined `} onClick={()=>{faadd(id)}}>favorite</span>
+                    <span className={`material-symbols-outlined `} onClick={() => { faadd(id) }}>favorite</span>
                 </div>
             </header>
             <div className='detail'>
@@ -130,7 +131,7 @@ function Detail() {
                                     </div>
                                     <div className='item_data'>
                                         {
-                                            item.drops === undefined ? <span>{item.cooking_effect}</span> : item.drops.map((v,k) => (<span key={k}>{v}</span>))
+                                            item.drops === undefined ? <span>{item.cooking_effect}</span> : item.drops.map((v, k) => (<span key={k}>{v}</span>))
                                         }
                                     </div>
                                 </div>

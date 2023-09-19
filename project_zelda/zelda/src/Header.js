@@ -9,6 +9,7 @@ function Header() {
     const pathname = location.pathname;
     const routeName = pathname.replace('/', '');
 
+
     return (
         <header>
             <div className="head">

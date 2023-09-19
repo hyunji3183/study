@@ -132,18 +132,6 @@ main {
             }
         }
     }
-    .home {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        b {
-            font-family: "font_zelda";
-            font-weight: 200;
-            font-size: 2.5rem;
-            color: #e0ceaa;
-        }
-    }
     .list {
         width: 90%;
         ul {
@@ -210,7 +198,7 @@ main {
                 padding-left: 1rem;
                 display: flex;
                 input {
-                    width: 80%;
+                    width: 90%;
                     font-family: "font_zelda";
                     font-weight: 200;
                     font-size: 30px;
@@ -286,10 +274,10 @@ main {
             ul {
                 display: flex;
                 flex-wrap: wrap;
-                width: 90%;
+                width: 96%;
                 li {
                     width: 25%;
-                    padding: 1rem 0 0;
+                    padding: 1.5rem 0 0;
                     figure {
                         display: flex;
                         align-items: center;
@@ -311,7 +299,7 @@ main {
                                 font-family: "font_zelda";
                                 font-weight: 200;
                                 font-size: 1.5rem;
-                                padding: 0.3rem 0;
+                                padding: 0.5rem 0;
                             }
                         }
                     }

@@ -21,9 +21,10 @@ function Detail() {
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
 
+    const navigate = useNavigate();
+
     const { param } = useParams();
     const [catagory, id] = param.split('-');
-    console.log(catagory, id)
 
 
     const [data, setData] = useState([]);
@@ -47,7 +48,7 @@ function Detail() {
         <>
             <header>
                 <div className="head">
-                    <a><img src={back} alt="back" /></a>
+                    <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
                     <a className='like_heart'><img src={like_heart} alt="like_heart" /></a>
                 </div>

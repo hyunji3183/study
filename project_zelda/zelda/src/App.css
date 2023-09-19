@@ -133,18 +133,6 @@ main aside .toggle a {
 main aside .toggle a img {
   width: 100%;
 }
-main .home {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-main .home b {
-  font-family: "font_zelda";
-  font-weight: 200;
-  font-size: 2.5rem;
-  color: #e0ceaa;
-}
 main .list {
   width: 90%;
 }
@@ -210,7 +198,7 @@ main .search .search_area form {
   display: flex;
 }
 main .search .search_area form input {
-  width: 80%;
+  width: 90%;
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 30px;
@@ -272,11 +260,11 @@ main .favorite {
 main .favorite .favorite_data ul {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 96%;
 }
 main .favorite .favorite_data ul li {
   width: 25%;
-  padding: 1rem 0 0;
+  padding: 1.5rem 0 0;
 }
 main .favorite .favorite_data ul li figure {
   display: flex;
@@ -301,5 +289,5 @@ main .favorite .favorite_data ul li figure figcaption p {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.5rem;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }

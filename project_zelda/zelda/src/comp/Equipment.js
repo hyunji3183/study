@@ -8,24 +8,33 @@ import axios from 'axios'
 function Equipment() {
     const bodys = document.querySelector('body')
     bodys.classList.remove('detail')
+
     const [data, setData] = useState([]);
+    const [sortedData, setSortedData] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('./db/botw/data/compendium/equipment.json')
             .then(res => {
                 setData(res.data)
-                console.log(res.data);
             })
     }, []);
+
+    const sortDataAlphabetically = (isSorted) => {
+        const sorted = isSorted
+            ? [...data].sort((a, b) => a.name.localeCompare(b.name))
+            : [...data].sort((b, a) => a.name.localeCompare(b.name))
+        console.log([...data]);
+        setData(sorted);
+    };
     return (<>
         <Header />
         <main>
-            <Aside />
+            <Aside onSortRequest={sortDataAlphabetically} />
             <div className="list">
                 <ul>
                     {data && data.map((item) => (
-                        <li key={item.objectID}>
+                        <li key={item.id}>
                             <figure onClick={() => { navigate(`/DetailWeapon/Equipment-${item.id}`) }}>
                                 <a>
                                     <img src={item.image} />

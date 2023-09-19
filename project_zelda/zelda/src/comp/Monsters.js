@@ -8,7 +8,9 @@ import axios from 'axios'
 function Monsters() {
     const bodys = document.querySelector('body')
     bodys.classList.remove('detail')
+
     const [data, setData] = useState([]);
+    const [sortedData, setSortedData] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -17,25 +19,32 @@ function Monsters() {
                 setData(res.data)
             })
     }, []);
+
+    const sortDataAlphabetically = (isSorted) => {
+        const sorted = isSorted
+            ? [...data].sort((a, b) => a.name.localeCompare(b.name))
+            : [...data].sort((b, a) => a.name.localeCompare(b.name))
+        setData(sorted);
+    };
     return (<>
         <Header />
         <main>
-            <Aside/>
+            <Aside onSortRequest={sortDataAlphabetically} />
             <div className="list">
                 <ul>
                     {data && data.map((item) => (
-                    <li key={item.objectID}>
-                        <figure onClick={() => { navigate(`/detail/Monsters-${item.id}`) }}>
-                            <a>
-                                <img src={item.image} />
-                                <span>NO. {item.id}</span>
-                            </a>
-                            <figcaption>
-                                <b>{item.name}</b>
-                                <p>{item.name}</p>
-                            </figcaption>
-                        </figure>
-                    </li>
+                        <li key={item.id}>
+                            <figure onClick={() => { navigate(`/detail/Monsters-${item.id}`) }}>
+                                <a>
+                                    <img src={item.image} />
+                                    <span>NO. {item.id}</span>
+                                </a>
+                                <figcaption>
+                                    <b>{item.name}</b>
+                                    <p>{item.name}</p>
+                                </figcaption>
+                            </figure>
+                        </li>
                     ))}
                 </ul>
             </div>
