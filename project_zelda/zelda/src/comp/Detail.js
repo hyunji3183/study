@@ -48,33 +48,40 @@ function Detail() {
     },[])
 
     let newdata;
-    function faadd(id) {
-        let idData = localStorage.getItem('fa')  === null ? [] : localStorage.getItem('fa').split(',').filter(n=>n === id);
-        if(idData.length <= 0){
-            if(fa.length <= 0) {
-                newdata = id;
+    function OnFavorite(catagory, id) {
+        let value = catagory + '-' + id;
+        let filterData = localStorage.getItem('fa')?.split(',').filter(n => n === value);
+        if (filterData != undefined)
+        {
+            let idData = localStorage.getItem('fa') === null ? [] : filterData;
+            if (idData.length == 0) {
+                if (fa.length == 0) {
+                    newdata = value;
+                } else {
+                    newdata = fa + ',' + value;
+                }
             } else {
-                newdata = fa + ',' + id
+                newdata = localStorage.getItem('fa').split(',').filter(n => n !== value);
             }
-        } else {
-            newdata = localStorage.getItem('fa').split(',').filter(n=>n !== id);
+            localStorage.setItem('fa', newdata);
+            setFa(newdata);
+            setIsFavorite(newdata.length == 0 ? false : true);
         }
-        localStorage.setItem('fa',newdata)
-        setFa(newdata)
-        let lengths = localStorage.getItem('fa').split(',').filter(n=> n === id).length
-        setIsFavorite( lengths <= 0 ? false : true)
+        else
+        {
+            localStorage.setItem('fa', value);
+            setIsFavorite(true);
+        }
     }
-
-    if (!data && data.length <= 0) return <></>;
-
-
+    
+    if (!data && data.length == 0) return <></>;
     return (
         <>
             <header>
                 <div className="head">
                     <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
-                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { faadd(id) }}>favorite</span>
+                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>
             </header>
             <div className='detail'>
