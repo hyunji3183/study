@@ -23,7 +23,7 @@ function Detail() {
 
 
     const [data, setData] = useState([]);
-    const [favorite, setFavorite] = useState();
+    const [fa, setFa] = useState([]);
     const [isFavorite, setIsFavorite] = useState(false);
     const navigate = useNavigate();
 
@@ -40,40 +40,32 @@ function Detail() {
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
-                setFavorite(localStorage.getItem('fa'))
             })
-    }, []);
+    }, [isFavorite]);
 
+    useEffect(() => {
+        setFa(localStorage.getItem('fa') === null ? [] : localStorage.getItem('fa').split(','))
+    },[])
 
-
-    function loaclS(id) {
-        localStorage.setItem('fa', id)
-        setFavorite(id)
-    }
-
-
-    let favoriteArr;
+    let newdata;
     function faadd(id) {
-        favorite.split(',').length || !favorite.split(',') <= 0 ? favoriteArr = 0 : favoriteArr = favorite.split(',');
-
-        if (!favorite || favoriteArr.length <= 0) {
-            loaclS(id)
-        } else {
-            let findFavorite = favoriteArr.filter(n => n == id);
-            if (findFavorite.length <= 0) {
-                let key = favorite + "," + id;
-                loaclS(key)
+        let idData = localStorage.getItem('fa')  === null ? [] : localStorage.getItem('fa').split(',').filter(n=>n === id);
+        if(idData.length <= 0){
+            if(fa.length <= 0) {
+                newdata = id;
             } else {
-                let key = favoriteArr.filter(n => n != id);
-                loaclS(key)
+                newdata = fa + ',' + id
             }
-            console.log(findFavorite);
+        } else {
+            newdata = localStorage.getItem('fa').split(',').filter(n=>n !== id);
         }
+        localStorage.setItem('fa',newdata)
+        setFa(newdata)
+        let lengths = localStorage.getItem('fa').split(',').filter(n=> n === id).length
+        setIsFavorite( lengths <= 0 ? false : true)
     }
 
     if (!data && data.length <= 0) return <></>;
-
-
 
 
     return (
@@ -82,7 +74,7 @@ function Detail() {
                 <div className="head">
                     <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
-                    <span className={`material-symbols-outlined `} onClick={() => { faadd(id) }}>favorite</span>
+                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { faadd(id) }}>favorite</span>
                 </div>
             </header>
             <div className='detail'>

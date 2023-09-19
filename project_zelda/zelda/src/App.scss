@@ -6,14 +6,17 @@ body {
 }
 .intro {
     position: relative;
-    video {
-        display: inline-block;
-        width: 100vw;
-        height: 100vh;
+    .videobox {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: hidden;
+        video {
+            display: inline-block;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
     }
     .logo {
         position: absolute;
@@ -125,6 +128,7 @@ main {
                 }
             }
             a {
+                cursor: pointer;
                 padding: 1rem 0.3rem;
                 img {
                     width: 100%;
@@ -144,6 +148,7 @@ main {
                 width: 45%;
                 padding: 1rem 0;
                 figure {
+                    cursor: pointer;
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;

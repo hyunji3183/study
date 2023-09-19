@@ -41,7 +41,7 @@ body.detail header .head span {
   text-align: left;
 }
 body.detail header .head span.active {
-  color: red;
+  color: #ff4a4a;
 }
 body.detail .detail aside {
   width: 50%;

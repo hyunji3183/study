@@ -21,13 +21,14 @@ function Detail() {
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
 
-    const navigate = useNavigate();
-
     const { param } = useParams();
     const [catagory, id] = param.split('-');
 
 
     const [data, setData] = useState([]);
+    const [fa, setFa] = useState([]);
+    const [isFavorite, setIsFavorite] = useState(false);
+    const navigate = useNavigate();
 
     const url = {
         Creatures: '../db/botw/data/compendium/Creatures.json',
@@ -40,9 +41,34 @@ function Detail() {
     useEffect(() => {
         axios.get(url[catagory])
             .then(res => {
-                setData(res.data)
+                let data = res.data.filter(n => n.id == id)
+                setData(data)
             })
-    }, []);
+    }, [isFavorite]);
+
+    useEffect(() => {
+        setFa(localStorage.getItem('fa') === null ? [] : localStorage.getItem('fa').split(','))
+    },[])
+
+    let newdata;
+    function faadd(id) {
+        let idData = localStorage.getItem('fa')  === null ? [] : localStorage.getItem('fa').split(',').filter(n=>n === id);
+        if(idData.length <= 0){
+            if(fa.length <= 0) {
+                newdata = id;
+            } else {
+                newdata = fa + ',' + id
+            }
+        } else {
+            newdata = localStorage.getItem('fa').split(',').filter(n=>n !== id);
+        }
+        localStorage.setItem('fa',newdata)
+        setFa(newdata)
+        let lengths = localStorage.getItem('fa').split(',').filter(n=> n === id).length
+        setIsFavorite( lengths <= 0 ? false : true)
+    }
+
+    if (!data && data.length <= 0) return <></>;
 
     return (
         <>
@@ -50,7 +76,7 @@ function Detail() {
                 <div className="head">
                     <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
-                    <a className='like_heart'><img src={like_heart} alt="like_heart" /></a>
+                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { faadd(id) }}>favorite</span>
                 </div>
             </header>
             <div className='detail'>

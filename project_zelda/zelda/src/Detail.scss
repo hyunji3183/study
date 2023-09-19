@@ -32,13 +32,13 @@ body.detail {
                 font-family: "font_zelda";
                 font-weight: 200;
             }
-            span{
+            span {
                 width: 10%;
                 font-size: 2.125rem;
                 color: #818181;
                 text-align: left;
                 &.active {
-                    color:red
+                    color: #ff4a4a;
                 }
             }
         }

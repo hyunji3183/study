@@ -7,7 +7,10 @@ body {
 .intro {
   position: relative;
 }
-.intro video {
+.intro .videobox {
+  position: relative;
+}
+.intro .videobox video {
   display: inline-block;
   width: 100vw;
   height: 100vh;
@@ -128,6 +131,7 @@ main aside .toggle .menu.on a img {
   width: 100%;
 }
 main aside .toggle a {
+  cursor: pointer;
   padding: 1rem 0.3rem;
 }
 main aside .toggle a img {
@@ -148,6 +152,7 @@ main .list ul li {
   padding: 1rem 0;
 }
 main .list ul li figure {
+  cursor: pointer;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
