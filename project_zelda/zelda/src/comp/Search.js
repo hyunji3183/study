@@ -38,75 +38,82 @@ function Search() {
     }, []);
 
     //검색
-    function searching(e) {
-        e.preventDefault();
-        if (searchText) {
-            const filteredData = data.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()));
-            setFilteredData(filteredData);
-        } else {
-            setFilteredData([]);
-        }
+   // 검색
+function searching(e) {
+    e.preventDefault();
+    if (searchText) {
+        const filteredDataByName = data.filter(item =>
+            item.name.toLowerCase().includes(searchText.toLowerCase())
+        );
+        const filteredDataById = data.filter(item =>
+            item.id.toString().toLowerCase().includes(searchText.toLowerCase())
+        );
+        const filteredData = [...new Set([...filteredDataByName, ...filteredDataById])];
+        setFilteredData(filteredData);
+    } else {
+        setFilteredData([]);
     }
+}
 
-    //정렬
-    const dataSort = (isSorted) => {
-        const sorted = isSorted
-            ? [...filteredData].sort((a, b) => a.name.localeCompare(b.name))
-            : [...filteredData].sort((b, a) => a.name.localeCompare(b.name))
-        setFilteredData(sorted);
-    };
-
-
-    const navigateToDetail = (category, id) => {
-        console.log(category, id);
-        navigate(`/detail/${category}-${id}`);
-    };
+//정렬
+const dataSort = (isSorted) => {
+    const sorted = isSorted
+        ? [...filteredData].sort((a, b) => a.name.localeCompare(b.name))
+        : [...filteredData].sort((b, a) => a.name.localeCompare(b.name))
+    setFilteredData(sorted);
+};
 
 
-    return (
-        <>
-            <Header />
-            <main>
-                <Aside onSortRequest={dataSort} />
-                <div className="search">
-                    <div className='search_area'>
-                        <form onSubmit={searching}>
-                            <input
-                                type='text'
-                                name='text'
-                                value={searchText}
-                                onChange={(e) => setSearchText(e.target.value)}
-                                placeholder="search" />
-                            <button type="submit">
-                                <img src={searchbtn} className="searchbtn" alt="searchbtn" />
-                            </button>
-                        </form>
-                        <img src={searchbar} className="searchbar" alt="searchbar" />
-                    </div>
-                    <div className='search_data'>
-                        {filteredData.length > 0 ? (
-                            <ul>
-                                {filteredData.map((item, index) => (
-                                    <li key={index}>
-                                        <figure onClick={() => navigateToDetail(item.category, item.id)}>
-                                            <a><img src={item.image} alt="Item" /></a>
-                                            <figcaption>
-                                                <p>{item.name}</p>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
-                        ) : searchText != '' ? (
-                            <p>검색된 내용이 없습니다.</p>
-                        ) : (
-                            <p>검색어를 입력해주세요</p>
-                        )}
-                    </div>
+const navigateToDetail = (category, id) => {
+    console.log(category, id);
+    navigate(`/detail/${category}-${id}`);
+};
+
+
+return (
+    <>
+        <Header />
+        <main>
+            <Aside onSortRequest={dataSort} />
+            <div className="search">
+                <div className='search_area'>
+                    <form onSubmit={searching}>
+                        <input
+                            type='text'
+                            name='text'
+                            value={searchText}
+                            onChange={(e) => setSearchText(e.target.value)}
+                            placeholder="search" />
+                        <button type="submit">
+                            <img src={searchbtn} className="searchbtn" alt="searchbtn" />
+                        </button>
+                    </form>
+                    <img src={searchbar} className="searchbar" alt="searchbar" />
                 </div>
-            </main>
-        </>
-    );
+                <div className='search_data'>
+                    {filteredData.length > 0 ? (
+                        <ul>
+                            {filteredData.map((item, index) => (
+                                <li key={index}>
+                                    <figure onClick={() => navigateToDetail(item.category, item.id)}>
+                                        <a><img src={item.image} alt="Item" /></a>
+                                        <figcaption>
+                                            <p>{item.name}</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : searchText != '' ? (
+                        <p>검색된 내용이 없습니다.</p>
+                    ) : (
+                        <p>검색어를 입력해주세요</p>
+                    )}
+                </div>
+            </div>
+        </main>
+    </>
+);
 }
 
 export default Search;
