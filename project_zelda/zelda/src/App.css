@@ -102,10 +102,9 @@ main aside .toggle {
   justify-content: space-between;
 }
 main aside .toggle .menu {
-  opacity: 0;
   background-color: #332624;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 main aside .toggle .menu a {
   width: 80%;
@@ -113,21 +112,6 @@ main aside .toggle .menu a {
   padding: 0.8rem;
 }
 main aside .toggle .menu a img {
-  width: 100%;
-}
-main aside .toggle .menu.on {
-  transition: 0.3s;
-  opacity: 1;
-  background-color: #332624;
-  text-align: center;
-  padding: 1rem 0;
-}
-main aside .toggle .menu.on a {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0.8rem;
-}
-main aside .toggle .menu.on a img {
   width: 100%;
 }
 main aside .toggle a {
@@ -261,6 +245,15 @@ main .search .search_data p {
 }
 main .favorite {
   width: 90%;
+}
+main .favorite .favorite_data p {
+  padding: 18rem 0;
+  width: 100%;
+  color: #e0ceaa;
+  text-align: center;
+  font-size: 20px;
+  font-family: "dreamgotic";
+  font-weight: 500;
 }
 main .favorite .favorite_data ul {
   display: flex;

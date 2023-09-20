@@ -49,18 +49,25 @@ function Search() {
     }
 
     //정렬
-    const sortDataAlphabetically = (isSorted) => {
+    const dataSort = (isSorted) => {
         const sorted = isSorted
             ? [...filteredData].sort((a, b) => a.name.localeCompare(b.name))
             : [...filteredData].sort((b, a) => a.name.localeCompare(b.name))
         setFilteredData(sorted);
     };
 
+
+    const navigateToDetail = (category, id) => {
+        console.log(category, id);
+        navigate(`/detail/${category}-${id}`);
+    };
+
+
     return (
         <>
             <Header />
             <main>
-                <Aside onSortRequest={sortDataAlphabetically} />
+                <Aside onSortRequest={dataSort} />
                 <div className="search">
                     <div className='search_area'>
                         <form onSubmit={searching}>
@@ -81,7 +88,7 @@ function Search() {
                             <ul>
                                 {filteredData.map((item, index) => (
                                     <li key={index}>
-                                        <figure onClick={() => { navigate(`/detail/${item.category}-${item.id}`) }}>
+                                        <figure onClick={() => navigateToDetail(item.category, item.id)}>
                                             <a><img src={item.image} alt="Item" /></a>
                                             <figcaption>
                                                 <p>{item.name}</p>

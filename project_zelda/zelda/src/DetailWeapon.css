@@ -196,7 +196,7 @@ body.detail .contentsD .right_contents_Weapon .place .place_data span {
   font-weight: 500;
 }
 body.detail .contentsD .right_contents_Weapon .get_item {
-  padding-bottom: 2rem;
+  padding: 1rem 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

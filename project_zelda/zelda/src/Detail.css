@@ -136,7 +136,7 @@ body.detail .contents .right_contents .place .place_data span {
   font-weight: 500;
 }
 body.detail .contents .right_contents .get_item {
-  padding-bottom: 2rem;
+  padding: 1rem 0 2rem;
 }
 body.detail .contents .right_contents .get_item .item {
   width: 100%;
@@ -218,9 +218,6 @@ body.detail .contents .right_contents_Weapon .get_item .item_stats {
 }
 body.detail .contents .right_contents_Weapon .get_item .item_stats .item {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 body.detail .contents .right_contents_Weapon .get_item .item_stats .item span {
   color: #3cd3fc;

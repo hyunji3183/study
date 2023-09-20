@@ -20,7 +20,7 @@ function Equipment() {
             })
     }, []);
 
-    const sortDataAlphabetically = (isSorted) => {
+    const dataSort = (isSorted) => {
         const sorted = isSorted
             ? [...data].sort((a, b) => a.name.localeCompare(b.name))
             : [...data].sort((b, a) => a.name.localeCompare(b.name))
@@ -30,7 +30,7 @@ function Equipment() {
     return (<>
         <Header />
         <main>
-            <Aside onSortRequest={sortDataAlphabetically} />
+            <Aside onSortRequest={dataSort} />
             <div className="list">
                 <ul>
                     {data && data.map((item) => (

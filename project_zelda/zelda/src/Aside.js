@@ -11,10 +11,7 @@ import triforce from './img/icon_triforce.png';
 import { Link } from 'react-router-dom';
 
 function Aside({ onSortRequest }) {
-    const toggle = () => {
-        const togglemenu = document.querySelector('.menu')
-        togglemenu.classList.toggle('on')
-    }
+    
 
     const click_back = () => {
         const categoryBtn = document.querySelectorAll('.category a');
@@ -53,7 +50,7 @@ function Aside({ onSortRequest }) {
                     <a onClick={toggleSort}><img src={sort} alt="" /></a>
                     <Link to="/Search"><img src={search} alt="" /></Link>
                 </div>
-                <a onClick={toggle}><img src={triforce} alt="" /></a>
+                <a><img src={triforce} alt="" /></a>
             </div>
         </aside>
     )

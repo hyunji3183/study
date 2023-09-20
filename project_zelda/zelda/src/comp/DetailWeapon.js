@@ -18,7 +18,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function Detail() {
-    
+
 
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
@@ -41,43 +41,42 @@ function Detail() {
     }
 
     let favorite, filterData;
-    function favoriteStorage(){
+    function favoriteStorage() {
         favorite = localStorage.fa || [];
         favorite = (favorite.length) ? JSON.parse(favorite) : [];
-        
-        filterData = favorite.filter(obj=>obj.id==id && obj.catagory==catagory);
-        if(!data.length){
+
+        filterData = favorite.filter(obj => obj.id == id && obj.catagory == catagory);
+        if (!data.length) {
             filterData.length ? setIsFavorite(true) : setIsFavorite(false);
-        }else{
+        } else {
             setIsFavorite(!isFavorite)
         }
     }
-    
-    
+
+
     function OnFavorite() {
         favoriteStorage();
-        
-        if (filterData.length)
-        {
-            let setFa = favorite.filter(obj=> (obj.id !== id))
-            localStorage.setItem('fa', JSON.stringify(setFa));           
+
+        if (filterData.length) {
+            let setFa = favorite.filter(obj => (obj.id !== id))
+            localStorage.setItem('fa', JSON.stringify(setFa));
         }
-        else
-        {
-            localStorage.setItem('fa', JSON.stringify([...favorite,{catagory,id}]));           
+        else {
+            localStorage.setItem('fa', JSON.stringify([...favorite, { catagory, id }]));
         }
-        
+
     }
-    
+
     useEffect(() => {
-        favoriteStorage();       
+        favoriteStorage();
         axios.get(url[catagory])
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
             })
-        
+
     }, []);
+
 
 
     if (!data && data.length == 0) return <></>;
@@ -130,22 +129,12 @@ function Detail() {
                                 <div className='get_item'>
                                     <div className='item_stats'>
                                         <div className='item'>
-                                            <p><img src={deLweapon} /></p>
-                                            <span>공격력</span>
-                                            <p><img src={deRweapon} /></p>
+                                            <p><img src={deLplace} /></p>
+                                            <span>{item.properties.attack > 0 ? "공격력" : "방어력"}</span>
+                                            <p><img src={deRplace} /></p>
                                         </div>
                                         <div className='item_data'>
-                                            <span>{item.properties.attack}</span>
-                                        </div>
-                                    </div>
-                                    <div className='item_stats'>
-                                        <div className='item'>
-                                            <p><img src={deLweapon} /></p>
-                                            <span>방어력</span>
-                                            <p><img src={deRweapon} /></p>
-                                        </div>
-                                        <div className='item_data'>
-                                            <span>{item.properties.defense}</span>
+                                            <span>{item.properties.attack > 0 ? item.properties.attack : item.properties.defense}</span>
                                         </div>
                                     </div>
                                 </div>

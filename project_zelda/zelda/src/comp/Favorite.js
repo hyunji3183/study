@@ -24,7 +24,7 @@ function Favorite() {
 
     const favorites = localStorage.getItem('fa') ? JSON.parse(localStorage.getItem('fa')) : [];
 
-    const fetchDataForFavorites = () => {
+    const favoriteData = () => {
         const allData = []; // 모든 결과를 저장할 배열
 
         const axiosRequests = favorites.map((v, k) => {
@@ -43,10 +43,30 @@ function Favorite() {
     };
 
     useEffect(() => {
-        fetchDataForFavorites();
+        favoriteData();
     }, []);
 
-    const sortDataAlphabetically = () => {
+
+    const removeFavorite = (item) => {
+        // 로컬 스토리지에서 현재 저장된 즐겨찾기 목록을 가져옵니다.
+        const favorites = JSON.parse(localStorage.getItem('fa') || '[]');
+        // 현재 아이템을 즐겨찾기에서 제거한 새로운 배열을 생성합니다.
+        const updateData = favorites.filter((fav) => !(fav.id == item.id));
+        // 로컬 스토리지를 업데이트합니다.
+        localStorage.setItem('fa', JSON.stringify(updateData));
+        // 화면에서 해당 데이터를 제거합니다.
+        setData((prevData) => prevData.filter((dataItem) => !(dataItem.id == item.id && dataItem.category == item.category)));
+    };
+
+    const isFavorite = (id, category) => {
+        const favorites = JSON.parse(localStorage.getItem('fa') || '[]');
+        //로컬 스토리지에서 fa라는 키로 저장된 데이터를 가져와서 해당 데이터 배열에서 특정 id와 category 값이 일치하는지 확인
+        return favorites.some((item) => item.id == id && item.category == category);
+    };
+
+
+
+    const dataSort = () => {
         const sorted = isSorted
             ? [...data].sort((a, b) => a.name.localeCompare(b.name))
             : [...data].sort((b, a) => a.name.localeCompare(b.name))
@@ -57,24 +77,29 @@ function Favorite() {
         <>
             <Header />
             <main>
-                <Aside onSortRequest={sortDataAlphabetically} />
+                <Aside onSortRequest={dataSort} />
                 <div className='favorite'>
                     <div className='favorite_data'>
-                        <ul>
-                            {data.map((item) => (
-                                <li key={item.id}>
-                                    <figure>
-                                        <a>
-                                            <img src={item.image} alt={item.name} />
-                                            <span className="material-symbols-outlined">favorite</span>
-                                        </a>
-                                        <figcaption>
-                                            <p>{item.name}</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                            ))}
-                        </ul>
+                        {data.length === 0 ? (
+                            <p>목록이 비어있습니다.</p>
+                        ) : (
+                            <ul>
+                                {data.map((item) => (
+                                    <li key={item.id}>
+                                        <figure>
+                                            <a /* onClick={() => navigate(`/detail/${item.category}-${item.id}`)} */>
+                                                <img src={item.image} alt={item.name} />
+                                                <span className={`material-symbols-outlined ${isFavorite(item.id, item.category) ? 'active' : ''}`}
+                                                    onClick={() => { removeFavorite(item); }}>favorite</span>
+                                            </a>
+                                            <figcaption>
+                                                <p>{item.name}</p>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </div>
             </main>

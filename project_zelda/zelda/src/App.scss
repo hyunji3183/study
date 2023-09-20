@@ -99,25 +99,9 @@ main {
             align-items: center;
             justify-content: space-between;
             .menu {
-                opacity: 0;
                 background-color: #332624;
                 text-align: center;
-                padding: 1rem 0;
-                a {
-                    width: 80%;
-                    margin: 0 auto;
-                    padding: 0.8rem;
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-            .menu.on {
-                transition: 0.3s;
-                opacity: 1;
-                background-color: #332624;
-                text-align: center;
-                padding: 1rem 0;
+                padding: 1.5rem 0;
                 a {
                     width: 80%;
                     margin: 0 auto;
@@ -276,6 +260,15 @@ main {
     .favorite {
         width: 90%;
         .favorite_data {
+            p{
+                padding: 18rem 0;
+                width: 100%;
+                color: #e0ceaa;
+                text-align: center;
+                font-size: 20px;
+                font-family: "dreamgotic";
+                font-weight: 500;
+            }
             ul {
                 display: flex;
                 flex-wrap: wrap;
