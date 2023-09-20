@@ -8,6 +8,7 @@ import Aside from '../Aside';
 
 function Favorite() {
     const [data, setData] = useState([]);
+    const [isSorted, setIsSorted] = useState(false);
     const navigate = useNavigate();
 
     const bodys = document.querySelector('body');
@@ -45,18 +46,28 @@ function Favorite() {
         fetchDataForFavorites();
     }, []);
 
+    const sortDataAlphabetically = () => {
+        const sorted = isSorted
+            ? [...data].sort((a, b) => a.name.localeCompare(b.name))
+            : [...data].sort((b, a) => a.name.localeCompare(b.name))
+        setData(sorted);
+        setIsSorted(!isSorted);
+    };
     return (
         <>
             <Header />
             <main>
-                <Aside />
+                <Aside onSortRequest={sortDataAlphabetically} />
                 <div className='favorite'>
                     <div className='favorite_data'>
                         <ul>
                             {data.map((item) => (
                                 <li key={item.id}>
                                     <figure>
-                                        <a><img src={item.image} alt={item.name} /></a>
+                                        <a>
+                                            <img src={item.image} alt={item.name} />
+                                            <span className="material-symbols-outlined">favorite</span>
+                                        </a>
                                         <figcaption>
                                             <p>{item.name}</p>
                                         </figcaption>

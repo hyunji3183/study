@@ -81,7 +81,7 @@ function Search() {
                             <ul>
                                 {filteredData.map((item, index) => (
                                     <li key={index}>
-                                        <figure onClick={() => { navigate(`/detail/Creatures-${item.id}`) }}>
+                                        <figure onClick={() => { navigate(`/detail/${item.category}-${item.id}`) }}>
                                             <a><img src={item.image} alt="Item" /></a>
                                             <figcaption>
                                                 <p>{item.name}</p>

@@ -272,6 +272,7 @@ main .favorite .favorite_data ul li {
   padding: 1.5rem 0 0;
 }
 main .favorite .favorite_data ul li figure {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -279,11 +280,20 @@ main .favorite .favorite_data ul li figure {
 }
 main .favorite .favorite_data ul li figure a {
   width: 90%;
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
 }
 main .favorite .favorite_data ul li figure a img {
   width: 100%;
+}
+main .favorite .favorite_data ul li figure a > span {
+  width: 16%;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 26px;
+  color: #ff4a4a;
 }
 main .favorite .favorite_data ul li figure figcaption {
   color: #e0ceaa;
