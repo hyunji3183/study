@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import '../App.css';
@@ -8,8 +8,7 @@ import Aside from '../Aside';
 
 function Favorite() {
     const [data, setData] = useState([]);
-    const { param } = useParams();
-    const favorites = localStorage.getItem('fa') ? localStorage.getItem('fa').split(',') : [];
+    const navigate = useNavigate();
 
     const bodys = document.querySelector('body');
     bodys.classList.remove('detail');
@@ -22,19 +21,29 @@ function Favorite() {
         Treasure: '../db/botw/data/compendium/Treasure.json'
     };
 
-    const test = () =>
-    {
-        favorites.map(cur => {
-            const [category, id] = cur.split('-');
-            axios.get(url[category])
-                .then(res => {
-                    let filteredData = res.data.filter(n => n.id == id)[0]
-                    setData(data  => [...data, filteredData]);
-                })
+    const favorites = localStorage.getItem('fa') ? JSON.parse(localStorage.getItem('fa')) : [];
+
+    const fetchDataForFavorites = () => {
+        const allData = []; // 모든 결과를 저장할 배열
+
+        const axiosRequests = favorites.map((v, k) => {
+            return axios.get(url[v.catagory])
+                .then((res) => {
+                    let filterData = res.data.filter(n => n.id == v.id);
+                    allData.push(...filterData);
+                });
         });
+
+        // 모든 axios 요청이 완료되면 데이터 설정
+        Promise.all(axiosRequests)
+            .then(() => {
+                setData(allData);
+            });
     };
 
-    useEffect(test, []);
+    useEffect(() => {
+        fetchDataForFavorites();
+    }, []);
 
     return (
         <>

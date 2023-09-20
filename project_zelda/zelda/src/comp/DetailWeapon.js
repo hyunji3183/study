@@ -18,6 +18,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function Detail() {
+    
+
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
 
@@ -27,7 +29,7 @@ function Detail() {
 
     const [data, setData] = useState([]);
     const [fa, setFa] = useState([]);
-    const [isFavorite, setIsFavorite] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(true);
     const navigate = useNavigate();
 
     const url = {
@@ -38,45 +40,54 @@ function Detail() {
         Treasure: '../db/botw/data/compendium/Treasure.json'
     }
 
+    let favorite, filterData;
+    function favoriteStorage(){
+        favorite = localStorage.fa || [];
+        favorite = (favorite.length) ? JSON.parse(favorite) : [];
+        
+        filterData = favorite.filter(obj=>obj.id==id && obj.catagory==catagory);
+        if(!data.length){
+            filterData.length ? setIsFavorite(true) : setIsFavorite(false);
+        }else{
+            setIsFavorite(!isFavorite)
+        }
+    }
+    
+    
+    function OnFavorite() {
+        favoriteStorage();
+        
+        if (filterData.length)
+        {
+            let setFa = favorite.filter(obj=> (obj.id !== id))
+            localStorage.setItem('fa', JSON.stringify(setFa));           
+        }
+        else
+        {
+            localStorage.setItem('fa', JSON.stringify([...favorite,{catagory,id}]));           
+        }
+        
+    }
+    
     useEffect(() => {
+        favoriteStorage();       
         axios.get(url[catagory])
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
             })
-    }, [isFavorite]);
+        
+    }, []);
 
-    useEffect(() => {
-        setFa(localStorage.getItem('fa') === null ? [] : localStorage.getItem('fa').split(','))
-    },[])
 
-    let newdata;
-    function faadd(id) {
-        let idData = localStorage.getItem('fa')  === null ? [] : localStorage.getItem('fa').split(',').filter(n=>n === id);
-        if(idData.length <= 0){
-            if(fa.length <= 0) {
-                newdata = id;
-            } else {
-                newdata = fa + ',' + id
-            }
-        } else {
-            newdata = localStorage.getItem('fa').split(',').filter(n=>n !== id);
-        }
-        localStorage.setItem('fa',newdata)
-        setFa(newdata)
-        let lengths = localStorage.getItem('fa').split(',').filter(n=> n === id).length
-        setIsFavorite( lengths <= 0 ? false : true)
-    }
-
-    if (!data && data.length <= 0) return <></>;
-
+    if (!data && data.length == 0) return <></>;
     return (
         <>
             <header>
                 <div className="head">
                     <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
-                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { faadd(id) }}>favorite</span>
+                    <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>
             </header>
             <div className='detail'>

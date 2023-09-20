@@ -15,6 +15,8 @@ import List from '../Favorite_List.json';
 
 
 function Detail() {
+    
+
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
 
@@ -24,7 +26,7 @@ function Detail() {
 
     const [data, setData] = useState([]);
     const [fa, setFa] = useState([]);
-    const [isFavorite, setIsFavorite] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(true);
     const navigate = useNavigate();
 
     const url = {
@@ -35,45 +37,46 @@ function Detail() {
         Treasure: '../db/botw/data/compendium/Treasure.json'
     }
 
+    let favorite, filterData;
+    function favoriteStorage(){
+        favorite = localStorage.fa || [];
+        favorite = (favorite.length) ? JSON.parse(favorite) : [];
+        
+        filterData = favorite.filter(obj=>obj.id==id && obj.catagory==catagory);
+        if(!data.length){
+            filterData.length ? setIsFavorite(true) : setIsFavorite(false);
+        }else{
+            setIsFavorite(!isFavorite)
+        }
+    }
+    
+    
+    function OnFavorite() {
+        favoriteStorage();
+        
+        if (filterData.length)
+        {
+            let setFa = favorite.filter(obj=> (obj.id !== id))
+            localStorage.setItem('fa', JSON.stringify(setFa));           
+        }
+        else
+        {
+            localStorage.setItem('fa', JSON.stringify([...favorite,{catagory,id}]));           
+        }
+        
+    }
+    
     useEffect(() => {
+        favoriteStorage();       
         axios.get(url[catagory])
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
             })
-    }, [isFavorite]);
+        
+    }, []);
 
-    useEffect(() => {
-        setFa(localStorage.getItem('fa') === null ? [] : localStorage.getItem('fa').split(','))
-    },[])
 
-    let newdata;
-    function OnFavorite(catagory, id) {
-        let value = catagory + '-' + id;
-        let filterData = localStorage.getItem('fa')?.split(',').filter(n => n === value);
-        if (filterData != undefined)
-        {
-            let idData = localStorage.getItem('fa') === null ? [] : filterData;
-            if (idData.length == 0) {
-                if (fa.length == 0) {
-                    newdata = value;
-                } else {
-                    newdata = fa + ',' + value;
-                }
-            } else {
-                newdata = localStorage.getItem('fa').split(',').filter(n => n !== value);
-            }
-            localStorage.setItem('fa', newdata);
-            setFa(newdata);
-            setIsFavorite(newdata.length == 0 ? false : true);
-        }
-        else
-        {
-            localStorage.setItem('fa', value);
-            setIsFavorite(true);
-        }
-    }
-    
     if (!data && data.length == 0) return <></>;
     return (
         <>
