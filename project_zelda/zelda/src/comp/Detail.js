@@ -33,7 +33,8 @@ function Detail() {
         Equipment: '../db/botw/data/compendium/Equipment.json',
         Materials: '../db/botw/data/compendium/Materials.json',
         Monsters: '../db/botw/data/compendium/Monsters.json',
-        Treasure: '../db/botw/data/compendium/Treasure.json'
+        Treasure: '../db/botw/data/compendium/Treasure.json',
+        Master: '../db/botw/data/compendium/Master.json'
     }
 
     let favorite, filterData;
@@ -96,6 +97,7 @@ function Detail() {
                         <Link to="/materials"><img src={materials} alt="" /></Link>
                         <Link to="/equipment"><img src={equipmentd} alt="" /></Link>
                         <Link to="/treasure"><img src={treasure} alt="" /></Link>
+                        <Link to="/master"><img src={treasure} alt="" /></Link>
                     </div>
                 </aside>
                 {data && data

@@ -25,7 +25,8 @@ function Aside({ onSortRequest }) {
                 <Link to="/monsters"><img src={monsters} alt="monsters"/></Link>
                 <Link to="/materials"><img src={materials} alt="materials"/></Link>
                 <Link to="/equipment"><img src={equipmentd} alt="equipmentd"/></Link>
-                <Link to="/treasure"><img src={treasure} alt=""/></Link>
+                <Link to="/treasure"><img src={treasure} alt="treasure"/></Link>
+                <Link to="/master"><img src={treasure} alt="master"/>"</Link>
             </div>
             <div className="toggle">
                 <div className='menu'>

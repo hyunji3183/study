@@ -13,6 +13,7 @@ import Favorite from './comp/Favorite';
 import Search from './comp/Search';
 import Detail from './comp/Detail';
 import DetailWeapon from './comp/DetailWeapon';
+import Master from './comp/Master';
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                         <Route path="/Materials" element={<Materials />} />
                         <Route path="/Equipment" element={<Equipment />} />
                         <Route path="/Treasure" element={<Treasure />} />
+                        <Route path="/Master" element={<Master />} />
                         <Route path="/Favorite" element={<Favorite />} />
                         <Route path="/Search" element={<Search />} />
                         <Route path="/Detail/:param" element={<Detail />} />

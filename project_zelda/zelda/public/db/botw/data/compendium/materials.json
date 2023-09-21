@@ -4,8 +4,8 @@
         "name": "apple",
         "description": "A common fruit found on trees all around Hyrule. Eat it fresh, or cook it to increase its effect.",
         "common_locations": [
-            "Hyrule Field",
-            "East Necluda"
+            "하이랄 평원",
+            "동하테르"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "",
@@ -18,8 +18,8 @@
         "name": "palm fruit",
         "description": "Fruit from palm trees that grow near the ocean. It doesn't offer any special effects but will increase your heart recovery when used as an ingredient.",
         "common_locations": [
-            "East Necluda",
-            "Gerudo Desert"
+            "동하테르",
+            "겔드 사막"
         ],
         "hearts_recovered": 1.0,
         "cooking_effect": "",
@@ -32,8 +32,8 @@
         "name": "wildberry",
         "description": "A fruit that grows in cold, snowy regions known for its tangy, sweet flavor. It doesn't offer any special effects, but it's a popular cooking ingredient.",
         "common_locations": [
-            "Gerudo Highlands",
-            "Hebra Mountains"
+            "겔드 고지",
+            "헤브라산"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "",
@@ -46,8 +46,8 @@
         "name": "hearty durian",
         "description": "This fruit's mighty odor has earned it the nickname \"king of fruits.\" It offers immense restorative powers; dishes cooked with it will temporarily increase your maximum hearts.",
         "common_locations": [
-            "West Necluda",
-            "Faron Grasslands"
+            "서하테르",
+            "필로네 초원"
         ],
         "hearts_recovered": 3.0,
         "cooking_effect": "extra hearts",
@@ -60,8 +60,8 @@
         "name": "hydromelon",
         "description": "This resilient fruit can flourish even in the heat of the desert. The hydrating liquid inside provides a cooling effect that, when cooked, increases your heat resistance.",
         "common_locations": [
-            "Gerudo Desert",
-            "Faron Grasslands"
+            "겔드 사막",
+            "필로네 초원"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "heat resistance",
@@ -74,8 +74,8 @@
         "name": "spicy pepper",
         "description": "This pepper is exploding with spice. Cook with it to create dishes that will raise your body temperature and help you withstand the cold.",
         "common_locations": [
-            "Gerudo Desert",
-            "Tabantha Frontier"
+            "겔드 사막",
+            "타반타 변두리"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "cold resistance",
@@ -86,10 +86,10 @@
     {
         "id": 171,
         "name": "voltfruit",
-        "description": "Cacti found in the Gerudo Desert bear this sweet fruit. It's naturally insulated, so when cooked into a dish, it provides resistance against electricity.",
+        "description": "Cacti found in the 겔드 사막 bear this sweet fruit. It's naturally insulated, so when cooked into a dish, it provides resistance against electricity.",
         "common_locations": [
-            "Gerudo Desert",
-            "Gerudo Highlands"
+            "겔드 사막",
+            "겔드 고지"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "shock resistance",
@@ -102,8 +102,8 @@
         "name": "fleet-lotus seeds",
         "description": "The plant that bears these seeds grows near deep water. The roots draw nutrients from the water, which boosts your movement speed when the seeds are cooked into a dish.",
         "common_locations": [
-            "Lanayru Wetlands",
-            "Lanayru Great Spring"
+            "라넬 습원",
+            "라넬 대수원"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "speed up",
@@ -129,8 +129,8 @@
         "name": "hylian shroom",
         "description": "A common mushroom found near trees around Hyrule. Eat it to restore half a heart.",
         "common_locations": [
-            "Hyrule Field",
-            "West Necluda"
+            "하이랄 평원",
+            "서하테르"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "",
@@ -143,8 +143,8 @@
         "name": "endura shroom",
         "description": "A rare yellowish-orange mushroom. Cook it before eating to temporarily increase your stamina limit.",
         "common_locations": [
-            "Hyrule Ridge",
-            "Hyrule Field"
+            "하이랄 구릉",
+            "하이랄 평원"
         ],
         "hearts_recovered": 1.0,
         "cooking_effect": "extra stamina",
@@ -157,8 +157,8 @@
         "name": "stamella shroom",
         "description": "A green mushroom that grows near trees in the forest. It's chock-full of natural energy. Cook it to release its stamina-restoration properties.",
         "common_locations": [
-            "Hyrule Ridge",
-            "Hyrule Field"
+            "하이랄 구릉",
+            "하이랄 평원"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "stamina recovery",
@@ -171,8 +171,8 @@
         "name": "hearty truffle",
         "description": "This rare mushroom has a rich scent. Cook it before eating to temporarily increase your maximum hearts.",
         "common_locations": [
-            "Great Hyrule Forest",
-            "Hyrule Field"
+            "하이랄 대삼림",
+            "하이랄 평원"
         ],
         "hearts_recovered": 2.0,
         "cooking_effect": "extra hearts",
@@ -185,8 +185,8 @@
         "name": "big hearty truffle",
         "description": "Years of going unpicked have allowed this hearty truffle to grow quite large. It's chock- full of nutrients. When cooked into a dish, it temporarily increases your maximum hearts.",
         "common_locations": [
-            "Hebra Mountains",
-            "Great Hyrule Forest"
+            "헤브라산",
+            "하이랄 대삼림"
         ],
         "hearts_recovered": 3.0,
         "cooking_effect": "extra hearts",
@@ -199,7 +199,7 @@
         "name": "chillshroom",
         "description": "Often found at the base of pine trees in cold climates, these mushrooms are cool to the touch and can be used to cook dishes that allow you to stay cool even in arid regions.",
         "common_locations": [
-            "Hebra Mountains",
+            "헤브라산",
             "Mount Lanayru"
         ],
         "hearts_recovered": 0.5,
@@ -213,8 +213,8 @@
         "name": "sunshroom",
         "description": "A bright red mushroom that grows in hot climates. Imbued with the power of heat, they can be used to cook dishes that will allow you endure the bitter cold.",
         "common_locations": [
-            "Eldin Canyon",
-            "Gerudo Highlands"
+            "올딘 협곡",
+            "겔드 고지"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "cold resistance",
@@ -227,8 +227,8 @@
         "name": "zapshroom",
         "description": "This mushroom grows wild in the Gerudo region. The cap is naturally insulated, so when used in cooking, it will offer protection against electricity.",
         "common_locations": [
-            "Deep Akkala",
-            "Gerudo Highlands"
+            "추낙 심부",
+            "겔드 고지"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "shock resistance",
@@ -241,8 +241,8 @@
         "name": "rushroom",
         "description": "A mushroom that can grow almost anywhere but prefers ceilings and sheer cliffs. Cook it before eating to temporarily increase your movement speed.",
         "common_locations": [
-            "Gerudo Highlands",
-            "Hyrule Ridge"
+            "겔드 고지",
+            "하이랄 구릉"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "speed up",
@@ -255,8 +255,8 @@
         "name": "razorshroom",
         "description": "This mushroom is known for the natural slice in its cap. Eating it fosters your competitive spirit. Use it when cooking to prepare a dish that will increase your strength.",
         "common_locations": [
-            "Great Hyrule Forest",
-            "Tabantha Frontier"
+            "하이랄 대삼림",
+            "타반타 변두리"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "attack up",
@@ -269,8 +269,8 @@
         "name": "ironshroom",
         "description": "The cap of this mushroom is very hard. Use it when cooking to prepare a dish that increases you defense.",
         "common_locations": [
-            "West Necluda",
-            "East Necluda"
+            "서하테르",
+            "동하테르"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "defense up",
@@ -283,8 +283,8 @@
         "name": "silent shroom",
         "description": "A strange mushroom that glows softly in the forest at night. Cooking it into a dish unlocks the nutrients in its cap, resulting in a meal that will allow you to move stealthily.",
         "common_locations": [
-            "Lanayru Great Spring",
-            "West Necluda"
+            "라넬 대수원",
+            "서하테르"
         ],
         "hearts_recovered": 0.5,
         "cooking_effect": "stealth up",
@@ -297,8 +297,8 @@
         "name": "hyrule herb",
         "description": "This healthy herb grows abundantly in the plains of Hyrule. Cook it before eating to increase the number of hearts it restores.",
         "common_locations": [
-            "Hyrule Field",
-            "Akkala Highlands"
+            "하이랄 평원",
+            "추낙 고원"
         ],
         "hearts_recovered": 1.0,
         "cooking_effect": "",
@@ -311,8 +311,8 @@
         "name": "hearty radish",
         "description": "A rare radish that grows best in sunny plains. Cook it before eating to temporarily increase your maximum hearts.",
         "common_locations": [
-            "Hyrule Ridge",
-            "East Necluda"
+            "하이랄 구릉",
+            "동하테르"
         ],
         "hearts_recovered": 2.5,
         "cooking_effect": "extra hearts",
@@ -325,8 +325,8 @@
         "name": "big hearty radish",
         "description": "This hearty radish has grown much larger than the average radish. It's rich in analeptic compounds that, when cooked into a dish, temporarily increase your maximum hearts.",
         "common_locations": [
-            "Akkala Highlands",
-            "Lanayru Great Spring"
+            "추낙 고원",
+            "라넬 대수원"
         ],
         "hearts_recovered": 4.0,
         "cooking_effect": "extra hearts",
@@ -339,8 +339,8 @@
         "name": "cool safflina",
         "description": "This medicinal plant grows in high elevations, such as mountains in the Hebra or Gerudo regions. When cooked into a dish, it will temporarily increase your heat resistance.",
         "common_locations": [
-            "Hebra Mountains",
-            "Gerudo Highlands"
+            "헤브라산",
+            "겔드 고지"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "heat resistance",
@@ -351,10 +351,10 @@
     {
         "id": 190,
         "name": "warm safflina",
-        "description": "This medicinal plant grows in hot regions, such as the Gerudo Desert. It's warm to the touch and increases your cold resistance when cooked into a dish.",
+        "description": "This medicinal plant grows in hot regions, such as the 겔드 사막. It's warm to the touch and increases your cold resistance when cooked into a dish.",
         "common_locations": [
-            "Gerudo Desert",
-            "Hyrule Ridge"
+            "겔드 사막",
+            "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "cold resistance",
@@ -365,10 +365,10 @@
     {
         "id": 191,
         "name": "electric safflina",
-        "description": "This medicinal plant grows abundantly in the Gerudo Desert. Its peculiar fibers conduct electricity, which will increase your electricity resistance when cooked into a dish.",
+        "description": "This medicinal plant grows abundantly in the 겔드 사막. Its peculiar fibers conduct electricity, which will increase your electricity resistance when cooked into a dish.",
         "common_locations": [
-            "Gerudo Desert",
-            "Hyrule Ridge"
+            "겔드 사막",
+            "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "shock resistance",
@@ -394,8 +394,8 @@
         "name": "endura carrot",
         "description": "Highly valued as a medicinal plant, this carrot contains large amounts of nourishing energy. When cooked into a dish, it boosts your stamina beyond its maximum limit.",
         "common_locations": [
-            "Hyrule Ridge",
-            "Faron Grasslands"
+            "하이랄 구릉",
+            "필로네 초원"
         ],
         "hearts_recovered": 2.0,
         "cooking_effect": "extra stamina",
@@ -421,8 +421,8 @@
         "name": "swift violet",
         "description": "This vitality-rich flower blooms mainly on cliffsides. When cooked into a dish, the nourishing compounds increase your movement speed.",
         "common_locations": [
-            "Gerudo Highlands",
-            "Hebra Mountains"
+            "겔드 고지",
+            "헤브라산"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "speed up",
@@ -435,8 +435,8 @@
         "name": "mighty thistle",
         "description": "This medicinal plant is known for its sharp thorns and for the fruit it bears. The fruit contains a compound that increases attack power when cooked into a dish.",
         "common_locations": [
-            "West Necluda",
-            "Faron Grasslands"
+            "서하테르",
+            "필로네 초원"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "attack up",
@@ -449,8 +449,8 @@
         "name": "armoranth",
         "description": "This tough medicinal plant cannot be broken, but it can be cooked. Its durable yet flexible fibers raise your defense when cooked into a dish.",
         "common_locations": [
-            "Akkala Highlands",
-            "Hyrule Ridge"
+            "추낙 고원",
+            "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "defense up",
@@ -463,8 +463,8 @@
         "name": "blue nightshade",
         "description": "A plant that grows in the quieter areas of Hyrule. At night, it gives off a soft glow. Cook with it to increase your stealth.",
         "common_locations": [
-            "West Necluda",
-            "Lanayru Great Spring"
+            "서하테르",
+            "라넬 대수원"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "stealth up",
@@ -477,8 +477,8 @@
         "name": "silent princess",
         "description": "This lovely flower was said to have been a favorite of the princess of Hyrule. Once feared to have gone extinct, it's recently been spotted growing in the wild.",
         "common_locations": [
-            "Hyrule Ridge",
-            "West Necluda"
+            "하이랄 구릉",
+            "서하테르"
         ],
         "hearts_recovered": 0.0,
         "cooking_effect": "stealth up",
@@ -491,8 +491,8 @@
         "name": "courser bee honey",
         "description": "Honey straight from the hive is chock-full of nutrients. Cooking this into a meal unlocks the potential of these nutrients and provides a stamina-recovery effect.",
         "common_locations": [
-            "Hyrule Field",
-            "Tabantha Frontier"
+            "하이랄 평원",
+            "타반타 변두리"
         ],
         "hearts_recovered": 2.0,
         "cooking_effect": "stamina recovery",

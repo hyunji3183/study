@@ -78,11 +78,10 @@ body main aside .category {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
 }
 body main aside .category a {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 body main aside .category a img {
   width: 100%;
@@ -101,7 +100,7 @@ body main aside .toggle {
 body main aside .toggle .menu {
   background-color: #332624;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 body main aside .toggle .menu a {
   width: 80%;
@@ -363,11 +362,10 @@ body main .favorite .favorite_data ul li figure figcaption p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
   }
   body main aside .category a {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   body main aside .category a img {
     width: 100%;
@@ -386,7 +384,7 @@ body main .favorite .favorite_data ul li figure figcaption p {
   body main aside .toggle .menu {
     background-color: #332624;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
   body main aside .toggle .menu a {
     width: 80%;
@@ -647,11 +645,10 @@ body main .favorite .favorite_data ul li figure figcaption p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
   }
   body main aside .category a {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   body main aside .category a img {
     width: 100%;
@@ -670,7 +667,7 @@ body main .favorite .favorite_data ul li figure figcaption p {
   body main aside .toggle .menu {
     background-color: #332624;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
   body main aside .toggle .menu a {
     width: 80%;
