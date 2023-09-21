@@ -1,9 +1,10 @@
 @import url("./_reset.scss");
 
 body.detail {
-    background-image: url(./background_image_detail.jpg);
-    width: 100%;
+    background-image: url(../src/img/background_image_detail.jpg);
     background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
     header {
         width: 100%;
         .head {
@@ -13,7 +14,7 @@ body.detail {
             width: 90%;
             margin: 0 auto;
             padding: 5rem 0 2rem;
-            a {
+            p {
                 width: 10%;
                 text-align: right;
                 img {

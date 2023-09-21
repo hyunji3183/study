@@ -1,16 +1,15 @@
 @import url("./_reset.scss");
 body {
-  background: url(./background_image.jpeg);
+  background: url(../src/img/background_image.jpeg);
   width: 100%;
 }
-
-.intro {
+body .intro {
   position: relative;
 }
-.intro .videobox {
+body .intro .videobox {
   position: relative;
 }
-.intro .videobox video {
+body .intro .videobox video {
   display: inline-block;
   width: 100vw;
   height: 100vh;
@@ -19,24 +18,23 @@ body {
   transform: translateX(-50%);
   overflow: hidden;
 }
-.intro .logo {
+body .intro .logo {
   position: absolute;
   left: 0;
   bottom: 16%;
 }
-.intro .logo p {
+body .intro .logo p {
   width: 80%;
   display: inline-block;
   text-align: center;
 }
-.intro .logo p img {
+body .intro .logo p img {
   width: 50%;
 }
-
-header {
+body header {
   width: 100%;
 }
-header .head {
+body header .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,17 +42,17 @@ header .head {
   margin: 0 auto;
   padding: 2rem 0;
 }
-header .head a {
+body header .head a {
   width: 7%;
   text-align: center;
 }
-header .head a img {
+body header .head a img {
   width: 50%;
 }
-header .head .heart {
+body header .head .heart {
   display: none;
 }
-header .head h2 {
+body header .head h2 {
   width: 16%;
   color: #e0ceaa;
   text-align: center;
@@ -63,94 +61,92 @@ header .head h2 {
   font-family: "font_zelda";
   font-weight: 0;
 }
-
-main {
+body main {
   width: 90%;
   height: fit-content;
   margin: 0 auto;
   display: flex;
 }
-main aside {
+body main aside {
   height: fit-content;
   width: 10%;
   position: sticky;
   top: 100px;
 }
-main aside .category {
+body main aside .category {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
 }
-main aside .category a {
+body main aside .category a {
   width: 100%;
   margin-bottom: 1rem;
 }
-main aside .category a img {
+body main aside .category a img {
   width: 100%;
 }
-main aside .category a.active img {
+body main aside .category a.active img {
   width: 100%;
   box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
 }
-main aside .toggle {
+body main aside .toggle {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-main aside .toggle .menu {
+body main aside .toggle .menu {
   background-color: #332624;
   text-align: center;
   padding: 1.5rem 0;
 }
-main aside .toggle .menu a {
+body main aside .toggle .menu a {
   width: 80%;
   margin: 0 auto;
-  padding: 0.8rem;
 }
-main aside .toggle .menu a img {
-  width: 100%;
+body main aside .toggle .menu a img {
+  width: 70%;
 }
-main aside .toggle a {
+body main aside .toggle a {
   cursor: pointer;
   padding: 1rem 0.3rem;
 }
-main aside .toggle a img {
+body main aside .toggle a img {
   width: 100%;
 }
-main .list {
+body main .list {
   width: 90%;
 }
-main .list ul {
+body main .list ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #332624;
   padding: 2rem;
 }
-main .list ul li {
+body main .list ul li {
   width: 45%;
   padding: 1rem 0;
 }
-main .list ul li figure {
+body main .list ul li figure {
   cursor: pointer;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-main .list ul li figure a {
+body main .list ul li figure a {
   width: 48%;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
-main .list ul li figure a img {
+body main .list ul li figure a img {
   width: 100%;
 }
-main .list ul li figure a span {
+body main .list ul li figure a span {
   position: absolute;
   left: 2%;
   top: 2.5%;
@@ -163,78 +159,78 @@ main .list ul li figure a span {
   padding: 0.2rem 0.3rem;
   border-radius: 10px;
 }
-main .list ul li figure figcaption {
+body main .list ul li figure figcaption {
   width: 46%;
   color: #e0ceaa;
 }
-main .list ul li figure figcaption b {
+body main .list ul li figure figcaption b {
   font-family: "dreamgotic";
   font-weight: 500;
   font-size: 1.375rem;
 }
-main .list ul li figure figcaption p {
+body main .list ul li figure figcaption p {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.125rem;
   padding: 0.5rem 0 1rem;
 }
-main .search {
+body main .search {
   width: 90%;
 }
-main .search .search_area form {
+body main .search .search_area form {
   transform: translateY(50%);
   padding-left: 1rem;
   display: flex;
 }
-main .search .search_area form input {
+body main .search .search_area form input {
   width: 90%;
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 30px;
   color: #e0ceaa;
 }
-main .search .search_area form > div {
+body main .search .search_area form > div {
   width: 90%;
   display: flex;
 }
-main .search .search_area form > div .searchbar img {
+body main .search .search_area form > div .searchbar img {
   width: 100%;
 }
-main .search .search_data ul {
+body main .search .search_data ul {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
 }
-main .search .search_data ul li {
+body main .search .search_data ul li {
   width: 25%;
   padding: 1rem 0 0;
 }
-main .search .search_data ul li figure {
+body main .search .search_data ul li figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
-main .search .search_data ul li figure a {
+body main .search .search_data ul li figure a {
   width: 90%;
   border-radius: 10px;
   overflow: hidden;
 }
-main .search .search_data ul li figure a img {
+body main .search .search_data ul li figure a img {
   width: 100%;
 }
-main .search .search_data ul li figure figcaption {
+body main .search .search_data ul li figure figcaption {
   color: #e0ceaa;
   width: 80%;
   text-align: center;
 }
-main .search .search_data ul li figure figcaption p {
+body main .search .search_data ul li figure figcaption p {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.5rem;
   padding: 0.3rem 0;
 }
-main .search .search_data p {
+body main .search .search_data p {
   padding: 10rem 0;
   width: 100%;
   color: #e0ceaa;
@@ -243,10 +239,10 @@ main .search .search_data p {
   font-family: "dreamgotic";
   font-weight: 500;
 }
-main .favorite {
+body main .favorite {
   width: 90%;
 }
-main .favorite .favorite_data p {
+body main .favorite .favorite_data p {
   padding: 18rem 0;
   width: 100%;
   color: #e0ceaa;
@@ -255,47 +251,620 @@ main .favorite .favorite_data p {
   font-family: "dreamgotic";
   font-weight: 500;
 }
-main .favorite .favorite_data ul {
+body main .favorite .favorite_data ul {
   display: flex;
   flex-wrap: wrap;
   width: 96%;
 }
-main .favorite .favorite_data ul li {
+body main .favorite .favorite_data ul li {
   width: 25%;
   padding: 1.5rem 0 0;
 }
-main .favorite .favorite_data ul li figure {
+body main .favorite .favorite_data ul li figure {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
-main .favorite .favorite_data ul li figure a {
+body main .favorite .favorite_data ul li figure a {
   width: 90%;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
 }
-main .favorite .favorite_data ul li figure a img {
+body main .favorite .favorite_data ul li figure a img {
   width: 100%;
 }
-main .favorite .favorite_data ul li figure a > span {
+body main .favorite .favorite_data ul li figure a > span {
   width: 16%;
   position: absolute;
-  right: 2%;
-  top: 2%;
-  font-size: 26px;
+  right: 5%;
+  top: 5%;
+  font-size: 1.5rem;
   color: #ff4a4a;
 }
-main .favorite .favorite_data ul li figure figcaption {
+body main .favorite .favorite_data ul li figure figcaption {
   color: #e0ceaa;
   width: 80%;
   text-align: center;
 }
-main .favorite .favorite_data ul li figure figcaption p {
+body main .favorite .favorite_data ul li figure figcaption p {
   font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.5rem;
   padding: 0.5rem 0;
+}
+
+@media (min-width: 641px) {
+  body {
+    background: url(../src/img/background_image.jpeg);
+    width: 100%;
+  }
+  body .intro {
+    position: relative;
+  }
+  body .intro .videobox {
+    position: relative;
+  }
+  body .intro .videobox video {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+  body header {
+    width: 100%;
+  }
+  body header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  body header .head a {
+    width: 7%;
+    text-align: center;
+  }
+  body header .head a img {
+    width: 50%;
+  }
+  body header .head .heart {
+    display: none;
+  }
+  body header .head h2 {
+    width: 16%;
+    color: #e0ceaa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-family: "font_zelda";
+    font-weight: 0;
+  }
+  body main {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+  }
+  body main aside {
+    height: fit-content;
+    width: 10%;
+    position: sticky;
+    top: 100px;
+  }
+  body main aside .category {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  body main aside .category a {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  body main aside .category a img {
+    width: 100%;
+  }
+  body main aside .category a.active img {
+    width: 100%;
+    box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
+  }
+  body main aside .toggle {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main aside .toggle .menu {
+    background-color: #332624;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  body main aside .toggle .menu a {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body main aside .toggle .menu a img {
+    width: 70%;
+  }
+  body main aside .toggle a {
+    cursor: pointer;
+    padding: 1rem 0.3rem;
+  }
+  body main aside .toggle a img {
+    width: 100%;
+  }
+  body main .list {
+    width: 90%;
+  }
+  body main .list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #332624;
+    padding: 2rem;
+  }
+  body main .list ul li {
+    width: 45%;
+    padding: 1rem 0;
+  }
+  body main .list ul li figure {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  body main .list ul li figure a {
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  body main .list ul li figure a img {
+    width: 100%;
+  }
+  body main .list ul li figure a span {
+    position: absolute;
+    left: 2%;
+    top: 2.5%;
+    display: block;
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.125rem;
+    color: #faf7f2;
+    background-color: #163156;
+    padding: 0.2rem 0.3rem;
+    border-radius: 10px;
+  }
+  body main .list ul li figure figcaption {
+    width: 46%;
+    color: #e0ceaa;
+  }
+  body main .list ul li figure figcaption b {
+    font-family: "dreamgotic";
+    font-weight: 500;
+    font-size: 1.375rem;
+  }
+  body main .list ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.125rem;
+    padding: 0.5rem 0 1rem;
+  }
+  body main .search {
+    width: 90%;
+  }
+  body main .search .search_area form {
+    transform: translateY(50%);
+    padding-left: 1rem;
+    display: flex;
+  }
+  body main .search .search_area form input {
+    width: 90%;
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 30px;
+    color: #e0ceaa;
+  }
+  body main .search .search_area .searchbar {
+    width: 88%;
+  }
+  body main .search .search_area .searchbar img {
+    width: 100%;
+  }
+  body main .search .search_data ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  body main .search .search_data ul li {
+    width: 25%;
+    padding: 1rem 0 0;
+  }
+  body main .search .search_data ul li figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body main .search .search_data ul li figure a {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body main .search .search_data ul li figure a img {
+    width: 100%;
+  }
+  body main .search .search_data ul li figure figcaption {
+    color: #e0ceaa;
+    width: 80%;
+    text-align: center;
+  }
+  body main .search .search_data ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+  }
+  body main .search .search_data p {
+    padding: 10rem 0;
+    width: 100%;
+    color: #e0ceaa;
+    text-align: center;
+    font-size: 20px;
+    font-family: "dreamgotic";
+    font-weight: 500;
+  }
+  body main .favorite {
+    width: 90%;
+  }
+  body main .favorite .favorite_data p {
+    padding: 18rem 0;
+    width: 100%;
+    color: #e0ceaa;
+    text-align: center;
+    font-size: 20px;
+    font-family: "dreamgotic";
+    font-weight: 500;
+  }
+  body main .favorite .favorite_data ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+  }
+  body main .favorite .favorite_data ul li {
+    width: 25%;
+    padding: 1.5rem 0 0;
+  }
+  body main .favorite .favorite_data ul li figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body main .favorite .favorite_data ul li figure a {
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body main .favorite .favorite_data ul li figure a img {
+    width: 100%;
+  }
+  body main .favorite .favorite_data ul li figure a > span {
+    width: 16%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 1.5rem;
+    color: #ff4a4a;
+  }
+  body main .favorite .favorite_data ul li figure figcaption {
+    color: #e0ceaa;
+    width: 80%;
+    text-align: center;
+  }
+  body main .favorite .favorite_data ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    background: url(../src/img/background_image.jpeg);
+    width: 100%;
+  }
+  body .intro {
+    position: relative;
+  }
+  body .intro .videobox {
+    position: relative;
+  }
+  body .intro .videobox video {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+  body header {
+    width: 100%;
+  }
+  body header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  body header .head a {
+    width: 10%;
+    text-align: center;
+  }
+  body header .head a img {
+    width: 50%;
+  }
+  body header .head .heart {
+    display: none;
+  }
+  body header .head h2 {
+    width: 16%;
+    color: #e0ceaa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "font_zelda";
+    font-weight: 200;
+  }
+  body main {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+  }
+  body main aside {
+    height: fit-content;
+    width: 10%;
+    position: sticky;
+    top: 100px;
+  }
+  body main aside .category {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  body main aside .category a {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  body main aside .category a img {
+    width: 100%;
+  }
+  body main aside .category a.active img {
+    width: 100%;
+    box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
+  }
+  body main aside .toggle {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main aside .toggle .menu {
+    background-color: #332624;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  body main aside .toggle .menu a {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  body main aside .toggle .menu a img {
+    width: 70%;
+  }
+  body main aside .toggle a {
+    cursor: pointer;
+    padding: 1rem 0.3rem;
+  }
+  body main aside .toggle a img {
+    width: 100%;
+  }
+  body main .list {
+    width: 90%;
+  }
+  body main .list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #332624;
+    padding: 2rem;
+  }
+  body main .list ul li {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  body main .list ul li figure {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  body main .list ul li figure a {
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  body main .list ul li figure a img {
+    min-width: 100%;
+  }
+  body main .list ul li figure a span {
+    position: absolute;
+    left: 2%;
+    top: 2.5%;
+    display: block;
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: #faf7f2;
+    background-color: #163156;
+    padding: 0.2rem 0.3rem;
+    border-radius: 10px;
+  }
+  body main .list ul li figure figcaption {
+    width: 50%;
+    color: #e0ceaa;
+  }
+  body main .list ul li figure figcaption b {
+    font-family: "dreamgotic";
+    font-weight: 500;
+    font-size: 1.375rem;
+  }
+  body main .list ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.125rem;
+    padding: 0.5rem 0 1rem;
+  }
+  body main .search {
+    width: 90%;
+  }
+  body main .search .search_area form {
+    transform: translateY(50%);
+    padding-left: 1rem;
+    display: flex;
+  }
+  body main .search .search_area form input {
+    width: 90%;
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 30px;
+    color: #e0ceaa;
+  }
+  body main .search .search_area .searchbar {
+    width: 88%;
+  }
+  body main .search .search_area .searchbar img {
+    width: 100%;
+  }
+  body main .search .search_data ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body main .search .search_data ul li {
+    width: 30%;
+    padding: 1rem 0 0;
+  }
+  body main .search .search_data ul li figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body main .search .search_data ul li figure a {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body main .search .search_data ul li figure a img {
+    width: 100%;
+  }
+  body main .search .search_data ul li figure figcaption {
+    color: #e0ceaa;
+    width: 80%;
+    text-align: center;
+  }
+  body main .search .search_data ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+  }
+  body main .search .search_data p {
+    padding: 10rem 0;
+    width: 100%;
+    color: #e0ceaa;
+    text-align: center;
+    font-size: 20px;
+    font-family: "dreamgotic";
+    font-weight: 500;
+  }
+  body main .favorite {
+    width: 90%;
+  }
+  body main .favorite .favorite_data p {
+    padding: 18rem 0;
+    width: 100%;
+    color: #e0ceaa;
+    text-align: center;
+    font-size: 20px;
+    font-family: "dreamgotic";
+    font-weight: 500;
+  }
+  body main .favorite .favorite_data ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body main .favorite .favorite_data ul li {
+    width: 30%;
+    padding: 1.5rem 0 0;
+  }
+  body main .favorite .favorite_data ul li figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body main .favorite .favorite_data ul li figure a {
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body main .favorite .favorite_data ul li figure a img {
+    width: 100%;
+  }
+  body main .favorite .favorite_data ul li figure a > span {
+    width: 16%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 1.5rem;
+    color: #ff4a4a;
+  }
+  body main .favorite .favorite_data ul li figure figcaption {
+    color: #e0ceaa;
+    width: 80%;
+    text-align: center;
+  }
+  body main .favorite .favorite_data ul li figure figcaption p {
+    font-family: "font_zelda";
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
 }

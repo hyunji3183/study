@@ -1,8 +1,8 @@
 @import url("./_reset.scss");
 body.detail {
-  background-image: url(./background_image_detail.jpg);
-  width: 100%;
+  background-image: url(../src/img/background_image_detail.jpg);
   background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 body.detail header {
   width: 100%;
@@ -15,11 +15,11 @@ body.detail header .head {
   margin: 0 auto;
   padding: 5rem 0 2rem;
 }
-body.detail header .head a {
+body.detail header .head p {
   width: 10%;
   text-align: right;
 }
-body.detail header .head a img {
+body.detail header .head p img {
   width: 40%;
 }
 body.detail header .head .like_heart {

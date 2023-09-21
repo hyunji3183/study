@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../Detail.css';
-import like_heart from '../img/icon_favorite_none.png'
+import angle from '../img/background_image_detail.jpg'
 import back from '../img/icon_arrow_back.png'
 import creatures from '../img/icon_1.png';
 import monsters from '../img/icon_2.png';
@@ -11,11 +11,10 @@ import deLplace from '../img/detail_line_place_left.png'
 import deRplace from '../img/detail_line_place_right.png'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import List from '../Favorite_List.json';
 
 
 function Detail() {
-    
+
 
     const bodys = document.querySelector('body')
     bodys.classList.add('detail')
@@ -38,43 +37,45 @@ function Detail() {
     }
 
     let favorite, filterData;
-    function favoriteStorage(){
+    function favoriteStorage() {
         favorite = localStorage.fa || [];
         favorite = (favorite.length) ? JSON.parse(favorite) : [];
-        
-        filterData = favorite.filter(obj=>obj.id==id && obj.catagory==catagory);
-        if(!data.length){
+
+        filterData = favorite.filter(obj => obj.id == id && obj.catagory == catagory);
+        if (!data.length) {
             filterData.length ? setIsFavorite(true) : setIsFavorite(false);
-        }else{
+        } else {
             setIsFavorite(!isFavorite)
         }
     }
-    
-    
+
+
     function OnFavorite() {
         favoriteStorage();
-        
-        if (filterData.length)
-        {
-            let setFa = favorite.filter(obj=> (obj.id !== id))
-            localStorage.setItem('fa', JSON.stringify(setFa));           
+
+        if (filterData.length) {
+            let setFa = favorite.filter(obj => (obj.id !== id))
+            localStorage.setItem('fa', JSON.stringify(setFa));
         }
-        else
-        {
-            localStorage.setItem('fa', JSON.stringify([...favorite,{catagory,id}]));           
+        else {
+            localStorage.setItem('fa', JSON.stringify([...favorite, { catagory, id }]));
         }
-        
+
     }
-    
+
     useEffect(() => {
-        favoriteStorage();       
+        favoriteStorage();
         axios.get(url[catagory])
             .then(res => {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
             })
-        
+
     }, []);
+
+    const handleBackClick = () => { 
+        navigate( -1 )
+    };
 
 
     if (!data && data.length == 0) return <></>;
@@ -82,7 +83,7 @@ function Detail() {
         <>
             <header>
                 <div className="head">
-                    <a href=""><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
+                    <p><img src={back} alt="back" onClick={handleBackClick} /></p>
                     <h2>Detail</h2>
                     <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>

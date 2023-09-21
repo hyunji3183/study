@@ -78,13 +78,17 @@ function Detail() {
     }, []);
 
 
+    const handleBackClick = () => { 
+        navigate( -1 )
+    };
+
 
     if (!data && data.length == 0) return <></>;
     return (
         <>
             <header>
                 <div className="head">
-                    <a href=""><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
+                    <p><img src={back} alt="back" onClick={handleBackClick} /></p>
                     <h2>Detail</h2>
                     <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>
