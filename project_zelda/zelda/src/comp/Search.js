@@ -65,7 +65,7 @@ function Search() {
 
     const navigateToDetail = (category, id) => {
         const str = category;
-        const str2 =  str.charAt(0).toUpperCase()+str.slice(1)
+        const str2 = str.charAt(0).toUpperCase() + str.slice(1)
         navigate(`/detail/${str2}-${id}`);
     };
 
@@ -96,8 +96,9 @@ function Search() {
                                 {filteredData.map((item, index) => (
                                     <li key={index}>
                                         <figure onClick={() => { navigateToDetail(item.category, item.id) }}>
-                                            <a href=""><img src={item.image} alt={item.name}/></a>
+                                            <a href=""><img src={item.image} alt={item.name} /></a>
                                             <figcaption>
+                                                <b>{item.kname}</b>
                                                 <p>{item.name}</p>
                                             </figcaption>
                                         </figure>

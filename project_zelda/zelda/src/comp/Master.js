@@ -41,7 +41,7 @@ function Master() {
                                     <span>NO. {item.id}</span>
                                 </a>
                                 <figcaption>
-                                    <b>{item.name}</b>
+                                    <b>{item.kname}</b>
                                     <p>{item.name}</p>
                                 </figcaption>
                             </figure>

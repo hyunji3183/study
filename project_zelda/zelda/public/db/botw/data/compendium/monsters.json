@@ -1,14 +1,15 @@
 [
     {
         "id": 84,
+        "kname": "츄츄",
         "name": "chuchu",
-        "description": "This low-level, gel-based monster can be found all over Hyrule. It tends to spring its attacks on unsuspecting prey from the ground or from trees. Its strength varies by size, and the type of jelly it drops varies depending on whether the Chuchu was heated up, cooled down, or shocked.",
+        "description": "하이랄 전역에 서식하는 젤리형 하급 몬스터. 지면이나 나무 뒤에서 갑자기 튀어나온다. 몸통 크기에 따라 체력이 다르며 츄츄가 떨어트리는 젤리는 열을 가하거나 식히거나 전류를 통하게 하면 성질이 바뀐다고 한다.",
         "common_locations": [
             "하이랄 평원",
             "서하테르"
         ],
         "drops": [
-            "chuchu jelly"
+            "츄츄젤리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/chuchu/image",
         "category": "monsters",
@@ -16,14 +17,15 @@
     },
     {
         "id": 85,
+        "kname": "파이어 츄츄",
         "name": "fire chuchu",
-        "description": "This low-level gel monster is engulfed in flames. Its strength varies depending on its size. It tends to explode if attacked from close range, so the use of spears, arrows, and other ranged weapons is advised.",
+        "description": "화염을 두르고 있는 젤리형 하급 몬스터. 몸통 크기에 따라 체력이 다르다. 함부로 건드리면 파열되어 폭발하므로 창으로 멀리서 찌르는 편이 안전하다.",
         "common_locations": [
             "올딘 협곡",
             "올딘 산맥"
         ],
         "drops": [
-            "red chuchu jelly"
+            "빨간츄츄젤리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fire_chuchu/image",
         "category": "monsters",
@@ -31,14 +33,15 @@
     },
     {
         "id": 86,
+        "kname": "아이스 츄츄",
         "name": "ice chuchu",
-        "description": "This low-level gel monster is engulfed in freezing-cold air. Its strength varies depending on its size. It tends to explode if attacked from close range, so the use of spears, arrows, and other ranged weapons is advised.",
+        "description": "냉기를 두르고 있는 젤리형 하급 몬스터. 몸통 크기에 따라 체력이 다르다. 함부로 건드리면 파열되어 냉기를 흩뿌리므로 창으로 멀리서 찌르는 편이 안전하다.",
         "common_locations": [
             "겔드 고지",
             "헤브라산"
         ],
         "drops": [
-            "white chuchu jelly"
+            "하얀츄츄젤리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ice_chuchu/image",
         "category": "monsters",
@@ -46,14 +49,15 @@
     },
     {
         "id": 87,
+        "kname": "일렉트로 츄츄",
         "name": "electric chuchu",
-        "description": "This low-level gel monster is engulfed in electricity. Its strength varies depending on its size. It tends to explode if attacked from close range, so the use of spears, arrows, and other ranged weapons is advised.",
+        "description": "전기를 두르고 있는 젤리형 하급 몬스터. 몸통 크기에 따라 체력이 다르다. 함부로 건드리면 파열되어 전기를 방출하므로 창으로 멀리서 찌르면 안전하게 처리할 수 있다.",
         "common_locations": [
             "겔드 고지",
             "동하테르"
         ],
         "drops": [
-            "yellow chuchu jelly"
+            "노란츄츄젤리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/electric_chuchu/image",
         "category": "monsters",
@@ -61,15 +65,16 @@
     },
     {
         "id": 88,
+        "kname": "키이스",
         "name": "keese",
-        "description": "The unpredictable flight pattern of this noctoural bat-like species can make fighting them a nuisance, but they're weak enough to fell with a single strike. Sometimes they'll attack in packs, but even then, a pack can be sent packing with a single attack.",
+        "description": "어두운 밤에 나타나는 박쥐 같은 모습의 하급 마족. 불규칙하게 날아다니기 때문에 상대하기 어려우나 한 번의 공격으로 처리할 수 있다. 가끔 무리를 지어 습격하는 경우도 있으나 침착하게 공격을 한 번 가하면 흩어진다.",
         "common_locations": [
             "하이랄 평원",
             "동하테르"
         ],
         "drops": [
-            "keese wing",
-            "keese eyeball"
+            "키이스의 날개",
+            "키이스의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/keese/image",
         "category": "monsters",
@@ -77,15 +82,16 @@
     },
     {
         "id": 89,
+        "kname": "파이어 키이스",
         "name": "fire keese",
-        "description": "The fire that engulfs the bodies of these bat-like Keese makes them more dangerous than the standard type. They're capable of setting fire to anything they touch.",
+        "description": "어두운 밤에 나타나는 박쥐 같은 모습의 하급 마족. 화염을 띄고 있어 닿으면 불에 탄다.",
         "common_locations": [
             "올딘 협곡",
             "올딘 산맥"
         ],
         "drops": [
-            "fire keese wing",
-            "keese eyeball"
+            "파이어 키이스의 날개",
+            "키이스의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fire_keese/image",
         "category": "monsters",
@@ -93,15 +99,16 @@
     },
     {
         "id": 90,
+        "kname": "아이스 키이스",
         "name": "ice keese",
-        "description": "The intense frost that engulfs the bodies of these bat-like Keese makes them more dangerous than the standard type. They're capable of freezing anything they touch.",
+        "description": "어두운 밤에 나타나는 박쥐 같은 모습의 하급 마족. 냉기를 띄고 있어 닿으면 얼어버린다.",
         "common_locations": [
             "헤브라산",
             "겔드 고지"
         ],
         "drops": [
-            "ice keese wing",
-            "keese eyeball"
+            "아이스 키이스의 날개",
+            "키이스의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ice_keese/image",
         "category": "monsters",
@@ -109,15 +116,16 @@
     },
     {
         "id": 91,
+        "kname": "일렉트로 키이스",
         "name": "electric keese",
-        "description": "The electricity that engulfs the bodies of these bat-like Keese makes them more dangerous than the standard type. They're capable of shocking anything they touch.",
+        "description": "어두운 밤에 나타나는 박쥐 같은 모습의 하급 마족. 전기를 띄고 있어 닿으면 마비된다.",
         "common_locations": [
             "라넬 대수원",
             "동하테르"
         ],
         "drops": [
-            "electric keese wing",
-            "keese eyeball"
+            "일렉트로 키이스의 날개",
+            "키이스의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/electric_keese/image",
         "category": "monsters",
@@ -125,16 +133,17 @@
     },
     {
         "id": 92,
+        "kname": "워터 옥타",
         "name": "water octorok",
-        "description": "Although they spend most of their time in water, the drop in barometric pressure that occurs when it rains causes an air sac within these octopus-like monsters to inflate and lift them into the air. The rocks they spit out can be bounced back with a shield.",
+        "description": "문어 같은 모습을 한 하급 마족. 평소에는 물속에 숨어 있지만 기압이 낮아져 비가 오면 체내의 부레가 부풀어 공중으로 떠오른다. 토해내는 바위는 방패로 튕겨낼 수 있다.",
         "common_locations": [
             "서하테르",
             "하이랄 평원"
         ],
         "drops": [
-            "octorok tentacle",
-            "octo balloon",
-            "octorok eyeball"
+            "옥타의 다리",
+            "옥타 풍선",
+            "옥타의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/water_octorok/image",
         "category": "monsters",
@@ -142,16 +151,17 @@
     },
     {
         "id": 93,
+        "kname": "포레스트 옥타",
         "name": "forest octorok",
-        "description": "Although originally an aquatic species, this type has adapted to life in the forest. They hide among the trees, disguising themselves as grass or unassuming shrubbery, and then attack when someone wanders by.",
+        "description": "문어 같은 모습을 한 하급 마족. 숲에 숨어서 풀이나 낮은 나무로 위장하고 있다. 가까이 가면 땅속으로 숨어버린다. 원래는 물에 사는 마족이지만 어느샌가 숲에도 살게 되었다.",
         "common_locations": [
             "하이랄 구릉",
             "추낙 심부"
         ],
         "drops": [
-            "octorok tentacle",
-            "octo balloon",
-            "octorok eyeball"
+            "옥타의 다리",
+            "옥타 풍선",
+            "옥타의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/forest_octorok/image",
         "category": "monsters",
@@ -159,16 +169,17 @@
     },
     {
         "id": 94,
+        "kname": "록 옥타",
         "name": "rock octorok",
-        "description": "This octopus-like species of monster lives in volcanic regions. When they inhale, they're preparing to spit out flaming rocks but have been known to suck up weapons or bombs in the same breath.",
+        "description": "문어 같은 모습을 한 하급 마족. 화산 지대에 서식한다. 크게 숨을 들이쉰 후 화염으로 싸인 바위를 뱉어 낸다. 강력한 흡입력으로 무기나 폭탄을 빨아들이기도 한다.",
         "common_locations": [
             "올딘 협곡",
             "겔드 고지"
         ],
         "drops": [
-            "octorok tentacle",
-            "octo balloon",
-            "octorok eyeball"
+            "옥타의 다리",
+            "옥타 풍선",
+            "옥타의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/rock_octorok/image",
         "category": "monsters",
@@ -176,16 +187,17 @@
     },
     {
         "id": 95,
+        "kname": "스노우 옥타",
         "name": "snow octorok",
-        "description": "These octopus-like monsters live in snowy fields and disguise themselves as grass. When someone wanders by, they spring into action and attack by spitting snowballs.",
+        "description": "문어 같은 모습을 한 하급 마족. 설원 지대에 서식한다. 설원에 나 있는 갈대로 위장하고 있다가 사람을 발견하면 눈덩이를 토해 습격한다.",
         "common_locations": [
             "겔드 고지",
             "타반타 변두리"
         ],
         "drops": [
-            "octorok tentacle",
-            "octo balloon",
-            "octorok eyeball"
+            "옥타의 다리",
+            "옥타 풍선",
+            "옥타의 눈알"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/snow_octorok/image",
         "category": "monsters",
@@ -193,21 +205,22 @@
     },
     {
         "id": 96,
+        "kname": "트레져 옥타",
         "name": "treasure octorok",
-        "description": "These particularly clever monsters bury themselves in deep sand or snow and disguise themselves as treasure chests. Anyone who approaches the chests is attacked. The treasures chests are not magnetic, which proves that they are actually a part of these monsters' bodies.",
+        "description": "문어 같은 모습을 한 하급 마족. 모래밭이나 설원에 숨어 있으며 보물 상자로 위장하고 있다. 함부로 가까이 가면 기습을 당한다. 머리에 달린 쇠로 된 보물 상자는 진짜가 아니며 옥타의 신체 일부라고 한다. 그 증거로 자석에 반응하지 않는다.",
         "common_locations": [
             "겔드 고지",
             "겔드 사막"
         ],
         "drops": [
-            "octorok tentacle",
-            "octo balloon",
-            "octorok eyeball",
-            "green rupee",
-            "blue rupee",
-            "red rupee",
-            "purple rupee",
-            "silver rupee"
+            "옥타의 다리",
+            "옥타 풍선",
+            "옥타의 눈알",
+            "초록 루피",
+            "파란 루피",
+            "빨간 루피",
+            "보라 루피",
+            "실버 루피"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/treasure_octorok/image",
         "category": "monsters",
@@ -215,93 +228,112 @@
     },
     {
         "id": 97,
+        "kname": "파이어 위즈로브",
         "name": "fire wizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their fire rods to hurl fireballs or to summon flaming monsters and have been known to severely raise the temperature around them. The weather will normalize once the Wizzrobe is defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 파이어 로드를 이용하여 불덩이를 쏘거나 화염으로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 열대 기후로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "하이랄 평원",
             "하이랄 대삼림"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "파이어 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fire_wizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 98,
+        "kname": "아이스 위즈로브",
         "name": "ice wizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their ice rods to create freezing blasts of air or to summon frozen monsters and have been known to cause blizzards to severely decrease the temperatures around them. The weather will normalize once the Wizzrobe is defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 아이스 로드를 이용하여 냉기를 흩뿌리거나 냉기로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 폭설로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "겔드 고지",
             "하이랄 평원"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "아이스 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ice_wizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 99,
+        "kname": "일렉트로 위즈로브",
         "name": "electric wizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their lightning rods to hurl balls of electricity or to summon monsters surging with electricity and have been known to cause thunderstorms in the area. The weather will normalize once the Wizzrobe has been defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 일렉트로 로드를 이용하여 전기 구슬을 쏘거나 전기로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 뇌우로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "하이랄 구릉",
             "서하테르"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "일렉트로 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/electric_wizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 100,
+        "kname": "메테오 위즈로브",
         "name": "meteo wizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their meteor rods to hurl fireballs or to summon flaming monsters and have been known to severely raise the temperature around them. The weather will normalize once the Wizzrobe is defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 메테오 로드를 이용하여 불덩이를 쏘거나 화염으로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 열대 기후로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "하이랄 평원",
             "올딘 협곡"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "메테오 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/meteo_wizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 101,
+        "kname": "프리즈 위즈로브",
         "name": "blizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their blizzard rods to create freezing blasts of air or to summon frozen monsters and have been known to cause blizzards to severely decrease the temperature around them. The weather will normalize once the Blizzrobe is defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 프리즈 로드를 이용하여 냉기를 흩뿌리거나 냉기로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 폭설로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "하이랄 평원",
             "헤브라산"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "프리즈 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 102,
+        "kname": "볼트 위즈로브",
         "name": "thunder wizzrobe",
-        "description": "These spell-casting monsters can be found all over Hyrule. They use their thunderstorm rods to hurl balls of electricity or to summon monsters surging with electricity and have been known to cause thunderstorms in the area. The weather will normalize once the Wizzrobe is defeated.",
+        "description": "하이랄 전역에 존재하는 마법을 쓰는 몬스터. 볼티지 로드를 이용하여 전기 구슬을 쏘거나 전기로 휩싸인 몬스터를 소환하기도 한다. 또한 가끔 세계의 기후를 뇌우로 바꾸는 마법을 부리기도 한다. 위즈로브를 물리치면 기후가 평상시로 돌아온다.",
         "common_locations": [
             "하이랄 평원",
             "타반타 변두리"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "볼티지 로드"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/thunder_wizzrobe/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 103,
+        "kname": "보코블린",
         "name": "bokoblin",
-        "description": "This common species is a nuisance all over Hyrule. Some have unified in the time following the Great Calamity and have formed factions of bandits. While not very clever, they are at least intelligent enough to hunt beasts and grill their meat for food. Though they're typically ferocious carnivores, they actually enjoy fruit as well.",
+        "description": "하이랄 전역에 서식하는 몬스터. 황폐한 하이랄에서 떼를 지어 산적이 되었다. 머리는 그다지 좋지 않지만 사냥한 짐승 고기를 구울 정도의 지식은 있는 듯하다. 흉폭하며 잡식이다.",
         "common_locations": [
             "하이랄 평원",
             "서하테르"
         ],
         "drops": [
-            "bokoblin horn",
-            "bokoblin fang"
+            "보코블린의 뿔",
+            "보코블린의 이빨"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/bokoblin/image",
         "category": "monsters",
@@ -309,16 +341,17 @@
     },
     {
         "id": 104,
+        "kname": "블루 보코블린",
         "name": "blue bokoblin",
-        "description": "This common species is a nuisance all over Hyrule. They're tougher and have stronger weapons than the red Bokoblins - and are a little more clever, as well. At the very least, they have figured out that they can simply kick a Remote Bomb out of the way to avoid its blast.",
+        "description": "하이랄 전역에 서식하는 몬스터. 붉은 보코블린과 비교하면 체력이 강하고 다루는 무기도 강력하다. 리모콘 폭탄을 발견하면 재빨리 발로 차 위험을 회피하는 등 조금은 영리함도 갖추고 있는 것 같다.",
         "common_locations": [
             "겔드 사막",
             "겔드 고지"
         ],
         "drops": [
-            "bokoblin horn",
-            "bokoblin fang",
-            "bokoblin guts"
+            "보코블린의 뿔",
+            "보코블린의 이빨",
+            "보코블린의 간"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blue_bokoblin/image",
         "category": "monsters",
@@ -326,16 +359,17 @@
     },
     {
         "id": 105,
+        "kname": "블랙 보코블린",
         "name": "black bokoblin",
-        "description": "Although Bokoblins are generally a nuisance, the Black Bokoblins are among the most dangerous type. They're extremely resilient, and many are armed with more advanced weapons.",
+        "description": "하이랄 전역에 서식하는 몬스터. 체력이 매우 강하고 강력한 무기를 갖고 있는 경우가 많아 보코블린족 안에서도 위험도는 최상급이다.",
         "common_locations": [
             "하이랄 평원",
             "겔드 고지"
         ],
         "drops": [
-            "bokoblin horn",
-            "bokoblin fang",
-            "bokoblin guts"
+            "보코블린의 뿔",
+            "보코블린의 이빨",
+            "보코블린의 간"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/black_bokoblin/image",
         "category": "monsters",
@@ -343,15 +377,16 @@
     },
     {
         "id": 106,
+        "kname": "스탈 보코블린",
         "name": "stalkoblin",
-        "description": "The remains of Bokoblins appear in the dark of the night. While they're fragile enough to crumble from a single blow, as long as a skull remains intact, they'll continue to pull themselves back together and go on fighting. Sometimes the body will pick up the wrong skull, but this doesn't seem to be a problem...",
+        "description": "어두운 밤에 나타나는 보코블린의 유해. 한 번만 가격해도 와르르 무너질 정도로 약한 반면 두개골만 있으면 몇 번이고 되살아난다. 가끔 두개골을 바꿔 끼우는 경우가 있으나 그들에게는 큰 문제가 되지 않는 듯하다.",
         "common_locations": [
             "하이랄 평원",
             "하이랄 대삼림"
         ],
         "drops": [
-            "bokoblin horn",
-            "bokoblin fang"
+            "보코블린의 뿔",
+            "보코블린의 이빨"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stalkoblin/image",
         "category": "monsters",
@@ -359,19 +394,22 @@
     },
     {
         "id": 107,
+        "kname": "실버 보코블린",
         "name": "silver bokoblin",
-        "description": "You would be foolish to call these Silver Bokoblins a mere nuisance. They have been influenced by Ganon's fiendish magic, so they are stronger than even the Black Bokoblins. They're called \"silver\" not only because of their coloring but also to denote their rarity. The purple markings help them to stand out even more.",
-        "common_locations": ["확인불가"],
+        "description": "블랙 보코블린을 능가하는 체력을 가진 최강 보코블린. 흰 육체와 그 희소성 때문에 실버 보코블린이라 불린다. 가논의 흉악한 마력에 영향을 받아 몸 전체에 보라색 줄무늬가 보이는 것이 특징이다.",
+        "common_locations": [
+            "확인불가"
+        ],
         "drops": [
-            "bokoblin horn",
-            "bokoblin fang",
-            "bokoblin guts",
-            "amber",
-            "opal",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "diamond"
+            "보코블린의 뿔",
+            "보코블린의 이빨",
+            "보코블린의 간",
+            "호박",
+            "오팔",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/silver_bokoblin/image",
         "category": "monsters",
@@ -379,15 +417,16 @@
     },
     {
         "id": 108,
+        "kname": "모리블린",
         "name": "moblin",
-        "description": "This heavyweight species of monster can be found all over Hyrule. They're physically very strong, their legs along strong enough to resist the force of a bomb blast. They're much more dangerous than the Bokoblins. In fact, Moblins have been known to pick up Bokoblins and throw them as makeshift projectile weapons.",
+        "description": "하이랄 전역에 서식하는 중량급 몬스터. 무시무시할 정도로 강한 완력으로 보코블린을 던지는 경우가 있다고 한다. 다리와 허리도 탄탄해 폭탄을 맞아도 끄떡없다. 보코블린족보다 격이 높은 종족이다.",
         "common_locations": [
             "하이랄 평원",
             "동하테르"
         ],
         "drops": [
-            "moblin horn",
-            "moblin fang"
+            "모리블린의 뿔",
+            "모리블린의 이빨"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/moblin/image",
         "category": "monsters",
@@ -395,16 +434,17 @@
     },
     {
         "id": 109,
+        "kname": "블루 모리블린",
         "name": "blue moblin",
-        "description": "These heavyweight monsters can be found all over Hyrule. They're much tougher than their standard counterparts and often have much stronger weapons equipped.",
+        "description": "하이랄 전역에 서식하는 강한 완력을 가진 몬스터. 붉은 모리블린보다 체력이 강하며 갖고 있는 무기도 더 위력이 센 경우가 많다.",
         "common_locations": [
             "하이랄 평원",
             "추낙 심부"
         ],
         "drops": [
-            "moblin horn",
-            "moblin fang",
-            "moblin guts"
+            "모리블린의 뿔",
+            "모리블린의 이빨",
+            "모리블린의 간"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blue_moblin/image",
         "category": "monsters",
@@ -412,16 +452,17 @@
     },
     {
         "id": 110,
+        "kname": "블랙 모리블린",
         "name": "black moblin",
-        "description": "These heavyweight monsters can be found all over Hyrule and are among the most dangerous types of Moblin. They're extremely resilient and are often armed with some of the strongest weapons Moblins can carry.",
+        "description": "하이랄 전역에 서식하는 몬스터. 체력이 매우 강하고 강력한 무기를 갖고 있는 경우가 많아 모리블린족 안에서도 위험도는 최상급이다.",
         "common_locations": [
             "하이랄 평원",
             "올딘 협곡"
         ],
         "drops": [
-            "moblin horn",
-            "moblin fang",
-            "moblin guts"
+            "모리블린의 뿔",
+            "모리블린의 이빨",
+            "모리블린의 간"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/black_moblin/image",
         "category": "monsters",
@@ -429,15 +470,16 @@
     },
     {
         "id": 111,
-        "name": "stalmoblin",
-        "description": "The remains of Moblins appear in the dark of the night. Even the toughest Moblins become fragile when they're little more than a pile of bones, so they'll crumble after just a few attacks. However, as long as a skull remains intact, they'll continue to pull themselves back together and go on fighting.",
+        "kname": "",
+        "name": "스탈 모리블린",
+        "description": "어두운 밤에 나타나는 모리블린의 유해. 평소에는 강력한 모리블린도 뼈가 되면 약해지는 모양이다. 살짝 공격을 가하기만 해도 무너진다. 그러나 두개골만 있으면 몇 번이고 되살아난다.",
         "common_locations": [
             "하이랄 대삼림",
             "겔드 고지"
         ],
         "drops": [
-            "moblin horn",
-            "moblin fang"
+            "모리블린의 뿔",
+            "모리블린의 이빨"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stalmoblin/image",
         "category": "monsters",
@@ -445,19 +487,22 @@
     },
     {
         "id": 112,
+        "kname": "실버 모리블린",
         "name": "silver moblin",
-        "description": "The strongest of all Moblins, Ganon's fiendish magic has allowed them to surpass even the Black Moblins in strength and resilience. They're called \"silver\" for both their body color as well as their rarity. The purple patterns on their bodies also help them to stand out.",
-        "common_locations": ["확인불가"],
+        "description": "블랙 모리블린을 능가하는 체력을 가진 최강 모리블린. 흰 육체와 그 희소성 때문에 실버 모리블린이라 불린다. 가논의 흉악한 마력에 영향을 받아 몸 전체에 보라색 줄무늬가 보이는 것이 특징이다.",
+        "common_locations": [
+            "확인불가"
+        ],
         "drops": [
-            "moblin horn",
-            "moblin fang",
-            "moblin guts",
-            "amber",
-            "opal",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "diamond"
+            "모리블린의 뿔",
+            "모리블린의 이빨",
+            "모리블린의 간",
+            "호박",
+            "오팔",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/silver_moblin/image",
         "category": "monsters",
@@ -465,15 +510,16 @@
     },
     {
         "id": 113,
+        "kname": "리잘포스",
         "name": "lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. They're a sly species that lurks underwater or uses camouflage to blend in with the environment to launch ambushes. Moreover, they never sleep. They're meat eaters by nature but will enjoy the occasional insect or two.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 물속으로 숨거나 땅에 몸을 위장했다가 기습해 오는 경우도 있는 교활한 종족. 밤낮을 가리지 않으며 잠도 자지 않는다. 육식이며 짐승 고기를 주로 먹지만 곤충도 잘 먹는다.",
         "common_locations": [
             "라넬 대수원",
             "겔드 사막"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/lizalfos/image",
         "category": "monsters",
@@ -481,16 +527,17 @@
     },
     {
         "id": 114,
+        "kname": "블루 리잘포스",
         "name": "blue lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. Compared to the green Lizalfos, many of these carry much stronger weapons and are generally much tougher.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 초록색 리잘포스보다 강력한 무기를 갖고 있는 경우가 많고 체력도 강하다.",
         "common_locations": [
             "타반타 변두리",
             "겔드 사막"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon",
-            "lizalfos tail"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 꼬리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blue_lizalfos/image",
         "category": "monsters",
@@ -498,16 +545,17 @@
     },
     {
         "id": 115,
+        "kname": "블랙 리잘포스",
         "name": "black lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. This particular type tends to carry some pretty strong weapons, so they are among the most dangerous Lizalfos.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 체력이 매우 강하고 강력한 무기를 갖고 있는 경우가 많아 리잘포스족 안에서도 위험도는 최상급이다.",
         "common_locations": [
             "하이랄 평원",
             "헤브라산"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon",
-            "lizalfos tail"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 꼬리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/black_lizalfos/image",
         "category": "monsters",
@@ -515,15 +563,16 @@
     },
     {
         "id": 116,
+        "kname": "스탈 리잘포스",
         "name": "stalizalfos",
-        "description": "The remains of Lizalfos appear in the dark of night. They're as sly as ever, even now that they're just some bones stacked atop each other. However, their bodies are much more fragile, and a single solid hit can reduce them to pieces. If a skull remains intact, they will pull themselves back up and continue to fight. They've been known to grab the wrong skull at times, but they never seem to mind...",
+        "description": "어두운 밤에 나타나는 리잘포스의 유해. 유해가 되어서도 민첩함은 변함이 없다. 한 번만 가격해도 와르르 무너질 정도로 약한 반면 두개골만 있으면 몇 번이고 되살아난다. 가끔 두개골을 바꿔 끼우는 경우가 있으나 그들에게는 큰 문제가 되지 않는 듯하다.",
         "common_locations": [
             "겔드 사막",
             "하이랄 구릉"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stalizalfos/image",
         "category": "monsters",
@@ -531,16 +580,17 @@
     },
     {
         "id": 117,
+        "kname": "화염 리잘포스",
         "name": "fire-breath lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. Their fiery breath makes them pretty dangerous, but exposure to cold will kill them instantly. They mainly make their homes in volcanic areas but have also been sighted in the Akkala region.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 입에서 고열의 화염을 뿜는 위험한 종이지만 냉기에 닿으면 즉사한다고 한다. 주로 화산 지대에 서식하는 듯하나 추낙 지방에서도 목격되곤 한다.",
         "common_locations": [
             "올딘 협곡",
             "겔드 사막"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon",
-            "red lizalfos tail"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 붉은 꼬리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fire-breath_lizalfos/image",
         "category": "monsters",
@@ -548,16 +598,17 @@
     },
     {
         "id": 118,
+        "kname": "얼음 리잘포스",
         "name": "ice-breath lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. The balls of ice they spit make them particularly troublesome, but exposure to fire will kill them instantly. Their homes are mainly on snowy mountains.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 입에서 얼음을 뱉어내는 성가신 종이지만 불에 닿으면 즉사한다고 한다. 주로 설산에 서식한다.",
         "common_locations": [
             "겔드 고지",
             "헤브라산"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon",
-            "icy lizalfos tail"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 푸른 꼬리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ice-breath_lizalfos/image",
         "category": "monsters",
@@ -565,16 +616,17 @@
     },
     {
         "id": 119,
+        "kname": "마비 리잘포스",
         "name": "electric lizalfos",
-        "description": "These quick-witted, lizard-like monsters can be found all over Hyrule. The can emit strong electrical currents from their bodies, so don't get too close. Their horns are brimming with electricity, which will discharge and arc to nearby areas if struck by an arrow. They tend to live in desert climates.",
+        "description": "하이랄 전역에 서식하는 민첩한 도마뱀류 몬스터. 몸에서 강력한 전기를 발산하는 경우가 있다. 뿔에 전기를 갖고 있어 그 곳을 쏘면 광범위에 걸쳐 방전한다. 주로 사막 지역에 서식한다고 한다.",
         "common_locations": [
             "겔드 사막",
             "하이랄 구릉"
         ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos tail",
-            "yellow lizalfos tail"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 노란 꼬리"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/electric_lizalfos/image",
         "category": "monsters",
@@ -582,19 +634,22 @@
     },
     {
         "id": 120,
+        "kname": "실버 리잘포스",
         "name": "silver lizalfos",
-        "description": "These Lizalfos have been influenced by Ganon's fiendish magic to become the strongest Lizalfos of all. They're called \"silver\" for their unique coloring and also to denote their rarity. Their purple pattern makes them even more distinct.",
-        "common_locations": ["확인불가"],
+        "description": "블랙 리잘포스를 능가하는 체력을 가진 최강 리잘포스. 흰 육체와 그 희소성 때문에 실버 리잘포스라 불린다. 가논의 흉악한 마력에 영향을 받아 몸 전체에 보라색 줄무늬가 보이는 것이 특징이다.",
+        "common_locations": [
+            "확인불가"
+        ],
         "drops": [
-            "lizalfos horn",
-            "lizalfos talon",
-            "lizalfos tail",
-            "amber",
-            "opal",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "diamond"
+            "리잘포스의 뿔",
+            "리잘포스의 발톱",
+            "리잘포스의 꼬리",
+            "호박",
+            "오팔",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/silver_lizalfos/image",
         "category": "monsters",
@@ -602,16 +657,21 @@
     },
     {
         "id": 121,
+        "kname": "라이넬",
         "name": "lynel",
-        "description": "These fearsome monsters have lived in Hyrule since ancient times. They possess intense intelligence, resilience, and strength, making them among the most dangerous monsters in all the land. This is compounded by the fact that they have a natural resistance to all elements. You would be wise to challenge a Lynel only if you're very well prepared.",
+        "description": "고대부터 하이랄 전역에 서식하는 것으로 알려진 반인반수의 몬스터. 몬스터 중에서도 위험도가 높은 종족으로 지력, 체력 모두 높으며 공격력 또한 강하다. 화염, 얼음, 전기도 그들에게는 위협이 되지 않는다. 어설픈 각오로 함부로 덤비지 않는 편이 좋다.",
         "common_locations": [
             "라넬 대수원",
             "하이랄 평원"
         ],
         "drops": [
-            "lynel horn",
-            "lynel hoof",
-            "lynel guts"
+            "라이넬의 뿔",
+            "라이넬의 발굽",
+            "라이넬의 간",
+            "속성 화살",
+            "라이넬 장비",
+            "야수왕 장비",
+            "야수신 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/lynel/image",
         "category": "monsters",
@@ -619,16 +679,21 @@
     },
     {
         "id": 122,
+        "kname": "푸른 갈기의 라이넬",
         "name": "blue-maned lynel",
-        "description": "These fearsome monsters have lived in Hyrule since ancient times. Compared to the standard Lynel, those with blue manes much tougher and equipped with much stronger weapons. Facing off against a Lynel is ill-advised, but if you must, be sure you're well prepared.",
+        "description": "고대부터 하이랄 전역에 서식하는 것으로 알려진 반인반수의 몬스터. 붉은 라이넬보다 더 강한 체력을 자랑하며 강력한 무기를 갖추고 있다. 어설픈 각오로 함부로 덤비지 않는 편이 좋다.",
         "common_locations": [
             "하이랄 평원",
             "추낙 심부"
         ],
         "drops": [
-            "lynel horn",
-            "lynel hoof",
-            "lynel guts"
+            "라이넬의 뿔",
+            "라이넬의 발굽",
+            "라이넬의 간",
+            "속성 화살",
+            "라이넬 장비",
+            "야수왕 장비",
+            "야수신 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blue-maned_lynel/image",
         "category": "monsters",
@@ -636,16 +701,20 @@
     },
     {
         "id": 123,
+        "kname": "하얀 갈기의 라이넬",
         "name": "white-maned lynel",
-        "description": "These fearsome monsters have lived in Hyrule since ancient times. Their ability to breathe fire makes White-Maned Lynels among the toughest of the species; each one of their attacks is an invitation to the grave. There are so few eyewitness accounts of this breed because a White-Maned Lynel is not one to let even simple passersby escape with their lives.",
+        "description": "고대부터 하이랄 전역에 서식하는 것으로 알려진 반인반수의 몬스터. 지력, 체력 모두 높으며 무기 또한 강력해 라이넬족 중에서도 위험도는 최상급이다. 강렬한 화염을 뿜는 경우가 있으며 모든 공격이 죽음을 불러온다. 목격 정보가 별로 없는데 이유는 살아 돌아온 자가 적기 때문이다.",
         "common_locations": [
             "하이랄 평원",
             "헤브라산"
         ],
         "drops": [
-            "lynel horn",
-            "lynel hoof",
-            "lynel guts"
+            "라이넬의 뿔",
+            "라이넬의 발굽",
+            "라이넬의 간",
+            "속성 화살",
+            "야수왕 장비",
+            "야수신 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/white-maned_lynel/image",
         "category": "monsters",
@@ -653,18 +722,23 @@
     },
     {
         "id": 124,
+        "kname": "실버 라이넬",
         "name": "silver lynel",
-        "description": "Silver Lynels are not to be trifled with. They have been influenced by Ganon's fiendish magic, so they are the strongest among the Lynel species, surpassing even the strength of those with white manes. The term \"silver\" denotes not only their color but also their rarity. The purple stripes help them to stand out even more.",
-        "common_locations": ["확인불가"],
+        "description": "하얀 갈기의 라이넬을 능가하는 체력을 가진 최강 라이넬. 흰 육체와 그 희소성 때문에 실버 라이넬이라 불린다. 가논의 흉악한 마력에 영향을 받아 몸 전체에 보라색 줄무늬가 보이는 것이 특징이다.",
+        "common_locations": [
+            "확인불가"
+        ],
         "drops": [
-            "lynel horn",
-            "lynel hoof",
-            "lynel guts",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "diamond",
-            "star fragment"
+            "라이넬의 뿔",
+            "라이넬의 발굽",
+            "라이넬의 간",
+            "속성 화살",
+            "야수신 장비",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "다이아몬드",
+            "별의 조각"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/silver_lynel/image",
         "category": "monsters",
@@ -672,18 +746,19 @@
     },
     {
         "id": 125,
+        "kname": "가디언(보행형)",
         "name": "guardian stalker",
-        "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon. Its six legs give it extraordinary mobility compared to most current vehicles, and its powerful laser provides far greater offensive capability than conventional weaponry. Destroying the legs severely reduces its mobility.",
+        "description": "고대 하이랄 왕국이 시커족 기술을 집결시켜 완성한 가논 대항용 병기. 6개의 다리는 그 어디서도 볼 수 없는 돌파력을 부여하였으며 강력한 레이저 공격은 타의 추종을 불허하는 공격력을 갖고 있다. 다리를 절단하면 기동력을 저하시킬 수 있다.",
         "common_locations": [
             "하이랄 평원"
         ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core",
-            "giant ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어",
+            "고대의 거대한 코어"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_stalker/image",
         "category": "monsters",
@@ -691,19 +766,20 @@
     },
     {
         "id": 126,
+        "kname": "가디언(비행형)",
         "name": "guardian skywatcher",
-        "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon. This flying model is an improvement over the walking type, capable of either attacking or surveying from the air. Destroying the propeller will ground it.",
+        "description": "고대 하이랄 왕국이 시커족 기술을 집결시켜 완성한 가논 대항용 병기. 보행형을 개량하여 공중에서 정찰과 공격이 가능하다. 프로펠러를 파괴하면 떨어트릴 수 있다.",
         "common_locations": [
             "하이랄 평원",
             "추낙 고원"
         ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core",
-            "giant ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어",
+            "고대의 거대한 코어"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_skywatcher/image",
         "category": "monsters",
@@ -711,18 +787,19 @@
     },
     {
         "id": 127,
+        "kname": "가디언(포대형)",
         "name": "guardian turret",
-        "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon. This stationary model was used for defending important structures. Its offensive power is on par with other Guardians, and omitting the legs kept the manufacturing costs low.",
+        "description": "고대 하이랄 왕국이 시커족 기술을 집결시켜 완성한 가논 대항용 병기. 주로 성 방어용으로 쓰기 위해 만들어졌다. 다리를 제거함으로써 본래의 공격력을 유지하면서도 비용을 대폭 절감하는데 성공하였다.",
         "common_locations": [
             "Hyrule Castle"
         ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core",
-            "giant ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어",
+            "고대의 거대한 코어"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_turret/image",
         "category": "monsters",
@@ -730,17 +807,18 @@
     },
     {
         "id": 128,
+        "kname": "프로펠러",
         "name": "sentry",
-        "description": "These sentries dispatched from Divine Beast Vah Rudania are equipped with searchlights that can spot intruders.",
+        "description": "신수 바·루다니아가 쏘아 올린 정찰기. 상공에서 땅 위로 빛을 비춰 침입자를 찾아낸다.",
         "common_locations": [
             "데스마운틴"
         ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/sentry/image",
         "category": "monsters",
@@ -748,17 +826,18 @@
     },
     {
         "id": 129,
+        "kname": "망가진 가디언",
         "name": "decayed guardian",
-        "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon, but it was destroyed during the Great Calamity. Ages of weather and neglect have left it in a state of disrepair. Approach with caution; some of the derelict models have been known to awaken from stasis and attack when approached.",
+        "description": "원래는 고대 하이랄 왕국이 시커족의 기술을 결집시켜 만든 가논 대항용 병기였다. 대재앙 당시 파괴되어 오랜 기간 방치되는 바람에 풍화되었다. 개중에는 다가가면 정지 상태에서 깨어나 다시 움직이는 개체도 존재한다.",
         "common_locations": [
             "하이랄 평원",
-            "Hyrule Castle"
+            "하이랄 성"
         ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/decayed_guardian/image",
         "category": "monsters",
@@ -766,12 +845,15 @@
     },
     {
         "id": 130,
+        "kname": "소형 가디언",
         "name": "guardian scout i",
-        "description": "Guardians were originally designed by an ancient civilization to combat Ganon, but these smaller models were placed inside shrines as part of the trials found within. The multiple legs and beam functionality were scaled down but kept mostly intact.",
-        "common_locations": ["확인불가"],
+        "description": "시련의 사당에 설치된 고대 문명 병기의 일종. 가논에 대항할 병기로 만들어진 가디언에서 다족 이동 기구와 빔 발사 기능을 유용하여 용사의 훈련용 병기로 재탄생하였다.",
+        "common_locations": [
+            "시련의 사당"
+        ],
         "drops": [
-            "ancient screw",
-            "ancient spring"
+            "고대의 나사",
+            "고대의 스프링"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_scout_i/image",
         "category": "monsters",
@@ -779,14 +861,18 @@
     },
     {
         "id": 131,
+        "kname": "소형 가디언 2호",
         "name": "guardian scout ii",
-        "description": "Although originally designed by an ancient civilization to combat Ganon, these scaled-down Guardians were placed inside shrines as part of the trials. In additional to the beam functionality, this particular model was designed to handle weaponry as a means of further testing the combat prowess of one undertaking the trials. It takes some serious skill to go toe-to-toe with one of these.",
-        "common_locations": ["확인불가"],
+        "description": "시련의 사당에 설치된 고대 문명 병기의 일종. 가논에 대항할 병기로 만들어진 가디언에서 다족 이동 기구와 빔 발사 기능을 유용하여 용사의 훈련용 병기로 재탄생하였다. 용사의 전투력을 기르는 힘의 시련을 위해 무기를 다루는 기능이 추가되었다. 맞서 싸우려면 그에 맞는 힘이 요구된다.",
+        "common_locations": [
+            "시련의 사당"
+        ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "가디언 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_scout_ii/image",
         "category": "monsters",
@@ -794,15 +880,19 @@
     },
     {
         "id": 132,
+        "kname": "소형 가디언 3호",
         "name": "guardian scout iii",
-        "description": "Although originally designed by an ancient civilisation to combat Ganon, these scaled-down Guardians were placed inside shrines as part or the trials. This model is equipped with twin-blade functionality to further test the combat prowess of one undertaking the trials. It takes a nimble fighter to overcome this one.",
-        "common_locations": ["확인불가"],
+        "description": "시련의 사당에 설치된 고대 문명 병기의 일종. 가논에 대항할 병기로 만들어진 가디언에서 다족 이동 기구와 빔 발사 기능을 유용하여 용사의 훈련용 병기로 재탄생하였다. 용사의 전투력을 기르는 힘의 시련을 위해 이도류 기능이 추가되었다. 맞서 싸우려면 그에 맞는 힘이 요구된다.",
+        "common_locations": [
+            "시련의 사당"
+        ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어",
+            "+가디언 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_scout_iii/image",
         "category": "monsters",
@@ -810,15 +900,19 @@
     },
     {
         "id": 133,
+        "kname": "소형 가디언 4호",
         "name": "guardian scout iv",
-        "description": "An ancient civilization originally designed Guardians to combat Ganon but then scaled them down to place in shrines as part of the trials. This model is very resilient and has been outfitted with triple-blade functionality, allowing it to wield three weapons. This will put any would-be hero to the test for sure. A great deal of strength and confidence alike are required to contend with one of these.",
-        "common_locations": ["확인불가"],
+        "description": "시련의 사당에 설치된 고대 문명 병기의 일종. 가논에 대항할 병기로 만들어진 가디언에서 다족 이동 기구와 빔 발사 기능을 유용하여 용사의 훈련용 병기로 재탄생하였다. 힘의 시련 상급을 위해 삼도류 기능이 추가되었다. 충분한 힘을 길러야만 상대할 수 있다.",
+        "common_locations": [
+            "시련의 사당"
+        ],
         "drops": [
-            "ancient screw",
-            "ancient spring",
-            "ancient gear",
-            "ancient shaft",
-            "ancient core"
+            "고대의 나사",
+            "고대의 스프링",
+            "고대의 톱니",
+            "고대의 샤프트",
+            "고대의 코어",
+            "++가디언 장비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/guardian_scout_iv/image",
         "category": "monsters",
@@ -826,15 +920,21 @@
     },
     {
         "id": 134,
-        "name": "yiga footsoldier",
-        "description": "The lowest-ranked members of the Yiga Clan. They've been dispatched all across Hyrule with a single task: seek out Link and end his life. They're a crafty bunch, sometimes disguising themselves as simple travelers or villagers to get the jump on you. Be wary of suspicious people you encounter. They're very agile and carry a bow and one-handed sword.",
-        "common_locations": ["확인불가"],
+        "kname": "이가단 구성원",
+        "name": "Yiga Soldier",
+        "description": "이가단 말단 구성원. 영걸 링크를 찾아내 숨통을 끊기 위해 하이랄 전역에 파견되어 있다. 여행자나 마을 주민으로 위장하여 링크를 기습하는 경우도 있어 수상한 인물을 발견하면 주의가 필요하다. 한손검과 활을 사용하며 움직임이 민첩하다.",
+        "common_locations": [
+            "하이랄 전역"
+        ],
         "drops": [
-            "green rupee",
-            "blue rupee",
-            "red rupee",
-            "purple rupee",
-            "mighty bananas"
+            "초록 루피",
+            "파란 루피",
+            "빨간 루피",
+            "보라 루피",
+            "칼날바나나",
+            "참수도",
+            "귀원도",
+            "이연궁"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/yiga_footsoldier/image",
         "category": "monsters",
@@ -842,16 +942,20 @@
     },
     {
         "id": 135,
-        "name": "yiga blademaster",
-        "description": "These are the elite soldiers of the Yiga Clan. They favor the windcleaver blade and are extremely agile despite their bulky build. At this Yiga Clan rank, they have mastered a technique that allows them to manipulate the very earth. By striking the ground, they can create stone pillars and blasts of air.",
-        "common_locations": ["확인불가"],
+        "kname": "이가단 간부",
+        "name": "Yiga Swordsman",
+        "description": "이가단의 구성원. 진공파를 발사하는 풍참도를 갖고 있다. 다부진 체격에 비해 움직임이 민첩하다. 지면을 내리치며 기류와 함께 돌기둥을 생성한다. 토둔 술법도 사용할 수 있다고 한다.",
+        "common_locations": [
+            "확인불가"
+        ],
         "drops": [
-            "amber",
-            "opal",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "mighty bananas"
+            "호박",
+            "오팔",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "칼날바나나",
+            "풍참도"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/yiga_blademaster/image",
         "category": "monsters",
@@ -859,39 +963,48 @@
     },
     {
         "id": 136,
+        "kname": "코가님",
         "name": "master kohga",
-        "description": "The leader of the Yiga Clan, a group formed with just a single objective: eliminate Link. He sends his minions all over Hyrule in search of you but tends to spend most of his time napping and generally loafing about. Despite this, his mastery of the esoteric arts has earned him a deep respect. Even if he were to die, his followers would never give up on their one and only task.",
+        "description": "영걸 링크의 목숨을 노리는 이가단의 총단장. 전 세계에 심복을 보내 탐색을 지시해두고 정작 자신은 놀고 먹기만 한다. 이런 총단장이지만 궁극의 필살기를 지니고 있어 심복들의 신뢰는 의외로 두텁다. 설령 총단장이 소멸하여도 심복들이 의지를 이어 받아 영걸들을 쫓을 것이다.",
         "common_locations": [
-            "Yiga Clan Hideout"
+            "이가단 아지트"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "뇌명의 투구"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/master_kohga/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 137,
+        "kname": "미즈·코시아",
         "name": "monk maz koshia",
-        "description": "The arbiter of worthiness for the hero who wishes to control a Divine Beast, following a revelation from the Goddess Hylia. As the last part of the final trial, the monk offers a challenge of ancient techniques.",
-        "common_locations": ["확인불가"],
-        "drops": ["없음"],
+        "description": "여신 하일리아의 계시에 따라 신수의 조종자로 어울릴 만한 자를 발굴하기 위한 시련을 담당하는 도사. 그 최후의 시련으로서 스스로가 나서서 다양한 고대 기술을 구사하며 전투를 걸어 온다.",
+        "common_locations": [
+            "확인불가"
+        ],
+        "drops": [
+            "마스터바이크 제로"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/monk_maz_koshia/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 138,
+        "kname": "바위록",
         "name": "stone talus",
-        "description": "This enormous monster is naturally camouflaged as a rock formation. Neither sword nor arrow can pierce its stony form, but a cunning adventurer knows to scale its body and attack the ore sprouting from its peak.",
+        "description": "바위로 위장한 거대 몬스터. 단단한 바위 몸에는 검과 활이 들지 않는다. 몸을 타고 올라가 머리 쪽에 노출되어 있는 광상을 공격하면 쓰러트릴 수 있다고 한다.",
         "common_locations": [
             "서하테르",
             "동하테르"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "opal",
-            "ruby"
+            "부싯돌",
+            "호박",
+            "오팔",
+            "루피"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stone_talus/image",
         "category": "monsters",
@@ -899,19 +1012,20 @@
     },
     {
         "id": 139,
+        "kname": "바위록(야광)",
         "name": "stone talus (luminous)",
-        "description": "This enormous monster is naturally camouflaged as a rock formation. Neither sword nor arrow can pierce its stony form, but a cunning adventurer knows to scale its body and attack the ore sprouting from its peak. Unlike your average Stone Talus, this type's ore deposit consists mostly of luminous stone.",
+        "description": "바위로 위장한 거대 몬스터. 단단한 바위 몸에는 검과 활이 들지 않는다. 머리 쪽에 노출되어 있는 광상에 야광석을 많이 함유하고 있는 것이 특징이다.",
         "common_locations": [
             "겔드 고지",
             "하이랄 평원"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "opal",
-            "luminous stone",
-            "topaz",
-            "diamond"
+            "부싯돌",
+            "호박",
+            "오팔",
+            "야광석",
+            "토파즈",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stone_talus_(luminous)/image",
         "category": "monsters",
@@ -919,20 +1033,21 @@
     },
     {
         "id": 140,
+        "kname": "바위록(레어)",
         "name": "stone talus (rare)",
-        "description": "This enormous monster is naturally camouflaged as a rock formation. Neither stone nor arrow can pierce its stony form, but a cunning adventurer knows to scale its body and attack the ore sprouting from its peak. Unlike your average Stone Talus, this type's ore deposit contains a large amount of precious ore.",
+        "description": "바위로 위장한 거대 몬스터. 단단한 바위 몸에는 검과 활이 들지 않는다. 머리 쪽에 노출되어 있는 광상에 귀한 광석을 많이 함유하고 있는 것이 특징이다.",
         "common_locations": [
             "하이랄 평원",
             "타반타 변두리"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "opal",
-            "topaz",
-            "ruby",
-            "sapphire",
-            "diamond"
+            "부싯돌",
+            "호박",
+            "오팔",
+            "토파즈",
+            "루비",
+            "사파이어",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stone_talus_(rare)/image",
         "category": "monsters",
@@ -940,16 +1055,17 @@
     },
     {
         "id": 141,
+        "kname": "마그록",
         "name": "igneo talus",
-        "description": "This enormous monster is naturally camouflaged as molten rock. Neither sword nor arrow can pierce its fiery form. Merely touching its magma-hot body can burn you pretty badly, but you may be able to scale it if you can use something to chill its flames.",
+        "description": "용암으로 위장한 거대 몬스터. 단단한 바위 몸에는 검과 활이 들지 않는다. 용암을 두르고 있어 닿는 것조차 위험하지만 냉기로 열을 식히면 몸을 타고 올라갈 수 있다.",
         "common_locations": [
             "올딘 협곡"
         ],
         "drops": [
-            "flint",
-            "opal",
-            "ruby",
-            "diamond"
+            "부싯돌",
+            "오팔",
+            "루비",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/igneo_talus/image",
         "category": "monsters",
@@ -957,17 +1073,18 @@
     },
     {
         "id": 142,
+        "kname": "꽁꽁록",
         "name": "frost talus",
-        "description": "This enormous monster is naturally camouflaged as a frozen rock formation. Neither sword nor arrow can pierce its frigid form. Merely touching its frosty body can leave you with severe frostbite, but you may be able to scale it if you use something to thaw its icy exterior.",
+        "description": "얼어붙은 바위로 위장한 거대 몬스터. 단단한 바위 몸에는 검과 활이 들지 않는다. 꽁꽁 언 몸은 닿는 것조차 위험하지만 화염으로 얼음을 녹이면 타고 올라갈 수 있다.",
         "common_locations": [
             "헤브라산",
             "겔드 고지"
         ],
         "drops": [
-            "flint",
-            "opal",
-            "sapphire",
-            "diamond"
+            "부싯돌",
+            "오팔",
+            "사파이어",
+            "다이아몬드"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/frost_talus/image",
         "category": "monsters",
@@ -975,15 +1092,16 @@
     },
     {
         "id": 143,
+        "kname": "돌록",
         "name": "stone pebblit",
-        "description": "A very young Stone Talus. Their bodies toughen as they mature, becoming as tough as boulders by adulthood. As a child, however, their bodies are light enough to be lifted and fragile enough to break when thrown.",
+        "description": "바위록의 소형 버전. 성장하면 바위와 같이 단단한 몸통이 되는데 소형 버전은 들어올릴 수 있을 정도로 가볍고 던지면 금방 부서질 정도로 약하다.",
         "common_locations": [
             "하이랄전역"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "opal"
+            "부싯돌",
+            "호박",
+            "오팔"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stone_pebblit/image",
         "category": "monsters",
@@ -991,16 +1109,17 @@
     },
     {
         "id": 144,
+        "kname": "불꽃록",
         "name": "igneo pebblit",
-        "description": "A very young Igneo Talus. Their bodies toughen as they mature and convert fully into lava by adulthood. As a child, however, while still covered in fire, their bodies are fragile and light enough to be blown away by a bomb's blast.",
+        "description": "마그록의 소형 버전. 성장하면 용암으로 된 단단한 몸통이 된다. 소형 버전이어도 화염을 띄고 있는데 폭탄으로 날려버릴 수 있을 정도로 가볍고 약하다.",
         "common_locations": [
             "올딘 협곡",
             "올딘 산맥"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "ruby"
+            "부싯돌",
+            "호박",
+            "루비"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/igneo_pebblit/image",
         "category": "monsters",
@@ -1008,16 +1127,17 @@
     },
     {
         "id": 145,
+        "kname": "얼음록",
         "name": "frost pebblit",
-        "description": "A very young Frost Talus. Their bodies toughen and frost over as they mature, becoming entirely made of ice by adulthood. As a child, however, their bodies are awfully fragile and are light enough to be blown away by a bomb's blast.",
+        "description": "꽁꽁록의 소형 버전. 성장하면 얼음 바위로 된 단단한 몸통이 된다. 소형 버전이어도 냉기를 띄고 있는데 폭탄으로 날려버릴 수 있을 정도로 가볍고 약하다.",
         "common_locations": [
             "헤브라산",
             "겔드 고지"
         ],
         "drops": [
-            "flint",
-            "amber",
-            "sapphire"
+            "부싯돌",
+            "호박",
+            "사파이어"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/frost_pebblit/image",
         "category": "monsters",
@@ -1025,33 +1145,39 @@
     },
     {
         "id": 146,
+        "kname": "메가 마그록",
         "name": "igneo talus titan",
-        "description": "This monster is an Igneo Talus subspecies that is camouflaged as molten rock. It lives in lava for many years before emerging at an enormous size. It is wildly powerful and emits a tremendous amount of heat, causing a constant updraft in its vicinity. This monster is so fearsome it has earned the title of Titan.",
-        "common_locations": ["확인불가"],
-        "drops": ["없음"],
+        "description": "용암으로 위장한 거대 몬스터 마그록의 아종으로 마그마 안에 숨어서 오랜 세월에 걸쳐 자신의 몸을 더욱 거대화시키고 있다. 그 힘은 물론, 몸에서 발산하는 열로 인해 주변에 항상 상승 기류를 발생시키는 모습은 메가라는 이름에 걸맞다.",
+        "common_locations": [
+            "확인불가"
+        ],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/igneo_talus_titan/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 147,
+        "kname": "히녹스",
         "name": "hinox",
-        "description": "The largest monster to make its home in Hyrule, the Hinox lives primarily in forested areas. A keen awareness of your surroundings is paramount when facing one, as Hinox are known for tearing entire trees from the ground and using them as weapons. A deft hand can steal weapons off the necklaces they wear.",
+        "description": "하이랄 서식 몬스터 중 최대급 크기를 자랑한다. 주로 숲에 서식하고 있다. 나무를 뽑아 휘두르는 등 난폭한 성격이라 전투 시에는 주변 지형에도 주의할 필요가 있다. 목에 걸고 있는 무기는 빼앗을 수 있다.",
         "common_locations": [
             "동하테르",
             "서하테르"
         ],
         "drops": [
-            "hinox toenail",
-            "hinox tooth",
-            "hinox guts",
-            "apple",
-            "wildberry",
-            "palm fruit",
-            "voltfruit",
-            "mighty bananas",
-            "fortified pumpkin",
-            "hearty durian"
+            "히녹스의 발톱",
+            "히녹스의 이빨",
+            "히녹스의 간",
+            "사과",
+            "딸기",
+            "야자열매",
+            "찌릿찌릿푸르트",
+            "칼날바나나",
+            "갑옷호박",
+            "맥스두리안"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hinox/image",
         "category": "monsters",
@@ -1059,25 +1185,26 @@
     },
     {
         "id": 148,
+        "kname": "블루 히녹스",
         "name": "blue hinox",
-        "description": "The largest monster to make its home in Hyrule, the Hinox lives primarily in forested areas. A keen awareness of your surroundings is paramount when facing one, as Hinox are known for tearing entire trees from the ground and using them as weapons. Blue Hinox wear greaves that can be burnt away to expose their feet. A deft hand can steal weapons off the necklaces they wear.",
+        "description": "하이랄 서식 몬스터 중 최대급 크기를 자랑한다. 주로 숲에 서식하고 있다. 나무를 뽑아 휘두르는 등 난폭한 성격이라 전투 시에는 주변 지형에도 주의할 필요가 있다. 다리를 단단한 보호대로 지키고 있는데 불을 붙이면 태워버릴 수 있다. 목에 걸고 있는 무기는 빼앗을 수 있다.",
         "common_locations": [
             "하이랄 평원",
             "라넬 대수원"
         ],
         "drops": [
-            "hinox toenail",
-            "hinox tooth",
-            "hinox guts",
-            "roasted bass",
-            "roasted hearty bass",
-            "roasted hearty salmon",
-            "roasted trout",
-            "roasted carp",
-            "roasted porgy",
-            "sneaky river escargot",
-            "blueshell escargot",
-            "blackened crab"
+            "히녹스의 발톱",
+            "히녹스의 이빨",
+            "히녹스의 간",
+            "구운 배스",
+            "구운 맥스배스",
+            "구운 맥스연어",
+            "구운 송어",
+            "구운 잉어",
+            "구운 도미",
+            "구운 은밀우렁이",
+            "구운 맥스소라",
+            "구운 게"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/blue_hinox/image",
         "category": "monsters",
@@ -1085,22 +1212,23 @@
     },
     {
         "id": 149,
+        "kname": "블랙 히녹스",
         "name": "black hinox",
-        "description": "The largest monster to make its home in Hyrule, the Hinox lives primarily in forested areas. A keen awareness of your surroundings is paramount when facing one, as Hinox are known for tearing entire trees from the ground and using them as weapons. Black Hinox wear metal greaves that conduct electricity rather well. A deft hand can steal weapons off the necklaces they wear.",
+        "description": "하이랄 서식 몬스터 중 최대급 크기를 자랑한다. 주로 숲에 서식하고 있다. 나무를 뽑아 휘두르는 등 난폭한 성격이라 전투 시에는 주변 지형에도 주의할 필요가 있다. 강철 보호대는 단단하기 때문에 부술 수는 없지만 전기 공격에는 약할 것 같다. 목에 걸고 있는 무기는 빼앗을 수 있다.",
         "common_locations": [
             "동하테르",
             "하이랄 평원"
         ],
         "drops": [
-            "hinox toenail",
-            "hinox tooth",
-            "hinox guts",
-            "seared steak",
-            "seared prime steak",
-            "seared gourmet steak",
-            "roasted bird drumstick",
-            "roasted bird thigh",
-            "roasted whole bird"
+            "히녹스의 발톱",
+            "히녹스의 이빨",
+            "히녹스의 간",
+            "구운 짐승 고기",
+            "구운 상급 짐승 고기",
+            "구운 특급 짐승 고기",
+            "구운 새 고기",
+            "구운 상급 새 고기",
+            "구운 특급 새 고기"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/black_hinox/image",
         "category": "monsters",
@@ -1108,14 +1236,15 @@
     },
     {
         "id": 150,
+        "kname": "스탈 히녹스",
         "name": "stalnox",
-        "description": "The mere remains of what was once a giant monster known as a Hinox. These skeletal beasts appear at nighttime. Much like their living counterparts, the Stalnox will tear entire trees from the ground to use as weapons. Furthermore, even if it appears defeated at first, it will keep coming back for more as long as its eye is left intact.",
+        "description": "거대한 외눈박이 몬스터 히녹스의 유해. 밤이 되면 움직이기 시작한다. 나무를 뽑아 휘두르기 때문에 전투 시 방심할 수 없다. 눈알만 있으면 몇 번이고 되살아난다.",
         "common_locations": [
             "하이랄 평원",
             "서하테르"
         ],
         "drops": [
-            "hinox tooth"
+            "히녹스의 이빨"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stalnox/image",
         "category": "monsters",
@@ -1123,14 +1252,16 @@
     },
     {
         "id": 151,
+        "kname": "몰드래고",
         "name": "molduga",
-        "description": "This massive monster swims beneath the desert's sand. It spends most of its time submerged, but if it senses sound, it will breach the surface to feast on whatever it can grab. Running around carelessly can be dangerous if you suspect there may be one in the area.",
+        "description": "사막의 모래 속에 있는 고래를 닮은 거대 몬스터. 평소에는 모래 속에 숨어 있지만 소리를 감지하면 밖으로 튀어나와 덤벼든다. 마주쳤을 때 함부로 뛰면 위험하다.",
         "common_locations": [
             "겔드 사막"
         ],
         "drops": [
-            "molduga fin",
-            "molduga guts"
+            "몰드래고의 등지느러미",
+            "몰드래고의 간",
+            "보물상자"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/molduga/image",
         "category": "monsters",
@@ -1138,11 +1269,14 @@
     },
     {
         "id": 152,
+        "kname": "킹래고",
         "name": "molduking",
-        "description": "This massive monster swims beneath the desert's sand. It is a subspecies of Molduga that stored up a great deal of energy by sleeping underground for hundreds of years. Its power is superior to Molduga, as its skin is rich with iron and acts as a protective shield.",
-        "common_locations": ["확인불가"],
+        "description": "사막의 모래 속에 있는 거대 몬스터인 몰드래고의 아종. 수백 년 동안 모래 속에서 잠자며 힘을 비축한 특이한 개체이다. 그 힘은 일반종을 크게 상회하며 철분을 다량 함유한 단단한 피부는 튼튼한 갑옷 역할을 하며 그 몸을 지키고 있다.",
+        "common_locations": [
+            "겔드 사막"
+        ],
         "drops": [
-            "treasures"
+            "보물상자"
         ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/molduking/image",
         "category": "monsters",
@@ -1150,140 +1284,191 @@
     },
     {
         "id": 153,
+        "kname": "올드래곤",
         "name": "dinraal",
-        "description": "A spirit of fire has taken the form of this giant dragon. Making its home in the Eldin region, it's said to have served the Spring of Power since ancient times. An old saying goes, \"The dragon ascends to the heavens as the sun begins to set,\" but nobody has witnessed this in the current age. The flames that coat its body make it dangerous to get near, but Dinraal bears no ill will toward people.",
+        "description": "올딘 지방에 서식하는 용의 모습을 한 불의 정령으로 옛부터 힘의 샘의 사자라 불린다.「태양이 질 때 하늘을 난다」는 전승이 남아있으나 요즘에는 그 모습을 목격한 자가 드물다. 몸이 화염으로 휩싸여 있어 가까이 가면 위험하지만 인간에게 해를 가하지는 않는다고 한다.",
         "common_locations": [
             "올딘 산맥",
             "타반타 변두리"
         ],
-        "drops": "none",
+        "drops": [
+            "올드래곤의 비늘",
+            "올드래곤의 발톱",
+            "올드래곤의 이빨 조각",
+            "올드래곤의 뿔 조각"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/dinraal/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 154,
+        "kname": "넬드래곤",
         "name": "naydra",
-        "description": "A spirit of ice has taken the form of this giant dragon. Making its home in the Lanayru region, it's said to have served the Spring of Wisdom since ancient times. An old saying goes, \"The dragon ascends to the heavens as the sun begins to set,\" but nobody has seen this in the current age. The ice that coats its body makes it dangerous to get near, but Naydra bears no ill will toward people.",
+        "description": "라넬 지방에 서식하는 용의 모습을 한 얼음의 정령으로 옛부터 지혜의 샘의 사자라 불린다. 「태양이 질 때 하늘을 난다」는 전승이 남아있으나 요즘에는 그 모습을 목격한 자가 없다. 몸이 냉기로 휩싸여 있어 가까이 가면 위험하지만 인간에게 해를 가하지는 않는다고 한다.",
         "common_locations": [
-            "Mount Lanayru"
+            "라넬산"
         ],
-        "drops": "none",
+        "drops":  [
+            "넬드래곤의 비늘",
+            "넬드래곤의 발톱",
+            "넬드래곤의 이빨 조각",
+            "넬드래곤의 뿔 조각"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/naydra/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 155,
+        "kname": "필로드래곤",
         "name": "farosh",
-        "description": "A spirit of lightning has taken the form of this giant dragon. Making its home in the Faron region, it's said to have served the Spring of Courage since ancient times. An old saying goes, \"The dragon ascends to the heavens as the sun begins to set,\" but nobody has seen this in the current age. The electricity that coats its body makes it dangerous to get near, but Farosh bears no ill will toward people.",
+        "description": "필로네 지방에 서식하는 용의 모습을 한 번개의 정령으로 옛부터 용기의 샘의 사자라 불린다. 「태양이 질 때 하늘을 난다」는 전승이 남아있으나 요즘에는 그 모습을 목격한 자가 드물다. 몸이 전기로 휩싸여 있어 가까이 가면 위험하지만 인간에게 해를 가하지는 않는다고 한다.",
         "common_locations": [
             "하일리아호",
-            "Lake Floria"
+            "플로리아호"
         ],
-        "drops": "none",
+        "drops":  [
+            "필로드래곤의 비늘",
+            "필로드래곤의 발톱",
+            "필로드래곤의 이빨 조각",
+            "필로드래곤의 뿔 조각"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/farosh/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 156,
+        "kname": "커스 보코블린",
         "name": "cursed bokoblin",
-        "description": "The Malice has given these Bokoblin skulls a sort of life. Devoid of any intelligence the Bokoblin it once belonged to may have had, these pitiful things now exist only to attack anything that gets too close.",
-        "common_locations": ["확인불가"],
-        "drops": ["없음"],
+        "description": "원념에 사로잡힌 보코블린의 두개골. 생전의 지성은 전혀 느낄 수 없고 다가오는 자를 덮치기만 하는 애잔한 존재가 되었다.",
+        "common_locations": [
+            "확인불가"
+        ],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/cursed_bokoblin/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 157,
+        "kname": "커스 모리블린",
         "name": "cursed moblin",
         "description": "The Malice has given these Moblin skulls a pitiful life after death. The only fragment of their former selves they've held on to is the ferocity innate to all Moblins, so they will attack anyone that approaches.",
-        "common_locations": ["확인불가"],
-        "drops": ["없음"],
+        "common_locations": [
+            "확인불가"
+        ],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/cursed_moblin/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 158,
+        "kname": "커스 리잘포스",
         "name": "cursed lizalfos",
         "description": "The Malice has given these Lizalfos skulls a sorry form of life after death. Only the slyness of their former selves remains, making them faster than Bokoblin skulls. They thoughtlessly attack anyone who approaches.",
-        "common_locations": ["확인불가"],
-        "drops": ["없음"],
+        "common_locations": [
+            "확인불가"
+        ],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/cursed_lizalfos/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 159,
+        "kname": "번개의 커스 가논",
         "name": "thunderblight ganon",
-        "description": "This phantom of Ganon attacked the Divine Beast Vah Naboris and was responsible for the demise of the Champion Urbosa. It specializes in quick, lightning-based attacks.",
+        "description": "신수 나보리스를 습격한 가논의 분신. 재빠른 움직임과 번개를 이용한 공격이 주특기. 영걸 중 하나인 우르보사의 목숨을 앗아갔다.",
         "common_locations": [
-            "Divine Beast Vah Naboris"
+            "신수 바·나보리스"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "생명의 그릇"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/thunderblight_ganon/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 160,
+        "kname": "화염의 커스 가논",
         "name": "fireblight ganon",
-        "description": "This phantom of Ganon attacked the Divine Beast Vah Rudania and was responsible for the demise of the Champion Daruk. It attacks with a greatsword and fire magic.",
+        "description": "신수 루다니아를 습격한 가논의 분신. 대검과 화염을 이용한 공격이 주특기. 영결 중 하나인 다르케르의 목숨을 앗아갔다.",
         "common_locations": [
-            "Divine Beast Vah Rudania"
+            "신수 바·루다니아"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "생명의 그릇"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fireblight_ganon/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 161,
+        "kname": "물의 커스 가논",
         "name": "waterblight ganon",
-        "description": "This phantom of Ganon attacked the Divine Beast Vah Ruta and was responsible for the demise of the Champion Mipha. It attacks with a spear and ice magic.",
+        "description": "신수 루타를 습격한 가논의 분신. 긴 창과 얼음 덩어리를 이용한 공격이 주특기. 영걸 중 하나인 미파의 목숨을 앗아갔다.",
         "common_locations": [
-            "Divine Beast Vah Ruta"
+            "신수 바·루타"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "생명의 그릇"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/waterblight_ganon/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 162,
+        "kname": "바람의 커스 가논",
         "name": "windblight ganon",
-        "description": "This phantom of Ganon attacked the Divine Beast Vah Medoh and was responsible for the demise of the Champion Revali. It specializes in long-ranged wind attacks.",
+        "description": "신수 메도를 습격한 가논의 분신. 원거리에서 바람을 이용한 공격이 주특기. 영걸 중 하나인 리발의 목숨을 앗아갔다.",
         "common_locations": [
-            "Divine Beast Vah Medoh"
+            "신수 바·메도"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "생명의 그릇"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/windblight_ganon/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 163,
+        "kname": "재앙 가논",
         "name": "calamity ganon",
-        "description": "The source of the darkness that has appeared time and again throughout Hyrule's history. It's been called many names, from \"Great King of Evil\" to \"Calamity.\" Hibernating within a cocoon, it attempted to regenerate a physical form after Link awoke but was forced to confront him in an incomplete state.",
+        "description": "고대부터 하이랄에 거듭 나타나 어둠을 가져온 원흉. 시대에 따라 대마왕, 재앙 등으로 불린다. 고치 안에서 부활을 기다리고 있다가 링크의 각성에 반응하여 불완전한 상태로 그 모습을 드러냈다. 커스 가논들의 무기와 작은 가디언 무기들이 여러 팔에 달려있다.",
         "common_locations": [
-            "Hyrule Castle"
+           "하이랄 성"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/calamity_ganon/image",
         "category": "monsters",
         "dlc": false
     },
     {
         "id": 164,
+        "kname": "마수 가논",
         "name": "dark beast ganon",
-        "description": "After Ganon was defeated by Link, the remaining Malice pulled itself together to form this bestial creature. Its appearance and fiendish magic eared it the name of Dark Beast. This form is considered to be Ganon's original, although in this state, his awareness has been consumed entirely by Malice, and all he knows is a desire to rampage and destroy.",
+        "description": "재앙 가논을 한 번 쓰러뜨린 뒤에는 최종보스전으로 하이랄 필드로 나가 마수 가논과 싸우게 된다. 링크에 의해 토벌되어 흩어진 원념이 모인 모습. 불길한 마력과 흉포한 짐승과도 같은 그 모습은 가히 마수라 할 수 있다. 가논의 본래 모습이며 의식은 원념에 먹혀 폭주하고 있다.",
         "common_locations": [
             "하이랄 평원"
         ],
-        "drops": ["없음"],
+        "drops": [
+            "없음"
+        ],
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/dark_beast_ganon/image",
         "category": "monsters",
         "dlc": false

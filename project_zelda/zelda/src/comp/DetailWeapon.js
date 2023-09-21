@@ -78,8 +78,8 @@ function Detail() {
     }, []);
 
 
-    const handleBackClick = () => { 
-        navigate( -1 )
+    const handleBackClick = () => {
+        navigate(-1)
     };
 
 
@@ -111,7 +111,7 @@ function Detail() {
                                 <div className='left_txt'>
                                     <p>no. {item.id}</p>
                                     <div className='txt'>
-                                        <p>{item.name}</p>
+                                        <p>{item.kname}</p>
                                         <span>{item.name}</span>
                                     </div>
                                 </div>

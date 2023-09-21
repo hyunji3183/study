@@ -74,8 +74,8 @@ function Detail() {
 
     }, []);
 
-    const handleBackClick = () => { 
-        navigate( -1 )
+    const handleBackClick = () => {
+        navigate(-1)
     };
 
 
@@ -107,7 +107,7 @@ function Detail() {
                                 <div className='left_txt'>
                                     <p>no. {item.id}</p>
                                     <div className='txt'>
-                                        <p>{item.name}</p>
+                                        <p>{item.kname}</p>
                                         <span>{item.name}</span>
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@ function Detail() {
                                 <div className='get_item'>
                                     <div className='item'>
                                         <p><img src={deLplace} /></p>
-                                        <span> {catagory == 'Materials' ? "요리효과" : "관련아이템"} </span>
+                                        <span> {catagory == 'Materials' && item.cooking_effect ? "요리효과" : "관련아이템" && item.cooking_effect ? "요리효과" : "관련아이템"} </span>
                                         <p><img src={deRplace} /></p>
                                     </div>
                                     <div className='item_data'>
