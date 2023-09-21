@@ -20,7 +20,7 @@ export default function Main() {
             </div>
             <div className="logo">
                 <p>
-                    <img src={logo} alt="" onClick={nextpage} />
+                    <img src={logo} alt="main_logo" onClick={nextpage} />
                 </p>
             </div>
         </div>

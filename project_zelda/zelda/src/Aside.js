@@ -11,23 +11,6 @@ import triforce from './img/icon_triforce.png';
 import { Link } from 'react-router-dom';
 
 function Aside({ onSortRequest }) {
-    
-
-    const click_back = () => {
-        const categoryBtn = document.querySelectorAll('.category a');
-        let num = 0;
-
-        window.event.target.classList.toggle('active');
-
-        // categoryBtn.forEach(function (ele, key) {
-
-        //         this.classList.toggle('active');
-        //         if (num != key) {
-        //             categoryBtn[num].classList.remove('active');
-        //         }
-        //         num = key;
-        // })        
-    }
     const [isSorted, setIsSorted] = useState(false);
 
     const toggleSort = () => {
@@ -38,17 +21,17 @@ function Aside({ onSortRequest }) {
     return (
         <aside>
             <div className="category">
-                <Link to="/Creatures"><img src={creatures} alt="" onClick={click_back} /></Link>
-                <Link to="/monsters"><img src={monsters} alt="" onClick={click_back} /></Link>
-                <Link to="/materials"><img src={materials} alt="" onClick={click_back} /></Link>
-                <Link to="/equipment"><img src={equipmentd} alt="" onClick={click_back} /></Link>
-                <Link to="/treasure"><img src={treasure} alt="" onClick={click_back} /></Link>
+                <Link to="/Creatures"><img src={creatures} alt="creatures"/></Link>
+                <Link to="/monsters"><img src={monsters} alt="monsters"/></Link>
+                <Link to="/materials"><img src={materials} alt="materials"/></Link>
+                <Link to="/equipment"><img src={equipmentd} alt="equipmentd"/></Link>
+                <Link to="/treasure"><img src={treasure} alt=""/></Link>
             </div>
             <div className="toggle">
                 <div className='menu'>
-                    <Link to="/Favorite"><img src={favorite} alt="" /></Link>
-                    <a onClick={toggleSort}><img src={sort} alt="" /></a>
-                    <Link to="/Search"><img src={search} alt="" /></Link>
+                    <Link to="/Favorite"><img src={favorite} alt="favorite" /></Link>
+                    <a onClick={toggleSort} href=""><img src={sort} alt="sort" /></a>
+                    <Link to="/Search"><img src={search} alt="search" /></Link>
                 </div>
                 <a><img src={triforce} alt="" /></a>
             </div>

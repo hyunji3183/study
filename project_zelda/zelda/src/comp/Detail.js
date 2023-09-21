@@ -82,7 +82,7 @@ function Detail() {
         <>
             <header>
                 <div className="head">
-                    <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
+                    <a href=""><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
                     <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>

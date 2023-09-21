@@ -84,7 +84,7 @@ function Detail() {
         <>
             <header>
                 <div className="head">
-                    <a><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
+                    <a href=""><img src={back} alt="back" onClick={() => { navigate(-1) }} /></a>
                     <h2>Detail</h2>
                     <span className={`material-symbols-outlined ${isFavorite === true ? 'active' : ''} `} onClick={() => { OnFavorite(catagory, id) }}>favorite</span>
                 </div>
@@ -111,7 +111,7 @@ function Detail() {
                                         <span>{item.name}</span>
                                     </div>
                                 </div>
-                                <p><img src={item.image} /></p>
+                                <p><img src={item.image} alt={item.name} /></p>
                             </div>
                             <div className='right_contents_Weapon'>
                                 <div className='place'>

@@ -73,6 +73,15 @@ function Favorite() {
         setData(sorted);
         setIsSorted(!isSorted);
     };
+
+
+    const favoriteDetail = (category, id) => {
+        const str = category;
+        const str2 = str.charAt(0).toUpperCase() + str.slice(1)
+        navigate(`/detail/${str2}-${id}`);
+    };
+
+
     return (
         <>
             <Header />
@@ -87,8 +96,8 @@ function Favorite() {
                                 {data.map((item) => (
                                     <li key={item.id}>
                                         <figure>
-                                            <a /* onClick={() => navigate(`/detail/${item.category}-${item.id}`)} */>
-                                                <img src={item.image} alt={item.name} />
+                                            <a href="">
+                                                <img src={item.image} alt={item.name} onClick={() => favoriteDetail(item.category, item.id)} />
                                                 <span className={`material-symbols-outlined ${isFavorite(item.id, item.category) ? 'active' : ''}`}
                                                     onClick={() => { removeFavorite(item); }}>favorite</span>
                                             </a>
