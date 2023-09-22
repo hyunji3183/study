@@ -69,7 +69,7 @@
             "필로네 초원"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "heat resistance",
+        "cooking_effect": "더위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hydromelon/image",
         "category": "materials",
         "dlc": false
@@ -107,14 +107,14 @@
     {
         "id": 172,
         "kname": "고고연꽃 열매",
-        "name": "이동속도 업",
+        "name": "Fleet-Lotus Seeds",
         "description": "물가에 피어 있는 연꽃 열매. 수중 깊이 내린 뿌리로 모은 영양분 덕에 요리에 사용하면 이동 속도를 올리는 효과를 준다.",
         "common_locations": [
             "라넬 습원",
             "라넬 대수원"
         ],
         "hearts_recovered": 0.5,
-        "cooking_effect": "speed up",
+        "cooking_effect": "이동속도 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fleet-lotus_seeds/image",
         "category": "materials",
         "dlc": false
