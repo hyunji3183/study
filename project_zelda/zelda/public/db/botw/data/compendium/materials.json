@@ -62,7 +62,7 @@
     {
         "id": 169,
         "kname": "썰렁멜론",
-        "name": "더위 가드",
+        "name": "hydromelon",
         "description": "사막에서도 자라는 특수한 과일. 즙이 많은 과육에는 체온을 낮추는 효과가 있어 요리에 사용하면 더위를 견디는 효과를 발휘한다.",
         "common_locations": [
             "겔드 사막",
@@ -107,7 +107,7 @@
     {
         "id": 172,
         "kname": "고고연꽃 열매",
-        "name": "Fleet-Lotus Seeds",
+        "name": "fleet-lotus seeds",
         "description": "물가에 피어 있는 연꽃 열매. 수중 깊이 내린 뿌리로 모은 영양분 덕에 요리에 사용하면 이동 속도를 올리는 효과를 준다.",
         "common_locations": [
             "라넬 습원",
@@ -524,7 +524,7 @@
     {
         "id": 200,
         "kname": "원기벌의 벌꿀",
-        "name": "Courser Bee Honey",
+        "name": "courser bee honey",
         "description": "벌집에서 갓 딴 벌꿀은 영양 만점! 높은 영양가 덕분에 벌꿀을 조미료으로 쓴 요리는 스태미나 게이지 회복 효과가 나타난다.",
         "common_locations": [
             "하이랄 평원",

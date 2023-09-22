@@ -13,7 +13,8 @@ import { Link } from 'react-router-dom';
 function Aside({ onSortRequest }) {
     const [isSorted, setIsSorted] = useState(false);
 
-    const toggleSort = () => {
+    const toggleSort = (e) => {
+        e.preventDefault()
         setIsSorted(!isSorted);
         onSortRequest(!isSorted); 
     };

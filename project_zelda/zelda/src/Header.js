@@ -15,7 +15,6 @@ function Header() {
             <div className="head">
                 <Link to="/"><img src={home} alt="" /></Link>
                 <h2>{routeName}</h2>
-                <a><img src={heart} alt="heart" className="heart" /></a>
             </div>
         </header>
     )

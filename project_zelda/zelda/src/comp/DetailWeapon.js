@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import '../DetailWeapon.css';
-import like_heart from '../img/icon_favorite_none.png'
+import '../Detail.css';
 import back from '../img/icon_arrow_back.png'
 import creatures from '../img/icon_1.png';
 import monsters from '../img/icon_2.png';
 import materials from '../img/icon_3.png';
 import equipmentd from '../img/icon_4.png';
 import treasure from '../img/icon_5.png';
-import truffle from '../img/big_hearty_truffle.png';
 import deLplace from '../img/detail_line_place_left.png'
 import deRplace from '../img/detail_line_place_right.png'
-import deLitem from '../img/detail_line_item_left.png'
-import deRitem from '../img/detail_line_item_right.png'
-import deLweapon from '../img/detail_line_weapon_left.png'
-import deRweapon from '../img/detail_line_weapon_right.png'
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -106,18 +100,20 @@ function Detail() {
                 {data && data
                     .filter((item) => item.id == id)
                     .map((item) => (
-                        <div className='contentsD' key={item.id}>
+                        <div className='contents' key={item.id}>
                             <div className='left_contents'>
-                                <div className='left_txt'>
-                                    <p>no. {item.id}</p>
-                                    <div className='txt'>
-                                        <p>{item.kname}</p>
-                                        <span>{item.name}</span>
+                                <div className='left'>
+                                    <div className='left_txt'>
+                                        <p>no. {item.id}</p>
+                                        <div className='txt'>
+                                            <p>{item.kname}</p>
+                                            <span>{item.name}</span>
+                                        </div>
                                     </div>
+                                    <p className='image'><img src={item.image} alt={item.name} /></p>
                                 </div>
-                                <p><img src={item.image} alt={item.name} /></p>
                             </div>
-                            <div className='right_contents_Weapon'>
+                            <div className='right_contents'>
                                 <div className='place'>
                                     <div className='location'>
                                         <p><img src={deLplace} /></p>
@@ -125,21 +121,21 @@ function Detail() {
                                         <p><img src={deRplace} /></p>
                                     </div>
                                     <div className='place_data'>
-                                        <span>{item.common_locations[0]}</span>
-                                        <span>{item.common_locations[1]}</span>
-                                        <span>{item.common_locations[2]}</span>
+                                    {
+                                            item.common_locations && item.common_locations.map((v, k) => (
+                                                <span key={k}>{v}</span>
+                                            ))
+                                        }
                                     </div>
                                 </div>
                                 <div className='get_item'>
-                                    <div className='item_stats'>
-                                        <div className='item'>
-                                            <p><img src={deLplace} /></p>
-                                            <span>{item.properties.attack > 0 ? "공격력" : "방어력"}</span>
-                                            <p><img src={deRplace} /></p>
-                                        </div>
-                                        <div className='item_data'>
-                                            <span>{item.properties.attack > 0 ? item.properties.attack : item.properties.defense}</span>
-                                        </div>
+                                    <div className='item'>
+                                        <p><img src={deLplace} /></p>
+                                        <span>{item.properties.attack > 0 ? "공격력" : "방어력"}</span>
+                                        <p><img src={deRplace} /></p>
+                                    </div>
+                                    <div className='item_data'>
+                                        <span>{item.properties.attack > 0 ? item.properties.attack : item.properties.defense}</span>
                                     </div>
                                 </div>
                                 <div className='description'>

@@ -166,7 +166,7 @@
     {
         "id": 11,
         "kname": "붉은이멧돼지",
-        "name": "red-tusked Boar",
+        "name": "red-tusked boar",
         "description": "검은 털과 붉은 송곳니가 특징인 멧돼지. 생태는 평범한 멧돼지들과 비슷하나 생명력과 돌진할 때의 위력이 강하므로 사냥을 할 때에는 위험을 각오할 필요가 있다.",
         "common_locations": [
             "추낙 고원",
@@ -832,7 +832,7 @@
             "추낙 고원"
         ],
         "hearts_recovered": 2.0,
-        "cooking_effect": "extra hearts",
+        "cooking_effect": "MAX 하트 +2",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hearty_bass/image",
         "category": "creatures",
         "dlc": false,
@@ -848,7 +848,7 @@
             "서하테르"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "stamina recovery",
+        "cooking_effect": "스태미나 게이지 회복",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/staminoka_bass/image",
         "category": "creatures",
         "dlc": false,
@@ -864,7 +864,7 @@
             "헤브라산"
         ],
         "hearts_recovered": 4.0,
-        "cooking_effect": "extra hearts",
+        "cooking_effect": "MAX 하트 +4",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hearty_salmon/image",
         "category": "creatures",
         "dlc": false,
@@ -880,7 +880,7 @@
             "헤브라산"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "heat resistance",
+        "cooking_effect": "더위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/chillfin_trout/image",
         "category": "creatures",
         "dlc": false,
@@ -896,7 +896,7 @@
             "올딘 산맥"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "cold resistance",
+        "cooking_effect": "추위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/sizzlefin_trout/image",
         "category": "creatures",
         "dlc": false,
@@ -912,7 +912,7 @@
             "하이랄 구릉"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "shock resistance",
+        "cooking_effect": "전기 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/voltfin_trout/image",
         "category": "creatures",
         "dlc": false,
@@ -928,7 +928,7 @@
             "올딘 산맥"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "stealth up",
+        "cooking_effect": "조용함 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/stealthfin_trout/image",
         "category": "creatures",
         "dlc": false,
@@ -944,7 +944,7 @@
             "라넬 대수원"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "attack up",
+        "cooking_effect": "공격력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/mighty_carp/image",
         "category": "creatures",
         "dlc": false,
@@ -960,7 +960,7 @@
             "동하테르"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "defense up",
+        "cooking_effect": "방어력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/armored_carp/image",
         "category": "creatures",
         "dlc": false,
@@ -991,7 +991,7 @@
             "라넬해"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "attack up",
+        "cooking_effect": "공격력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/mighty_porgy/image",
         "category": "creatures",
         "dlc": false,
@@ -1007,7 +1007,7 @@
             "라넬해"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "defense up",
+        "cooking_effect": "방어력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/armored_porgy/image",
         "category": "creatures",
         "dlc": false,
@@ -1023,7 +1023,7 @@
             "라넬 대수원"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "stealth up",
+        "cooking_effect": "조용함 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/sneaky_river_snail/image",
         "category": "creatures",
         "dlc": false,
@@ -1039,7 +1039,7 @@
             "하테르해"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "extra hearts",
+        "cooking_effect": "MAX 하트 +3",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hearty_blueshell_snail/image",
         "category": "creatures",
         "dlc": false,
@@ -1055,7 +1055,7 @@
             "동하테르"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "attack up",
+        "cooking_effect": "공격력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/razorclaw_crab/image",
         "category": "creatures",
         "dlc": false,
@@ -1071,7 +1071,7 @@
             "동하테르"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "defense up",
+        "cooking_effect": "방어력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/ironshell_crab/image",
         "category": "creatures",
         "dlc": false,
@@ -1087,7 +1087,7 @@
             "올딘 협곡"
         ],
         "hearts_recovered": 1.0,
-        "cooking_effect": "stamina recovery",
+        "cooking_effect": "스태미나 게이지 회복",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/bright-eyed_crab/image",
         "category": "creatures",
         "dlc": false,
@@ -1102,7 +1102,7 @@
             "하이랄전역"
         ],
         "hearts_recovered": 5.0,
-        "cooking_effect": "",
+        "cooking_effect": "체력 +5 / 사망시 사동 사용",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fairy/image",
         "category": "creatures",
         "dlc": false,
@@ -1118,7 +1118,7 @@
             "겔드 고지"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "heat resistance",
+        "cooking_effect": "더위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/winterwing_butterfly/image",
         "category": "creatures",
         "dlc": false,
@@ -1134,7 +1134,7 @@
             "올딘 산맥"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "cold resistance",
+        "cooking_effect": "추위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/summerwing_butterfly/image",
         "category": "creatures",
         "dlc": false,
@@ -1150,7 +1150,7 @@
             "겔드 고지"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "shock resistance",
+        "cooking_effect": "전기 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/thunderwing_butterfly/image",
         "category": "creatures",
         "dlc": false,
@@ -1166,7 +1166,7 @@
             "데스마운틴"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "flame guard",
+        "cooking_effect": "불꽃 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/smotherwing_butterfly/image",
         "category": "creatures",
         "dlc": false,
@@ -1182,7 +1182,7 @@
             "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "heat resistance",
+        "cooking_effect": "더위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/cold_darner/image",
         "category": "creatures",
         "dlc": false,
@@ -1198,7 +1198,7 @@
             "하이랄 평원"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "cold resistance",
+        "cooking_effect": "추위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/warm_darner/image",
         "category": "creatures",
         "dlc": false,
@@ -1214,7 +1214,7 @@
             "겔드 사막"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "shock resistance",
+        "cooking_effect": "추위 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/electric_darner/image",
         "category": "creatures",
         "dlc": false,
@@ -1230,7 +1230,7 @@
             "동하테르"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "stamina recovery",
+        "cooking_effect": "스테미나 회복",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/restless_cricket/image",
         "category": "creatures",
         "dlc": false,
@@ -1246,7 +1246,7 @@
             "동하테르"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "attack up",
+        "cooking_effect": "공격력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/bladed_rhino_beetle/image",
         "category": "creatures",
         "dlc": false,
@@ -1262,7 +1262,7 @@
             "필로네 초원"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "defense up",
+        "cooking_effect": "방어력 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/rugged_rhino_beetle/image",
         "category": "creatures",
         "dlc": false,
@@ -1278,7 +1278,7 @@
             "서하테르"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "stamina recovery",
+        "cooking_effect": "스테미나 회복",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/energetic_rhino_beetle/image",
         "category": "creatures",
         "dlc": false,
@@ -1294,7 +1294,7 @@
             "하이랄 대삼림"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "stealth up",
+        "cooking_effect": "조용함 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/sunset_firefly/image",
         "category": "creatures",
         "dlc": false,
@@ -1310,7 +1310,7 @@
             "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "speed up",
+        "cooking_effect": "스피드 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hot-footed_frog/image",
         "category": "creatures",
         "dlc": false,
@@ -1326,7 +1326,7 @@
             "하이랄 구릉"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "extra stamina",
+        "cooking_effect": "MAX 스태미나",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/tireless_frog/image",
         "category": "creatures",
         "dlc": false,
@@ -1342,7 +1342,7 @@
             "동하테르"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "speed up",
+        "cooking_effect": "스피드 업",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hightail_lizard/image",
         "category": "creatures",
         "dlc": false,
@@ -1358,7 +1358,7 @@
             "하테르해"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "extra hearts",
+        "cooking_effect": "MAX 하트",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/hearty_lizard/image",
         "category": "creatures",
         "dlc": false,
@@ -1374,7 +1374,7 @@
             "데스마운틴"
         ],
         "hearts_recovered": 0.0,
-        "cooking_effect": "flame guard",
+        "cooking_effect": "불꽃 가드",
         "image": "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/fireproof_lizard/image",
         "category": "creatures",
         "dlc": false,

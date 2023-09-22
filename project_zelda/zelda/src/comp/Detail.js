@@ -104,14 +104,16 @@ function Detail() {
                     .map((item) => (
                         <div className='contents' key={item.id}>
                             <div className='left_contents'>
-                                <div className='left_txt'>
-                                    <p>no. {item.id}</p>
-                                    <div className='txt'>
-                                        <p>{item.kname}</p>
-                                        <span>{item.name}</span>
+                                <div className='left'>
+                                    <div className='left_txt'>
+                                        <p>no. {item.id}</p>
+                                        <div className='txt'>
+                                            <p>{item.kname}</p>
+                                            <span>{item.name}</span>
+                                        </div>
                                     </div>
+                                    <p className='image'><img src={item.image} /></p>
                                 </div>
-                                <p><img src={item.image} /></p>
                             </div>
                             <div className='right_contents'>
                                 <div className='place'>

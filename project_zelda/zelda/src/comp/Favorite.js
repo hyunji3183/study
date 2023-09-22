@@ -102,7 +102,7 @@ function Favorite() {
                                                     onClick={() => { removeFavorite(item); }}>favorite</span>
                                             </a>
                                             <figcaption>
-                                                <p>{item.name}</p>
+                                                <b>{item.kname}</b>
                                             </figcaption>
                                         </figure>
                                     </li>
