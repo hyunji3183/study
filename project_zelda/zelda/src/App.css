@@ -1,7 +1,7 @@
 @import url("./_reset.scss");
 body {
   background: url(../src/img/background_image.jpeg);
-  width: 100%;
+  width: 100vw;
 }
 body .intro {
   position: relative;

@@ -2,11 +2,15 @@
 body.detail {
   background-image: url(../src/img/background_image__PC_detail.png);
   background-repeat: no-repeat;
-  background-position: cover;
   background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body.detail header {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 body.detail header .head {
@@ -15,7 +19,7 @@ body.detail header .head {
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 0 2rem;
+  padding: 0 0 4rem;
 }
 body.detail header .head p {
   width: 8%;
@@ -47,7 +51,7 @@ body.detail header .head span.active {
 }
 body.detail .detail aside {
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto 6rem;
 }
 body.detail .detail aside .category {
   width: 100%;
@@ -66,7 +70,7 @@ body.detail .detail aside .category a img:hover {
   box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
 }
 body.detail .contents {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -212,7 +216,7 @@ body.detail .contents .right_contents .description > p {
   body.detail {
     background-image: url(../src/img/background_image_detail.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
   }
   body.detail header {
     width: 100%;
@@ -418,8 +422,7 @@ body.detail .contents .right_contents .description > p {
   body.detail {
     background-image: url(../src/img/background_image__mobile_detail.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: contain;
+    background-size: 100vw 100vh;
   }
   body.detail header {
     width: 100%;

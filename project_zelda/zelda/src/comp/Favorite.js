@@ -29,7 +29,7 @@ function Favorite() {
 
         const axiosRequests = favorites.map((v, k) => {
             return axios.get(url[v.catagory])
-                .then((res) => {
+            .then((res) => {
                     let filterData = res.data.filter(n => n.id == v.id);
                     allData.push(...filterData);
                 });
