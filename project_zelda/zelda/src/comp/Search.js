@@ -64,11 +64,11 @@ function Search() {
         setFilteredData(sorted);
     };
 
-    // const navigateToDetail = (category, id) => {
-    //     const str = category;
-    //     const str2 = str.charAt(0).toUpperCase() + str.slice(1);
-    //     navigate(`/detail/${str2}-${id}`);
-    // };
+    const navigateToDetail = (category, id) => {
+        const str = category;
+        const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+        navigate(`/detail/${str2}-${id}`);
+    };
 
     return (
         <>

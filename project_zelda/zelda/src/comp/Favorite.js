@@ -76,11 +76,11 @@ function Favorite() {
     };
 
 
-    // const favoriteDetail = (category, id) => {
-    //     const str = category;
-    //     const str2 = str.charAt(0).toUpperCase() + str.slice(1)
-    //     navigate(`/detail/${str2}-${id}`);
-    // };
+    const favoriteDetail = (category, id) => {
+        const str = category;
+        const str2 = str.charAt(0).toUpperCase() + str.slice(1)
+        navigate(`/detail/${str2}-${id}`);
+    };
 
 
     return (
