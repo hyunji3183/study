@@ -1,5 +1,5 @@
-import { HashRouter, Route, Routes, Link, Router, BrowserRouter, useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import { HashRouter, Route, Routes} from 'react-router-dom';
+import react from 'react';
 
 import './App.css';
 
@@ -18,7 +18,7 @@ import Master from './comp/Master';
 const App = () => {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                     <Routes>
                         <Route path="/" element={<Main />} />
                         <Route path="/Creatures" element={<Creatures />} />
@@ -32,7 +32,7 @@ const App = () => {
                         <Route path="/Detail/:param" element={<Detail />} />
                         <Route path="/DetailWeapon/:param" element={<DetailWeapon />} />
                     </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 };
