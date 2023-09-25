@@ -14,7 +14,7 @@ function Equipment() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/equipment.json')
+        axios.get('/project_zelda/db/botw/data/compendium/equipment.json')
             .then(res => {
                 setData(res.data)
             })

@@ -15,7 +15,7 @@ function Creatures() {
 
     //json data 출력
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/creatures.json')
+        axios.get('/project_zelda/db/botw/data/compendium/creatures.json')
         .then((res) => {
             setData(res.data);
             setSortedData([...res.data]);

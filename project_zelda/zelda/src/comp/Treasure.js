@@ -14,7 +14,7 @@ function Treasure() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/treasure.json')
+        axios.get('/project_zelda/db/botw/data/compendium/treasure.json')
             .then(res => {
                 setData(res.data)
             })

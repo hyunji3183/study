@@ -14,7 +14,7 @@ function Master() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/master.json')
+        axios.get('/project_zelda/db/botw/data/compendium/master.json')
             .then(res => {
                 setData(res.data)
             })

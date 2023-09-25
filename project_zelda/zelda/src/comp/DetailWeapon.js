@@ -27,12 +27,12 @@ function Detail() {
     const navigate = useNavigate();
 
     const url = {
-        Creatures: '../db/botw/data/compendium/creatures.json',
-        Equipment: '../db/botw/data/compendium/equipment.json',
-        Materials: '../db/botw/data/compendium/materials.json',
-        Monsters: '../db/botw/data/compendium/monsters.json',
-        Treasure: '../db/botw/data/compendium/treasure.json',
-        Master: '../db/botw/data/compendium/master.json'
+        Creatures: '/project_zelda/db/botw/data/compendium/creatures.json',
+        Equipment: '/project_zelda/db/botw/data/compendium/equipment.json',
+        Materials: '/project_zelda/db/botw/data/compendium/materials.json',
+        Monsters: '/project_zelda/db/botw/data/compendium/monsters.json',
+        Treasure: '/project_zelda/db/botw/data/compendium/treasure.json',
+        Master: '/project_zelda/db/botw/data/compendium/master.json'
     };
 
     let favorite, filterData;

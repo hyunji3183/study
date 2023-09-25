@@ -16,7 +16,7 @@
             justify-content: space-between;
             width: 100%;
             margin: 0 auto;
-            padding: 0 0 4rem;
+            padding: 0 0 3rem;
             p {
                 width: 8%;
                 text-align: right;
@@ -89,7 +89,7 @@
                             color: #84a1c8;
                             font-family: "font_zelda";
                             font-weight: 200;
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                             text-transform: uppercase;
                         }
                         .txt {
@@ -103,12 +103,12 @@
                             span {
                                 font-family: "font_zelda";
                                 font-weight: 200;
-                                font-size: 1.5rem;
+                                font-size: 1.3rem;
                             }
                         }
                     }
                     .image {
-                        width: 100%;
+                        min-width: 100%;
                         display: inline-block;
                         border-radius: 20px;
                         overflow: hidden;
@@ -123,7 +123,7 @@
                 color: white;
                 display: inline-block;
                 .place {
-                    padding: 1rem 0 2rem;
+                    padding: 1rem 0 1.2rem;
                     .location {
                         width: 100%;
                         display: flex;
@@ -138,7 +138,7 @@
                         span {
                             color: #3cd3fc;
                             text-align: center;
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                             font-family: "dreamgotic";
                             font-weight: 500;
                         }
@@ -161,7 +161,7 @@
                     }
                 }
                 .get_item {
-                    padding: 1rem 0 2rem;
+                    padding: 1rem 0 1.2rem;
                     .item {
                         width: 100%;
                         display: flex;
@@ -176,7 +176,7 @@
                         span {
                             color: #3cd3fc;
                             text-align: center;
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                             font-family: "dreamgotic";
                             font-weight: 500;
                         }
@@ -206,18 +206,20 @@
                         font-size: 1.2rem;
                         font-family: "font_zelda", "dreamgotic";
                         font-weight: 500;
-                        line-height: 2.25rem;
+                        line-height: 2rem;
                     }
                 }
             }
         }
     }
 }
+
 @media (min-width: 641px) and (max-width: 1024px) {
     .detail_body {
         background-image: url(../src/img/background_image_detail.jpg);
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
+        padding: 0;
         header {
             width: 100%;
             .head {
@@ -281,7 +283,7 @@
                 }
             }
             .contents {
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
@@ -319,7 +321,7 @@
                             }
                         }
                         .image {
-                            width: 100%;
+                            min-width: 100%;
                             display: inline-block;
                             border-radius: 10px;
                             overflow: hidden;
@@ -334,7 +336,7 @@
                     color: white;
                     display: inline-block;
                     .place {
-                        padding: 1rem 0 2rem;
+                        padding: 1rem 0;
                         .location {
                             width: 100%;
                             display: flex;
@@ -372,7 +374,7 @@
                         }
                     }
                     .get_item {
-                        padding: 1rem 0 2rem;
+                        padding: 1rem 0;
                         .item {
                             width: 100%;
                             display: flex;
@@ -417,7 +419,7 @@
                             font-size: 0.8rem;
                             font-family: "font_zelda", "dreamgotic";
                             font-weight: 500;
-                            line-height: 1.25rem;
+                            line-height: 1.2rem;
                         }
                     }
                 }
@@ -428,9 +430,11 @@
 
 @media (max-width: 640px) {
     .detail_body {
-        background-image: url(../src/img/background_image__mobile_detail.png);
+        background-image: url(../src/img/background_image__mobile_detail_1.png);
         background-repeat: no-repeat;
-        background-size: 100vw 100vh;
+        background-size: cover;
+        padding: 0;
+        margin: 4rem auto 0;
         header {
             width: 100%;
             .head {
@@ -439,29 +443,29 @@
                 justify-content: space-between;
                 width: 90%;
                 margin: 0 auto;
-                padding: 5rem 0 2rem;
+                padding: 0 0 3rem;
                 p {
-                    width: 10%;
+                    width: 12%;
                     text-align: right;
                     img {
-                        width: 40%;
+                        width: 50%;
                     }
                 }
                 .like_heart {
                     text-align: left;
                 }
                 h2 {
-                    width: 16%;
+                    width: 40%;
                     color: #e0ceaa;
                     text-align: center;
                     text-transform: uppercase;
-                    font-size: 1.475rem;
+                    font-size: 1.8rem;
                     font-family: "font_zelda";
                     font-weight: 200;
                 }
                 span {
-                    width: 10%;
-                    font-size: 1.5rem;
+                    width: 12%;
+                    font-size: 1.6rem;
                     color: #818181;
                     text-align: left;
                     &.active {
@@ -472,8 +476,8 @@
         }
         .detail {
             .d_aside {
-                width: 50%;
-                margin: 0 auto;
+                width: 90%;
+                margin: 0 auto 1rem;
                 .category {
                     width: 100%;
                     display: flex;
@@ -483,7 +487,7 @@
                         width: 18%;
                         text-align: center;
                         img {
-                            width: 80%;
+                            width: 60%;
                             &:hover {
                                 box-shadow: (0px 0px 7px 6px rgba(1, 242, 255, 0.5));
                             }
@@ -492,26 +496,30 @@
                 }
             }
             .contents {
-                width: 50%;
+                width: 90%;
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 flex-direction: column;
-                padding: 3rem 0;
-                .left_contents {
+                padding: 4rem 0;
+                .left_contents {width: 90%;
                     .left {
                         width: 100%;
+                        display: flex;
+                        flex-direction: column-reverse;
                         .left_txt {
                             width: 100%;
                             display: flex;
-                            align-items: flex-end;
+                            align-items: flex-start;
                             justify-content: space-between;
-                            padding-bottom: 0.2rem;
+                            padding-bottom: 0;
+                            padding-top: 0.2rem;
                             > p {
                                 color: #84a1c8;
                                 font-family: "font_zelda";
                                 font-weight: 200;
+                                font-size: 1rem;
                                 text-transform: uppercase;
                             }
                             .txt {
@@ -520,11 +528,12 @@
                                 p {
                                     font-family: "dreamgotic";
                                     font-weight: 500;
-                                    font-size: 1.175rem;
+                                    font-size: 1rem;
                                 }
                                 span {
                                     font-family: "font_zelda";
                                     font-weight: 200;
+                                    font-size: 1rem;
                                 }
                             }
                         }
@@ -540,11 +549,11 @@
                     }
                 }
                 .right_contents {
-                    width: 100%;
+                    width: 90%;
                     color: white;
                     display: inline-block;
                     .place {
-                        padding: 1rem 0 2rem;
+                        padding: 1rem 0;
                         .location {
                             width: 100%;
                             display: flex;
@@ -574,14 +583,14 @@
                                 flex-grow: 1;
                                 padding: 0.3rem 0;
                                 width: 30%;
-                                font-size: 0.7rem;
+                                font-size: 0.9rem;
                                 font-family: "dreamgotic";
                                 font-weight: 500;
                             }
                         }
                     }
                     .get_item {
-                        padding: 1rem 0 2rem;
+                        padding: 1rem 0;
                         .item {
                             width: 100%;
                             display: flex;
@@ -612,7 +621,7 @@
                                 flex-grow: 1;
                                 padding: 0.3rem 0;
                                 width: 25%;
-                                font-size: 0.7rem;
+                                font-size: 0.9rem;
                                 font-family: "dreamgotic";
                                 font-weight: 500;
                             }
@@ -707,8 +716,10 @@
                         padding: 0.8rem 0;
                         > p {
                             color: #e0ceaa;
-                            font-family: "dreamgotic";
+                            font-size: 0.8rem;
+                            font-family: "font_zelda", "dreamgotic";
                             font-weight: 500;
+                            line-height: 0.4rem;
                         }
                     }
                 }

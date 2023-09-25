@@ -14,8 +14,7 @@ function Monsters() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('./db/botw/data/compendium/monsters.json')
-            .then(res => {
+        axios.get('/project_zelda/db/botw/data/compendium/monsters.json')            .then(res => {
                 setData(res.data)
             })
     }, []);
