@@ -15,11 +15,12 @@ function Favorite() {
     bodys.classList.remove('detail_body');
 
     const url = {
-        Creatures: '../db/botw/data/compendium/Creatures.json',
-        Equipment: '../db/botw/data/compendium/Equipment.json',
-        Materials: '../db/botw/data/compendium/Materials.json',
-        Monsters: '../db/botw/data/compendium/Monsters.json',
-        Treasure: '../db/botw/data/compendium/Treasure.json'
+        Creatures: '../db/botw/data/compendium/creatures.json',
+        Equipment: '../db/botw/data/compendium/equipment.json',
+        Materials: '../db/botw/data/compendium/materials.json',
+        Monsters: '../db/botw/data/compendium/monsters.json',
+        Treasure: '../db/botw/data/compendium/treasure.json',
+        Master: '../db/botw/data/compendium/master.json'
     };
 
     const favorites = localStorage.getItem('fa') ? JSON.parse(localStorage.getItem('fa')) : [];

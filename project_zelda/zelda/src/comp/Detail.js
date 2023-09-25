@@ -29,12 +29,12 @@ function Detail() {
     const navigate = useNavigate();
 
     const url = {
-        Creatures: '../db/botw/data/compendium/Creatures.json',
-        Equipment: '../db/botw/data/compendium/Equipment.json',
-        Materials: '../db/botw/data/compendium/Materials.json',
-        Monsters: '../db/botw/data/compendium/Monsters.json',
-        Treasure: '../db/botw/data/compendium/Treasure.json',
-        Master: '../db/botw/data/compendium/Master.json'
+        Creatures: '../db/botw/data/compendium/creatures.json',
+        Equipment: '../db/botw/data/compendium/equipment.json',
+        Materials: '../db/botw/data/compendium/materials.json',
+        Monsters: '../db/botw/data/compendium/monsters.json',
+        Treasure: '../db/botw/data/compendium/treasure.json',
+        Master: '../db/botw/data/compendium/master.json'
     }
 
     let favorite, filterData;

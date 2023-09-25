@@ -46,6 +46,17 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+          console.log('Worker Registered');
+        }).catch(err => {
+          console.log('error in service worker', err)
+        })
+      })
+    }
+  </script>
 </body>
 
 </html>
