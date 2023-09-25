@@ -56,8 +56,8 @@ body header .head h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
-  font-family: "font_zelda";
   font-weight: 200;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main {
   width: 70%;
@@ -148,28 +148,28 @@ body main .list ul li figure a span {
   left: 2%;
   top: 2.5%;
   display: block;
-  font-family: "font_zelda";
-  font-weight: 200;
-  font-size: 1.2rem;
   color: #faf7f2;
   background-color: #163156;
   padding: 0.2rem 0.3rem;
   border-radius: 10px;
+  font-weight: 200;
+  font-size: 1.2rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .list ul li figure figcaption {
   width: 46%;
   color: #e0ceaa;
 }
 body main .list ul li figure figcaption b {
-  font-family: "dreamgotic";
   font-weight: 500;
   font-size: 1.575rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .list ul li figure figcaption p {
-  font-family: "font_zelda";
   font-weight: 200;
   font-size: 1.525rem;
   padding: 0.5rem 0 1rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .search {
   width: 90%;
@@ -183,9 +183,9 @@ body main .search .search_area form input {
   padding-bottom: 1rem;
   width: 90%;
   color: #e0ceaa;
-  font-family: "font_zelda", "dreamgotic";
   font-weight: 500;
   font-size: 2rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .search .search_area form > div {
   width: 90%;
@@ -198,7 +198,7 @@ body main .search .search_area .searchbar img {
   width: 100%;
 }
 body main .search .search_data {
-  width: 90%;
+  width: 100%;
   background-color: #332624;
   padding: 3rem;
   margin-top: 2rem;
@@ -234,9 +234,9 @@ body main .search .search_data ul li figure figcaption {
 body main .search .search_data ul li figure figcaption b {
   display: inline-block;
   padding: 0.8rem 0;
-  font-family: "dreamgotic";
   font-weight: 500;
   font-size: 1.2rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .search .search_data p {
   padding: 10rem 0;
@@ -244,8 +244,8 @@ body main .search .search_data p {
   color: #e0ceaa;
   text-align: center;
   font-size: 20px;
-  font-family: "dreamgotic";
   font-weight: 500;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .favorite {
   width: 90%;
@@ -263,17 +263,17 @@ body main .favorite .favorite_data p {
   color: #e0ceaa;
   text-align: center;
   font-size: 20px;
-  font-family: "dreamgotic";
   font-weight: 500;
+  font-family: "font_zelda", "dreamgotic";
 }
 body main .favorite .favorite_data ul {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: flex-start;
   width: 100%;
 }
 body main .favorite .favorite_data ul li {
-  width: 22%;
+  width: 25%;
   padding: 1.5rem 0 0;
 }
 body main .favorite .favorite_data ul li figure {
@@ -308,15 +308,16 @@ body main .favorite .favorite_data ul li figure figcaption {
 body main .favorite .favorite_data ul li figure figcaption b {
   display: inline-block;
   padding: 0.8rem 0;
-  font-family: "dreamgotic";
   font-weight: 500;
   font-size: 1.2rem;
+  font-family: "font_zelda", "dreamgotic";
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
   body {
     background: url(../src/img/background_image.jpeg);
     width: 100%;
+    font-family: "font_zelda", "dreamgotic";
   }
   body .intro {
     position: relative;
@@ -370,7 +371,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.875rem;
-    font-family: "font_zelda";
     font-weight: 0;
   }
   body main {
@@ -462,7 +462,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     left: 2%;
     top: 2.5%;
     display: block;
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 0.8rem;
     color: #faf7f2;
@@ -475,12 +474,10 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
   }
   body main .list ul li figure figcaption b {
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1.175rem;
   }
   body main .list ul li figure figcaption p {
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 1.125rem;
     padding: 0.5rem 0 1rem;
@@ -495,7 +492,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
   }
   body main .search .search_area form input {
     width: 90%;
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 1.875rem;
     color: #e0ceaa;
@@ -548,7 +544,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     width: 100%;
     display: block;
     padding: 0.8rem 0;
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1rem;
     overflow: hidden;
@@ -562,14 +557,14 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
     text-align: center;
     font-size: 20px;
-    font-family: "dreamgotic";
     font-weight: 500;
   }
   body main .favorite {
-    width: 90%;
+    width: 100%;
   }
   body main .favorite .favorite_data {
     padding: 2rem;
+    width: 100%;
   }
   body main .favorite .favorite_data p {
     padding: 18rem 0;
@@ -577,7 +572,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
     text-align: center;
     font-size: 20px;
-    font-family: "dreamgotic";
     font-weight: 500;
   }
   body main .favorite .favorite_data ul {
@@ -622,7 +616,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
   body main .favorite .favorite_data ul li figure figcaption b {
     width: 100%;
     padding: 0.8rem 0;
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1rem;
     display: block;
@@ -636,6 +629,7 @@ body main .favorite .favorite_data ul li figure figcaption b {
   body {
     background: url(../src/img/background_image.jpeg);
     width: 100%;
+    font-family: "font_zelda", "dreamgotic";
   }
   body .intro {
     position: relative;
@@ -676,7 +670,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.4rem;
-    font-family: "font_zelda";
     font-weight: 200;
   }
   body main {
@@ -770,7 +763,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     left: 2%;
     top: 2.5%;
     display: block;
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 0.6rem;
     color: #faf7f2;
@@ -783,12 +775,10 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
   }
   body main .list ul li figure figcaption b {
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1rem;
   }
   body main .list ul li figure figcaption p {
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 1rem;
     padding: 0.5rem 0 1rem;
@@ -803,7 +793,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
   }
   body main .search .search_area form input {
     width: 90%;
-    font-family: "font_zelda";
     font-weight: 200;
     font-size: 1.5rem;
     color: #e0ceaa;
@@ -855,7 +844,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     text-align: center;
   }
   body main .search .search_data ul li figure figcaption b {
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1rem;
     display: block;
@@ -870,7 +858,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
     text-align: center;
     font-size: 0.875rem;
-    font-family: "dreamgotic";
     font-weight: 500;
   }
   body main .favorite {
@@ -886,7 +873,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
     color: #e0ceaa;
     text-align: center;
     font-size: 1.25rem;
-    font-family: "dreamgotic";
     font-weight: 500;
   }
   body main .favorite .favorite_data ul {
@@ -931,7 +917,6 @@ body main .favorite .favorite_data ul li figure figcaption b {
   }
   body main .favorite .favorite_data ul li figure figcaption b {
     display: inline-block;
-    font-family: "dreamgotic";
     font-weight: 500;
     font-size: 1rem;
     display: block;
