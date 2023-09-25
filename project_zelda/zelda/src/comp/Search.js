@@ -32,7 +32,7 @@ function Search() {
             setData(mergedData);
         };
         const bodys = document.querySelector('body');
-        bodys.classList.remove('detail');
+        bodys.classList.remove('detail_body');
         fetchData();
     }, []);
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../Detail.css';
+import '../Detail.scss';
 import angle from '../img/background_image_detail.jpg'
 import back from '../img/icon_arrow_back.png'
 import creatures from '../img/icon_1.png';
@@ -17,7 +17,7 @@ function Detail() {
 
 
     const bodys = document.querySelector('body')
-    bodys.classList.add('detail')
+    bodys.classList.add('detail_body')
 
     const { param } = useParams();
     const [catagory, id] = param.split('-');
@@ -90,7 +90,7 @@ function Detail() {
                 </div>
             </header>
             <div className='detail'>
-                <aside>
+                <aside className='d_aside'>
                     <div className="category">
                         <Link to="/Creatures"><img src={creatures} alt="" /></Link>
                         <Link to="/monsters"><img src={monsters} alt="" /></Link>

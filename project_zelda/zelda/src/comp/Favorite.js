@@ -12,7 +12,7 @@ function Favorite() {
     const navigate = useNavigate();
 
     const bodys = document.querySelector('body');
-    bodys.classList.remove('detail');
+    bodys.classList.remove('detail_body');
 
     const url = {
         Creatures: '../db/botw/data/compendium/Creatures.json',

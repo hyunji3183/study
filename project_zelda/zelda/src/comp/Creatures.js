@@ -7,7 +7,7 @@ import axios from 'axios'
 
 function Creatures() {
     const bodys = document.querySelector('body')
-    bodys.classList.remove('detail')
+    bodys.classList.remove('detail_body')
 
     const [data, setData] = useState([]);
     const [sortedData, setSortedData] = useState([]);

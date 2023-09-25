@@ -15,7 +15,7 @@ function Detail() {
 
 
     const bodys = document.querySelector('body')
-    bodys.classList.add('detail')
+    bodys.classList.add('detail_body')
 
     const { param } = useParams();
     const [catagory, id] = param.split('-');
@@ -88,13 +88,14 @@ function Detail() {
                 </div>
             </header>
             <div className='detail'>
-                <aside>
+                <aside className='d_aside'>
                     <div className="category">
                         <Link to="/Creatures"><img src={creatures} alt="" /></Link>
                         <Link to="/monsters"><img src={monsters} alt="" /></Link>
                         <Link to="/materials"><img src={materials} alt="" /></Link>
                         <Link to="/equipment"><img src={equipmentd} alt="" /></Link>
                         <Link to="/treasure"><img src={treasure} alt="" /></Link>
+                        <Link to="/master"><img src={treasure} alt="" /></Link>
                     </div>
                 </aside>
                 {data && data
@@ -121,7 +122,7 @@ function Detail() {
                                         <p><img src={deRplace} /></p>
                                     </div>
                                     <div className='place_data'>
-                                    {
+                                        {
                                             item.common_locations && item.common_locations.map((v, k) => (
                                                 <span key={k}>{v}</span>
                                             ))

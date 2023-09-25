@@ -184,7 +184,7 @@ body {
                         padding-bottom: 1rem;
                         width: 90%;
                         color: #e0ceaa;
-                        font-family: "font_zelda","dreamgotic";
+                        font-family: "font_zelda", "dreamgotic";
                         font-weight: 500;
                         font-size: 2rem;
                     }
@@ -207,10 +207,14 @@ body {
                 }
             }
             .search_data {
+                width: 90%;
+                background-color: #332624;
+                padding: 3rem;
+                margin-top: 2rem;
                 ul {
                     display: flex;
                     flex-wrap: wrap;
-                    width: 90%;
+                    width: 100%;
                     li {
                         width: 25%;
                         padding: 1rem 0 0;
@@ -256,6 +260,11 @@ body {
         .favorite {
             width: 90%;
             .favorite_data {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                background-color: #332624;
+                padding: 3rem;
                 p {
                     padding: 18rem 0;
                     width: 100%;
@@ -267,10 +276,11 @@ body {
                 }
                 ul {
                     display: flex;
+                    justify-content: space-around;
                     flex-wrap: wrap;
-                    width: 96%;
+                    width: 100%;
                     li {
-                        width: 25%;
+                        width: 22%;
                         padding: 1.5rem 0 0;
                         figure {
                             width: 100%;
