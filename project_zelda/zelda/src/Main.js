@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import trailer from './videos/breath_of_the_wild_trailer';
+import trailer from './videos/breath_of_the_wild_trailer.mp4';
 
 export default function Main() {
     const navigate = useNavigate();
