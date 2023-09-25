@@ -96,7 +96,7 @@ function Favorite() {
                                 {data.map((item) => (
                                     <li key={item.id}>
                                         <figure>
-                                            <a href="">
+                                            <a>
                                                 <img src={item.image} alt={item.name} onClick={() => favoriteDetail(item.category, item.id)} />
                                                 <span className={`material-symbols-outlined ${isFavorite(item.id, item.category) ? 'active' : ''}`}
                                                     onClick={() => { removeFavorite(item); }}>favorite</span>

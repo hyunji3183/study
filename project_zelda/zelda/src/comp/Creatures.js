@@ -41,7 +41,7 @@ function Creatures() {
                     {data && data.map((item) => (
                         <li key={item.id}>
                             <figure onClick={() => { navigate(`/detail/Creatures-${item.id}`) }}>
-                                <a href="">
+                                <a>
                                     <img src={item.image} alt={item.name} />
                                     <span>NO. {item.id}</span>
                                 </a>
