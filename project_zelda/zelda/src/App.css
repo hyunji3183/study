@@ -172,7 +172,7 @@ body main .list ul li figure figcaption p {
   font-family: "font_zelda", "dreamgotic";
 }
 body main .search {
-  width: 90%;
+  width: 100%;
 }
 body main .search .search_area form {
   transform: translateY(50%);
@@ -198,8 +198,7 @@ body main .search .search_area .searchbar img {
   width: 100%;
 }
 body main .search .search_data {
-  width: 100%;
-  background-color: #332624;
+  width: 90%;
   padding: 3rem;
   margin-top: 2rem;
 }
@@ -248,13 +247,13 @@ body main .search .search_data p {
   font-family: "font_zelda", "dreamgotic";
 }
 body main .favorite {
-  width: 90%;
+  width: 100%;
 }
 body main .favorite .favorite_data {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #332624;
   padding: 3rem;
 }
 body main .favorite .favorite_data p {

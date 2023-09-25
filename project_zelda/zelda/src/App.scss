@@ -173,7 +173,7 @@ body {
             }
         }
         .search {
-            width: 90%;
+            width: 100%;
             .search_area {
                 form {
                     transform: translateY(50%);
@@ -206,8 +206,7 @@ body {
                 }
             }
             .search_data {
-                width: 100%;
-                background-color: #332624;
+                width: 90%;
                 padding: 3rem;
                 margin-top: 2rem;
                 ul {
@@ -257,12 +256,12 @@ body {
             }
         }
         .favorite {
-            width: 90%;
+            width: 100%;
             .favorite_data {
+                width: 90%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                background-color: #332624;
                 padding: 3rem;
                 p {
                     padding: 18rem 0;
