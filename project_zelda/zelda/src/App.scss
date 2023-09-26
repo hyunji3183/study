@@ -3,11 +3,28 @@
 body {
     background: url(../src/img/background_image.jpeg);
     width: 100vw;
-    overflow: hidden;
     .intro {
         position: relative;
+        .playVideo.behind {
+            display: none;
+        }
+        .playVideo {
+                .sheikah_slate {
+                    z-index: 5;
+                    display: inline-block;
+                    position: absolute;
+                    left: 42%;
+                    top: 32%;
+                    width: 20%;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
         .videobox {
             position: relative;
+            overflow: hidden;
             video {
                 display: inline-block;
                 width: 100vw;
@@ -16,19 +33,6 @@ body {
                 left: 50%;
                 transform: translateX(-50%);
                 overflow: hidden;
-            }
-        }
-        .logo {
-            position: absolute;
-            left: 0;
-            bottom: 16%;
-            p {
-                width: 80%;
-                display: inline-block;
-                text-align: center;
-                img {
-                    width: 50%;
-                }
             }
         }
     }
@@ -206,9 +210,11 @@ body {
                         font-size: 2rem;
                         font-family: "font_zelda", "dreamgotic";
                     }
-                    button {width: 10%;
+                    button {
+                        width: 10%;
                         .searchbtn {
-                            img {width: 100%;
+                            img {
+                                width: 100%;
                             }
                         }
                     }

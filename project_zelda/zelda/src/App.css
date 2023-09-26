@@ -2,13 +2,28 @@
 body {
   background: url(../src/img/background_image.jpeg);
   width: 100vw;
-  overflow: hidden;
 }
 body .intro {
   position: relative;
 }
+body .intro .playVideo.behind {
+  display: none;
+}
+body .intro .playVideo .sheikah_slate {
+  z-index: 5;
+  display: inline-block;
+  position: absolute;
+  left: 42%;
+  top: 32%;
+  width: 20%;
+  cursor: pointer;
+}
+body .intro .playVideo .sheikah_slate img {
+  width: 100%;
+}
 body .intro .videobox {
   position: relative;
+  overflow: hidden;
 }
 body .intro .videobox video {
   display: inline-block;
@@ -18,19 +33,6 @@ body .intro .videobox video {
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-}
-body .intro .logo {
-  position: absolute;
-  left: 0;
-  bottom: 16%;
-}
-body .intro .logo p {
-  width: 80%;
-  display: inline-block;
-  text-align: center;
-}
-body .intro .logo p img {
-  width: 50%;
 }
 body header {
   width: 80%;
