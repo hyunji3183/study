@@ -14,9 +14,9 @@ function Monsters() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('/project_zelda/db/botw/data/compendium/monsters.json')            .then(res => {
-                setData(res.data)
-            })
+        axios.get('/project_zelda/db/botw/data/compendium/monsters.json').then(res => {
+            setData(res.data)
+        })
     }, []);
 
     const dataSort = (isSorted) => {
@@ -26,10 +26,10 @@ function Monsters() {
         setData(sorted);
     };
     return (<>
-        <Header />
         <main>
             <Aside onSortRequest={dataSort} />
             <div className="list">
+                <Header />
                 <ul>
                     {data && data.map((item) => (
                         <li key={item.id}>

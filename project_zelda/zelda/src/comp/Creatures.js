@@ -16,10 +16,10 @@ function Creatures() {
     //json data 출력
     useEffect(() => {
         axios.get('/project_zelda/db/botw/data/compendium/creatures.json')
-        .then((res) => {
-            setData(res.data);
-            setSortedData([...res.data]);
-        });
+            .then((res) => {
+                setData(res.data);
+                setSortedData([...res.data]);
+            });
     }, []);
 
     //정렬기능함수
@@ -27,16 +27,16 @@ function Creatures() {
         const sorted = isSorted
             ? [...data].sort((a, b) => a.name.localeCompare(b.name))
             : [...data].sort((b, a) => a.name.localeCompare(b.name))
-            console.log([...data]);
+        console.log([...data]);
         setData(sorted);
     };
 
 
     return (<>
-        <Header />
         <main>
             <Aside onSortRequest={dataSort} />
             <div className="list">
+                <Header />
                 <ul>
                     {data && data.map((item) => (
                         <li key={item.id}>

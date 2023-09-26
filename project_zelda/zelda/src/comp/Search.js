@@ -72,10 +72,10 @@ function Search() {
 
     return (
         <>
-            <Header />
             <main>
                 <Aside onSortRequest={dataSort} />
                 <div className="search">
+                    <Header />
                     <div className='search_area'>
                         <form onSubmit={searching}>
                             <input

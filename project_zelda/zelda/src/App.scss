@@ -3,6 +3,7 @@
 body {
     background: url(../src/img/background_image.jpeg);
     width: 100vw;
+    overflow: hidden;
     .intro {
         position: relative;
         .videobox {
@@ -41,19 +42,12 @@ body {
             width: 90%;
             margin: 0 auto;
             padding: 2rem 0;
-            a {
-                width: 8%;
-                text-align: center;
-                img {
-                    width: 50%;
-                }
-            }
             h2 {
-                width: 93%;
+                width: 90%;
                 color: #e0ceaa;
                 text-align: center;
                 text-transform: uppercase;
-                font-size: 40px;
+                font-size: 2.75rem;
                 font-weight: 200;
                 font-family: "font_zelda", "dreamgotic";
             }
@@ -66,9 +60,21 @@ body {
         display: flex;
         aside {
             height: fit-content;
-            width: 10%;
+            min-width: 10%;
             position: sticky;
-            top: 100px;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            > a {
+                width: 60%;
+                text-align: center;
+                padding: 2rem 0;
+                img {
+                    width: 60%;
+                }
+            }
             .category {
                 width: 60%;
                 display: flex;
@@ -107,8 +113,9 @@ body {
                     }
                 }
                 a {
+                    width: 90%;
                     cursor: pointer;
-                    padding: 1rem 0.3rem;
+                    padding: 2rem 0.3rem;
                     img {
                         width: 100%;
                     }
@@ -132,6 +139,7 @@ body {
                         align-items: center;
                         justify-content: space-between;
                         a {
+                            display: inline-block;
                             width: 45%;
                             border-radius: 10px;
                             overflow: hidden;
@@ -152,6 +160,17 @@ body {
                                 font-size: 1.2rem;
                                 font-family: "font_zelda", "dreamgotic";
                             }
+                            // .material-symbols-outlined {
+                            //     z-index: 1;
+                            //     width: 14%;
+                            //     height: 14%;
+                            //     font-size: 2rem;
+                            //     position: absolute;
+                            //     color: #818181;
+                            //     right: 2%;
+                            //     bottom: 2%;
+                            //     background-color: transparent;
+                            // }
                         }
                         figcaption {
                             width: 46%;
@@ -187,28 +206,25 @@ body {
                         font-size: 2rem;
                         font-family: "font_zelda", "dreamgotic";
                     }
-                    > div {
-                        width: 90%;
-                        display: flex;
-                        button {
-                            .searchbtn {
-                                img {
-                                }
+                    button {width: 10%;
+                        .searchbtn {
+                            img {width: 100%;
                             }
                         }
                     }
                 }
                 .searchbar {
-                    width: 88%;
+                    width: 90%;
                     img {
                         width: 100%;
                     }
                 }
             }
             .search_data {
-                width: 90%;
+                width: 100%;
                 padding: 3rem;
                 margin-top: 2rem;
+                background-color: #332624;
                 ul {
                     display: flex;
                     flex-wrap: wrap;
@@ -258,11 +274,14 @@ body {
         .favorite {
             width: 100%;
             .favorite_data {
-                width: 90%;
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 padding: 3rem;
+                margin: 0 auto;
+                text-align: center;
+                background-color: #332624;
                 p {
                     padding: 18rem 0;
                     width: 100%;
@@ -365,13 +384,6 @@ body {
                 width: 90%;
                 margin: 0 auto;
                 padding: 2rem 0;
-                a {
-                    width: 7%;
-                    text-align: center;
-                    img {
-                        width: 50%;
-                    }
-                }
                 h2 {
                     width: 93%;
                     color: #e0ceaa;
@@ -391,7 +403,14 @@ body {
                 height: fit-content;
                 width: 10%;
                 position: sticky;
-                top: 100px;
+                > a {
+                    width: 100%;
+                    text-align: center;
+                    padding: 2rem 0;
+                    img {
+                        width: 50%;
+                    }
+                }
                 .category {
                     width: 70%;
                     display: flex;
@@ -675,13 +694,6 @@ body {
                 width: 90%;
                 margin: 0 auto;
                 padding: 2rem 0;
-                a {
-                    width: 14%;
-                    text-align: center;
-                    img {
-                        width: 50%;
-                    }
-                }
                 h2 {
                     width: 86%;
                     color: #e0ceaa;
@@ -701,7 +713,14 @@ body {
                 height: fit-content;
                 width: 18%;
                 position: sticky;
-                top: 100px;
+                > a {
+                    width: 70%;
+                    text-align: center;
+                    padding: 2rem 0;
+                    img {
+                        width: 50%;
+                    }
+                }
                 .category {
                     width: 70%;
                     display: flex;

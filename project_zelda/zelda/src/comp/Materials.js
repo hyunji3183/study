@@ -28,10 +28,10 @@ function Materials() {
         setData(sorted);
     };
     return (<>
-        <Header />
         <main>
             <Aside onSortRequest={dataSort} />
             <div className="list">
+                <Header />
                 <ul>
                     {data && data.map((item) => (
                         <li key={item.id}>

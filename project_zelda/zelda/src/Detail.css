@@ -43,6 +43,7 @@
   font-size: 2.5rem;
   color: #818181;
   text-align: left;
+  cursor: pointer;
 }
 .detail_body header .head span.active {
   color: #ff4a4a;

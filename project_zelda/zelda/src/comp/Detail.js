@@ -60,7 +60,6 @@ function Detail() {
         else {
             localStorage.setItem('fa', JSON.stringify([...favorite, { catagory, id }]));
         }
-
     }
 
     useEffect(() => {
@@ -70,7 +69,6 @@ function Detail() {
                 let data = res.data.filter(n => n.id == id)
                 setData(data)
             })
-
     }, []);
 
     const handleBackClick = () => {

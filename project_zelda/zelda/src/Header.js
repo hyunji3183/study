@@ -13,7 +13,6 @@ function Header() {
     return (
         <header>
             <div className="head">
-                <Link to="/"><img src={home} alt="" /></Link>
                 <h2>{routeName}</h2>
             </div>
         </header>

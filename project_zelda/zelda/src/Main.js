@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import trailer from './videos/breath_of_the_wild_trailer.mp4';
+import trailer from './videos/BOTW_trailer.mp4';
+import trailer_BGM from './videos/BOTW_BGM.mp3'
 
 export default function Main() {
     const navigate = useNavigate();
@@ -18,6 +19,10 @@ export default function Main() {
                     <source src={trailer} type="video/mp4" />
                 </video>
             </div>
+            <audio
+                src={trailer_BGM}
+                autoPlay={true} loop={true} muted={false}>
+            </audio>
         </div>
     );
 }

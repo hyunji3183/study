@@ -30,7 +30,7 @@ function Favorite() {
 
         const axiosRequests = favorites.map((v, k) => {
             return axios.get(url[v.catagory])
-            .then((res) => {
+                .then((res) => {
                     let filterData = res.data.filter(n => n.id == v.id);
                     allData.push(...filterData);
                 });
@@ -85,10 +85,10 @@ function Favorite() {
 
     return (
         <>
-            <Header />
             <main>
                 <Aside onSortRequest={dataSort} />
                 <div className='favorite'>
+                    <Header />
                     <div className='favorite_data'>
                         {data.length === 0 ? (
                             <p>목록이 비어있습니다.</p>
