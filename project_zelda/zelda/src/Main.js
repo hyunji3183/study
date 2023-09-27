@@ -1,51 +1,74 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import trailer from './videos/BOTW_trailer.mp4';
-import trailer_BGM from './videos/BOTW_BGM.mp3'
-import sheikah_slate from './img/search_button.png';
-import sheikah_back from './img/openapp.png';
+import skip from './img/skip_btn.png';
+import notice from './img/notice.png';
 
 export default function Main() {
     const navigate = useNavigate();
-    const [mute, setMute] = useState(false);
     const videoRef = useRef(null);
-    const audioRef = useRef(null);
-    const imageRef = useRef(null); // 이미지에 대한 ref 추가
+    const imageRef = useRef(null);
+    const textRef = useRef(null);
 
-    const openapp = (e) => {
-        e.preventDefault();
-        navigate('/Creatures');
+
+    // useEffect(() => {
+    //     const audioElement = new Audio(hateno_BGM);
+    //     audioElement.pause();
+    // }, []);
+
+
+
+
+const openapp = (e) => {
+    e.preventDefault();
+    navigate('/Creatures');
+}
+
+const behind = (type) => {
+    console.log(type);
+    const playVideoElement = document.querySelector('.playVideo');
+    const skipBtn = document.querySelector('.skip');
+    const videoElement = videoRef.current;
+    switch (type) {
+        case 'on':
+            videoElement.muted = false;
+            break;
+        default:
+            videoElement.muted = true;
     }
+    playVideoElement.classList.add('behind');
+    skipBtn.classList.add('on');
+    videoElement.play();
+}
 
-    const behind = () => {
-        const playVideoElement = document.querySelector('.playVideo');
-        if (playVideoElement) {
-            playVideoElement.classList.add('behind');
-        }
-        // 이미지 숨김
-        if (imageRef.current) {
-            imageRef.current.style.display = 'none';
-        }
-        // 비디오 재생
+useEffect(() => {
+    return () => {
         const videoElement = videoRef.current;
         if (videoElement) {
-            videoElement.play();
+            videoElement.pause();
         }
-    }
+    };
+}, []);
 
-    return (
-        <div className="intro">
-            <div className='playVideo'>
-                <p className='sheikah_slate'>
-                    <img src={sheikah_slate} ref={imageRef} onClick={behind} />
-                </p>
-            </div>
-            <div className="videobox">
-                <video autoPlay loop onClick={openapp} ref={videoRef}>
-                    <source src={trailer} type="video/mp4" />
-                </video>
+return (
+    <div className="intro">
+        <div className='playVideo'>
+            <p className='sheikah_slate'>
+                <img src={notice} ref={imageRef} />
+            </p>
+            <div className='soundtxt' ref={textRef}>
+                <span className='on' onClick={() => { behind('on') }}>on</span>
+                <span className='bar'>|</span>
+                <span className='off' onClick={() => { behind('off') }}>off</span>
             </div>
         </div>
-    );
+        <div className="videobox">
+            <video autoPlay loop ref={videoRef}>
+                <source src={trailer} type="video/mp4" />
+            </video>
+            <p className='skip'><img src={skip} onClick={openapp} /></p>
+        </div>
+    </div>
+);
 }

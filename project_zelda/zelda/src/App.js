@@ -14,7 +14,7 @@ import Search from './comp/Search';
 import Detail from './comp/Detail';
 import DetailWeapon from './comp/DetailWeapon';
 import Master from './comp/Master';
-import hateno_BGM from './videos/Hateno_Village.mp3';
+// import hateno_BGM from './videos/Hateno_Village.mp3';
 
 const App = () => {
     return (
@@ -33,10 +33,6 @@ const App = () => {
                     <Route path="/Detail/:param" element={<Detail />} />
                     <Route path="/DetailWeapon/:param" element={<DetailWeapon />} />
                 </Routes>
-                <audio
-                    src={hateno_BGM}
-                    autoPlay={true} loop={true}>
-                </audio>
             </BrowserRouter>
         </>
     );

@@ -4,6 +4,7 @@ import monsters from './img/icon_2.png';
 import materials from './img/icon_3.png';
 import equipmentd from './img/icon_4.png';
 import treasure from './img/icon_5.png';
+import master from './img/icon_6.png';
 import favorite from './img/favorite.png';
 import sort from './img/sort.png';
 import search from './img/search.png';
@@ -27,14 +28,14 @@ function Aside({ onSortRequest }) {
 
     return (
         <aside>
-            <Link to="/"><img src={home} alt="" /></Link>
+            <Link to="/"><img src={home} alt=""/></Link>
             <div className="category">
                 <Link to="/Creatures"><img src={creatures} alt="creatures" /></Link>
                 <Link to="/monsters"><img src={monsters} alt="monsters" /></Link>
                 <Link to="/materials"><img src={materials} alt="materials" /></Link>
                 <Link to="/equipment"><img src={equipmentd} alt="equipmentd" /></Link>
                 <Link to="/treasure"><img src={treasure} alt="treasure" /></Link>
-                <Link to="/master"><img src={treasure} alt="master" />"</Link>
+                <Link to="/master"><img src={master} alt="master" />"</Link>
             </div>
             <div className="toggle">
                 <div className='menu'>

@@ -6,6 +6,7 @@ import monsters from '../img/icon_2.png';
 import materials from '../img/icon_3.png';
 import equipmentd from '../img/icon_4.png';
 import treasure from '../img/icon_5.png';
+import master from '../img/icon_6.png';
 import deLplace from '../img/detail_line_place_left.png'
 import deRplace from '../img/detail_line_place_right.png'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
@@ -94,7 +95,7 @@ function Detail() {
                         <Link to="/materials"><img src={materials} alt="" /></Link>
                         <Link to="/equipment"><img src={equipmentd} alt="" /></Link>
                         <Link to="/treasure"><img src={treasure} alt="" /></Link>
-                        <Link to="/master"><img src={treasure} alt="" /></Link>
+                        <Link to="/master"><img src={master} alt="" /></Link>
                     </div>
                 </aside>
                 {data && data

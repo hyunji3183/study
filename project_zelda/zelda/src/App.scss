@@ -2,26 +2,57 @@
 
 body {
     background: url(../src/img/background_image.jpeg);
-    width: 100vw;
     .intro {
         position: relative;
         .playVideo.behind {
             display: none;
         }
         .playVideo {
-                .sheikah_slate {
-                    z-index: 5;
-                    display: inline-block;
-                    position: absolute;
-                    left: 42%;
-                    top: 32%;
-                    width: 20%;
-                    cursor: pointer;
-                    img {
-                        width: 100%;
-                    }
+            z-index: 5;
+            width: 100%;
+            position: absolute;
+            top: 38%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .sheikah_slate {
+                width: 40%;
+                display: inline-block;
+                padding-bottom: 1rem;
+                cursor: pointer;
+                img {
+                    width: 100%;
                 }
             }
+            .soundtxt {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                .on {
+                    width: 10%;
+                    display: inline-block;
+                    font-family: "font_zelda", "dreamgotic";
+                    font-size: 1.975rem;
+                    color: #e0ceaa;
+                    cursor: pointer;
+                }
+                .bar {
+                    width: 2%;
+                    color: #e0ceaa;
+                    font-weight: bold;
+                }
+                .off {
+                    width: 10%;
+                    display: inline-block;
+                    font-family: "font_zelda", "dreamgotic";
+                    font-size: 1.975rem;
+                    color: #e0ceaa;
+                    cursor: pointer;
+                }
+            }
+        }
         .videobox {
             position: relative;
             overflow: hidden;
@@ -34,16 +65,31 @@ body {
                 transform: translateX(-50%);
                 overflow: hidden;
             }
+            .skip {
+                opacity: 0;
+                transition: 5s;
+                width: 6%;
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+            .skip.on {
+                opacity: 1;
+            }
         }
     }
     header {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         .head {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             padding: 2rem 0;
             h2 {
@@ -54,6 +100,13 @@ body {
                 font-size: 2.75rem;
                 font-weight: 200;
                 font-family: "font_zelda", "dreamgotic";
+            }
+            p {
+                width: 10%;
+                img{
+                    width: 50%;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -85,7 +138,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 a {
-                    width: 100%;
+                    width: 80%;
                     margin-bottom: 0.5rem;
                     img {
                         width: 100%;
@@ -105,7 +158,7 @@ body {
                 align-items: center;
                 justify-content: space-between;
                 .menu {
-                    background-color: #332624;
+                    background-color: rgba(51, 38, 36,0.5);
                     text-align: center;
                     padding: 1rem 0;
                     a {
@@ -119,7 +172,7 @@ body {
                 a {
                     width: 90%;
                     cursor: pointer;
-                    padding: 2rem 0.3rem;
+                    padding: 1rem 0.3rem;
                     img {
                         width: 100%;
                     }
@@ -129,6 +182,7 @@ body {
         .list {
             width: 90%;
             ul {
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -326,6 +380,7 @@ body {
                                     top: 5%;
                                     font-size: 2rem;
                                     color: #ff4a4a;
+                                    cursor: pointer;
                                 }
                             }
                             figcaption {
@@ -355,6 +410,55 @@ body {
         font-family: "font_zelda", "dreamgotic";
         .intro {
             position: relative;
+            .playVideo.behind {
+                display: none;
+            }
+            .playVideo {
+                z-index: 5;
+                width: 100%;
+                position: absolute;
+                top: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .sheikah_slate {
+                    width: 80%;
+                    display: inline-block;
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .soundtxt {
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    .on {
+                        width: 20%;
+                        display: inline-block;
+                        font-family: "font_zelda", "dreamgotic";
+                        font-size: 1.625rem;
+                        color: #e0ceaa;
+                        cursor: pointer;
+                    }
+                    .bar {
+                        width: 2%;
+                        color: #e0ceaa;
+                        font-weight: bold;
+                    }
+                    .off {
+                        width: 20%;
+                        display: inline-block;
+                        font-family: "font_zelda", "dreamgotic";
+                        font-size: 1.625rem;
+                        color: #e0ceaa;
+                        cursor: pointer;
+                    }
+                }
+            }
             .videobox {
                 position: relative;
                 video {
@@ -366,18 +470,20 @@ body {
                     transform: translateX(-50%);
                     overflow: hidden;
                 }
-            }
-            .logo {
-                position: absolute;
-                left: 0;
-                bottom: 16%;
-                p {
-                    width: 80%;
-                    display: inline-block;
-                    text-align: center;
+                .skip {
+                    opacity: 0;
+                    transition: 5s;
+                    width: 10%;
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
                     img {
-                        width: 50%;
+                        width: 100%;
+                        cursor: pointer;
                     }
+                }
+                .skip.on {
+                    opacity: 1;
                 }
             }
         }
@@ -397,6 +503,13 @@ body {
                     text-transform: uppercase;
                     font-size: 1.875rem;
                     font-weight: 00;
+                }
+                p {
+                    width: 10%;
+                    img{
+                        width: 60%;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -678,6 +791,55 @@ body {
         font-family: "font_zelda", "dreamgotic";
         .intro {
             position: relative;
+            .playVideo.behind {
+                display: none;
+            }
+            .playVideo {
+                z-index: 5;
+                width: 100%;
+                position: absolute;
+                top: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .sheikah_slate {
+                    width: 90%;
+                    display: inline-block;
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .soundtxt {
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    .on {
+                        width: 20%;
+                        display: inline-block;
+                        font-family: "font_zelda", "dreamgotic";
+                        font-size: 1.625rem;
+                        color: #e0ceaa;
+                        cursor: pointer;
+                    }
+                    .bar {
+                        width: 2%;
+                        color: #e0ceaa;
+                        font-weight: bold;
+                    }
+                    .off {
+                        width: 20%;
+                        display: inline-block;
+                        font-family: "font_zelda", "dreamgotic";
+                        font-size: 1.625rem;
+                        color: #e0ceaa;
+                        cursor: pointer;
+                    }
+                }
+            }
             .videobox {
                 position: relative;
                 video {
@@ -688,6 +850,21 @@ body {
                     left: 50%;
                     transform: translateX(-50%);
                     overflow: hidden;
+                }
+                .skip {
+                    opacity: 0;
+                    transition: 5s;
+                    width: 14%;
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
+                    img {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+                .skip.on {
+                    opacity: 1;
                 }
             }
         }
@@ -707,6 +884,13 @@ body {
                     text-transform: uppercase;
                     font-size: 1.4rem;
                     font-weight: 200;
+                }
+                p {
+                    width: 10%;
+                    img{
+                        width: 80%;
+                        cursor: pointer;
+                    }
                 }
             }
         }

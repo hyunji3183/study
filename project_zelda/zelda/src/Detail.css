@@ -17,7 +17,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 0 3rem;
+  padding: 3rem 0;
 }
 .detail_body header .head p {
   width: 8%;
@@ -67,9 +67,6 @@
 }
 .detail_body .detail .d_aside .category > a img {
   width: 80%;
-}
-.detail_body .detail .d_aside .category > a img:hover {
-  box-shadow: 0px 0px 7px 6px rgba(1, 242, 255, 0.5);
 }
 .detail_body .detail .contents {
   width: 90%;

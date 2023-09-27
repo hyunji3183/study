@@ -1,7 +1,6 @@
 @import url("./_reset.scss");
 body {
   background: url(../src/img/background_image.jpeg);
-  width: 100vw;
 }
 body .intro {
   position: relative;
@@ -9,17 +8,51 @@ body .intro {
 body .intro .playVideo.behind {
   display: none;
 }
-body .intro .playVideo .sheikah_slate {
+body .intro .playVideo {
   z-index: 5;
-  display: inline-block;
+  width: 100%;
   position: absolute;
-  left: 42%;
-  top: 32%;
-  width: 20%;
+  top: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .intro .playVideo .sheikah_slate {
+  width: 40%;
+  display: inline-block;
+  padding-bottom: 1rem;
   cursor: pointer;
 }
 body .intro .playVideo .sheikah_slate img {
   width: 100%;
+}
+body .intro .playVideo .soundtxt {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body .intro .playVideo .soundtxt .on {
+  width: 10%;
+  display: inline-block;
+  font-family: "font_zelda", "dreamgotic";
+  font-size: 1.975rem;
+  color: #e0ceaa;
+  cursor: pointer;
+}
+body .intro .playVideo .soundtxt .bar {
+  width: 2%;
+  color: #e0ceaa;
+  font-weight: bold;
+}
+body .intro .playVideo .soundtxt .off {
+  width: 10%;
+  display: inline-block;
+  font-family: "font_zelda", "dreamgotic";
+  font-size: 1.975rem;
+  color: #e0ceaa;
+  cursor: pointer;
 }
 body .intro .videobox {
   position: relative;
@@ -34,15 +67,30 @@ body .intro .videobox video {
   transform: translateX(-50%);
   overflow: hidden;
 }
+body .intro .videobox .skip {
+  opacity: 0;
+  transition: 5s;
+  width: 6%;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+body .intro .videobox .skip img {
+  width: 100%;
+  cursor: pointer;
+}
+body .intro .videobox .skip.on {
+  opacity: 1;
+}
 body header {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 body header .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -54,6 +102,13 @@ body header .head h2 {
   font-size: 2.75rem;
   font-weight: 200;
   font-family: "font_zelda", "dreamgotic";
+}
+body header .head p {
+  width: 10%;
+}
+body header .head p img {
+  width: 50%;
+  cursor: pointer;
 }
 body main {
   width: 70%;
@@ -86,7 +141,7 @@ body main aside .category {
   align-items: center;
 }
 body main aside .category a {
-  width: 100%;
+  width: 80%;
   margin-bottom: 0.5rem;
 }
 body main aside .category a img {
@@ -104,7 +159,7 @@ body main aside .toggle {
   justify-content: space-between;
 }
 body main aside .toggle .menu {
-  background-color: #332624;
+  background-color: rgba(51, 38, 36, 0.5);
   text-align: center;
   padding: 1rem 0;
 }
@@ -118,7 +173,7 @@ body main aside .toggle .menu a img {
 body main aside .toggle a {
   width: 90%;
   cursor: pointer;
-  padding: 2rem 0.3rem;
+  padding: 1rem 0.3rem;
 }
 body main aside .toggle a img {
   width: 100%;
@@ -127,6 +182,7 @@ body main .list {
   width: 90%;
 }
 body main .list ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -314,6 +370,7 @@ body main .favorite .favorite_data ul li figure a > span {
   top: 5%;
   font-size: 2rem;
   color: #ff4a4a;
+  cursor: pointer;
 }
 body main .favorite .favorite_data ul li figure figcaption {
   color: #e0ceaa;
@@ -337,6 +394,55 @@ body main .favorite .favorite_data ul li figure figcaption b {
   body .intro {
     position: relative;
   }
+  body .intro .playVideo.behind {
+    display: none;
+  }
+  body .intro .playVideo {
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .intro .playVideo .sheikah_slate {
+    width: 80%;
+    display: inline-block;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+  body .intro .playVideo .sheikah_slate img {
+    width: 100%;
+  }
+  body .intro .playVideo .soundtxt {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  body .intro .playVideo .soundtxt .on {
+    width: 20%;
+    display: inline-block;
+    font-family: "font_zelda", "dreamgotic";
+    font-size: 1.625rem;
+    color: #e0ceaa;
+    cursor: pointer;
+  }
+  body .intro .playVideo .soundtxt .bar {
+    width: 2%;
+    color: #e0ceaa;
+    font-weight: bold;
+  }
+  body .intro .playVideo .soundtxt .off {
+    width: 20%;
+    display: inline-block;
+    font-family: "font_zelda", "dreamgotic";
+    font-size: 1.625rem;
+    color: #e0ceaa;
+    cursor: pointer;
+  }
   body .intro .videobox {
     position: relative;
   }
@@ -349,18 +455,20 @@ body main .favorite .favorite_data ul li figure figcaption b {
     transform: translateX(-50%);
     overflow: hidden;
   }
-  body .intro .logo {
+  body .intro .videobox .skip {
+    opacity: 0;
+    transition: 5s;
+    width: 10%;
     position: absolute;
-    left: 0;
-    bottom: 16%;
+    bottom: 10%;
+    right: 10%;
   }
-  body .intro .logo p {
-    width: 80%;
-    display: inline-block;
-    text-align: center;
+  body .intro .videobox .skip img {
+    width: 100%;
+    cursor: pointer;
   }
-  body .intro .logo p img {
-    width: 50%;
+  body .intro .videobox .skip.on {
+    opacity: 1;
   }
   body header {
     width: 100%;
@@ -380,6 +488,13 @@ body main .favorite .favorite_data ul li figure figcaption b {
     text-transform: uppercase;
     font-size: 1.875rem;
     font-weight: 0;
+  }
+  body header .head p {
+    width: 10%;
+  }
+  body header .head p img {
+    width: 60%;
+    cursor: pointer;
   }
   body main {
     width: 90%;
@@ -649,6 +764,55 @@ body main .favorite .favorite_data ul li figure figcaption b {
   body .intro {
     position: relative;
   }
+  body .intro .playVideo.behind {
+    display: none;
+  }
+  body .intro .playVideo {
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .intro .playVideo .sheikah_slate {
+    width: 90%;
+    display: inline-block;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+  body .intro .playVideo .sheikah_slate img {
+    width: 100%;
+  }
+  body .intro .playVideo .soundtxt {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  body .intro .playVideo .soundtxt .on {
+    width: 20%;
+    display: inline-block;
+    font-family: "font_zelda", "dreamgotic";
+    font-size: 1.625rem;
+    color: #e0ceaa;
+    cursor: pointer;
+  }
+  body .intro .playVideo .soundtxt .bar {
+    width: 2%;
+    color: #e0ceaa;
+    font-weight: bold;
+  }
+  body .intro .playVideo .soundtxt .off {
+    width: 20%;
+    display: inline-block;
+    font-family: "font_zelda", "dreamgotic";
+    font-size: 1.625rem;
+    color: #e0ceaa;
+    cursor: pointer;
+  }
   body .intro .videobox {
     position: relative;
   }
@@ -660,6 +824,21 @@ body main .favorite .favorite_data ul li figure figcaption b {
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+  }
+  body .intro .videobox .skip {
+    opacity: 0;
+    transition: 5s;
+    width: 14%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+  body .intro .videobox .skip img {
+    width: 100%;
+    cursor: pointer;
+  }
+  body .intro .videobox .skip.on {
+    opacity: 1;
   }
   body header {
     width: 100%;
@@ -679,6 +858,13 @@ body main .favorite .favorite_data ul li figure figcaption b {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 200;
+  }
+  body header .head p {
+    width: 10%;
+  }
+  body header .head p img {
+    width: 80%;
+    cursor: pointer;
   }
   body main {
     width: 90%;
