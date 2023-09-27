@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import trailer from './videos/BOTW_trailer.mp4';
 import skip from './img/skip_btn.png';
 import notice from './img/notice.png';
+import Bgm from './comp/Bgm';
 
 export default function Main() {
     const navigate = useNavigate();

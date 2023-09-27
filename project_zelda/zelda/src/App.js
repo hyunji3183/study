@@ -14,7 +14,7 @@ import Search from './comp/Search';
 import Detail from './comp/Detail';
 import DetailWeapon from './comp/DetailWeapon';
 import Master from './comp/Master';
-// import hateno_BGM from './videos/Hateno_Village.mp3';
+import Bgm from './comp/Bgm';
 
 const App = () => {
     return (

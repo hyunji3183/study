@@ -155,6 +155,7 @@
   text-align: center;
 }
 .detail_body .detail .contents .right_contents .place .place_data span {
+  flex-grow: 1;
   padding: 0.3rem 0;
   width: 30%;
   font-size: 1.4rem;
