@@ -1,0 +1,49 @@
+@import url("./_reset.scss");
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .headerbox {
+  height: 75px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerbox h1 {
+  width: 100px;
+}
+header .headerbox h1 img {
+  width: 60%;
+}
+header .headerbox nav {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "dreamgotic";
+  font-weight: 300;
+}
+header .headerbox nav a {
+  letter-spacing: 2px;
+  color: #707070;
+}
+header .headerbox nav a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #B1C7FF;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 200ms ease-in-out;
+}
+header .headerbox nav a:hover {
+  color: #000;
+}
+header .headerbox nav a:hover::after {
+  transform: scaleX(1);
+}
