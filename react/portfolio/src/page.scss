@@ -1,10 +1,11 @@
 @import url("./_reset.scss");
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px dashed #b1c7ff;
 
     .headerbox {
         height: 75px;
@@ -35,12 +36,10 @@ header {
             a {
                 letter-spacing: 2px;
                 color: #707070;
-                ;
-
                 &::after {
                     display: block;
-                    content: '';
-                    border-bottom: solid 3px #B1C7FF;
+                    content: "";
+                    border-bottom: solid 3px #b1c7ff;
                     transform: scaleX(0);
                     transform-origin: 0% 50%;
                     transition: transform 200ms ease-in-out;
@@ -52,6 +51,277 @@ header {
 
                 &:hover::after {
                     transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
+
+.about_page {
+    font-family: "dreamgotic";
+    width: 100%;
+    padding: 200px 0;
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+        padding: 1.7rem 0;
+        .about_left {
+            width: 30%;
+            .profile {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                > p {
+                    width: 70%;
+                    padding-bottom: 3rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .info_data {
+                    .kakao_qr {
+                        position: absolute;
+                        bottom: -10%;
+                        left: 2%;
+                        display: none;
+                        width: 80%;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                    div {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        p {
+                            font-weight: 300;
+                            font-size: 1rem;
+                            padding: 0.8rem;
+                            border-left: 3px solid black;
+                            display: flex;
+                            align-items: center;
+
+                            &:nth-of-type(1)::before {
+                                content: "\e7e9";
+                                font-family: "Material Symbols Outlined";
+                                display: inline-block;
+                                width: 30px;
+                                height: 20px;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+                            &:nth-of-type(2)::before {
+                                content: "\e325";
+                                font-family: "Material Symbols Outlined";
+                                display: inline-block;
+                                width: 30px;
+                                height: 20px;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+                            &:nth-of-type(2)::after {
+                                content: "\e409";
+                                font-family: "Material Symbols Outlined";
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                font-size: 1rem;
+                            }
+                            &:nth-of-type(3)::before {
+                                content: "\e158";
+                                font-family: "Material Symbols Outlined";
+                                display: inline-block;
+                                width: 30px;
+                                height: 20px;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about_right {
+            width: 60%;
+            b {
+                font-weight: 500;
+                font-size: 2.5rem;
+                padding: 2rem 0;
+                display: inline-block;
+                span {
+                    padding: 0.5rem 0;
+                    border-bottom: 2px solid #b1c7ff;
+                    &:hover {
+                        transition: 0.5s;
+                        background-color: #b1c7ff;
+                        color: white;
+                    }
+                }
+            }
+            .about_me {
+                p {
+                    font-weight: 300;
+                    font-size: 20px;
+                    padding: 1rem 0;
+                }
+                span {
+                    line-height: 24px;
+                    display: inline-block;
+                    padding: 1rem 0;
+                    font-size: 1rem;
+                    font-weight: 200;
+                }
+            }
+            .Education {
+                p {
+                    font-weight: 300;
+                    font-size: 20px;
+                    padding: 1rem 0;
+                }
+                .edu_data {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        padding: 0.5rem 0;
+                        font-size: 1rem;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skill_page {
+    width: 100%;
+    .color_box {
+        width: 100%;
+        text-align: center;
+        background-color: #d7e2ff;
+        p {
+            font-family: "Blacksword";
+            font-weight: 400;
+            font-size: 48px;
+            color: white;
+            letter-spacing: 8px;
+        }
+    }
+    .skill {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .skill_left {
+            width: 45%;
+            .skill_left_top {
+                > p {
+                    display: inline-block;
+                    color: #5786ff;
+                    border-top: 2px solid #5786ff;
+                    font-size: 22px;
+                }
+                ul {
+                    li {
+                        border: 1px solid #b1c7ff;
+                        .contents_box {
+                            width: 80%;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .skill_name {
+                                width: 40%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                p {
+                                    width: 30%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                span {
+                                    width: 50%;
+                                }
+                            }
+                            .skill_level {
+                                width: 40%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                span {
+                                    border-radius: 6px;
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 30px;
+                                    background-color: #b1c7ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .skill_left_bottom {
+                p {
+                }
+                ul {
+                    li {
+                        .skill_name {
+                            p {
+                            }
+                            span {
+                            }
+                        }
+                        .skill_level {
+                            span {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .skill_right {
+            width: 45%;
+            .skill_right_top {
+                p {
+                }
+                ul {
+                    li {
+                        .skill_name {
+                            p {
+                            }
+                            span {
+                            }
+                        }
+                        .skill_level {
+                            span {
+                            }
+                        }
+                    }
+                }
+            }
+            .skill_right_bottom {
+                p {
+                }
+                ul {
+                    li {
+                        .skill_name {
+                            p {
+                            }
+                            span {
+                            }
+                        }
+                        .skill_level {
+                            span {
+                            }
+                        }
+                    }
                 }
             }
         }

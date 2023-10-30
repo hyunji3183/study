@@ -11,9 +11,9 @@ function Intro() {
 
     return (
         <>
-            <div class="container" onClick={openapp}>
+            <div className="container" onClick={openapp}>
                 <b>FRONTEND DEVELOPER<br/>PORTFOLIO</b>
-                <svg class="pulse" viewBox="0 0 1024 1024">
+                <svg className="pulse" viewBox="0 0 1024 1024">
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
