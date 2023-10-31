@@ -7,7 +7,7 @@
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-  cursor: url("./img/click_anywhere.png") 5 5, auto;
+  cursor: url("../src/img_src/click_anywhere.png") 5 5, auto;
 }
 .container > b {
   font-family: "dreamgotic";

@@ -2,25 +2,25 @@
     "publishing": [
         {
             "id": 1,
-            "icon": "/src/img/html.png",
+            "icon": "/img/skill_icon/html.png",
             "name": "HTML",
             "state": 4
         },
         {
             "id": 2,
-            "icon": "../src/img/css.png",
+            "icon": "/img/skill_icon/css.png",
             "name": "CSS",
             "state": 4
         },
         {
             "id": 3,
-            "icon": "../src/img/javascript.png",
+            "icon": "/img/skill_icon/javascript.png",
             "name": "JavaScript",
             "state": 3
         },
         {
             "id": 4,
-            "icon": "../src/img/sass.png",
+            "icon": "/img/skill_icon/sass.png",
             "name": "SASS",
             "state": 4
         }
@@ -28,19 +28,19 @@
     "frontend": [
         {
             "id": 1,
-            "icon": "../src/img/react.png",
+            "icon": "/img/skill_icon/react.png",
             "name": "react",
             "state": 3
         },
         {
             "id": 2,
-            "icon": "../src/img/next.png",
+            "icon": "/img/skill_icon/next.js.png",
             "name": "Next.js",
             "state": 3
         },
         {
             "id": 3,
-            "icon": "../src/img/vue.png",
+            "icon": "/img/skill_icon/vue.png",
             "name": "Vue",
             "state": 2
         }
@@ -48,19 +48,19 @@
     "backend": [
         {
             "id": 1,
-            "icon": "../src/img/nodejs.png",
-            "name": "Node.js",
+            "icon": "/img/skill_icon/node.js.png",
+            "name": "node.js",
             "state": 2
         },
         {
             "id": 2,
-            "icon": "../src/img/mysql.png",
+            "icon": "/img/skill_icon/mysql.png",
             "name": "mySQL",
             "state": 3
         },
         {
             "id": 3,
-            "icon": "../src/img/git.png",
+            "icon": "/img/skill_icon/git.png",
             "name": "Git",
             "state": 2
         }
@@ -68,25 +68,25 @@
     "etc": [
         {
             "id": 1,
-            "icon": "../src/img/figma.png",
+            "icon": "/img/skill_icon/figma.png",
             "name": "Figma",
             "state": 4
         },
         {
             "id": 2,
-            "icon": "../src/img/jira.png",
+            "icon": "/img/skill_icon/jira.png",
             "name": "jira",
             "state": 3
         },
         {
             "id": 3,
-            "icon": "../src/img/slack.png",
+            "icon": "/img/skill_icon/slack.png",
             "name": "Slack",
             "state": 4
         },
         {
             "id": 4,
-            "icon": "../src/img/github.png",
+            "icon": "/img/skill_icon/Github.png",
             "name": "Github",
             "state": 3
         }

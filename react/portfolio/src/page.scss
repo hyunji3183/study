@@ -2,7 +2,11 @@
 
 header.on {
     height: 0px;
-    transition: 0.5s;
+    transition: 1.5s;
+    .headerbox {
+        opacity: 0;
+        transition: 0.5s;
+    }
 }
 
 header {
@@ -13,7 +17,7 @@ header {
     height: 75px;
     background-color: rgb(255, 255, 255);
     border-bottom: 2px dashed #b1c7ff;
-    transition: 0.5s;
+    transition: 1.5s;
 
     .headerbox {
         width: 80%;
@@ -23,6 +27,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: 3s;
 
         h1 {
             width: 100px;
@@ -87,7 +92,7 @@ header {
                 align-items: center;
                 flex-direction: column;
 
-                >p {
+                > p {
                     width: 70%;
                     padding-bottom: 3rem;
 
@@ -276,92 +281,16 @@ header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: 4.375rem 0;
+        padding: 50px 0;
 
         .skill_left {
-            width: 45%;
+            width: 40%;
 
             .skill_left_top {
-                min-height: 380px;
-                padding: 2rem 0;
+                min-height: 370px;
+                padding: 1rem 0;
 
-                >p {
-                    display: inline-block;
-                    padding: 0.7rem 0;
-                    color: #5786ff;
-                    border-top: 2px solid #5786ff;
-                    font-weight: 300;
-                    font-size: 1.375rem;
-                }
-
-                ul {
-                    li {
-                        margin: 0.5rem 0;
-                        border: 1px solid #b1c7ff;
-                        border-radius: 10px;
-                        box-shadow: 1px 1px 4px #B1C7FF;
-
-                        .contents_box {
-                            width: 90%;
-                            margin: 0 auto;
-                            padding: 0.5rem 0;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-
-                            .skill_name {
-                                width: 40%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                p {
-                                    width: 30%;
-
-                                    img {
-                                        width: 100%;
-                                    }
-                                }
-
-                                span {
-                                    width: 50%;
-                                    font-weight: 300;
-                                }
-                            }
-
-                            .skill_level {
-                                width: 40%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                span {
-                                    border-radius: 6px;
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
-                                    background-color: transparent;
-                                    border: 1px solid #b1c7ff;
-                                }
-
-                                .active {
-                                    border-radius: 6px;
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
-                                    background-color: #b1c7ff;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .skill_left_bottom {
-                min-height: 380px;
-                padding: 2rem 0;
-
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -375,7 +304,7 @@ header {
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
-                        box-shadow: 1px 1px 4px #B1C7FF;
+                        box-shadow: 1px 1px 4px #b1c7ff;
 
                         .contents_box {
                             width: 90%;
@@ -392,8 +321,8 @@ header {
                                 justify-content: space-between;
 
                                 p {
-                                    width: 30%;
-
+                                    text-align: center;
+                                    width: 40%;
                                     img {
                                         width: 100%;
                                     }
@@ -406,7 +335,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 40%;
+                                width: 30%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -414,17 +343,93 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: transparent;
-                                    border: 1px solid #b1c7ff;
+                                    border: 2px solid #b1c7ff;
                                 }
 
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
+                                    background-color: #b1c7ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skill_left_bottom {
+                min-height: 370px;
+                padding: 1rem 0;
+
+                > p {
+                    display: inline-block;
+                    padding: 0.5rem 0;
+                    color: #5786ff;
+                    border-top: 2px solid #5786ff;
+                    font-weight: 300;
+                    font-size: 1.375rem;
+                }
+
+                ul {
+                    li {
+                        margin: 0.5rem 0;
+                        border: 1px solid #b1c7ff;
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 4px #b1c7ff;
+
+                        .contents_box {
+                            width: 90%;
+                            margin: 0 auto;
+                            padding: 0.5rem 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .skill_name {
+                                width: 40%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                p {
+                                    text-align: center;
+                                    width: 40%;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                span {
+                                    width: 50%;
+                                    font-weight: 300;
+                                }
+                            }
+
+                            .skill_level {
+                                width: 30%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                span {
+                                    border-radius: 6px;
+                                    display: inline-block;
+                                    width: 22px;
+                                    height: 22px;
+                                    background-color: transparent;
+                                    border: 2px solid #b1c7ff;
+                                }
+
+                                .active {
+                                    border-radius: 6px;
+                                    display: inline-block;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -435,13 +440,13 @@ header {
         }
 
         .skill_right {
-            width: 45%;
+            width: 40%;
 
             .skill_right_top {
-                min-height: 380px;
-                padding: 2rem 0;
+                min-height: 370px;
+                padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -455,7 +460,7 @@ header {
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
-                        box-shadow: 1px 1px 4px #B1C7FF;
+                        box-shadow: 1px 1px 4px #b1c7ff;
 
                         .contents_box {
                             width: 90%;
@@ -472,8 +477,8 @@ header {
                                 justify-content: space-between;
 
                                 p {
-                                    width: 30%;
-
+                                    text-align: center;
+                                    width: 40%;
                                     img {
                                         width: 100%;
                                     }
@@ -486,7 +491,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 40%;
+                                width: 30%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -494,8 +499,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: transparent;
                                     border: 2px solid #b1c7ff;
                                 }
@@ -503,8 +508,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -514,10 +519,10 @@ header {
             }
 
             .skill_right_bottom {
-                min-height: 380px;
-                padding: 2rem 0;
+                min-height: 370px;
+                padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -531,7 +536,7 @@ header {
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
-                        box-shadow: 1px 1px 4px #B1C7FF;
+                        box-shadow: 1px 1px 4px #b1c7ff;
 
                         .contents_box {
                             width: 90%;
@@ -548,8 +553,8 @@ header {
                                 justify-content: space-between;
 
                                 p {
-                                    width: 30%;
-
+                                    text-align: center;
+                                    width: 40%;
                                     img {
                                         width: 100%;
                                     }
@@ -562,7 +567,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 40%;
+                                width: 30%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -570,8 +575,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: transparent;
                                     border: 2px solid #b1c7ff;
                                 }
@@ -579,8 +584,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 22px;
+                                    height: 22px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -621,10 +626,80 @@ header {
                 width: 80%;
                 height: 100%;
                 margin: 0 auto;
-                background-color: #000;
+                padding: 1.8rem;
+                display: flex;
+                justify-content: space-between;
+                border: 2px dashed #d7e2ff;
+                .pro_left {
+                    width: 40%;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        li {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            p {
+                                width: 90%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pro_right {
+                    font-weight: 200;
+                    width: 55%;
+                    b {
+                        font-size: 24px;
+                    }
+                    .pro_text {
+                        .date {
+                            p {
+                                color: #5786ff;
+                                font-size: 20px;
+                            }
+                            span {
+                                font-size: 16px;
+                                padding-left: 10px;
+                            }
+                        }
+                        .language {
+                            p {
+                                color: #5786ff;
+                                font-size: 20px;
+                            }
+                            span {
+                                font-size: 16px;
+                                padding-left: 10px;
+                            }
+                        }
+                        .program {
+                            p {
+                                color: #5786ff;
+                                font-size: 20px;
+                            }
+                            span {
+                                font-size: 16px;
+                                padding-left: 10px;
+                            }
+                        }
+                        .description {
+                            p {
+                                color: #5786ff;
+                                font-size: 20px;
+                            }
+                            span {
+                                font-size: 16px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
-
 }

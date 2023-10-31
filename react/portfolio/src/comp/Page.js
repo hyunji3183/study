@@ -5,8 +5,8 @@ import Skill from './Skill'
 import Project from './Project'
 import Contact from './Contact'
 import { Link } from 'react-router-dom';
-import logo from '../img/logo.png'
-import top from '../img/top.png';
+import logo from '../img_src/logo.png'
+import top from '../img_src/top.png';
 
 
 function Page() {
@@ -16,7 +16,7 @@ function Page() {
     useEffect(() => {
         const handleScroll = () => {
             const moving = window.pageYOffset;
-            setOpen(position > moving);
+            setOpen(position < moving);
             setPosition(moving);
         }
         window.addEventListener('scroll', handleScroll);

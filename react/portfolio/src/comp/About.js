@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import QR from '../img/kakao_QR.png'
-import mimoji from '../img/mimoji_profile1.png'
+import QR from '../img_src/kakao_QR.png'
+import mimoji from '../img_src/mimoji_profile1.png'
 
 function About() {
 
