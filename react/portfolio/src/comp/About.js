@@ -15,9 +15,9 @@ function About() {
             <div className='about'>
                 <div className='about_left'>
                     <div className='profile'>
-                        <p><img src={mimoji} /></p>
+                        <p><img src={mimoji} alt='mimoji_profile'/></p>
                         <div className={`info_data ${onkakao ? 'on' : ''}`}>
-                            <div className='kakao_qr' onClick={open_qr}><img src={QR} /></div>
+                            <div className='kakao_qr' onClick={open_qr}><img src={QR} alt='kakao_QR' /></div>
                             <div>
                                 <p>1996.02.29</p>
                                 <p onClick={open_qr}>kakao talk</p>

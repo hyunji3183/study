@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import next from '../img_src/logo.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,7 +18,6 @@ function Project() {
                 console.log(res.data);
             })
     }, []);
-
 
     return (
         <section className='project_page'>
@@ -42,13 +40,26 @@ function Project() {
                         <div className='project_list'>
                             <div className='pro_left'>
                                 <ul>
-                                    <li>
-                                        <p><img src={item.image[0]} /></p>
-                                    </li>
+                                    {
+                                        item.image.map((item, key) => (
+                                            <li key={key} ><img src={item} alt={item} className='li_box'/></li>
+                                        ))
+                                    }
                                 </ul>
+                                <div className='btn_box'>
+                                    <span class="material-symbols-rounded">
+                                        navigate_before
+                                    </span>
+                                    <span class="material-symbols-rounded">
+                                        check_indeterminate_small
+                                    </span>
+                                    <span class="material-symbols-rounded">
+                                        navigate_next
+                                    </span>
+                                </div>
                             </div>
                             <div className='pro_right'>
-                                <b>{item.name}</b>
+                                <b>&#60;{item.name} /&#62;</b>
                                 <div className='pro_text'>
                                     <div className='date'>
                                         <p>Make Date</p>
@@ -56,11 +67,19 @@ function Project() {
                                     </div>
                                     <div className='language'>
                                         <p>Make Language</p>
-                                        <span>{item.Language}</span>
+                                        {
+                                            item.Language.map((item, key) => (
+                                                <span key={key}>{item}</span>
+                                            ))
+                                        }
                                     </div>
                                     <div className='program'>
                                         <p>Using Program</p>
-                                        <span>{item.program}</span>
+                                        {
+                                            item.program.map((item, key) => (
+                                                <span key={key}>{item}</span>
+                                            ))
+                                        }
                                     </div>
                                     <div className='description'>
                                         <p>Planning the road</p>

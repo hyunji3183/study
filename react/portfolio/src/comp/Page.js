@@ -29,7 +29,7 @@ function Page() {
         <>
             <header className={open ? 'on' : ''}>
                 <div className='headerbox'>
-                    <h1><img src={logo} alt="main_logo" /></h1>
+                    <h1><img src={logo} alt="main_logo"/></h1>
                     <nav>
                         <Link to="/about"> 	&#60;About /&#62;</Link>
                         <Link to="/skill"> &#60;Skill /&#62;</Link>
@@ -38,11 +38,10 @@ function Page() {
                     </nav>
                 </div>
             </header>
-            {/*
-                <Contact /> */}
             <About />
             <Skill />
             <Project />
+            <Contact />
             {/* <aside>
                 <img src={top} />
             </aside> */}
