@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react';
 import QR from '../img_src/kakao_QR.png';
 import contact_me from '../img_src/contact_me.png';
 
 function Contact() {
+    const [isFlipped, setIsFlip] = useState(false);
+
+    const handleFlipClick = () => {
+        setIsFlip(!isFlipped);
+    };
+
     return (
-        <section className='contact_page'>
+        <section className={`contact_page ${isFlipped ? 'on' : ''}`}>
             <div className='color_box'>
                 <p>contact</p>
             </div>
-            <div className='flip'>
+            <div className={`flip ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
                 <div className='front'>
-                    <p><img src={contact_me} alt='contact_me' />
-                    </p>
+                    <p><img src={contact_me} alt='contact_me' /></p>
                 </div>
                 <div className='back'>
                     <div className='con_left'>
@@ -33,7 +38,7 @@ function Contact() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
