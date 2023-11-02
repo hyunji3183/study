@@ -95,7 +95,7 @@ header {
                 align-items: center;
                 flex-direction: column;
 
-                > p {
+                >p {
                     width: 70%;
                     padding-bottom: 3rem;
 
@@ -293,7 +293,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -371,7 +371,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -452,7 +452,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -529,7 +529,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -668,6 +668,7 @@ header {
                                 opacity: 0;
                             }
                         }
+
                         .active {
                             opacity: 1;
                             transition: opacity 0.5s ease-in-out;
@@ -807,7 +808,7 @@ header {
         }
     }
 
-    .flip.on {
+    .flip.frame_in.on {
         transform: rotateY(180deg);
 
         .back {
@@ -918,6 +919,8 @@ header {
 }
 
 .frame_in {
+    width: 100%;
+    height: 100%;
     animation: frameInAnimation 1s forwards;
 }
 

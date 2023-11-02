@@ -13,12 +13,12 @@ function Contact() {
 
 
     return (
-        <section className={`contact_page ${isFlipped ? 'on' : ''}`} id='contact'>
+        <section className='contact_page'>
             <div className='color_box'>
                 <p>contact</p>
             </div>
+            <div className={`flip frame_in ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
             <Inview>
-                <div className={`flip frame_in ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
                     <div className='front'>
                         <p><img src={contact_me} alt='contact_me' /></p>
                     </div>
@@ -40,8 +40,8 @@ function Contact() {
                             <p> <img src={QR} alt='kakao_qr' /></p>
                         </div>
                     </div>
-                </div>
             </Inview>
+                </div>
         </section>
     );
 }
