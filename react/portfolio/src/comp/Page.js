@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 function Page() {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-    
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,7 +33,12 @@ function Page() {
         };
     }, [scrollPosition]);
 
+    const [onmenu, setOnmenu] = useState(false);
 
+
+    const open_menu = () => {
+        setOnmenu(!onmenu);
+    }
 
 
     return (
@@ -41,14 +46,17 @@ function Page() {
             <header className={isHeaderVisible ? 'on' : ''}>
                 <div className='headerbox'>
                     <h1><img src={logo} alt="main_logo" /></h1>
-                    <nav>
+                    <span className="material-symbols-rounded" onClick={open_menu}>
+                        menu
+                    </span>
+                    <nav className={`${onmenu ? 'on' : ''}`}>
                         <Link to="about" smooth={true} duration={500} spy={true}> &#60;About /&#62;</Link>
                         <Link to="skill" smooth={true} duration={500} spy={true}> &#60;Skill /&#62;</Link>
                         <Link to="project" smooth={true} duration={500} spy={true}> &#60;Project /&#62;</Link>
                         <Link to="contact" smooth={true} duration={500} spy={true}> &#60;Contact /&#62;</Link>
                     </nav>
                 </div>
-            </header>
+            </header >
             <About />
             <Skill />
             <Project />

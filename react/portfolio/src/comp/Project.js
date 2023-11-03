@@ -57,46 +57,53 @@ function Project() {
                     {data.map((item, index) => (
                         <SwiperSlide key={item.id}>
                             <div className='project_list'>
-                                <div className='pro_left'>
-                                    <ul>
-                                        {item.image.map((img, key) => (
-                                            <li key={key}><img src={img} alt={img} className={slide === key ? "active" : null} /></li>
-                                        ))}
-                                    </ul>
-                                    <div className='btn_box'>
-                                        <span className="material-symbols-rounded" onClick={() => { handlePage(index, 'prev') }}>
-                                            navigate_before
-                                        </span>
-                                        <span className="material-symbols-rounded">
-                                            check_indeterminate_small
-                                        </span>
-                                        <span className="material-symbols-rounded" onClick={() => { handlePage(index, 'next') }}>
-                                            navigate_next
-                                        </span>
+                                <div className='pro_box'>
+                                    <div className='pro_left'>
+                                        <ul>
+                                            {item.image.map((img, key) => (
+                                                <li key={key}><img src={img} alt={img} className={slide === key ? "active" : null} /></li>
+                                            ))}
+                                        </ul>
+                                        <div className='btn_box'>
+                                            <span className="material-symbols-rounded" onClick={() => { handlePage(index, 'prev') }}>
+                                                navigate_before
+                                            </span>
+                                            <span className="material-symbols-rounded" onClick={() => { handlePage(index, 'next') }}>
+                                                navigate_next
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className='pro_right'>
-                                    <b>&#60;{item.name} /&#62;</b>
-                                    <div className='pro_text'>
-                                        <div className='date'>
-                                            <p>Make Date</p>
-                                            <span>{item.Production}</span>
-                                        </div>
-                                        <div className='language'>
-                                            <p>Make Language</p>
-                                            {item.Language.map((lang, key) => (
-                                                <span key={key}>{lang}</span>
-                                            ))}
-                                        </div>
-                                        <div className='program'>
-                                            <p>Using Program</p>
-                                            {item.program.map((prog, key) => (
-                                                <span key={key}>{prog}</span>
-                                            ))}
-                                        </div>
-                                        <div className='description'>
-                                            <p>Planning the road</p>
-                                            <span>{item.description}</span>
+                                    <div className='pro_right'>
+                                        <b>&#60;{item.name} /&#62;</b>
+                                        <div className='pro_text'>
+                                            <div className='date'>
+                                                <p>Make Date</p>
+                                                <div className='date_txt'>
+                                                    <span>{item.Production}</span>
+                                                </div>
+                                            </div>
+                                            <div className='language'>
+                                                <p>Make Language</p>
+                                                <div className='language_txt'>
+                                                    {item.Language.map((lang, key) => (
+                                                        <span key={key}>{lang}</span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                            <div className='program'>
+                                                <p>Using Program</p>
+                                                <div className='program_txt'>
+                                                    {item.program.map((prog, key) => (
+                                                        <span key={key}>{prog}</span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                            <div className='description'>
+                                                <p>Planning the road</p>
+                                                <div className='description_txt'>
+                                                    <span>{item.description}</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

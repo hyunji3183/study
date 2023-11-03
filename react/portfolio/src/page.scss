@@ -39,7 +39,9 @@ header {
                 width: 60%;
             }
         }
-
+        span {
+            display: none;
+        }
         nav {
             width: 500px;
             display: flex;
@@ -95,7 +97,7 @@ header {
                 align-items: center;
                 flex-direction: column;
 
-                >p {
+                > p {
                     width: 70%;
                     padding-bottom: 3rem;
 
@@ -199,7 +201,7 @@ header {
 
             b {
                 font-weight: 500;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 padding: 2rem 0;
                 display: inline-block;
 
@@ -223,7 +225,7 @@ header {
 
             .about_me {
                 p {
-                    font-weight: 300;
+                    font-weight: 500;
                     font-size: 1.25rem;
                     padding: 1rem 0;
                 }
@@ -239,7 +241,7 @@ header {
 
             .Education {
                 p {
-                    font-weight: 300;
+                    font-weight: 500;
                     font-size: 1.25rem;
                     padding: 1rem 0;
                 }
@@ -252,6 +254,7 @@ header {
                         padding: 0.5rem 0;
                         font-size: 1rem;
                         font-weight: 200;
+                        line-height: 24px;
                     }
                 }
             }
@@ -293,7 +296,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -339,7 +342,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 30%;
+                                width: 45%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -347,8 +350,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: transparent;
                                     background-size: 0px 0px;
                                     border: 2px solid #b1c7ff;
@@ -357,8 +360,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -371,7 +374,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -417,7 +420,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 30%;
+                                width: 45%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -425,8 +428,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: transparent;
                                     border: 2px solid #b1c7ff;
                                 }
@@ -434,8 +437,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -452,7 +455,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -498,7 +501,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 30%;
+                                width: 45%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -506,8 +509,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: transparent;
                                     border: 2px solid #b1c7ff;
                                 }
@@ -515,8 +518,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -529,7 +532,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -575,7 +578,7 @@ header {
                             }
 
                             .skill_level {
-                                width: 30%;
+                                width: 45%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -583,8 +586,8 @@ header {
                                 span {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: transparent;
                                     border: 2px solid #b1c7ff;
                                 }
@@ -592,8 +595,8 @@ header {
                                 .active {
                                     border-radius: 6px;
                                     display: inline-block;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 24px;
+                                    height: 24px;
                                     background-color: #b1c7ff;
                                 }
                             }
@@ -609,6 +612,7 @@ header {
     font-family: "dreamgotic";
     width: 100%;
     height: 100vh;
+    background-color: #999999;
 
     .color_box {
         width: 100%;
@@ -625,7 +629,7 @@ header {
     }
 
     .swiper {
-        width: 70%;
+        width: 85%;
         height: 85%;
         padding: 5rem 0;
 
@@ -635,150 +639,162 @@ header {
                 height: 100%;
                 margin: 0 auto;
                 padding: 1.8rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border: 2px dashed #d7e2ff;
+                background-color: #ffffff;
+                border-radius: 10px;
 
-                .pro_left {
-                    width: 40%;
-                    height: 80%;
+                .pro_box {
+                    height: 100%;
                     display: flex;
                     align-items: center;
-                    flex-direction: column;
-
-                    ul {
-                        width: 90%;
-                        height: 90%;
-                        white-space: nowrap;
-                        position: relative;
-
-                        li {
-                            position: absolute;
-                            bottom: 0;
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            text-align: center;
-
-                            img {
-                                width: 90%;
-                                opacity: 0;
-                            }
-                        }
-
-                        .active {
-                            opacity: 1;
-                            transition: opacity 0.5s ease-in-out;
-                        }
-                    }
-
-                    // ul::-webkit-scrollbar {
-                    //     display: none;
-                    // }
-                    .btn_box {
+                    justify-content: space-between;
+                    border: 4px dashed #d7e2ff;
+                    border-radius: 10px;
+                    .pro_left {
                         width: 30%;
-                        padding: 4px 0;
-                        margin: 4px 0px;
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        border-radius: 4px;
-                        background-color: rgba(215, 226, 255, 0.4);
-
-                        span {
-                            display: inline-block;
-                            color: #a5a5a5;
-                            cursor: pointer;
-
-                            &:nth-of-type(1) {
-                                width: 45%;
-                                text-align: left;
-                            }
-
-                            &:nth-of-type(2) {
-                                width: 10%;
-                                text-align: center;
-                                transform-origin: 100% 50%;
-                                transform: translateX(-50%) rotate(-90deg);
-                            }
-
-                            &:nth-of-type(3) {
-                                width: 45%;
-                                text-align: right;
-                            }
-                        }
-                    }
-                }
-
-                .pro_right {
-                    font-weight: 200;
-                    width: 55%;
-                    height: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-
-                    b {
-                        display: inline-block;
-                        font-size: 1.5rem;
-                    }
-
-                    .pro_text {
-                        width: 80%;
-                        height: 70%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
                         flex-direction: column;
+                        
+                        ul {
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
 
-                        .date {
-                            p {
-                                color: #5786ff;
-                                font-size: 1.25rem;
+                            li {
+                                bottom: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+
+                                img {
+                                    width: 280px;
+                                    height: 450px;
+                                    opacity: 0;
+                                }
                             }
 
-                            span {
-                                font-size: 16px;
-                                padding-left: 10px;
-                            }
-                        }
-
-                        .language {
-                            p {
-                                color: #5786ff;
-                                font-size: 20px;
-                            }
-
-                            span {
-                                font-size: 16px;
-                                padding-left: 10px;
-                            }
-                        }
-
-                        .program {
-                            p {
-                                color: #5786ff;
-                                font-size: 20px;
-                            }
-
-                            span {
-                                font-size: 16px;
-                                padding-left: 10px;
+                            .active {
+                                opacity: 1;
+                                transition: opacity 0.5s ease-in-out;
                             }
                         }
 
-                        .description {
-                            p {
-                                color: #5786ff;
-                                font-size: 20px;
-                            }
+                        .btn_box {
+                            width: 30%;
+                            padding: 4px 0;
+                            margin: 4px 0px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            border-radius: 4px;
+                            background-color: rgba(215, 226, 255, 0.4);
 
                             span {
-                                font-size: 16px;
-                                padding-left: 10px;
+                                display: inline-block;
+                                color: #a5a5a5;
+                                cursor: pointer;
+
+                                &:nth-of-type(1) {
+                                    width: 45%;
+                                    text-align: left;
+                                }
+
+                                &:nth-of-type(2) {
+                                    width: 45%;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+
+                    .pro_right {
+                        font-weight: 200;
+                        width: 55%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        b {
+                            display: inline-block;
+                            font-size: 1.5rem;
+                        }
+
+                        .pro_text {
+                            width: 90%;
+                            height: 70%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            flex-direction: column;
+
+                            .date {
+                                p {
+                                    color: #5786ff;
+                                    font-size: 1.25rem;
+                                }
+                                .date_txt {
+                                    padding-left: 10px;
+                                    span {
+                                        font-size: 1rem;
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+
+                            .language {
+                                p {
+                                    color: #5786ff;
+                                    font-size: 1.25rem;
+                                }
+                                .language_txt {
+                                    padding-left: 10px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-wrap: wrap;
+                                    span {
+                                        font-size: 1rem;
+                                        padding-left: 10px;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+
+                            .program {
+                                p {
+                                    color: #5786ff;
+                                    font-size: 1.25rem;
+                                }
+                                .program_txt {
+                                    padding-left: 10px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-wrap: wrap;
+                                    span {
+                                        font-size: 1rem;
+                                        padding-left: 10px;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+
+                            .description {
+                                p {
+                                    color: #5786ff;
+                                    font-size: 1.25rem;
+                                }
+                                .description_txt {
+                                    padding-left: 10px;
+                                    span {
+                                        font-size: 1rem;
+                                        line-height: 24px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -791,7 +807,7 @@ header {
 .contact_page {
     font-family: "dreamgotic";
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     position: relative;
 
     .color_box {
@@ -808,7 +824,7 @@ header {
         }
     }
 
-    .flip.frame_in.on {
+    .flip.on {
         transform: rotateY(180deg);
 
         .back {
@@ -817,8 +833,8 @@ header {
     }
 
     .flip {
-        width: 40%;
-        height: 50%;
+        width: 600px;
+        height: 300px;
         margin: 5rem auto;
         transition: all 0.5s;
         transform-style: preserve-3d;
@@ -886,7 +902,7 @@ header {
                         }
 
                         span {
-                            font-size: 16px;
+                            font-size: 1rem;
                             padding-left: 10px;
                         }
                     }
@@ -894,11 +910,11 @@ header {
                     .Github {
                         p {
                             color: #5786ff;
-                            font-size: 20px;
+                            font-size: 1.25rem;
                         }
 
                         span {
-                            font-size: 16px;
+                            font-size: 1rem;
                             padding-left: 10px;
                         }
                     }
@@ -909,8 +925,9 @@ header {
                 width: 45%;
 
                 p {
+                    text-align: center;
                     img {
-                        width: 100%;
+                        width: 90%;
                     }
                 }
             }
@@ -920,18 +937,2838 @@ header {
 
 .frame_in {
     width: 100%;
-    height: 100%;
     animation: frameInAnimation 1s forwards;
 }
 
 @keyframes frameInAnimation {
     0% {
-        opacity: 0;
         transform: translateY(10%);
     }
 
     100% {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+@media (max-width: 1280px) {
+    header.on {
+        height: 0px;
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            opacity: 0;
+            transition: 0.5s;
+        }
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px dashed #b1c7ff;
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.5rem 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 3s;
+
+            h1 {
+                width: 100px;
+
+                img {
+                    width: 60%;
+                }
+            }
+            span {
+                display: none;
+            }
+            nav {
+                width: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "dreamgotic";
+                font-weight: 300;
+
+                a {
+                    letter-spacing: 2px;
+                    color: #707070;
+
+                    &::after {
+                        display: block;
+                        content: "";
+                        border-bottom: solid 3px #b1c7ff;
+                        transform: scaleX(0);
+                        transform-origin: 0% 50%;
+                        transition: transform 200ms ease-in-out;
+                    }
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .about_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+        padding: 74px 0;
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1.7rem 0;
+
+            .about_left {
+                width: 90%;
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    text-align: center;
+
+                    > p {
+                        width: 45%;
+                        padding-bottom: 3rem;
+
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    .info_data.on {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: inline-block;
+                            width: 180px;
+                            height: 180px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        div {
+                            display: none;
+                        }
+                    }
+
+                    .info_data {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: none;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            p {
+                                font-weight: 300;
+                                font-size: 16px;
+                                padding: 0.8rem;
+                                border-left: 3px solid black;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+                                &:nth-of-type(1)::before {
+                                    content: "\e7e9";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::before {
+                                    content: "\e325";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::after {
+                                    content: "\e409";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    font-size: 1rem;
+                                }
+
+                                &:nth-of-type(3)::before {
+                                    content: "\e158";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about_right {
+                width: 92%;
+
+                b {
+                    font-weight: 500;
+                    font-size: 2rem;
+                    padding: 2rem 0;
+                    display: inline-block;
+
+                    span {
+                        padding: 0.5rem 0;
+                        display: inline-block;
+                        width: 100%;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                .about_me {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 0.5rem 0;
+                    }
+
+                    span {
+                        line-height: 1.5rem;
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        font-size: 0.8125rem;
+                        font-weight: 200;
+                    }
+                }
+
+                .Education {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                    }
+
+                    .edu_data {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            padding: 0.5rem 0;
+                            font-size: 0.8125rem;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skill_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .skill {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 80px 0;
+
+            .skill_left {
+                width: 48%;
+
+                .skill_left_top {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 42%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_left_bottom {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 42%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skill_right {
+                width: 48%;
+
+                .skill_right_top {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 42%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_right_bottom {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 42%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .swiper {
+            width: 90%;
+            height: 85%;
+            padding: 5rem 0;
+
+            .swiper-slide {
+                .project_list {
+                    width: 80%;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding: 1rem;
+                    .pro_box {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: 4px dashed #d7e2ff;
+                        border-radius: 10px;
+                        .pro_left {
+                            width: 40%;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            ul {
+                                width: 90%;
+                                height: 90%;
+                                white-space: nowrap;
+                                position: relative;
+
+                                li {
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+
+                                    img {
+                                        width: 240px;
+                                        height: 386px;
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .active {
+                                    opacity: 1;
+                                    transition: opacity 0.5s ease-in-out;
+                                }
+                            }
+
+                            .btn_box {
+                                width: 44%;
+                                padding: 4px 0;
+                                margin: 4px 0px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                border-radius: 4px;
+                                background-color: rgba(215, 226, 255, 0.4);
+
+                                span {
+                                    display: inline-block;
+                                    color: #a5a5a5;
+                                    cursor: pointer;
+
+                                    &:nth-of-type(1) {
+                                        width: 45%;
+                                        text-align: left;
+                                    }
+
+                                    &:nth-of-type(2) {
+                                        width: 45%;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pro_right {
+                            font-weight: 200;
+                            width: 57%;
+                            height: 75%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            b {
+                                display: inline-block;
+                                font-size: 1.3rem;
+                                padding: 1.2rem 0;
+                            }
+
+                            .pro_text {
+                                width: 100%;
+                                height: 90%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                flex-direction: column;
+
+                                .date {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .date_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .language {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .language_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                            word-break: keep-all;
+                                        }
+                                    }
+                                }
+
+                                .program {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .program_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .description {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .description_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 56vh;
+        position: relative;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .flip.on {
+            transform: rotateY(180deg);
+
+            .back {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .flip {
+            width: 600px;
+            height: 300px;
+            margin: 5rem auto;
+            transition: all 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+            cursor: pointer;
+
+            .front {
+                width: 100%;
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                backface-visibility: hidden;
+
+                p {
+                    width: 65%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .back {
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+
+                .con_left {
+                    font-weight: 200;
+                    width: 45%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    b {
+                        display: inline-block;
+                        font-size: 1.3rem;
+                    }
+
+                    .con_text {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .email {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .Github {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .con_right {
+                    width: 45%;
+
+                    p {
+                        text-align: center;
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header.on {
+        height: 72px;
+
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px dashed #b1c7ff;
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.5rem 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 3s;
+            position: relative;
+
+            h1 {
+                width: 100px;
+
+                img {
+                    width: 60%;
+                }
+            }
+            span {
+                cursor: pointer;
+                display: none;
+                color: #6f6f6f;
+            }
+            nav {
+                width: 500px;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "dreamgotic";
+                font-weight: 300;
+
+                a {
+                    letter-spacing: 2px;
+                    color: #707070;
+
+                    &::after {
+                        display: block;
+                        content: "";
+                        border-bottom: solid 3px #b1c7ff;
+                        transform: scaleX(0);
+                        transform-origin: 0% 50%;
+                        transition: transform 200ms ease-in-out;
+                    }
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .about_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+        padding: 74px 0;
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 3.7rem 0;
+
+            .about_left {
+                width: 90%;
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    text-align: center;
+
+                    > p {
+                        width: 45%;
+                        padding-bottom: 3rem;
+
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    .info_data.on {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: inline-block;
+                            width: 180px;
+                            height: 180px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        div {
+                            display: none;
+                        }
+                    }
+
+                    .info_data {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: none;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            p {
+                                font-weight: 300;
+                                font-size: 16px;
+                                padding: 0.8rem;
+                                border-left: 3px solid black;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+                                &:nth-of-type(1)::before {
+                                    content: "\e7e9";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::before {
+                                    content: "\e325";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::after {
+                                    content: "\e409";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    font-size: 1rem;
+                                }
+
+                                &:nth-of-type(3)::before {
+                                    content: "\e158";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about_right {
+                width: 100%;
+
+                b {
+                    font-weight: 500;
+                    font-size: 2rem;
+                    padding: 2rem 0;
+                    display: inline-block;
+
+                    span {
+                        padding: 0.5rem 0;
+                        display: inline-block;
+                        width: 100%;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                .about_me {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 0.5rem 0;
+                    }
+
+                    span {
+                        line-height: 1.5rem;
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        font-size: 0.8125rem;
+                        font-weight: 200;
+                    }
+                }
+
+                .Education {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                    }
+
+                    .edu_data {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            padding: 0.5rem 0;
+                            font-size: 0.8125rem;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skill_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .skill {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 80px 0;
+
+            .skill_left {
+                width: 48%;
+
+                .skill_left_top {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_left_bottom {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skill_right {
+                width: 48%;
+
+                .skill_right_top {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_right_bottom {
+                    min-height: 340px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100vh;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 75%;
+            padding: 5rem 0;
+
+            .swiper-slide {
+                .project_list {
+                    width: 80%;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding: 1rem;
+
+                    .pro_box {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: 4px dashed #d7e2ff;
+                        border-radius: 10px;
+                        .pro_left {
+                            width: 40%;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            ul {
+                                width: 90%;
+                                height: 90%;
+                                white-space: nowrap;
+                                position: relative;
+
+                                li {
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+
+                                    img {
+                                        width: 100%;
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .active {
+                                    opacity: 1;
+                                    transition: opacity 0.5s ease-in-out;
+                                }
+                            }
+
+                            .btn_box {
+                                width: 44%;
+                                padding: 4px 0;
+                                margin: 4px 0px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                border-radius: 4px;
+                                background-color: rgba(215, 226, 255, 0.4);
+
+                                span {
+                                    display: inline-block;
+                                    color: #a5a5a5;
+                                    cursor: pointer;
+
+                                    &:nth-of-type(1) {
+                                        width: 45%;
+                                        text-align: left;
+                                    }
+
+                                    &:nth-of-type(2) {
+                                        width: 45%;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pro_right {
+                            font-weight: 200;
+                            width: 57%;
+                            height: 88%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            b {
+                                display: inline-block;
+                                font-size: 1.3rem;
+                                padding: 1.2rem 0;
+                            }
+
+                            .pro_text {
+                                width: 100%;
+                                height: 90%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                flex-direction: column;
+
+                                .date {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .date_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .language {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .language_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                            word-break: keep-all;
+                                        }
+                                    }
+                                }
+
+                                .program {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .program_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .description {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1.2rem;
+                                    }
+                                    .description_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.9rem;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 56vh;
+        position: relative;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .flip.on {
+            transform: rotateY(180deg);
+
+            .back {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .flip {
+            width: 65%;
+            height: 80%;
+            margin: 5rem auto;
+            transition: all 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+            cursor: pointer;
+
+            .front {
+                width: 100%;
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                backface-visibility: hidden;
+
+                p {
+                    width: 65%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .back {
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+
+                .con_left {
+                    font-weight: 200;
+                    width: 45%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    b {
+                        display: inline-block;
+                        font-size: 1.3rem;
+                    }
+
+                    .con_text {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .email {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .Github {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .con_right {
+                    width: 45%;
+
+                    p {
+                        text-align: center;
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    header.on {
+        height: 72px;
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px dashed #b1c7ff;
+        transition: 1.5s;
+        z-index: 10;
+
+        .headerbox {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.5rem 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 3s;
+            position: relative;
+
+            h1 {
+                width: 100px;
+
+                img {
+                    width: 60%;
+                }
+            }
+            span {
+                cursor: pointer;
+                display: inline-block;
+                color: #6f6f6f;
+            }
+            nav {
+                display: none;
+                width: 500px;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "dreamgotic";
+                font-weight: 300;
+
+                a {
+                    letter-spacing: 2px;
+                    color: #707070;
+
+                    &::after {
+                        display: block;
+                        content: "";
+                        border-bottom: solid 3px #b1c7ff;
+                        transform: scaleX(0);
+                        transform-origin: 0% 50%;
+                        transition: transform 200ms ease-in-out;
+                    }
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+            nav.on {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 42px;
+                width: 160px;
+                height: 185px;
+                padding: 40px 20px;
+                background-image: url(./img_src/menu_box.png);
+                background-size: 100% 100%;
+                a {
+                    display: inline-block;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    .about_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100%;
+        padding: 74px 0;
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem 0;
+
+            .about_left {
+                width: 90%;
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    text-align: center;
+
+                    > p {
+                        width: 100%;
+                        padding-bottom: 1rem;
+
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    .info_data.on {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: inline-block;
+                            width: 180px;
+                            height: 180px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        div {
+                            display: none;
+                        }
+                    }
+
+                    .info_data {
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 180px;
+
+                        .kakao_qr {
+                            display: none;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            p {
+                                font-weight: 300;
+                                font-size: 16px;
+                                padding: 0.8rem;
+                                border-left: 3px solid black;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+                                &:nth-of-type(1)::before {
+                                    content: "\e7e9";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::before {
+                                    content: "\e325";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+
+                                &:nth-of-type(2)::after {
+                                    content: "\e409";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    font-size: 1rem;
+                                }
+
+                                &:nth-of-type(3)::before {
+                                    content: "\e158";
+                                    font-family: "Material Symbols Outlined";
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 20px;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about_right {
+                width: 100%;
+
+                b {
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    padding: 2rem 0;
+                    display: inline-block;
+
+                    span {
+                        padding: 0.5rem 0;
+                        display: inline-block;
+                        width: 100%;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                .about_me {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        padding: 0.5rem 0;
+                    }
+
+                    span {
+                        line-height: 1.5rem;
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        font-size: 0.75rem;
+                        font-weight: 200;
+                    }
+                }
+
+                .Education {
+                    p {
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        padding: 1rem 0;
+                    }
+
+                    .edu_data {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            padding: 0rem 0;
+                            font-size: 0.75rem;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skill_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 100%;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .skill {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 3rem 0;
+            .skill_left {
+                width: 100%;
+
+                .skill_left_top {
+                    min-height: 240px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_left_bottom {
+                    min-height: 240px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skill_right {
+                width: 100%;
+
+                .skill_right_top {
+                    min-height: 240px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skill_right_bottom {
+                    min-height: 240px;
+                    padding: 1rem 0;
+
+                    > p {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                        color: #5786ff;
+                        border-top: 2px solid #5786ff;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        li {
+                            margin: 0.5rem 0;
+                            border: 1px solid #b1c7ff;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 4px #b1c7ff;
+
+                            .contents_box {
+                                width: 90%;
+                                margin: 0 auto;
+                                padding: 0.5rem 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .skill_name {
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    p {
+                                        text-align: center;
+                                        width: 40%;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        width: 50%;
+                                        font-weight: 300;
+                                        font-size: 0.875rem;
+                                    }
+                                }
+
+                                .skill_level {
+                                    width: 48%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: transparent;
+                                        background-size: 0px 0px;
+                                        border: 2px solid #b1c7ff;
+                                    }
+
+                                    .active {
+                                        border-radius: 6px;
+                                        display: inline-block;
+                                        width: 20px;
+                                        height: 20px;
+                                        background-color: #b1c7ff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        
+        min-height: 100vh;
+        height: auto;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 3rem 0;
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+            .swiper-slide {
+                .project_list {
+                    width: 90%;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding: 0.5rem;
+
+                    .pro_box {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        border: 4px dashed #d7e2ff;
+                        border-radius: 10px;
+                        .pro_left {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            ul {
+                                width: 90%;
+                                height: 90%;
+                                white-space: nowrap;
+                                position: relative;
+
+                                li {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+
+                                    img {
+                                        width: 190px;
+                                        height: 300px;
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .active {
+                                    opacity: 1;
+                                    transition: opacity 0.5s ease-in-out;
+                                }
+                            }
+
+                            .btn_box {
+                                width: 100px;
+                                padding: 4px 0;
+                                margin: 4px 0px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                border-radius: 4px;
+                                background-color: rgba(215, 226, 255, 0.4);
+
+                                span {
+                                    display: inline-block;
+                                    color: #a5a5a5;
+                                    cursor: pointer;
+
+                                    &:nth-of-type(1) {
+                                        width: 45%;
+                                        text-align: left;
+                                    }
+
+                                    &:nth-of-type(2) {
+                                        width: 45%;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pro_right {
+                            width: 100%;
+                            height: 88%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            font-weight: 200;
+
+                            b {
+                                display: inline-block;
+                                text-align: center;
+                                font-size: 1rem;
+                                padding: 1.2rem 0;
+                            }
+
+                            .pro_text {
+                                width: 90%;
+                                height: 80%;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                flex-direction: column;
+
+                                .date {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1rem;
+                                    }
+                                    .date_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.8rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .language {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1rem;
+                                    }
+                                    .language_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.8rem;
+                                            padding-left: 6px;
+                                            word-break: keep-all;
+                                        }
+                                    }
+                                }
+
+                                .program {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1rem;
+                                    }
+                                    .program_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.8rem;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .description {
+                                    p {
+                                        color: #5786ff;
+                                        font-size: 1rem;
+                                    }
+                                    .description_txt {
+                                        padding-left: 10px;
+                                        span {
+                                            font-size: 0.8rem;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_page {
+        font-family: "dreamgotic";
+        width: 100%;
+        height: 56vh;
+        position: relative;
+
+        .color_box {
+            width: 100%;
+            text-align: center;
+            background-color: #d7e2ff;
+
+            p {
+                font-family: "Blacksword";
+                font-weight: 400;
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 8px;
+            }
+        }
+
+        .flip.on {
+            transform: rotateY(180deg);
+
+            .back {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .flip {
+            width: 65%;
+            height: 80%;
+            margin: 5rem auto;
+            transition: all 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+            cursor: pointer;
+
+            .front {
+                width: 100%;
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                backface-visibility: hidden;
+
+                p {
+                    width: 65%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .back {
+                height: 100%;
+                border: 2px dashed #a1bbff;
+                background-color: #f9fbff;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+
+                .con_left {
+                    font-weight: 200;
+                    width: 45%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    b {
+                        display: inline-block;
+                        font-size: 1.3rem;
+                    }
+
+                    .con_text {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .email {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .Github {
+                            p {
+                                color: #5786ff;
+                                font-size: 1.2rem;
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .con_right {
+                    width: 45%;
+
+                    p {
+                        text-align: center;
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

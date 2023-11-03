@@ -17,8 +17,8 @@ function Contact() {
             <div className='color_box'>
                 <p>contact</p>
             </div>
-            <div className={`flip frame_in ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
             <Inview>
+                <div className={`flip ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
                     <div className='front'>
                         <p><img src={contact_me} alt='contact_me' /></p>
                     </div>
@@ -40,8 +40,8 @@ function Contact() {
                             <p> <img src={QR} alt='kakao_qr' /></p>
                         </div>
                     </div>
-            </Inview>
                 </div>
+            </Inview>
         </section>
     );
 }
