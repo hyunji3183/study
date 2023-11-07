@@ -31,7 +31,7 @@ function Contact() {
                                     <span>chj3183@gmail.com</span>
                                 </div>
                                 <div className='Github'>
-                                    <p>email</p>
+                                    <p>Github</p>
                                     <span>https://github.com/hyunji3183</span>
                                 </div>
                             </div>

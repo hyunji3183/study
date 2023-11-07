@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import QR from '../img_src/kakao_QR.png'
 import mimoji from '../img_src/mimoji_profile1.png'
 import Inview from './Inview';
@@ -7,11 +7,9 @@ import Inview from './Inview';
 function About() {
     const [onkakao, setonkakao] = useState(false);
 
-
     const open_qr = () => {
         setonkakao(!onkakao);
     }
-
 
     return (
         <section className='about_page' id='about'>

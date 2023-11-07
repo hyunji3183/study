@@ -56,11 +56,28 @@ function Page() {
                         <Link to="contact" smooth={true} duration={500} spy={true}> &#60;Contact /&#62;</Link>
                     </nav>
                 </div>
-            </header >
+            </header>
             <About />
             <Skill />
             <Project />
             <Contact />
+            <div className='bubble_box'>
+                <span className='blue_ball b4'></span>
+                <span className='blue_ball b7'></span>
+                <span className='blue_ball b3'></span>
+                <span className='blue_ball b1'></span>
+                <span className='blue_ball b2'></span>
+                <span className='blue_ball b5'></span>
+                <span className='blue_ball b6'></span>
+                <span className='blue_ball b4'></span>
+                <span className='blue_ball b1'></span>
+                <span className='blue_ball b5'></span>
+                <span className='blue_ball b3'></span>
+                <span className='blue_ball b7'></span>
+                <span className='blue_ball b2'></span>
+                <span className='blue_ball b6'></span>
+                <span className='blue_ball b5'></span>
+            </div>
         </>
     );
 }

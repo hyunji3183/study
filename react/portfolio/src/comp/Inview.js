@@ -1,9 +1,8 @@
-
 import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 
 function Inview({ children }) {
-    const [InView, setInView] = useState();
+    const [InView, setInView] = useState(false);
 
     const [ref, inView] = useInView({
         threshold: 0.3
@@ -21,7 +20,7 @@ function Inview({ children }) {
     }, [inView]);
 
     return (
-        <div className={`${InView ? 'frame_in' : ''}`} ref={ref} >{children}</div>
+        <div className={`none ${InView ? 'frame_in' : ''}`} ref={ref} >{children}</div>
     )
 }
 
