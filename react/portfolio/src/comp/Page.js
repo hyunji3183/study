@@ -7,22 +7,31 @@ import Contact from './Contact';
 import { Link } from 'react-scroll';
 import logo from '../img_src/logo.png';
 import top from '../img_src/top.png';
-import { Element } from 'react-scroll';
 
 function Page() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-
+    const [HeaderVisible, setHeaderVisible] = useState(false);
+    const [showButton, setShowButton] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = window.scrollY;
+            const iHeight = window.innerHeight * 1.5;
+            console.log(iHeight);
             setScrollPosition(currentPosition);
 
             if (currentPosition > scrollPosition) {
-                setIsHeaderVisible(true); // Scroll down
+                setHeaderVisible(true); // Scroll down
+                if (currentPosition > iHeight) {
+                    setShowButton(true)
+                    console.log('hi');
+                }
             } else {
-                setIsHeaderVisible(false); // Scroll up or at the top
+                setHeaderVisible(false); // Scroll up or at the top
+                if (currentPosition < iHeight) {
+                    setShowButton(false)
+                    console.log('hi');
+                }
             }
         };
 
@@ -40,16 +49,22 @@ function Page() {
         setOnmenu(!onmenu);
     }
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <>
-            <header className={isHeaderVisible ? 'on' : ''}>
+            <header className={HeaderVisible ? 'on' : ''}>
                 <div className='headerbox'>
                     <h1><img src={logo} alt="main_logo" /></h1>
                     <span className="material-symbols-rounded" onClick={open_menu}>
                         menu
                     </span>
-                    <nav className={`${onmenu ? 'on' : ''}`}>
+                    <nav className={onmenu ? 'on' : ''}>
                         <Link to="about" smooth={true} duration={500} spy={true}> &#60;About /&#62;</Link>
                         <Link to="skill" smooth={true} duration={500} spy={true}> &#60;Skill /&#62;</Link>
                         <Link to="project" smooth={true} duration={500} spy={true}> &#60;Project /&#62;</Link>
@@ -64,20 +79,22 @@ function Page() {
             <div className='bubble_box'>
                 <span className='blue_ball b4'></span>
                 <span className='blue_ball b7'></span>
+                <span className='blue_ball b6'></span>
                 <span className='blue_ball b3'></span>
                 <span className='blue_ball b1'></span>
                 <span className='blue_ball b2'></span>
                 <span className='blue_ball b5'></span>
-                <span className='blue_ball b6'></span>
                 <span className='blue_ball b4'></span>
-                <span className='blue_ball b1'></span>
-                <span className='blue_ball b5'></span>
-                <span className='blue_ball b3'></span>
                 <span className='blue_ball b7'></span>
                 <span className='blue_ball b2'></span>
+                <span className='blue_ball b3'></span>
                 <span className='blue_ball b6'></span>
                 <span className='blue_ball b5'></span>
+                <span className='blue_ball b1'></span>
             </div>
+            <aside>
+                <p className={showButton ? 'on' : ''} onClick={scrollToTop}><img src={top} alt="" /></p>
+            </aside>
         </>
     );
 }

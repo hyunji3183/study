@@ -53,6 +53,9 @@ header {
             a {
                 letter-spacing: 2px;
                 color: #707070;
+                cursor:
+                    url("./img_src/click.png") 5 5,
+                    auto;
 
                 &::after {
                     display: block;
@@ -116,7 +119,9 @@ header {
                         width: 180px;
                         height: 180px;
                         text-align: center;
-                        cursor: pointer;
+                        cursor:
+                            url("./img_src/click.png") 5 5,
+                            auto;
 
                         img {
                             width: 90%;
@@ -150,7 +155,9 @@ header {
                             border-left: 3px solid black;
                             display: flex;
                             align-items: center;
-                            cursor: pointer;
+                            cursor:
+                                url("./img_src/click.png") 5 5,
+                                auto;
 
                             &:nth-of-type(1)::before {
                                 content: "\e7e9";
@@ -692,7 +699,9 @@ header {
                             span {
                                 display: inline-block;
                                 color: #a5a5a5;
-                                cursor: pointer;
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
 
                                 &:nth-of-type(1) {
                                     width: 45%;
@@ -834,7 +843,9 @@ header {
         transition: all 0.5s;
         transform-style: preserve-3d;
         position: relative;
-        cursor: pointer;
+        cursor:
+            url("./img_src/click.png") 5 5,
+            auto;
 
         .front {
             width: 100%;
@@ -943,9 +954,6 @@ header {
         border-radius: 50%;
         overflow: hidden;
         animation: bubbleUp 15s linear infinite;
-        &:nth-of-type(2){
-            transform: translateY(10%);
-        }
     }
     .b1 {
         background-color: #a9c2ff56;
@@ -977,11 +985,51 @@ header {
     }
 }
 
+aside {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    bottom: 50px;
+    z-index: 10;
+    p {
+        opacity: 0;
+        transition: 0.5s;
+        width: 100px;
+        padding: 1rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+        &:hover {
+            background-color: #eff4ff;
+            transition: 0.5s;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    p.on {
+        opacity: 1;
+        width: 100px;
+        padding: 1rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+        &:hover {
+            background-color: #eff4ff;
+            transition: 0.5s;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
 @keyframes bubbleUp {
     0% {
         opacity: 0.3;
-        -webkit-transform: translateY(3600px) scale(0.4);
-        transform: translateY(3600px) scale(0.4);
+        -webkit-transform: translateY(3200px) scale(0.4);
+        transform: translateY(3200px) scale(0.4);
     }
     75% {
         opacity: 0.8;
@@ -1137,7 +1185,9 @@ header {
                             width: 180px;
                             height: 180px;
                             text-align: center;
-                            cursor: pointer;
+                            cursor:
+                                url("./img_src/click.png") 5 5,
+                                auto;
 
                             img {
                                 width: 90%;
@@ -1172,7 +1222,9 @@ header {
                                 border-left: 3px solid black;
                                 display: flex;
                                 align-items: center;
-                                cursor: pointer;
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
 
                                 &:nth-of-type(1)::before {
                                     content: "\e7e9";
@@ -1707,7 +1759,9 @@ header {
                                 span {
                                     display: inline-block;
                                     color: #a5a5a5;
-                                    cursor: pointer;
+                                    cursor:
+                                        url("./img_src/click.png") 5 5,
+                                        auto;
 
                                     &:nth-of-type(1) {
                                         width: 45%;
@@ -1843,7 +1897,9 @@ header {
             transition: all 0.5s;
             transform-style: preserve-3d;
             position: relative;
-            cursor: pointer;
+            cursor:
+                url("./img_src/click.png") 5 5,
+                auto;
 
             .front {
                 width: 100%;
@@ -1983,7 +2039,9 @@ header {
                 }
             }
             span {
-                cursor: pointer;
+                cursor:
+                    url("./img_src/click.png") 5 5,
+                    auto;
                 display: none;
                 color: #6f6f6f;
             }
@@ -2065,7 +2123,9 @@ header {
                             width: 180px;
                             height: 180px;
                             text-align: center;
-                            cursor: pointer;
+                            cursor:
+                                url("./img_src/click.png") 5 5,
+                                auto;
 
                             img {
                                 width: 90%;
@@ -2100,7 +2160,9 @@ header {
                                 border-left: 3px solid black;
                                 display: flex;
                                 align-items: center;
-                                cursor: pointer;
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
 
                                 &:nth-of-type(1)::before {
                                     content: "\e7e9";
@@ -2635,7 +2697,9 @@ header {
                                 span {
                                     display: inline-block;
                                     color: #a5a5a5;
-                                    cursor: pointer;
+                                    cursor:
+                                        url("./img_src/click.png") 5 5,
+                                        auto;
 
                                     &:nth-of-type(1) {
                                         width: 45%;
@@ -2771,7 +2835,9 @@ header {
             transition: all 0.5s;
             transform-style: preserve-3d;
             position: relative;
-            cursor: pointer;
+            cursor:
+                url("./img_src/click.png") 5 5,
+                auto;
 
             .front {
                 width: 100%;
@@ -2911,7 +2977,9 @@ header {
                 }
             }
             span {
-                cursor: pointer;
+                cursor:
+                    url("./img_src/click.png") 5 5,
+                    auto;
                 display: inline-block;
                 color: #6f6f6f;
             }
@@ -3010,7 +3078,9 @@ header {
                             width: 180px;
                             height: 180px;
                             text-align: center;
-                            cursor: pointer;
+                            cursor:
+                                url("./img_src/click.png") 5 5,
+                                auto;
 
                             img {
                                 width: 90%;
@@ -3045,7 +3115,9 @@ header {
                                 border-left: 3px solid black;
                                 display: flex;
                                 align-items: center;
-                                cursor: pointer;
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
 
                                 &:nth-of-type(1)::before {
                                     content: "\e7e9";
@@ -3587,7 +3659,9 @@ header {
                                 span {
                                     display: inline-block;
                                     color: #a5a5a5;
-                                    cursor: pointer;
+                                    cursor:
+                                        url("./img_src/click.png") 5 5,
+                                        auto;
 
                                     &:nth-of-type(1) {
                                         width: 45%;
@@ -3729,7 +3803,9 @@ header {
             transition: all 0.5s;
             transform-style: preserve-3d;
             position: relative;
-            cursor: pointer;
+            cursor:
+                url("./img_src/click.png") 5 5,
+                auto;
 
             .front {
                 width: 100%;

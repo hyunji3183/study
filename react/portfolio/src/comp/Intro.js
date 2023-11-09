@@ -12,12 +12,15 @@ function Intro() {
     return (
         <>
             <div className="container" onClick={openapp}>
-                <b>FRONTEND DEVELOPER<br/>PORTFOLIO</b>
+                <b>FRONTEND DEVELOPER<br />PORTFOLIO</b>
                 <svg className="pulse" viewBox="0 0 1024 1024">
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
                     <circle id="Oval" cx="512" cy="512" r="512"></circle>
                 </svg>
+                <div className='res_msg'>
+                    <p>Touch anywhere!</p>
+                </div>
             </div>
         </>
     )
