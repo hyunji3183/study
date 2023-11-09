@@ -61,16 +61,11 @@ function Project() {
                                                 </div>
                                             </div>
                                             <div className='language'>
-                                                <p>Make Language</p>
+                                                <p>Language & Using Program</p>
                                                 <div className='language_txt'>
                                                     {item.Language.map((lang, key) => (
                                                         <span key={key}>{lang}</span>
                                                     ))}
-                                                </div>
-                                            </div>
-                                            <div className='program'>
-                                                <p>Using Program</p>
-                                                <div className='program_txt'>
                                                     {item.program.map((prog, key) => (
                                                         <span key={key}>{prog}</span>
                                                     ))}
@@ -82,6 +77,16 @@ function Project() {
                                                     <span>{item.description}</span>
                                                 </div>
                                             </div>
+                                            <div className='description'>
+                                                <p>Trouble shooting</p>
+                                                <div className='description_txt'>
+                                                    <span>{item.Trouble}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='link'>
+                                            <a href={item.url} target='_blank'> Go to page </a>
+                                            <span className="material-symbols-rounded">chevron_right</span>
                                         </div>
                                     </div>
                                 </div>

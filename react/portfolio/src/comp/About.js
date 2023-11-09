@@ -40,10 +40,10 @@ function About() {
                         <div className='Education'>
                             <p>&#60;Education /&#62;</p>
                             <div className='edu_data'>
-                                <span>2014년 02월 전주생명과학고등학교 졸업</span>
-                                <span>2018년 02월 우석대학교 졸업</span>
                                 <span>2023년 05월 ~ 2023년 11월
                                     프로젝트기반 프론트엔드(React,Vue) 웹&앱 SW개발자 양성과정 수료</span>
+                                <span>2018년 02월 우석대학교 졸업</span>
+                                <span>2014년 02월 전주생명과학고등학교 졸업</span>
                             </div>
                         </div>
                     </div>

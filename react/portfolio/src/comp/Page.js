@@ -17,20 +17,17 @@ function Page() {
         const handleScroll = () => {
             const currentPosition = window.scrollY;
             const iHeight = window.innerHeight * 1.5;
-            console.log(iHeight);
             setScrollPosition(currentPosition);
 
             if (currentPosition > scrollPosition) {
                 setHeaderVisible(true); // Scroll down
                 if (currentPosition > iHeight) {
                     setShowButton(true)
-                    console.log('hi');
                 }
             } else {
                 setHeaderVisible(false); // Scroll up or at the top
                 if (currentPosition < iHeight) {
                     setShowButton(false)
-                    console.log('hi');
                 }
             }
         };

@@ -290,6 +290,7 @@ header {
 
     .skill {
         width: 70%;
+        height: 90%;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -376,85 +377,13 @@ header {
                     }
                 }
             }
-
-            .skill_left_bottom {
-                min-height: 370px;
-                padding: 1rem 0;
-
-                > p {
-                    display: inline-block;
-                    padding: 0.5rem 0;
-                    color: #5786ff;
-                    border-top: 2px solid #5786ff;
-                    font-weight: 300;
-                    font-size: 1.375rem;
-                }
-
-                ul {
-                    li {
-                        margin: 0.5rem 0;
-                        border: 1px solid #b1c7ff;
-                        border-radius: 10px;
-                        box-shadow: 1px 1px 4px #b1c7ff;
-
-                        .contents_box {
-                            width: 90%;
-                            margin: 0 auto;
-                            padding: 0.5rem 0;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-
-                            .skill_name {
-                                width: 40%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                p {
-                                    text-align: center;
-                                    width: 40%;
-
-                                    img {
-                                        width: 100%;
-                                    }
-                                }
-
-                                span {
-                                    width: 50%;
-                                    font-weight: 300;
-                                }
-                            }
-
-                            .skill_level {
-                                width: 45%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                span {
-                                    border-radius: 6px;
-                                    display: inline-block;
-                                    width: 24px;
-                                    height: 24px;
-                                    background-color: transparent;
-                                    border: 2px solid #b1c7ff;
-                                }
-
-                                .active {
-                                    border-radius: 6px;
-                                    display: inline-block;
-                                    width: 24px;
-                                    height: 24px;
-                                    background-color: #b1c7ff;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
-
+        .middle_line {
+            display: inline-block;
+            width: 2px;
+            height: 95%;
+            background-color: #b1c7ff;
+        }
         .skill_right {
             width: 40%;
 
@@ -719,7 +648,7 @@ header {
                     .pro_right {
                         font-weight: 200;
                         width: 55%;
-                        height: 80%;
+                        height: 90%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
@@ -799,6 +728,21 @@ header {
                                         line-height: 24px;
                                     }
                                 }
+                            }
+                        }
+                        .link {
+                            width: 90%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            a {
+                                color: #5786ff;
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
+                            }
+                            span {
+                                color: #5786ff;
                             }
                         }
                     }
@@ -1222,9 +1166,6 @@ aside {
                                 border-left: 3px solid black;
                                 display: flex;
                                 align-items: center;
-                                cursor:
-                                    url("./img_src/click.png") 5 5,
-                                    auto;
 
                                 &:nth-of-type(1)::before {
                                     content: "\e7e9";
@@ -1235,7 +1176,11 @@ aside {
                                     font-size: 1.2rem;
                                     text-align: center;
                                 }
-
+                                &:nth-of-type(2) {
+                                    cursor:
+                                        url("./img_src/click.png") 5 5,
+                                        auto;
+                                }
                                 &:nth-of-type(2)::before {
                                     content: "\e325";
                                     font-family: "Material Symbols Outlined";
@@ -1358,85 +1303,6 @@ aside {
                 width: 48%;
 
                 .skill_left_top {
-                    min-height: 340px;
-                    padding: 1rem 0;
-
-                    > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
-                        font-size: 1.2rem;
-                    }
-
-                    ul {
-                        li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
-                            .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    span {
-                                        width: 50%;
-                                        font-weight: 300;
-                                        font-size: 0.875rem;
-                                    }
-                                }
-
-                                .skill_level {
-                                    width: 42%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    span {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 22px;
-                                        height: 22px;
-                                        background-color: transparent;
-                                        background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
-                                    }
-
-                                    .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 22px;
-                                        height: 22px;
-                                        background-color: #b1c7ff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .skill_left_bottom {
                     min-height: 340px;
                     padding: 1rem 0;
 
@@ -2373,85 +2239,6 @@ aside {
                         }
                     }
                 }
-
-                .skill_left_bottom {
-                    min-height: 340px;
-                    padding: 1rem 0;
-
-                    > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
-                        font-size: 1.2rem;
-                    }
-
-                    ul {
-                        li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
-                            .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    span {
-                                        width: 50%;
-                                        font-weight: 300;
-                                        font-size: 0.875rem;
-                                    }
-                                }
-
-                                .skill_level {
-                                    width: 48%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    span {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 20px;
-                                        height: 20px;
-                                        background-color: transparent;
-                                        background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
-                                    }
-
-                                    .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 20px;
-                                        height: 20px;
-                                        background-color: #b1c7ff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
 
             .skill_right {
@@ -2627,7 +2414,6 @@ aside {
             width: 100%;
             text-align: center;
             background-color: #d7e2ff;
-
             p {
                 font-family: "Blacksword";
                 font-weight: 400;
@@ -2778,18 +2564,18 @@ aside {
                                         }
                                     }
                                 }
+                            }
 
-                                .description {
-                                    p {
-                                        color: #5786ff;
-                                        font-size: 1.2rem;
-                                    }
-                                    .description_txt {
-                                        padding-left: 10px;
-                                        span {
-                                            font-size: 0.9rem;
-                                            line-height: 24px;
-                                        }
+                            .description {
+                                p {
+                                    color: #5786ff;
+                                    font-size: 1.2rem;
+                                }
+                                .description_txt {
+                                    padding-left: 10px;
+                                    span {
+                                        font-size: 0.9rem;
+                                        line-height: 24px;
                                     }
                                 }
                             }
@@ -2934,7 +2720,6 @@ aside {
         }
     }
 }
-
 @media (max-width: 720px) {
     header.on {
         height: 72px;
@@ -3251,85 +3036,6 @@ aside {
                 width: 100%;
 
                 .skill_left_top {
-                    min-height: 240px;
-                    padding: 1rem 0;
-
-                    > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
-                        font-size: 1.2rem;
-                    }
-
-                    ul {
-                        li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
-                            .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    span {
-                                        width: 50%;
-                                        font-weight: 300;
-                                        font-size: 0.875rem;
-                                    }
-                                }
-
-                                .skill_level {
-                                    width: 48%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    span {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 20px;
-                                        height: 20px;
-                                        background-color: transparent;
-                                        background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
-                                    }
-
-                                    .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
-                                        width: 20px;
-                                        height: 20px;
-                                        background-color: #b1c7ff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .skill_left_bottom {
                     min-height: 240px;
                     padding: 1rem 0;
 
@@ -3798,7 +3504,7 @@ aside {
 
         .flip {
             width: 90%;
-            height: 100%;
+            height: 55%;
             margin: 5rem auto;
             transition: all 0.5s;
             transform-style: preserve-3d;
@@ -3819,7 +3525,7 @@ aside {
                 backface-visibility: hidden;
 
                 p {
-                    width: 65%;
+                    width: 55%;
                     margin: 50px 0;
                     img {
                         width: 100%;

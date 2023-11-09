@@ -43,23 +43,21 @@
             "icon": "/img/skill_icon/vue.png",
             "name": "Vue",
             "state": 2
-        }
-    ],
-    "backend": [
+        },
         {
-            "id": 1,
+            "id": 4,
             "icon": "/img/skill_icon/node.js.png",
             "name": "node.js",
             "state": 2
         },
         {
-            "id": 2,
+            "id": 5,
             "icon": "/img/skill_icon/mysql.png",
             "name": "mySQL",
             "state": 3
         },
         {
-            "id": 3,
+            "id": 6,
             "icon": "/img/skill_icon/git.png",
             "name": "Git",
             "state": 2
