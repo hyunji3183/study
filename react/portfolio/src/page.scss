@@ -17,8 +17,7 @@ header {
     left: 0;
     width: 100%;
     height: 75px;
-    background-color:#D7E2FF;
-    border-bottom: 2px dashed #b1c7ff;
+    background-color: #d7e2ff;
     transition: 1.5s;
     z-index: 10;
 
@@ -60,7 +59,7 @@ header {
                 &::after {
                     display: block;
                     content: "";
-                    border-bottom: solid 3px #b1c7ff;
+                    border-bottom: solid 3px #000;
                     transform: scaleX(0);
                     transform-origin: 0% 50%;
                     transition: transform 200ms ease-in-out;
@@ -791,28 +790,7 @@ header {
         cursor:
             url("./img_src/click.png") 5 5,
             auto;
-
         .front {
-            width: 100%;
-            height: 100%;
-            border: 2px dashed #a1bbff;
-            background-color: #f9fbff;
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backface-visibility: hidden;
-
-            p {
-                width: 50%;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        .back {
             height: 100%;
             border: 2px dashed #a1bbff;
             background-color: #f9fbff;
@@ -820,7 +798,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            transform: rotateY(180deg);
+       
             backface-visibility: hidden;
             position: absolute;
             top: 0;
@@ -840,7 +818,7 @@ header {
 
                 .con_text {
                     width: 100%;
-                    height: 50%;
+                    height: 55%;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
@@ -880,6 +858,25 @@ header {
                     img {
                         width: 90%;
                     }
+                }
+            }
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+            border: 2px dashed #a1bbff;
+            background-color: #f9fbff;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            p {
+                width: 50%;
+
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -1766,7 +1763,7 @@ aside {
                 url("./img_src/click.png") 5 5,
                 auto;
 
-            .front {
+            .back {
                 width: 100%;
                 height: 100%;
                 border: 2px dashed #a1bbff;
@@ -1776,6 +1773,7 @@ aside {
                 align-items: center;
                 justify-content: center;
                 backface-visibility: hidden;
+                transform: rotateY(180deg);
 
                 p {
                     width: 65%;
@@ -1786,7 +1784,7 @@ aside {
                 }
             }
 
-            .back {
+            .front {
                 height: 100%;
                 border: 2px dashed #a1bbff;
                 background-color: #f9fbff;
@@ -1794,7 +1792,6 @@ aside {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                transform: rotateY(180deg);
                 backface-visibility: hidden;
                 position: absolute;
                 top: 0;
@@ -2623,7 +2620,7 @@ aside {
                 url("./img_src/click.png") 5 5,
                 auto;
 
-            .front {
+            .back {
                 width: 100%;
                 height: 100%;
                 border: 2px dashed #a1bbff;
@@ -2633,6 +2630,7 @@ aside {
                 align-items: center;
                 justify-content: center;
                 backface-visibility: hidden;
+                transform: rotateY(180deg);
 
                 p {
                     width: 65%;
@@ -2643,7 +2641,7 @@ aside {
                 }
             }
 
-            .back {
+            .front {
                 height: 100%;
                 border: 2px dashed #a1bbff;
                 background-color: #f9fbff;
@@ -2651,7 +2649,6 @@ aside {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                transform: rotateY(180deg);
                 backface-visibility: hidden;
                 position: absolute;
                 top: 0;
@@ -2718,6 +2715,7 @@ aside {
         }
     }
 }
+
 @media (max-width: 720px) {
     header.on {
         height: 72px;
@@ -3509,7 +3507,7 @@ aside {
                 url("./img_src/click.png") 5 5,
                 auto;
 
-            .front {
+            .back {
                 width: 100%;
                 height: 100%;
                 border: 2px dashed #a1bbff;
@@ -3519,6 +3517,7 @@ aside {
                 align-items: center;
                 justify-content: center;
                 backface-visibility: hidden;
+                transform: rotateY(180deg);
 
                 p {
                     width: 55%;
@@ -3529,7 +3528,7 @@ aside {
                 }
             }
 
-            .back {
+            .front {
                 width: 100%;
                 height: 100%;
                 border: 2px dashed #a1bbff;
@@ -3539,7 +3538,6 @@ aside {
                 align-items: center;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                transform: rotateY(180deg);
                 backface-visibility: hidden;
                 position: absolute;
                 top: 0;
@@ -3561,7 +3559,7 @@ aside {
 
                     .con_text {
                         width: 100%;
-                        height: 50%;
+                        height: 60%;
                         display: flex;
                         justify-content: space-around;
                         align-items: flex-start;
@@ -3596,14 +3594,11 @@ aside {
                 }
 
                 .con_right {
-                    width: 100%;
                     display: flex;
                     justify-content: center;
                     p {
-                        width: 50%;
-                        text-align: center;
                         img {
-                            width: 70%;
+                            width: 100%;
                         }
                     }
                 }

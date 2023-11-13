@@ -20,9 +20,6 @@ function Contact() {
             <Inview>
                 <div className={`flip ${isFlipped ? 'on' : ''}`} onClick={handleFlipClick}>
                     <div className='front'>
-                        <p><img src={contact_me} alt='contact_me' /></p>
-                    </div>
-                    <div className='back'>
                         <div className='con_left'>
                             <b>&#60;hyun ji cho /&#62;</b>
                             <div className='con_text'>
@@ -39,6 +36,9 @@ function Contact() {
                         <div className='con_right'>
                             <p> <img src={QR} alt='kakao_qr' /></p>
                         </div>
+                    </div>
+                    <div className='back'>
+                        <p><img src={contact_me} alt='contact_me' /></p>
                     </div>
                 </div>
             </Inview>

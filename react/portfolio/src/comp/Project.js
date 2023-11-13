@@ -11,6 +11,7 @@ import Inview from './Inview';
 import ProContent from './ProContent';
 
 function Project() {
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [data, setData] = useState([]);
     useEffect(() => {
         axios.get('/project.json')
@@ -19,13 +20,20 @@ function Project() {
             });
     }, []);
 
+    const handleSlideChange = (swiperCore) => {
+        const { realIndex } = swiperCore;
 
+        setCurrentIndex(realIndex);
+    };
 
 
     if (!data.length) return <></>;
 
-    return (
-        <section className='project_page' id='project'>
+    return (<>
+        <section className='project_page' id='project' style={{
+            background: `url(${data[currentIndex].back_img}) 0 0 /cover no-repeat`,
+            // filter: 'blur(5px)'
+        }}>
             <div className='color_box'>
                 <p>project</p>
             </div>
@@ -42,8 +50,8 @@ function Project() {
                     observeParents={true}
                     modules={[Pagination, Navigation]}
                     className="mySwiper frame_in"
+                    onSlideChange={handleSlideChange}
                 >
-
                     {data.map((item, index) => (
                         <SwiperSlide key={item.id}>
                             <div className='project_list'>
@@ -96,6 +104,7 @@ function Project() {
                 </Swiper>
             </Inview>
         </section>
+    </>
     );
 }
 
