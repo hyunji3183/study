@@ -10,6 +10,7 @@
 	cursor:
 		url(./img_src/click_anywhere.png) 5 5,
 		auto;
+
 	.intro_box {
 		width: 70%;
 		height: 80%;
@@ -19,14 +20,18 @@
 		box-shadow: 20px 20px 0px 2px #d7e2ff;
 		display: flex;
 		justify-content: space-around;
+		transform: scale(0.8);
+
 		.intro_left {
 			width: 50%;
 			display: flex;
 			justify-content: space-around;
 			flex-direction: column;
+
 			.front {
 				overflow: hidden;
-				text-shadow: 4px 2px 2px #808080;
+				text-shadow: 4px 4px 2px #808080;
+
 				p {
 					font-weight: 700;
 					font-size: 180px;
@@ -39,19 +44,21 @@
 					}
 				}
 			}
+
 			.dev {
 				overflow: hidden;
+				text-shadow: 4px 4px 2px #808080;
 				p {
 					text-align: right;
 					font-weight: 100;
 					font-size: 80px;
-					// color: rgb(0, 0, 0, 0.5);
 					transform: translateY(100%);
 					animation: txt_coming 0.7s ease-in-out forwards;
 					animation-delay: 1s;
 				}
 			}
 		}
+
 		.intro_right {
 			width: 40%;
 			height: 80%;
@@ -59,24 +66,31 @@
 			display: flex;
 			justify-content: space-around;
 			flex-direction: column;
+
 			.txt {
 				width: 80%;
+
 				p {
 					font-weight: 100;
 					line-height: 30px;
 					color: rgb(0, 0, 0, 0.5);
 				}
 			}
+
 			.portfolio {
 				font-weight: 700;
 				font-size: 120px;
 				width: 90%;
 				overflow: hidden;
-				text-shadow: 4px 2px 2px #808080;
+				color: #808080;
+				text-shadow: 4px 4px 2px #000000;
+
 				p {
+					padding: 0 10px;
 					transform: translateX(-90%);
 					animation: txt_coming 0.7s ease-in-out forwards;
 					animation-delay: 1.8s;
+
 					&:nth-of-type(2) {
 						text-align: right;
 						transform: translateX(90%);
@@ -85,8 +99,11 @@
 			}
 		}
 	}
+
 	.txt_con {
+		transform: translateY(15%);
 		display: flex;
+
 		span {
 			padding: 0 1rem;
 			white-space: nowrap;
@@ -110,14 +127,14 @@
 	0% {
 		transform: translateX(0);
 	}
+
 	100% {
 		transform: translateX(-100%);
 	}
 }
 
-@media (max-width: 1280px) {
-}
-@media (max-width: 1024px) {
-}
-@media (max-width: 720px) {
-}
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 720px) {}

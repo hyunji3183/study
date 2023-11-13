@@ -31,7 +31,8 @@ function Project() {
 
     return (<>
         <section className='project_page' id='project' style={{
-            background: `url(${data[currentIndex].back_img}) 0 0 /cover no-repeat`,
+            background: `url(${data[currentIndex].back_img}) 0 0 /cover no-repeat`
+            // transition:'0.5s'
             // filter: 'blur(5px)'
         }}>
             <div className='color_box'>

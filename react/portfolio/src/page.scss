@@ -1,5 +1,19 @@
 @import url("./_reset.scss");
 
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d7e2ff;
+    border-radius: 10px;
+    border: 7px solid #FFFFFF
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 header.on {
     height: 0px;
     transition: 1.5s;
@@ -16,7 +30,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 76px;
     background-color: #d7e2ff;
     transition: 1.5s;
     z-index: 10;
@@ -38,9 +52,11 @@ header {
                 width: 60%;
             }
         }
+
         span {
             display: none;
         }
+
         nav {
             width: 500px;
             display: flex;
@@ -99,7 +115,7 @@ header {
                 align-items: center;
                 flex-direction: column;
 
-                > p {
+                >p {
                     width: 70%;
                     padding-bottom: 3rem;
 
@@ -303,7 +319,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -377,12 +393,14 @@ header {
                 }
             }
         }
+
         .middle_line {
             display: inline-block;
             width: 2px;
             height: 95%;
             background-color: #b1c7ff;
         }
+
         .skill_right {
             width: 40%;
 
@@ -390,7 +408,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -467,7 +485,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                > p {
+                >p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -547,7 +565,6 @@ header {
     font-family: "dreamgotic";
     width: 100%;
     height: 100vh;
-    background-color: #999999;
 
     .color_box {
         width: 100%;
@@ -584,6 +601,7 @@ header {
                     justify-content: space-around;
                     border: 4px dashed #d7e2ff;
                     border-radius: 10px;
+
                     .pro_left {
                         width: 30%;
                         height: 100%;
@@ -671,8 +689,10 @@ header {
                                     color: #5786ff;
                                     font-size: 1.25rem;
                                 }
+
                                 .date_txt {
                                     padding-left: 10px;
+
                                     span {
                                         font-size: 1rem;
                                         padding-left: 10px;
@@ -685,11 +705,13 @@ header {
                                     color: #5786ff;
                                     font-size: 1.25rem;
                                 }
+
                                 .language_txt {
                                     padding-left: 10px;
                                     display: flex;
                                     justify-content: flex-start;
                                     flex-wrap: wrap;
+
                                     span {
                                         font-size: 1rem;
                                         padding-left: 10px;
@@ -703,11 +725,13 @@ header {
                                     color: #5786ff;
                                     font-size: 1.25rem;
                                 }
+
                                 .program_txt {
                                     padding-left: 10px;
                                     display: flex;
                                     justify-content: flex-start;
                                     flex-wrap: wrap;
+
                                     span {
                                         font-size: 1rem;
                                         padding-left: 10px;
@@ -721,8 +745,10 @@ header {
                                     color: #5786ff;
                                     font-size: 1.25rem;
                                 }
+
                                 .description_txt {
                                     padding-left: 10px;
+
                                     span {
                                         font-size: 1rem;
                                         line-height: 24px;
@@ -730,17 +756,20 @@ header {
                                 }
                             }
                         }
+
                         .link {
                             width: 90%;
                             display: flex;
                             align-items: center;
                             justify-content: flex-end;
+
                             a {
                                 color: #5786ff;
                                 cursor:
                                     url("./img_src/click.png") 5 5,
                                     auto;
                             }
+
                             span {
                                 color: #5786ff;
                             }
@@ -790,6 +819,7 @@ header {
         cursor:
             url("./img_src/click.png") 5 5,
             auto;
+
         .front {
             height: 100%;
             border: 2px dashed #a1bbff;
@@ -798,7 +828,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-around;
-       
+
             backface-visibility: hidden;
             position: absolute;
             top: 0;
@@ -855,12 +885,14 @@ header {
 
                 p {
                     text-align: center;
+
                     img {
                         width: 90%;
                     }
                 }
             }
         }
+
         .back {
             width: 100%;
             height: 100%;
@@ -872,6 +904,7 @@ header {
             justify-content: center;
             backface-visibility: hidden;
             transform: rotateY(180deg);
+
             p {
                 width: 50%;
 
@@ -890,6 +923,7 @@ header {
     position: absolute;
     top: 0;
     z-index: -99;
+
     .blue_ball {
         width: 5vw;
         height: 5vw;
@@ -897,30 +931,37 @@ header {
         overflow: hidden;
         animation: bubbleUp 15s linear infinite;
     }
+
     .b1 {
         background-color: #a9c2ff56;
         animation-duration: 10s;
     }
+
     .b2 {
         background-color: #5a88ff56;
         animation-duration: 7.5s;
     }
+
     .b3 {
         background-color: #aeb6ff7a;
         animation-duration: 20s;
     }
+
     .b4 {
         background-color: #b9a9ff57;
         animation-duration: 26s;
     }
+
     .b5 {
         background-color: #c1d3ff56;
         animation-duration: 30s;
     }
+
     .b6 {
         background-color: #477bfd69;
         animation-duration: 18s;
     }
+
     .b7 {
         background-color: #4278ff31;
         animation-duration: 36s;
@@ -936,31 +977,37 @@ aside {
     position: sticky;
     bottom: 50px;
     z-index: 10;
+
     p {
         opacity: 0;
         transition: 0.5s;
         width: 100px;
         padding: 1rem;
         border-radius: 50%;
-        box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.3);
         &:hover {
             background-color: #eff4ff;
             transition: 0.5s;
         }
+
         img {
             width: 100%;
         }
     }
+
     p.on {
         opacity: 1;
         width: 100px;
         padding: 1rem;
         border-radius: 50%;
         box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+
         &:hover {
             background-color: #eff4ff;
             transition: 0.5s;
         }
+
         img {
             width: 100%;
         }
@@ -973,9 +1020,11 @@ aside {
         -webkit-transform: translateY(3200px) scale(0.4);
         transform: translateY(3200px) scale(0.4);
     }
+
     75% {
         opacity: 0.8;
     }
+
     100% {
         opacity: 0.1;
         -webkit-transform: translateY(0) scale(1.7);
@@ -986,6 +1035,7 @@ aside {
 .none {
     opacity: 0;
 }
+
 .frame_in {
     opacity: 1;
     width: 100%;
@@ -1045,9 +1095,11 @@ aside {
                     width: 60%;
                 }
             }
+
             span {
                 display: none;
             }
+
             nav {
                 width: 500px;
                 display: flex;
@@ -1106,7 +1158,7 @@ aside {
                     flex-direction: row;
                     text-align: center;
 
-                    > p {
+                    >p {
                         width: 45%;
                         padding-bottom: 3rem;
 
@@ -1174,11 +1226,13 @@ aside {
                                     font-size: 1.2rem;
                                     text-align: center;
                                 }
+
                                 &:nth-of-type(2) {
                                     cursor:
                                         url("./img_src/click.png") 5 5,
                                         auto;
                                 }
+
                                 &:nth-of-type(2)::before {
                                     content: "\e325";
                                     font-family: "Material Symbols Outlined";
@@ -1226,6 +1280,7 @@ aside {
                         padding: 0.5rem 0;
                         display: inline-block;
                         width: 100%;
+
                         &::after {
                             display: none;
                         }
@@ -1304,7 +1359,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1387,7 +1442,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1466,7 +1521,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1574,6 +1629,7 @@ aside {
                     height: 100%;
                     margin: 0 auto;
                     padding: 1rem;
+
                     .pro_box {
                         height: 100%;
                         display: flex;
@@ -1581,6 +1637,7 @@ aside {
                         justify-content: space-between;
                         border: 4px dashed #d7e2ff;
                         border-radius: 10px;
+
                         .pro_left {
                             width: 40%;
                             display: flex;
@@ -1665,8 +1722,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .date_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -1679,8 +1738,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .language_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -1694,8 +1755,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .program_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -1708,8 +1771,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .description_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             line-height: 24px;
@@ -1848,6 +1913,7 @@ aside {
 
                     p {
                         text-align: center;
+
                         img {
                             width: 80%;
                         }
@@ -1900,6 +1966,7 @@ aside {
                     width: 60%;
                 }
             }
+
             span {
                 cursor:
                     url("./img_src/click.png") 5 5,
@@ -1907,6 +1974,7 @@ aside {
                 display: none;
                 color: #6f6f6f;
             }
+
             nav {
                 width: 500px;
                 align-items: center;
@@ -1964,7 +2032,7 @@ aside {
                     flex-direction: row;
                     text-align: center;
 
-                    > p {
+                    >p {
                         width: 45%;
                         padding-bottom: 3rem;
 
@@ -2083,6 +2151,7 @@ aside {
                         padding: 0.5rem 0;
                         display: inline-block;
                         width: 100%;
+
                         &::after {
                             display: none;
                         }
@@ -2161,7 +2230,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2244,7 +2313,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2323,7 +2392,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2410,6 +2479,7 @@ aside {
             width: 100%;
             text-align: center;
             background-color: #d7e2ff;
+
             p {
                 font-family: "Blacksword";
                 font-weight: 400;
@@ -2438,6 +2508,7 @@ aside {
                         justify-content: space-between;
                         border: 4px dashed #d7e2ff;
                         border-radius: 10px;
+
                         .pro_left {
                             width: 40%;
                             display: flex;
@@ -2522,8 +2593,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .date_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -2536,8 +2609,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .language_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -2551,8 +2626,10 @@ aside {
                                         color: #5786ff;
                                         font-size: 1.2rem;
                                     }
+
                                     .program_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -2566,8 +2643,10 @@ aside {
                                     color: #5786ff;
                                     font-size: 1.2rem;
                                 }
+
                                 .description_txt {
                                     padding-left: 10px;
+
                                     span {
                                         font-size: 0.9rem;
                                         line-height: 24px;
@@ -2706,6 +2785,7 @@ aside {
                     p {
                         width: 100%;
                         text-align: center;
+
                         img {
                             width: 100%;
                         }
@@ -2757,6 +2837,7 @@ aside {
                     width: 60%;
                 }
             }
+
             span {
                 cursor:
                     url("./img_src/click.png") 5 5,
@@ -2764,6 +2845,7 @@ aside {
                 display: inline-block;
                 color: #6f6f6f;
             }
+
             nav {
                 display: none;
                 width: 500px;
@@ -2794,6 +2876,7 @@ aside {
                     }
                 }
             }
+
             nav.on {
                 display: inline-block;
                 position: absolute;
@@ -2804,6 +2887,7 @@ aside {
                 padding: 40px 20px;
                 background-image: url(./img_src/menu_box.png);
                 background-size: 100% 100%;
+
                 a {
                     display: inline-block;
                     padding: 5px 0;
@@ -2837,7 +2921,7 @@ aside {
                     flex-direction: column;
                     text-align: center;
 
-                    > p {
+                    >p {
                         width: 100%;
                         padding-bottom: 1rem;
 
@@ -2957,6 +3041,7 @@ aside {
                         padding: 0.5rem 0;
                         display: inline-block;
                         width: 100%;
+
                         &::after {
                             display: none;
                         }
@@ -3028,6 +3113,7 @@ aside {
             justify-content: space-between;
             flex-direction: column;
             padding: 3rem 0;
+
             .skill_left {
                 width: 100%;
 
@@ -3035,7 +3121,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3118,7 +3204,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3197,7 +3283,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    > p {
+                    >p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3278,7 +3364,6 @@ aside {
     .project_page {
         font-family: "dreamgotic";
         width: 100%;
-
         min-height: 100vh;
         height: auto;
 
@@ -3305,6 +3390,7 @@ aside {
             .swiper-button-next {
                 display: none;
             }
+
             .swiper-slide {
                 .project_list {
                     width: 90%;
@@ -3321,6 +3407,7 @@ aside {
                         flex-direction: column;
                         border: 4px dashed #d7e2ff;
                         border-radius: 10px;
+
                         .pro_left {
                             width: 100%;
                             display: flex;
@@ -3402,12 +3489,15 @@ aside {
 
                                 .date {
                                     padding: 0.4rem 0;
+
                                     p {
                                         color: #5786ff;
                                         font-size: 1rem;
                                     }
+
                                     .date_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.8rem;
                                             padding-left: 6px;
@@ -3417,12 +3507,15 @@ aside {
 
                                 .language {
                                     padding: 0.4rem 0;
+
                                     p {
                                         color: #5786ff;
                                         font-size: 1rem;
                                     }
+
                                     .language_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.8rem;
                                             padding-left: 6px;
@@ -3433,12 +3526,15 @@ aside {
 
                                 .program {
                                     padding: 0.4rem 0;
+
                                     p {
                                         color: #5786ff;
                                         font-size: 1rem;
                                     }
+
                                     .program_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.8rem;
                                             padding-left: 6px;
@@ -3448,12 +3544,15 @@ aside {
 
                                 .description {
                                     padding: 0.4rem 0;
+
                                     p {
                                         color: #5786ff;
                                         font-size: 1rem;
                                     }
+
                                     .description_txt {
                                         padding-left: 10px;
+
                                         span {
                                             font-size: 0.8rem;
                                             line-height: 24px;
@@ -3522,6 +3621,7 @@ aside {
                 p {
                     width: 55%;
                     margin: 50px 0;
+
                     img {
                         width: 100%;
                     }
@@ -3567,6 +3667,7 @@ aside {
 
                         .email {
                             padding: 0.5rem 0;
+
                             p {
                                 color: #5786ff;
                                 font-size: 1.2rem;
@@ -3580,6 +3681,7 @@ aside {
 
                         .Github {
                             padding: 0.5rem 0;
+
                             p {
                                 color: #5786ff;
                                 font-size: 1.2rem;
@@ -3596,6 +3698,7 @@ aside {
                 .con_right {
                     display: flex;
                     justify-content: center;
+
                     p {
                         img {
                             width: 100%;
