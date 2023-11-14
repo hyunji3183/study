@@ -7,6 +7,7 @@ import Contact from './Contact';
 import { Link } from 'react-scroll';
 import logo from '../img_src/logo.png';
 import top from '../img_src/top.png';
+import { useNavigate } from 'react-router-dom';
 
 function Page() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -53,22 +54,29 @@ function Page() {
         })
     }
 
+
+    const navigate = useNavigate();
+    const back_intro = (e) => {
+        e.preventDefault();
+        navigate('/');
+    }
+
     return (
         <>
             <header className={HeaderVisible ? 'on' : ''}>
                 <div className='headerbox'>
-                    <h1><img src={logo} alt="main_logo" /></h1>
-                    <span className="material-symbols-rounded" onClick={open_menu}>
-                        menu
-                    </span>
-                    <nav className={onmenu ? 'on' : ''}>
-                        <Link to="about" smooth={true} duration={500} spy={true}> &#60;About /&#62;</Link>
-                        <Link to="skill" smooth={true} duration={500} spy={true}> &#60;Skill /&#62;</Link>
-                        <Link to="project" smooth={true} duration={500} spy={true}> &#60;Project /&#62;</Link>
-                        <Link to="contact" smooth={true} duration={500} spy={true}> &#60;Contact /&#62;</Link>
-                    </nav>
-                </div>
-            </header>
+                    <h1><img src={logo} alt="main_logo" onClick={back_intro}/></h1>
+                <span className="material-symbols-rounded" onClick={open_menu}>
+                    menu
+                </span>
+                <nav className={onmenu ? 'on' : ''}>
+                    <Link to="about" smooth={true} duration={500} spy={true}> &#60;About /&#62;</Link>
+                    <Link to="skill" smooth={true} duration={500} spy={true}> &#60;Skill /&#62;</Link>
+                    <Link to="project" smooth={true} duration={500} spy={true}> &#60;Project /&#62;</Link>
+                    <Link to="contact" smooth={true} duration={500} spy={true}> &#60;Contact /&#62;</Link>
+                </nav>
+            </div>
+        </header >
             <About />
             <Skill />
             <Project />

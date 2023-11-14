@@ -133,8 +133,44 @@
 	}
 }
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+	.intro_page {
+		.intro_box {
+			.intro_left {
+				.front {
+					p {
+						&:nth-of-type(2) {
+						}
+					}
+				}
+				.dev {
+					p {
+					}
+				}
+			}
+			.intro_right {
+				.txt {
+					p {
+					}
+				}
+				.portfolio {
+					p {
+						&:nth-of-type(2) {
+						}
+					}
+				}
+			}
+		}
 
-@media (max-width: 1024px) {}
+		.txt_con {
+			span {
+			}
+		}
+	}
+}
 
-@media (max-width: 720px) {}
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 720px) {
+}

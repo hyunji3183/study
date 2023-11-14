@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #d7e2ff;
     border-radius: 10px;
-    border: 7px solid #FFFFFF
+    border: 7px solid #ffffff;
 }
 
 body::-webkit-scrollbar-track {
@@ -115,7 +115,7 @@ header {
                 align-items: center;
                 flex-direction: column;
 
-                >p {
+                > p {
                     width: 70%;
                     padding-bottom: 3rem;
 
@@ -234,12 +234,13 @@ header {
                         display: block;
                         content: "";
                         border-bottom: solid 3px #b1c7ff;
-                        transform: scaleX(0);
                         transform-origin: 0% 50%;
-                        transition: transform 200ms ease-in-out;
+                        transform: scaleX(0);
+                        animation: underline 1.8s ease-in-out forwards;
                     }
-
-                    &:hover::after {
+                }
+                @keyframes underline {
+                    100% {
                         transform: scaleX(1);
                     }
                 }
@@ -276,7 +277,7 @@ header {
                         padding: 0.5rem 0;
                         font-size: 1rem;
                         font-weight: 200;
-                        line-height: 24px;
+                        line-height: 26px;
                     }
                 }
             }
@@ -290,19 +291,33 @@ header {
     height: 100vh;
 
     .color_box {
-        width: 100%;
-        text-align: center;
-        background-color: #d7e2ff;
-
+        width: 70%;
+        margin: 0 auto;
         p {
+            width: 100%;
             font-family: "Blacksword";
             font-weight: 400;
             font-size: 3rem;
-            color: white;
             letter-spacing: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 40%;
+                height: 2px;
+                background-color: black;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 40%;
+                height: 2px;
+                background-color: black;
+            }
         }
     }
-
     .skill {
         width: 70%;
         height: 90%;
@@ -319,7 +334,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -408,7 +423,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -485,7 +500,7 @@ header {
                 min-height: 370px;
                 padding: 1rem 0;
 
-                >p {
+                > p {
                     display: inline-block;
                     padding: 0.5rem 0;
                     color: #5786ff;
@@ -567,27 +582,54 @@ header {
     height: 100vh;
 
     .color_box {
-        width: 100%;
-        text-align: center;
-        background-color: #d7e2ff;
-
+        width: 70%;
+        margin: 0 auto;
+        padding: 0 0 50px;
         p {
+            width: 100%;
             font-family: "Blacksword";
             font-weight: 400;
             font-size: 3rem;
-            color: white;
             letter-spacing: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 40%;
+                height: 2px;
+                background-color: black;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 40%;
+                height: 2px;
+                background-color: black;
+            }
         }
     }
 
     .swiper {
-        width: 85%;
+        width: 100%;
         height: 85%;
         padding: 5rem 0;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            bottom: 0;
+            top: 0;
+        }
 
         .swiper-slide {
             .project_list {
-                width: 80%;
+                width: 70%;
                 height: 100%;
                 margin: 0 auto;
                 padding: 1.8rem;
@@ -596,6 +638,7 @@ header {
 
                 .pro_box {
                     height: 100%;
+                    padding: 2rem 0;
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
@@ -636,7 +679,7 @@ header {
                         .btn_box {
                             width: 30%;
                             padding: 4px 0;
-                            margin: 4px 0px;
+                            margin: 14px 0px;
                             display: flex;
                             align-items: center;
                             justify-content: space-around;
@@ -666,12 +709,13 @@ header {
                     .pro_right {
                         font-weight: 200;
                         width: 55%;
-                        height: 90%;
+                        height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
 
                         b {
+                            padding: 0.8rem 0;
                             display: inline-block;
                             font-size: 1.5rem;
                         }
@@ -685,6 +729,7 @@ header {
                             flex-direction: column;
 
                             .date {
+                                padding: 0.5rem 0;
                                 p {
                                     color: #5786ff;
                                     font-size: 1.25rem;
@@ -701,6 +746,7 @@ header {
                             }
 
                             .language {
+                                padding: 0.5rem 0;
                                 p {
                                     color: #5786ff;
                                     font-size: 1.25rem;
@@ -715,12 +761,13 @@ header {
                                     span {
                                         font-size: 1rem;
                                         padding-left: 10px;
-                                        line-height: 24px;
+                                        line-height: 26px;
                                     }
                                 }
                             }
 
                             .program {
+                                padding: 0.5rem 0;
                                 p {
                                     color: #5786ff;
                                     font-size: 1.25rem;
@@ -735,12 +782,13 @@ header {
                                     span {
                                         font-size: 1rem;
                                         padding-left: 10px;
-                                        line-height: 24px;
+                                        line-height: 26px;
                                     }
                                 }
                             }
 
                             .description {
+                                padding: 0.5rem 0;
                                 p {
                                     color: #5786ff;
                                     font-size: 1.25rem;
@@ -751,7 +799,7 @@ header {
 
                                     span {
                                         font-size: 1rem;
-                                        line-height: 24px;
+                                        line-height: 26px;
                                     }
                                 }
                             }
@@ -788,16 +836,32 @@ header {
     position: relative;
 
     .color_box {
-        width: 100%;
-        text-align: center;
-        background-color: #d7e2ff;
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px 0 0;
 
         p {
             font-family: "Blacksword";
             font-weight: 400;
             font-size: 3rem;
-            color: white;
             letter-spacing: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 400px;
+                height: 2px;
+                background-color: black;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 400px;
+                height: 2px;
+                background-color: black;
+            }
         }
     }
 
@@ -1039,7 +1103,6 @@ aside {
 .frame_in {
     opacity: 1;
     width: 100%;
-    height: 100%;
     animation: frameInAnimation 1s forwards;
 }
 
@@ -1087,7 +1150,6 @@ aside {
             justify-content: space-between;
             align-items: center;
             transition: 3s;
-
             h1 {
                 width: 100px;
 
@@ -1095,11 +1157,9 @@ aside {
                     width: 60%;
                 }
             }
-
             span {
                 display: none;
             }
-
             nav {
                 width: 500px;
                 display: flex;
@@ -1107,11 +1167,9 @@ aside {
                 justify-content: space-between;
                 font-family: "dreamgotic";
                 font-weight: 300;
-
                 a {
                     letter-spacing: 2px;
                     color: #707070;
-
                     &::after {
                         display: block;
                         content: "";
@@ -1119,14 +1177,6 @@ aside {
                         transform: scaleX(0);
                         transform-origin: 0% 50%;
                         transition: transform 200ms ease-in-out;
-                    }
-
-                    &:hover {
-                        color: #000;
-                    }
-
-                    &:hover::after {
-                        transform: scaleX(1);
                     }
                 }
             }
@@ -1158,7 +1208,7 @@ aside {
                     flex-direction: row;
                     text-align: center;
 
-                    >p {
+                    > p {
                         width: 45%;
                         padding-bottom: 3rem;
 
@@ -1331,16 +1381,32 @@ aside {
         height: 100vh;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -1359,7 +1425,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1442,7 +1508,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1521,7 +1587,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -1605,27 +1671,43 @@ aside {
         height: 100vh;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
         .swiper {
-            width: 90%;
+            width: 100%;
             height: 85%;
             padding: 5rem 0;
 
             .swiper-slide {
                 .project_list {
-                    width: 80%;
+                    width: 90%;
                     height: 100%;
                     margin: 0 auto;
                     padding: 1rem;
@@ -1668,7 +1750,7 @@ aside {
                             .btn_box {
                                 width: 44%;
                                 padding: 4px 0;
-                                margin: 4px 0px;
+                                margin: 14px 0px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-around;
@@ -1710,7 +1792,7 @@ aside {
                             }
 
                             .pro_text {
-                                width: 100%;
+                                width: 90%;
                                 height: 90%;
                                 display: flex;
                                 justify-content: space-between;
@@ -1777,7 +1859,7 @@ aside {
 
                                         span {
                                             font-size: 0.9rem;
-                                            line-height: 24px;
+                                            line-height: 26px;
                                         }
                                     }
                                 }
@@ -1796,16 +1878,32 @@ aside {
         position: relative;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 35%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -2032,7 +2130,7 @@ aside {
                     flex-direction: row;
                     text-align: center;
 
-                    >p {
+                    > p {
                         width: 45%;
                         padding-bottom: 3rem;
 
@@ -2202,16 +2300,32 @@ aside {
         height: 100vh;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 70%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -2230,7 +2344,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2313,7 +2427,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2392,7 +2506,7 @@ aside {
                     min-height: 340px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -2474,18 +2588,34 @@ aside {
         font-family: "dreamgotic";
         width: 100%;
         height: 100vh;
-
+        margin-bottom: 50px;
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 70%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -2503,6 +2633,7 @@ aside {
 
                     .pro_box {
                         height: 100%;
+                        padding: 1rem 0;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -2511,6 +2642,7 @@ aside {
 
                         .pro_left {
                             width: 40%;
+                            height: 100%;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
@@ -2539,7 +2671,7 @@ aside {
                             .btn_box {
                                 width: 44%;
                                 padding: 4px 0;
-                                margin: 4px 0px;
+                                margin: 14px 0px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-around;
@@ -2575,13 +2707,13 @@ aside {
                             justify-content: space-around;
 
                             b {
+                                padding: 1.2rem 0;
                                 display: inline-block;
                                 font-size: 1.3rem;
-                                padding: 1.2rem 0;
                             }
 
                             .pro_text {
-                                width: 100%;
+                                width: 90%;
                                 height: 90%;
                                 display: flex;
                                 justify-content: space-between;
@@ -2649,7 +2781,7 @@ aside {
 
                                     span {
                                         font-size: 0.9rem;
-                                        line-height: 24px;
+                                        line-height: 26px;
                                     }
                                 }
                             }
@@ -2667,16 +2799,32 @@ aside {
         position: relative;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 70%;
+            margin: 0 auto;
 
             p {
+                width: 100%;
                 font-family: "Blacksword";
                 font-weight: 400;
                 font-size: 3rem;
-                color: white;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -2915,18 +3063,19 @@ aside {
                 width: 90%;
 
                 .profile {
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
                     flex-direction: column;
                     text-align: center;
 
-                    >p {
-                        width: 100%;
+                    > p {
+                        width: 55%;
                         padding-bottom: 1rem;
 
                         img {
-                            width: 70%;
+                            width: 100%;
                         }
                     }
 
@@ -2975,7 +3124,7 @@ aside {
 
                             p {
                                 font-weight: 300;
-                                font-size: 16px;
+                                font-size: 14px;
                                 padding: 0.8rem;
                                 border-left: 3px solid black;
                                 display: flex;
@@ -3092,16 +3241,31 @@ aside {
         height: 100%;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
 
             p {
                 font-family: "Blacksword";
                 font-weight: 400;
-                font-size: 3rem;
-                color: white;
+                font-size: 2rem;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -3121,7 +3285,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3204,7 +3368,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3283,7 +3447,7 @@ aside {
                     min-height: 240px;
                     padding: 1rem 0;
 
-                    >p {
+                    > p {
                         display: inline-block;
                         padding: 0.5rem 0;
                         color: #5786ff;
@@ -3366,18 +3530,34 @@ aside {
         width: 100%;
         min-height: 100vh;
         height: auto;
+        margin: 0;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
 
             p {
                 font-family: "Blacksword";
                 font-weight: 400;
-                font-size: 3rem;
-                color: white;
+                font-size: 2rem;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 
@@ -3436,7 +3616,7 @@ aside {
                             .btn_box {
                                 width: 100px;
                                 padding: 4px 0;
-                                margin: 4px 0px;
+                                margin: 14px 0px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-around;
@@ -3555,7 +3735,7 @@ aside {
 
                                         span {
                                             font-size: 0.8rem;
-                                            line-height: 24px;
+                                            line-height: 26px;
                                         }
                                     }
                                 }
@@ -3574,16 +3754,32 @@ aside {
         position: relative;
 
         .color_box {
-            width: 100%;
-            text-align: center;
-            background-color: #d7e2ff;
+            width: 90%;
+            margin: 0 auto;
+            padding: 50px 0 0;
 
             p {
                 font-family: "Blacksword";
                 font-weight: 400;
-                font-size: 3rem;
-                color: white;
+                font-size: 2rem;
                 letter-spacing: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 20%;
+                    height: 2px;
+                    background-color: black;
+                }
             }
         }
 

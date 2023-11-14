@@ -11,9 +11,8 @@ function Contact() {
     };
 
 
-
     return (
-        <section className='contact_page'>
+        <section className='contact_page' id='contact'>
             <div className='color_box'>
                 <p>contact</p>
             </div>

@@ -30,11 +30,7 @@ function Project() {
     if (!data.length) return <></>;
 
     return (<>
-        <section className='project_page' id='project' style={{
-            background: `url(${data[currentIndex].back_img}) 0 0 /cover no-repeat`
-            // transition:'0.5s'
-            // filter: 'blur(5px)'
-        }}>
+        <section className='project_page' id='project'>
             <div className='color_box'>
                 <p>project</p>
             </div>
@@ -52,6 +48,9 @@ function Project() {
                     modules={[Pagination, Navigation]}
                     className="mySwiper frame_in"
                     onSlideChange={handleSlideChange}
+                    style={{
+                        background: `url(${data[currentIndex].back_img}) 0 0 /cover no-repeat`
+                    }}
                 >
                     {data.map((item, index) => (
                         <SwiperSlide key={item.id}>
