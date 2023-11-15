@@ -92,9 +92,15 @@ function Project() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='link'>
-                                            <a href={item.url} target='_blank'> Go to page </a>
-                                            <span className="material-symbols-rounded">chevron_right</span>
+                                        <div className='link_box'>
+                                            <div className='link'>
+                                                <a href={item.url} target='_blank' className='page_link'> Go to page </a>
+                                                <span className="material-symbols-rounded">chevron_right</span>
+                                            </div>
+                                            <div className='link'>
+                                                <p className='page_link'> View more </p>
+                                                <span className="material-symbols-rounded">chevron_right</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

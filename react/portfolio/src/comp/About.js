@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import QR from '../img_src/kakao_QR.png'
 import mimoji from '../img_src/mimoji_profile1.png'
+import profile from '../img_src/profile.png'
+import profile2 from '../img_src/profile2.png'
 import Inview from './Inview';
 
 
@@ -17,7 +19,7 @@ function About() {
                 <div className='about'>
                     <div className='about_left'>
                         <div className='profile'>
-                            <p><img src={mimoji} alt='mimoji_profile' /></p>
+                            <p><img src={profile2} alt='mimoji_profile' /></p>
                             <div className={`info_data ${onkakao ? 'on' : ''}`}>
                                 <div className='kakao_qr' onClick={open_qr}><img src={QR} alt='kakao_QR' /></div>
                                 <div>
