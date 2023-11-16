@@ -9,6 +9,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import axios from 'axios';
 import Inview from './Inview';
 import ProContent from './ProContent';
+import Mymodal from './Mymodal';
 
 function Project() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,10 +28,23 @@ function Project() {
     };
 
 
+    const [modalOpen, setModalOpen] = useState(false);
+    const [Troubledata, setTroubledata] = useState('');
+    const showModal = (des) => {
+        setModalOpen(!modalOpen);
+        setTroubledata(des)
+        // const body = document.querySelector('body');
+        // if (!modalOpen) {
+        //     body.style.overflow = "hidden";
+        // } else {
+        //     body.style.overflow = "visible";
+        // }
+    };
     if (!data.length) return <></>;
 
     return (<>
         <section className='project_page' id='project'>
+            {modalOpen && <Mymodal setModalOpen={setModalOpen} Troubledata={Troubledata} />}
             <div className='color_box'>
                 <p>project</p>
             </div>
@@ -85,19 +99,13 @@ function Project() {
                                                     <span>{item.description}</span>
                                                 </div>
                                             </div>
-                                            <div className='description'>
-                                                <p>Trouble shooting</p>
-                                                <div className='description_txt'>
-                                                    <span>{item.Trouble}</span>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div className='link_box'>
                                             <div className='link'>
-                                                <a href={item.url} target='_blank' className='page_link'> Go to page </a>
+                                                <a href={item.url} target='_blank' className='page_link' rel="noopener noreferrer"> Go to page </a>
                                                 <span className="material-symbols-rounded">chevron_right</span>
                                             </div>
-                                            <div className='link'>
+                                            <div className='link' onClick={() => showModal(item)}>
                                                 <p className='page_link'> View more </p>
                                                 <span className="material-symbols-rounded">chevron_right</span>
                                             </div>

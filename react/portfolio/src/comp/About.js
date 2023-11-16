@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import QR from '../img_src/kakao_QR.png'
-import mimoji from '../img_src/mimoji_profile1.png'
-import profile from '../img_src/profile.png'
 import profile2 from '../img_src/profile2.png'
 import Inview from './Inview';
 
