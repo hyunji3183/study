@@ -2,8 +2,9 @@ import React from 'react'
 import '../modal.scss';
 
 function Mymodal({ setModalOpen, Troubledata }) {
-    console.log(Troubledata);
     const closeModal = () => {
+        const body = document.querySelector('body');
+        body.style.overflow = "auto";
         setModalOpen(false);
     };
     return (

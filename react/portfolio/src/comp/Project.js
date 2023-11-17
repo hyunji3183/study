@@ -33,12 +33,10 @@ function Project() {
     const showModal = (des) => {
         setModalOpen(!modalOpen);
         setTroubledata(des)
-        // const body = document.querySelector('body');
-        // if (!modalOpen) {
-        //     body.style.overflow = "hidden";
-        // } else {
-        //     body.style.overflow = "visible";
-        // }
+        const body = document.querySelector('body');
+        if (!modalOpen) {
+            body.style.overflow = "hidden";
+        }
     };
     if (!data.length) return <></>;
 

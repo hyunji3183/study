@@ -14,11 +14,15 @@ body::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
 }
 
+body {
+    cursor:
+        url("./img_src/mouse.png") 5 5,
+        auto;}
+
 header.on {
     height: 0px;
     transition: 1.5s;
     z-index: 10;
-
     .headerbox {
         opacity: 0;
         transition: 0.5s;
@@ -31,8 +35,8 @@ header {
     left: 0;
     width: 100%;
     height: 76px;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 2px dashed #b1c7ff;
+    background-color: #d7e2ff;
+    border-bottom: 2px dashed white;
     transition: 1.5s;
     z-index: 10;
 
@@ -69,9 +73,6 @@ header {
             a {
                 letter-spacing: 2px;
                 color: #707070;
-                cursor:
-                    url("./img_src/click.png") 5 5,
-                    auto;
 
                 &::after {
                     display: block;
@@ -131,13 +132,12 @@ header {
                     min-height: 180px;
 
                     .kakao_qr {
-                        display: inline-block;
+                        animation: openqr 0.5s linear forwards;
+                        position: absolute;
+                        top: 0;
                         width: 180px;
                         height: 180px;
                         text-align: center;
-                        cursor:
-                            url("./img_src/click.png") 5 5,
-                            auto;
 
                         img {
                             width: 90%;
@@ -145,17 +145,23 @@ header {
                     }
 
                     div {
-                        display: none;
+                        opacity: 0;
                     }
                 }
 
                 .info_data {
-                    display: flex;
-                    flex-direction: column;
                     min-height: 180px;
-
+                    position: relative;
+                    overflow: hidden;
                     .kakao_qr {
-                        display: none;
+                        position: absolute;
+                        top: 0;
+                        width: 180px;
+                        height: 180px;
+                        transform: translateY(110%);
+                        img {
+                            width: 90%;
+                        }
                     }
 
                     div {
@@ -163,7 +169,7 @@ header {
                         align-items: flex-start;
                         justify-content: space-between;
                         flex-direction: column;
-
+                        
                         p {
                             font-weight: 300;
                             font-size: 1rem;
@@ -171,9 +177,7 @@ header {
                             border-left: 3px solid black;
                             display: flex;
                             align-items: center;
-                            cursor:
-                                url("./img_src/click.png") 5 5,
-                                auto;
+                            color: #424242;
 
                             &:nth-of-type(1)::before {
                                 content: "\e7e9";
@@ -185,6 +189,13 @@ header {
                                 text-align: center;
                             }
 
+                            &:nth-of-type(2),
+                            &:nth-of-type(3),
+                            &:nth-of-type(4) {
+                                cursor:
+                                    url("./img_src/click.png") 5 5,
+                                    auto;
+                            }
                             &:nth-of-type(2)::before {
                                 content: "\e325";
                                 font-family: "Material Symbols Outlined";
@@ -195,7 +206,9 @@ header {
                                 text-align: center;
                             }
 
-                            &:nth-of-type(2)::after {
+                            &:nth-of-type(2)::after,
+                            &:nth-of-type(3)::after,
+                            &:nth-of-type(4)::after {
                                 content: "\e409";
                                 font-family: "Material Symbols Outlined";
                                 display: inline-block;
@@ -206,6 +219,16 @@ header {
 
                             &:nth-of-type(3)::before {
                                 content: "\e158";
+                                font-family: "Material Symbols Outlined";
+                                display: inline-block;
+                                width: 30px;
+                                height: 20px;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+
+                            &:nth-of-type(4)::before {
+                                content: "\e853";
                                 font-family: "Material Symbols Outlined";
                                 display: inline-block;
                                 width: 30px;
@@ -273,6 +296,7 @@ header {
                     padding: 1rem 0;
                     font-size: 1rem;
                     font-weight: 200;
+                    color: #424242;
                 }
             }
 
@@ -291,7 +315,7 @@ header {
                         padding: 0.5rem 0;
                         font-size: 1rem;
                         font-weight: 200;
-                        line-height: 26px;
+                        color: #424242;
                     }
                 }
             }
@@ -299,6 +323,12 @@ header {
     }
 }
 
+@keyframes openqr {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 .skill_page {
     font-family: "dreamgotic";
     width: 100%;
@@ -359,6 +389,7 @@ header {
 
                 ul {
                     li {
+                        background-color: #ffffff;
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
@@ -448,6 +479,7 @@ header {
 
                 ul {
                     li {
+                        background-color: #ffffff;
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
@@ -525,6 +557,7 @@ header {
 
                 ul {
                     li {
+                        background-color: #ffffff;
                         margin: 0.5rem 0;
                         border: 1px solid #b1c7ff;
                         border-radius: 10px;
@@ -676,6 +709,7 @@ header {
                         ul {
                             width: 280px;
                             height: 80%;
+                            min-height: 440px;
                             display: flex;
                             align-items: center;
                             overflow: hidden;
@@ -927,7 +961,6 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-around;
-
             backface-visibility: hidden;
             position: absolute;
             top: 0;
@@ -1171,9 +1204,6 @@ aside {
         left: 0;
         width: 100%;
         height: 72px;
-        background-color: rgb(255, 255, 255);
-        border-bottom: 2px dashed #b1c7ff;
-        transition: 1.5s;
         z-index: 10;
 
         .headerbox {
@@ -1768,6 +1798,7 @@ aside {
 
                             ul {
                                 width: 240px;
+                                min-height: 380px;
                                 white-space: nowrap;
                                 position: relative;
 
@@ -2081,9 +2112,6 @@ aside {
         left: 0;
         width: 100%;
         height: 72px;
-        background-color: rgb(255, 255, 255);
-        border-bottom: 2px dashed #b1c7ff;
-        transition: 1.5s;
         z-index: 10;
 
         .headerbox {
@@ -2691,6 +2719,7 @@ aside {
                             flex-direction: column;
 
                             ul {
+                                min-height: 315px;
                                 width: 200px;
                                 white-space: nowrap;
                                 position: relative;
@@ -3005,9 +3034,6 @@ aside {
         left: 0;
         width: 100%;
         height: 72px;
-        background-color: rgb(255, 255, 255);
-        border-bottom: 2px dashed #b1c7ff;
-        transition: 1.5s;
         z-index: 10;
 
         .headerbox {
@@ -3150,7 +3176,7 @@ aside {
                     }
 
                     .info_data {
-                        width: 70%;
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         min-height: 180px;
@@ -3167,8 +3193,8 @@ aside {
 
                             p {
                                 font-weight: 300;
-                                font-size: 14px;
-                                padding: 0.8rem;
+                                font-size: 12px;
+                                padding: 0.4rem;
                                 border-left: 3px solid black;
                                 display: flex;
                                 align-items: center;
@@ -3623,6 +3649,7 @@ aside {
 
                     .pro_box {
                         height: 100%;
+                        min-height: 730px;
                         padding: 1rem 0;
                         display: flex;
                         align-items: center;
@@ -3639,6 +3666,7 @@ aside {
 
                             ul {
                                 width: 190px;
+                                min-height: 300px;
                                 white-space: nowrap;
                                 position: relative;
 

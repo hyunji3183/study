@@ -19,12 +19,13 @@ function About() {
                         <div className='profile'>
                             <p><img src={profile2} alt='mimoji_profile' /></p>
                             <div className={`info_data ${onkakao ? 'on' : ''}`}>
-                                <div className='kakao_qr' onClick={open_qr}><img src={QR} alt='kakao_QR' /></div>
                                 <div>
                                     <p>1996.02.29</p>
                                     <p onClick={open_qr}>kakao talk</p>
-                                    <p>chj3183@gmail.com</p>
+                                    <p><a href="mailto: chj3183@gmail.com" title="메일보내기">chj3183@gmail.com</a></p>
+                                    <p><a href="https://github.com/hyunji3183" target='_blank' rel="noopener noreferrer">https://github.com/hyunji3183</a></p>
                                 </div>
+                                <div className='kakao_qr' onClick={open_qr}><img src={QR} alt='kakao_QR' /></div>
                             </div>
                         </div>
                     </div>
